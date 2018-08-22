@@ -1,0 +1,87 @@
+%!TEX root = ../thesis.tex
+%*******************************************************************************
+%****************************** Second Chapter *********************************
+%*******************************************************************************
+
+\chapter{Lattice QCD}
+
+\ifpdf
+    \graphicspath{{Chapter2/Figs/Raster/}{Chapter2/Figs/PDF/}{Chapter2/Figs/}}
+\else
+    \graphicspath{{Chapter2/Figs/Vector/}{Chapter2/Figs/}}
+\fi
+Since the first efforts to construct a non-perturbative approach to QCD in 1974\cite{Wilson:1974sk}, lattice QCD has developed over the past 40 years into a powerful tool used to probe the low-energy behaviour of the strong nuclear force. Rather than treat spacetime as a set of continuous axes, it is instead discretised into a finite set of points on a four-dimensional hypercube. This prescription allows for the explicit calculation of path integrals present in QCD, at the cost of introducing finite-spacing errors that must be systematically accounted for.
+
+\section{QCD in the Continuum}
+
+
+\section{Pure Gauge Action}
+For the purpose of this research, we are interested in the behaviour of gluons, and as such we need to develop a description of pure gauge fields. In the continuum, a pure gauge field has the Lagrangian\cite{ryder1996quantum}
+\begin{equation}
+\mathcal{L}=\frac{1}{2}F_{\mu\nu}\,F^{\mu\nu}
+\label{QCDLagrangian}
+\end{equation}
+and corresponding action
+\begin{equation}
+\mathcal{S}=\int~d^4x~\mathcal{L},
+\label{QCDAction}
+\end{equation}
+where $F_{\mu\nu}$ is the field-strength tensor, and can be written in terms of the traceless, Hermitian, gauge potential $A_\mu$ as
+\begin{equation}
+F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu -ig[A_\mu,\,A_\nu]
+\label{FieldStrengthTensor}
+\end{equation}
+When considering the path integral formulation of a gauge field theory, integrals such as the generating functional,
+\begin{equation}
+\mathcal{Z} =\int \mathcal{D} A_\mu \exp\left(i\,\mathcal{S}\,[A_\mu(x)]\right),
+\end{equation}
+and others of a similar form appear frequently. This integral closely resembles the partition function found in statistical mechanics, $Z_{\text{classical}}=\int d^3x\,d^3p\,\exp\left(-\beta\,H(x,p)\right)$, with the notable exception of the factor of $i$ in the exponential. This factor leads to an oscillatory weight term, rendering numerical simulations impossible. To ensure that the weight factor is purely real, it is necessary to perform a Wick rotation into Euclidean space\cite{Schafer:1996wv,Wilson:1974sk}
+\begin{align*}
+x_0\rightarrow -ix_0
+\end{align*}
+The generating functional now becomes 
+\begin{equation}
+\mathcal{Z}_{\text{Eucl}} =\int \mathcal{D} A_\mu \exp\left(-\mathcal{S}_{\text{Eucl}}\,[A_\mu(x)]\right).
+\end{equation}
+The Wick rotation also has the consequence of reducing the metric $g_{\mu\nu}$ to the identity, meaning that there is no longer any differentiation between covariant and contravariant tensors.\\
+
+Within this framework, we can now consider discretising spacetime into a finite lattice, with each lattice site separated by a spacing $a$. When spacetime is discretised, it becomes necessary to consider derivatives as finite differences and integrals as finite sums. For example, we can construct the lattice form of Eq.~\ref{FieldStrengthTensor} as
+\begin{equation}
+F_{\text{Lat}}^{\mu\nu}(x) = \frac{A_\nu(x+a\hat{\mu})-A_\nu(x)}{a}-\frac{A_\mu(x+a\hat{\nu})-A_\mu(x)}{a}-ig[A_\mu(x),\,A_\nu(x)].
+\label{DiscreteFST}
+\end{equation}
+The notation $A_\nu(x+a\hat{\mu})$ denotes the field $A_\nu$ located at the site one lattice spacing in the $\hat{\mu}$ direction from $x$.
+\section{Gauge Fixing}
+\subsection{Landau Gauge}
+\subsection{Maximal Centre Gauge}
+
+
+%\begin{landscape}
+%
+%\section*{Subplots}
+%I can cite Wall-E (see Fig.~\ref{fig:WallE}) and Minions in despicable me (Fig.~\ref{fig:Minnion}) or I can cite the whole figure as Fig.~\ref{fig:animations}
+%
+%
+%\begin{figure}
+%  \centering
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{TomandJerry}
+%    \caption{Tom and Jerry}
+%    \label{fig:TomJerry}   
+%  \end{subfigure}             
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{WallE}
+%    \caption{Wall-E}
+%    \label{fig:WallE}
+%  \end{subfigure}             
+%  \begin{subfigure}[b]{0.3\textwidth}
+%    \includegraphics[width=\textwidth]{minion}
+%    \caption{Minions}
+%    \label{fig:Minnion}
+%  \end{subfigure}
+%  \caption{Best Animations}
+%  \label{fig:animations}
+%\end{figure}
+%
+%
+%\end{landscape}

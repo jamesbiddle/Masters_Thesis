@@ -1,0 +1,80 @@
+%!TEX root = ../thesis.tex
+%*******************************************************************************
+%*********************************** Fourth Chapter *****************************
+%*******************************************************************************
+
+\chapter{Landau Gauge Gluon Propagator}
+\ifpdf
+    \graphicspath{{Chapter4/Figs/Raster/}{Chapter4/Figs/PDF/}{Chapter4/Figs/}}
+\else
+    \graphicspath{{Chapter4/Figs/Vector/}{Chapter4/Figs/}}
+\fi
+In a gauge field theory, the propagator of the gauge boson is the two-point correlation function 
+\section{Lattice Definition of the Gluon Propagator}
+We begin with the definition of the coordinate space propagator~\cite{Zwanziger:1991gz,Cucchieri:1999sz,Langfeld:2001cz}.
+\begin{equation}
+D^{ab}_{\mu\nu}(x) = \langle A^a_\mu(x) \, A^b_\nu(0)\rangle.
+\end{equation}
+The propagator in momentum space is simply related by the discrete Fourier transform,
+\begin{equation}
+D^{ab}_{\mu\nu}(p) = \sum_x e^{-ip\cdot x} \langle A^a_\mu(x) \, A^b_\nu(0) \rangle. 
+\end{equation}
+Noting that the coordinate space propagator $D^{ab}_{\mu\nu}(x-y)$ only depends on the difference $x-y,$ we can make use of translational invariance to average over the four-dimensional volume to obtain the form for the momentum space propagator.
+\begin{align}
+D^{ab}_{\mu\nu}(p) &= \frac{1}{V}\sum_{x,y} e^{-ip\cdot x}\langle A^a_\mu(x+y) \, A^b_\nu(y) \rangle \nonumber \\
+                &= \frac{1}{V}\sum_{x,y} \langle e^{-ip\cdot (x+y)} A^a_\mu(x+y) \, e^{+ip\cdot y}A^b_\nu(y) \rangle \nonumber \\
+                &= \frac{1}{V}\langle A^a_\mu(p) \, A^b_\nu(-p) \rangle. \label{eq:gluPropxtop}
+\end{align}
+
+Hence we find that the momentum space gluon propagator on a finite lattice with four-dimensional volume $V$ is given by
+%
+\begin{equation}
+D_{\mu\nu}^{ab}(p) \equiv \frac{1}{V}\left \langle A^a_\mu (p)\,A^b_\nu(-p)\right\rangle \, . \label{eq:gluonProp}
+\end{equation}
+%
+In the continuum, the Landau-gauge momentum-space gluon propagator has the following form~\cite{Leinweber:1998im,Bonnet:2001uh}
+%
+\begin{equation}
+D^{ab}_{\mu\nu}(q) = \left ( \delta_{\mu\nu} - \frac{q_\mu q_\nu}{q^2} \right )\,\delta^{ab}\,D(q^2) \, ,
+\end{equation}
+%
+where $D(q^2)$ is the scalar gluon propagator.  Contracting Gell-Mann index $b$ with $a$ and
+Lorentz index $\nu$ with $\mu$ one has
+%
+\begin{equation}
+D^{aa}_{\mu\mu}(q) = (4-1)\,(n_c^2-1)\,D(q^2) \, ,
+\end{equation}
+%
+such that the scalar function can be obtained from the gluon propagator via
+%
+\begin{equation}
+D(q^2) = \frac{1}{3(n_c^2-1)}\,D^{aa}_{\mu\mu}(q) \, ,
+\label{eq:scalarProp}
+\end{equation}
+%
+where $n_c = 3$ is the number of colours.
+
+As the lattice gauge links $U_\mu(x)$ naturally reside in the fundamental representation of $SU(3),$ it is convenient to work with the corresponding $3\times 3$ matrix representation of the gauge potential $A_\mu  = A^a_\mu\,(\lambda_a/2),$ where $\lambda_a$ are the eight Gell-Mann matrices. Using the orthogonality relation $\Tr(\lambda_a\lambda_b) = \delta_{ab}$ for the Gell-Mann matrices, it is straightforward to see that
+\begin{equation}
+2\Tr(A_\mu\,A_\mu) = A^a_\mu A^a_\mu,
+\end{equation}
+which can be substituted into equation~\ref{eq:scalarProp} to obtain the final expression for the lattice scalar gluon propagator,
+\begin{equation}
+D(p^2) = \frac{2}{3\,(n_c^2-1)\,V}\big\langle {\rm Tr}\, A_\mu(p)\,A_\mu(-p) \big\rangle \,. \label{eq:scalarProp2}
+\end{equation}
+
+Following the formalism of Ref.~\cite{Leinweber:1998im}, we calculate
+the lattice gluon propagator using the mid-point
+definition of the gauge potential in terms of the lattice link
+variables~\cite{Alles:1996ka},
+%
+\begin{multline}
+A_\mu(x+\hat{\mu}/2)=\frac{1}{2ig_0}\, \left (U_\mu(x)-U^{\dagger}_\mu(x)\right ) \\
+-\frac{1}{6 i g_0}\, {\rm Tr}\left (U_\mu(x)-U^{\dagger}_\mu(x) \right ) + {\cal O}(a^2)\,.  \label{eq:midPoint}
+\end{multline}
+The gluon fields $U_\mu(x)$ are first gauge-fixed by maximizing an $\mathcal{O}(a^{2})$-improved functional using a Fourier-accelerated algorithm~\cite{Davies:1987vs,Bonnet:1999mj,Roberts:2010cz}. The gauge potential in momentum space is then obtained by taking the discrete Fourier transform, 
+\begin{equation}
+A_\mu(p) = \sum_x e^{-ip\cdot(x+\hat{\mu}/2)}\, A_\mu(x+\hat{\mu}/2).
+\end{equation}
+\section{Momentum Variables}
+
