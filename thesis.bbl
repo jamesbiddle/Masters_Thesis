@@ -1,0 +1,80 @@
+\begin{thebibliography}{10}
+
+\bibitem{Wilson:1974sk}
+Kenneth~G. Wilson.
+\newblock {Confinement of Quarks}.
+\newblock {\em Phys. Rev.}, D10:2445--2459, 1974.
+\newblock [,319(1974)].
+
+\bibitem{peskin2018introduction}
+Michael~E Peskin.
+\newblock {\em An introduction to quantum field theory}.
+\newblock CRC Press, 2018.
+
+\bibitem{ryder1996quantum}
+Lewis~H Ryder.
+\newblock {\em Quantum field theory}.
+\newblock Cambridge university press, 1996.
+
+\bibitem{Schafer:1996wv}
+Thomas Schäfer and Edward~V. Shuryak.
+\newblock {Instantons in QCD}.
+\newblock {\em Rev. Mod. Phys.}, 70:323--426, 1998.
+
+\bibitem{Zwanziger:1991gz}
+D.~Zwanziger.
+\newblock {Vanishing of zero momentum lattice gluon propagator and color
+  confinement}.
+\newblock {\em Nucl. Phys.}, B364:127--161, 1991.
+
+\bibitem{Cucchieri:1999sz}
+Attilio Cucchieri.
+\newblock {Infrared behavior of the gluon propagator in lattice Landau gauge:
+  The Three-dimensional case}.
+\newblock {\em Phys. Rev.}, D60:034508, 1999.
+
+\bibitem{Langfeld:2001cz}
+K.~Langfeld, H.~Reinhardt, and J.~Gattnar.
+\newblock {Gluon propagators and quark confinement}.
+\newblock {\em Nucl. Phys.}, B621:131--156, 2002.
+
+\bibitem{Leinweber:1998im}
+Derek~B. Leinweber, Jon~Ivar Skullerud, Anthony~G. Williams, and Claudio
+  Parrinello.
+\newblock {Gluon propagator in the infrared region}.
+\newblock {\em Phys. Rev.}, D58:031501, 1998.
+
+\bibitem{Bonnet:2001uh}
+Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
+  Williams, and James~M. Zanotti.
+\newblock {Infinite volume and continuum limits of the Landau gauge gluon
+  propagator}.
+\newblock {\em Phys. Rev.}, D64:034501, 2001.
+
+\bibitem{Alles:1996ka}
+B.~Alles, D.~Henty, H.~Panagopoulos, C.~Parrinello, C.~Pittori, and D.~G.
+  Richards.
+\newblock {$\alpha_s$ from the nonperturbatively renormalised lattice three
+  gluon vertex}.
+\newblock {\em Nucl. Phys.}, B502:325--342, 1997.
+
+\bibitem{Davies:1987vs}
+C.~T.~H. Davies, G.~G. Batrouni, G.~R. Katz, Andreas~S. Kronfeld, G.~P. Lepage,
+  K.~G. Wilson, P.~Rossi, and B.~Svetitsky.
+\newblock {Fourier Acceleration in Lattice Gauge Theories. 1. Landau Gauge
+  Fixing}.
+\newblock {\em Phys. Rev.}, D37:1581, 1988.
+
+\bibitem{Bonnet:1999mj}
+Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
+  Williams, and David~G. Richards.
+\newblock {Discretization errors in Landau gauge on the lattice}.
+\newblock {\em Austral. J. Phys.}, 52:939--948, 1999.
+
+\bibitem{Roberts:2010cz}
+Dale~S. Roberts, Patrick~O. Bowman, Waseem Kamleh, and Derek~B. Leinweber.
+\newblock {Wave Functions of the Proton Ground State in the Presence of a
+  Uniform Background Magnetic Field in Lattice QCD}.
+\newblock {\em Phys. Rev.}, D83:094504, 2011.
+
+\end{thebibliography}

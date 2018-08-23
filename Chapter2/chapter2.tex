@@ -14,30 +14,41 @@ Since the first efforts to construct a non-perturbative approach to QCD in 1974\
 
 \section{QCD in the Continuum}
 QCD is the gauge field theory that describes the interactions of quarks and gluons. Like all gauge theories, it has an internal symmetry group which the Lagrangian is invariant under. In the case of QCD there are three quark colours, which leads to the symmetry group being $SU(3)$, the group of $3\times 3$ unitary matrices of determinant 1 \footnote{This description is only true in the fundamental representation of the group, but this is the symmetry we observe in the Lagrangian and is a useful way to visualise the group symmetry.}. We can see this $SU(3)$ symmetry by inspecting the QCD quark Lagrangian
-
+%
 \begin{equation}
 \mathcal{L} = \bar{\psi}(x)\,(i\slashed{\partial}-m)\,\psi(x)\,.
 \label{GlobalQuarkLagrangian}
 \end{equation}
+%
 If we apply an $SU(3)$ transformation $\Omega$ to the colour indices of the quark ($\psi (x)$) and anti-quark ($\bar{\psi} (x)$) fields, we see that
+%
 \begin{align*}
 \mathcal{L}\rightarrow\mathcal{L'}&=\bar{\psi}(x)\,\Omega^\dag\,(i\slashed{\partial}-m)\,\Omega\,\psi(x)\\
 &= \bar{\psi}(x)\,(i\slashed{\partial}-m)\,\psi(x)\,\Omega^\dag\,\Omega\\
 &= \bar{\psi}(x)\,(i\slashed{\partial}-m)\,\psi(x)\\
 &= \mathcal{L}\, .
 \end{align*}\\
-
-If this symmetry were all we required, then we would be done and our theory would be pleasantly simple. However, we find that we actually need our gauge symmetry to be \textit{local}; that is, we demand that our gauge transformation itself be a function of $x$\cite{peskin2018introduction}. In this case, we find that the derivative in Eq.~\ref{GlobalQuarkLagrangian} results in a loss of $SU(3)$ symmetry. To amend this, we introduce the notion of the gauge-covariant derivative
+%
+If this symmetry were all we required then we would be done and our theory would be pleasantly simple. However, we find that we actually need our gauge symmetry to be \textit{local}; that is, we demand that our gauge transformation itself be a function of $x$\cite{peskin2018introduction}. In this case, we find that the derivative in Eq.~\ref{GlobalQuarkLagrangian} results in a loss of $SU(3)$ symmetry. To amend this, we introduce the notion of the gauge-covariant derivative
+%
 \begin{equation}
 D_\mu = \partial_\mu - ig A_\mu(x)^a\,\frac{\lambda_a}{2}\, ,
 \end{equation}
-where the $A_\mu^a(x)$ are the eight new gauge fields and the $\lambda_a$ are the eight generators of the $SU(3)$ group, known as the Gell-Mann matrices.
+%
+where the $A_\mu^a(x)$ are the eight new gauge fields and the $\lambda_a$ are the eight traceless, Hermitian, generators of the $SU(3)$ group, known as the Gell-Mann matrices. The generators of a group are related to the full group via the matrix exponential, such that any element $\Omega$ of $SU(3)$ can be written
+\begin{equation}
+\Omega = \exp\left(i\omega^a\,\frac{\lambda_a}{2}\right)
+\end{equation}
+
+
 \section{Pure Gauge Action}
 For the purpose of this research, we are interested in the behaviour of gluons, and as such we need to develop a description of pure gauge fields. In the continuum, a pure gauge field has the Lagrangian\cite{ryder1996quantum}
+%
 \begin{equation}
 \mathcal{L}=\frac{1}{2}F_{\mu\nu}\,F^{\mu\nu}
 \label{QCDLagrangian}
 \end{equation}
+%
 and corresponding action
 \begin{equation}
 \mathcal{S}=\int~d^4x~\mathcal{L},

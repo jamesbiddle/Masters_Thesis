@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  22 AUG 2018 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  22 AUG 2018 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1349,232 +1349,18 @@ Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
 Package: translator 2010/06/12 ver 1.10
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
-mappings.tex))) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.sty
-Package: biblatex_ 2016/03/03 v3.3 programmable bibliographies (biber) (PK/JW/A
-B)
-
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count269
-
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+mappings.tex))) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip73
+\bibsep=\skip74
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count269
 ))
-\c@tabx@nest=\count270
-\c@listtotal=\count271
-\c@listcount=\count272
-\c@liststart=\count273
-\c@liststop=\count274
-\c@citecount=\count275
-\c@citetotal=\count276
-\c@multicitecount=\count277
-\c@multicitetotal=\count278
-\c@instcount=\count279
-\c@maxnames=\count280
-\c@minnames=\count281
-\c@maxitems=\count282
-\c@minitems=\count283
-\c@citecounter=\count284
-\c@savedcitecounter=\count285
-\c@uniquelist=\count286
-\c@uniquename=\count287
-\c@refsection=\count288
-\c@refsegment=\count289
-\c@maxextratitle=\count290
-\c@maxextratitleyear=\count291
-\c@maxextrayear=\count292
-\c@maxextraalpha=\count293
-\c@abbrvpenalty=\count294
-\c@highnamepenalty=\count295
-\c@lownamepenalty=\count296
-\c@maxparens=\count297
-\c@parenlevel=\count298
-\blx@tempcnta=\count299
-\blx@tempcntb=\count300
-\blx@tempcntc=\count301
-\blx@maxsection=\count302
-\blx@maxsegment@0=\count303
-\blx@notetype=\count304
-\blx@parenlevel@text=\count305
-\blx@parenlevel@foot=\count306
-\blx@sectionciteorder@0=\count307
-\labelnumberwidth=\skip73
-\labelalphawidth=\skip74
-\biblabelsep=\skip75
-\bibitemsep=\skip76
-\bibnamesep=\skip77
-\bibinitsep=\skip78
-\bibparsep=\skip79
-\bibhang=\skip80
-\blx@bcfin=\read2
-\blx@bcfout=\write5
-\c@mincomprange=\count308
-\c@maxcomprange=\count309
-\c@mincompwidth=\count310
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric-comp.dbx' not found.
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count311
-\c@savedafterword=\count312
-\c@annotator=\count313
-\c@savedannotator=\count314
-\c@author=\count315
-\c@savedauthor=\count316
-\c@bookauthor=\count317
-\c@savedbookauthor=\count318
-\c@commentator=\count319
-\c@savedcommentator=\count320
-\c@editor=\count321
-\c@savededitor=\count322
-\c@editora=\count323
-\c@savededitora=\count324
-\c@editorb=\count325
-\c@savededitorb=\count326
-\c@editorc=\count327
-\c@savededitorc=\count328
-\c@foreword=\count329
-\c@savedforeword=\count330
-\c@holder=\count331
-\c@savedholder=\count332
-\c@introduction=\count333
-\c@savedintroduction=\count334
-\c@namea=\count335
-\c@savednamea=\count336
-\c@nameb=\count337
-\c@savednameb=\count338
-\c@namec=\count339
-\c@savednamec=\count340
-\c@translator=\count341
-\c@savedtranslator=\count342
-\c@shortauthor=\count343
-\c@savedshortauthor=\count344
-\c@shorteditor=\count345
-\c@savedshorteditor=\count346
-\c@labelname=\count347
-\c@savedlabelname=\count348
-\c@institution=\count349
-\c@savedinstitution=\count350
-\c@lista=\count351
-\c@savedlista=\count352
-\c@listb=\count353
-\c@savedlistb=\count354
-\c@listc=\count355
-\c@savedlistc=\count356
-\c@listd=\count357
-\c@savedlistd=\count358
-\c@liste=\count359
-\c@savedliste=\count360
-\c@listf=\count361
-\c@savedlistf=\count362
-\c@location=\count363
-\c@savedlocation=\count364
-\c@organization=\count365
-\c@savedorganization=\count366
-\c@origlocation=\count367
-\c@savedoriglocation=\count368
-\c@origpublisher=\count369
-\c@savedorigpublisher=\count370
-\c@publisher=\count371
-\c@savedpublisher=\count372
-\c@language=\count373
-\c@savedlanguage=\count374
-\c@pageref=\count375
-\c@savedpageref=\count376
-\shorthandwidth=\skip81
-\shortjournalwidth=\skip82
-\shortserieswidth=\skip83
-\shorttitlewidth=\skip84
-\shortauthorwidth=\skip85
-\shorteditorwidth=\skip86
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2016/03/03 v3.3 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex_.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.def
-File: biblatex_.def 
-\c@textcitecount=\count377
-\c@textcitetotal=\count378
-\c@textcitemaxnames=\count379
-\c@biburlnumpenalty=\count380
-\c@biburlucpenalty=\count381
-\c@biburllcpenalty=\count382
-\c@smartand=\count383
-)
-Package biblatex Info: Trying to load natbib compatibility...
-Package biblatex Info: ... file 'blx-natbib.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-natbib.def
-File: blx-natbib.def 2016/03/03 v3.3 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
-File: numeric-comp.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count384
-\c@bbx:relatedtotal=\count385
-)))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-))))
-(./thesis-info.tex)
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
-)
-\@quotelevel=\count386
-\@quotereset=\count387
-
-(./thesis.aux (./Dedication/dedication.aux) (./Declaration/declaration.aux)
-(./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux)
-(./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
-(./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
-(./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux))
+(./thesis-info.tex) (./thesis.aux (./Dedication/dedication.aux)
+(./Declaration/declaration.aux) (./Acknowledgement/acknowledgement.aux)
+(./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
+(./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
+(./Chapter6/chapter6.aux) (./Chapter7/chapter7.aux) (./Chapter8/chapter8.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
@@ -1608,16 +1394,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count388
+\scratchcounter=\count270
 \scratchdimen=\dimen197
 \scratchbox=\box50
-\nofMPsegments=\count389
-\nofMParguments=\count390
+\nofMPsegments=\count271
+\nofMParguments=\count272
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count391
+\MPscratchCnt=\count273
 \MPscratchDim=\dimen198
-\MPnumerator=\count392
-\makeMPintoPDFobject=\count393
+\MPnumerator=\count274
+\makeMPintoPDFobject=\count275
 \everyMPtoPDFconversion=\toks30
 )
 LaTeX Info: Redefining \microtypecontext on input line 110.
@@ -1643,15 +1429,15 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count394
+\c@section@level=\count276
 )
 LaTeX Info: Redefining \ref on input line 110.
 LaTeX Info: Redefining \pageref on input line 110.
 LaTeX Info: Redefining \nameref on input line 110.
 
 (./thesis.out) (./thesis.out)
-\@outlinefile=\write6
-\openout6 = `thesis.out'.
+\@outlinefile=\write5
+\openout5 = `thesis.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1701,21 +1487,11 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `thesis.bcf'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' found.
-
-(./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 110.
-Package biblatex Info: Reference segment=0 on input line 110.
-\c__siunitx_mathsf_int=\count395
+\c__siunitx_mathsf_int=\count277
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 110.
 
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 110.
@@ -1768,7 +1544,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count396
+\c__siunitx_mathtt_int=\count278
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 110
 .
 
@@ -1782,7 +1558,7 @@ Package microtype Info: Loading generic settings for font family
 \PHD@Title=\box52
 \PHD@crest=\box53
 
-<Figs/UofA-LogoVertical.png, id=144, 996.72375pt x 833.1125pt>
+<Figs/UofA-LogoVertical.png, id=148, 996.72375pt x 833.1125pt>
 File: Figs/UofA-LogoVertical.png Graphic file (type png)
 
 <use Figs/UofA-LogoVertical.png>
@@ -1795,7 +1571,7 @@ Package pdftex.def Info: Figs/UofA-LogoVertical.png used on input line 114.
 \PHD@dept=\box58
 \PHD@submission=\box59
 \PHD@collegedate=\box60
-\PHD@titlepagespacing=\skip87
+\PHD@titlepagespacing=\skip75
  [1
 
 
@@ -1805,8 +1581,8 @@ ng>] [2
 ] (./thesis.toc [3
 
 ])
-\tf@toc=\write7
-\openout7 = `thesis.toc'.
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
 
  [4]
 \openout2 = `Dedication/dedication.aux'.
@@ -1857,14 +1633,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 
 ] (./thesis.lof)
-\tf@lof=\write8
-\openout8 = `thesis.lof'.
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
 
  [13] [14
 
 ] (./thesis.lot)
-\tf@lot=\write9
-\openout9 = `thesis.lot'.
+\tf@lot=\write8
+\openout8 = `thesis.lot'.
 
  [15] [16
 
@@ -1886,56 +1662,27 @@ Chapter 1.
 
 ]
 Chapter 2.
-
-LaTeX Warning: Citation 'Wilson:1974sk' on page 3 undefined on input line 13.
-
-
-Overfull \hbox (41.44113pt too wide) in paragraph at lines 13--14
-\T1/lmr/m/n/12 (-20) Since the first ef-forts to con-struct a non-perturbative 
-ap-proach to QCD in 1974[[]],
- []
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 16.
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
-
-LaTeX Warning: Citation 'peskin2018introduction' on page 4 undefined on input l
-ine 30.
-
-
-LaTeX Warning: Citation 'ryder1996quantum' on page 4 undefined on input line 36
-.
-
-[4]
-
-LaTeX Warning: Citation 'Schafer:1996wv' on page 5 undefined on input line 55.
-
-
-LaTeX Warning: Citation 'Wilson:1974sk' on page 5 undefined on input line 55.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
-
- []
-
-) [5]
+) [5] [6]
 \openout2 = `Chapter3/chapter3.aux'.
 
- (./Chapter3/chapter3.tex [6
+ (./Chapter3/chapter3.tex
+Chapter 3.
+) [7
 
 
 
 ]
-Chapter 3.
-) [7]
 \openout2 = `Chapter4/chapter4.aux'.
 
  (./Chapter4/chapter4.tex [8
@@ -1944,50 +1691,7 @@ Chapter 3.
 
 ]
 Chapter 4.
-
-LaTeX Warning: Citation 'Zwanziger:1991gz' on page 9 undefined on input line 14
-.
-
-
-LaTeX Warning: Citation 'Cucchieri:1999sz' on page 9 undefined on input line 14
-.
-
-
-LaTeX Warning: Citation 'Langfeld:2001cz' on page 9 undefined on input line 14.
-
-
-[9]
-
-LaTeX Warning: Citation 'Leinweber:1998im' on page 10 undefined on input line 3
-5.
-
-
-LaTeX Warning: Citation 'Bonnet:2001uh' on page 10 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'Leinweber:1998im' on page 10 undefined on input line 6
-6.
-
-
-LaTeX Warning: Citation 'Alles:1996ka' on page 10 undefined on input line 69.
-
-[10]
-
-LaTeX Warning: Citation 'Davies:1987vs' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Bonnet:1999mj' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Roberts:2010cz' on page 11 undefined on input line 75.
-
-
-
-Overfull \hbox (29.23758pt too wide) in paragraph at lines 74--76
-\T1/lmr/m/n/12 (-20) us-ing a Fourier-accelerated al-go-rithm [[], [], []].
- []
-
-) [11]
+[9] [10]) [11]
 \openout2 = `Chapter5/chapter5.aux'.
 
  (./Chapter5/chapter5.tex [12
@@ -2026,10 +1730,11 @@ Chapter 8.
 ) [19] [20
 
 
+] (./thesis.bbl) [21
+
+] [22
+
 ]
-
-LaTeX Warning: Empty bibliography on input line 170.
-
 No file thesis.ind.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
@@ -2041,28 +1746,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FC31830B334202B9564DF31C23A4EC08;5962.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'thesis.run.xml'.
-\openout1 = `thesis.run.xml'.
-
+(rerunfilecheck)             Checksum: 7F8F6DF3C3CEACDE0107B30A13526BAD;6056.
  ) 
 Here is how much of TeX's memory you used:
- 30296 strings out of 493029
- 538490 string characters out of 6136234
- 957806 words of memory out of 5000000
- 33163 multiletter control sequences out of 15000+600000
- 99665 words of font info for 113 fonts, out of 8000000 for 9000
+ 25476 strings out of 493029
+ 447364 string characters out of 6136234
+ 514903 words of memory out of 5000000
+ 28363 multiletter control sequences out of 15000+600000
+ 100238 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,92p,10383b,803s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,92p,10383b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -2074,10 +1767,10 @@ s/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb><
 public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on thesis.pdf (36 pages, 273931 bytes).
+Output written on thesis.pdf (38 pages, 280925 bytes).
 PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
- 388 compressed objects within 4 object streams
- 96 named destinations out of 1000 (max. 500000)
- 31006 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 506 PDF objects out of 1000 (max. 8388607)
+ 433 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 31014 words of extra memory for PDF output out of 35830 (max. 10000000)
 
