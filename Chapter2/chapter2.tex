@@ -13,14 +13,15 @@
 Since the first efforts to construct a non-perturbative approach to QCD in 1974\cite{Wilson:1974sk}, lattice QCD has developed over the past 40 years into a powerful tool used to probe the low-energy behaviour of the strong nuclear force. Rather than treat spacetime as a set of continuous axes, it is instead discretised into a finite set of points on a four-dimensional hypercube. This prescription allows for the explicit calculation of path integrals present in QCD, at the cost of introducing finite-spacing errors that must be systematically accounted for. In this chapter we will discuss the behaviour of QCD when spacetime is continuous (hereafter referred to as the continuum), and demonstrate how the transition can be made to a finite set of coordinates on a lattice. We will also describe the two choices of gauge used in this research, and how they are applied to the lattice. 
 
 \section{QCD in the Continuum}
+\subsection{Quarks and Gauge Invariance}
 QCD is the gauge field theory that describes the interactions of quarks and gluons. Like all gauge theories, it has an internal symmetry group which the Lagrangian is invariant under. In the case of QCD there are three quark colours, which leads to the symmetry group being $SU(3)$, the group of $3\times 3$ unitary matrices of determinant 1 \footnote{This description is only true in the fundamental representation of the group, but this is the symmetry we observe in the Lagrangian and is a useful way to visualise the group symmetry.}. We can see this $SU(3)$ symmetry by inspecting the QCD quark Lagrangian
 %
 \begin{equation}
 \mathcal{L} = \bar{\psi}(x)\,(i\slashed{\partial}-m)\,\psi(x)\,.
-\label{GlobalQuarkLagrangian}
+\label{eq:GlobalQuarkLagrangian}
 \end{equation}
 %
-If we apply an $SU(3)$ transformation $\Omega$ to the colour indices of the quark ($\psi (x)$) and anti-quark ($\bar{\psi} (x)$) fields, we see that
+If we apply an $SU(3)$ transformation $\Omega$ to the colour indices of the quark, $\psi (x)$, and anti-quark, $\bar{\psi} (x)$, fields, we see that
 %
 \begin{align*}
 \mathcal{L}\rightarrow\mathcal{L'}&=\bar{\psi}(x)\,\Omega^\dag\,(i\slashed{\partial}-m)\,\Omega\,\psi(x)\\
@@ -29,35 +30,101 @@ If we apply an $SU(3)$ transformation $\Omega$ to the colour indices of the quar
 &= \mathcal{L}\, .
 \end{align*}\\
 %
-If this symmetry were all we required then we would be done and our theory would be pleasantly simple. However, we find that we actually need our gauge symmetry to be \textit{local}; that is, we demand that our gauge transformation itself be a function of $x$\cite{peskin2018introduction}. In this case, we find that the derivative in Eq.~\ref{GlobalQuarkLagrangian} results in a loss of $SU(3)$ symmetry. To amend this, we introduce the notion of the gauge-covariant derivative
+Here we have made use of the unitarity property $U\,U^\dag = I$. If this symmetry were all we required then we would be done and our theory would be pleasantly simple. However, we find that we need our gauge symmetry to be \textit{local}; that is, we demand that our gauge transformation itself be a function of $x$\cite{peskin2018introduction}. In this case, we find that the derivative in Eq.~\ref{eq:GlobalQuarkLagrangian} results in a loss of $SU(3)$ symmetry. We can write an arbitrary $SU(3)$ gauge transformation as an exponential of the traceless, Hermitian group generators $\lambda_a$ (known as the Gell-Mann matrices) such that $\Omega=\exp\left(i\omega^a(x)\,\frac{\lambda_a}{2}\right)$. Using this form for $\Omega$, we find that under a gauge transformation the Lagrangian is now
+%
+\begin{align}
+\mathcal{L}\rightarrow\mathcal{L'}&=\bar{\psi}(x)\,\Omega^\dag(x)\,(i\slashed{\partial}-m)\,\Omega(x)\,\psi(x)\nonumber\\
+&=\bar{\psi}\,\Omega^\dag\left[-\frac{\lambda_a}{2}\,(\slashed{\partial}\,\omega^a(x))+i\,\Omega\,(\slashed{\partial}\,\psi)-m\,\Omega\,\psi\right]\nonumber\\
+&= \mathcal{L}-\bar{\psi}\,\Omega^\dag\,\frac{\lambda_a}{2}(\slashed{\partial}\,\omega^a(x))\,\Omega\,\psi
+\label{eq:LocalTrans}
+\end{align}
+%
+To amend this, we introduce the notion of the gauge-covariant derivative
 %
 \begin{equation}
-D_\mu = \partial_\mu - ig A_\mu(x)^a\,\frac{\lambda_a}{2}\, ,
+D_\mu = \partial_\mu - ig A_\mu(x)\, ,
 \end{equation}
 %
-where the $A_\mu^a(x)$ are the eight new gauge fields and the $\lambda_a$ are the eight traceless, Hermitian, generators of the $SU(3)$ group, known as the Gell-Mann matrices. The generators of a group are related to the full group via the matrix exponential, such that any element $\Omega$ of $SU(3)$ can be written
+where $A_\mu(x)=A_\mu^a(x)\,\frac{\lambda_a}{2}$, and $A_\mu^a(x)$ are eight new `gauge potentials'. Making the substitution $\partial_\mu\rightarrow D_\mu$, we introduce a new term into the Lagrangian that gives rise to an interaction between our quark and gauge fields.
+%
 \begin{equation}
-\Omega = \exp\left(i\omega^a\,\frac{\lambda_a}{2}\right)
+\mathcal{L}_\text{int} = g\,\bar{\psi}\,A_\mu(x)\,\psi
+\label{eq:InteractingLagrangian}
 \end{equation}
+%
+To preserve the gauge invariance of the Lagrangian, we need the gauge transformation property of Eq.~\ref{eq:InteractingLagrangian} to counteract the last term of Eq.~\ref{eq:LocalTrans}. Hence we require that
+%
+\begin{align}
+g\,\bar{\psi}\,A_\mu(x)\,\psi \rightarrow g\,\bar{\psi}\,A_\mu(x)\,\psi + \bar{\psi}\,\Omega^\dag\,\frac{\lambda_a}{2}(\partial_\mu\,\omega^a(x))\,\Omega\,\psi\, .
+\end{align}
+%
+Making use of the transformation properties of $\psi$ and $\bar{\psi}$, this implies that
+%
+\begin{equation}
+A_\mu(x)\rightarrow \Omega\,A_\mu(x)\,\Omega^\dag - \frac{i}{g}\,(\partial_\mu\,\Omega)\,\Omega^\dag\, . 
+\end{equation}\\
+%
 
+This transformation property can also be expressed in terms of the covariant derivative. Doing so, we find that
+%
+\begin{align*}
+D_\mu\,\psi \rightarrow &\left(\partial_\mu -ig\,\Omega\,A_\mu(x)\,\Omega^\dag - (\partial_\mu\,\Omega)\,\Omega^\dag\right)\,\Omega\,\psi\\
+&= (\partial_\mu\,\Omega)\,\psi + \Omega\,(\partial_\mu\,\psi) - ig\,\Omega\,A_\mu(x)\,\psi - (\partial_\mu\,\Omega)\psi\\
+&=\Omega\,D_\mu\,\psi\, .
+\end{align*}
+%
+And therefore
+%
+\begin{equation}
+D_{\mu}\rightarrow\Omega\,D_\mu \Omega^\dag
+\end{equation}
+%
+This result tells us that the covariant derivative of a quark field transforms in the same way as the quark field itself. The covariant derivative can then be thought of as a connection between two points that may have a different underlying gauge. For example, if we consider an infinitesimal translation in the quark field
+%
+\begin{equation*}
+d\psi(x) = \psi(x+dx)-\psi(x)\, ,
+\end{equation*} 
+%
+we note that the gauge at the point $x$ and at $x+dx$ in general will differ, so it doesn't make sense to compare the field values through the usual understanding of the derivative. Instead, the covariant derivative accounts for this underlying gauge structure, `transporting' the field from one position to another.\\
 
+\subsection{Gluon Field}
+Using local gauge invariance as a guide, we can now seek other gauge invariant terms to insert into the Lagrangian. If we consider the commutator of the covariant derivative, we have
+%
+\begin{align*}
+[D_\mu,\, D_\nu]\rightarrow &[\Omega\,D_\mu\,\Omega^\dag,\,\Omega\,D_\nu\,\Omega^\dag]\\
+&= \Omega\,D_\mu\, D_\nu\,\Omega^\dag - \Omega\,D_\nu\, D_\mu\,\Omega^\dag\\
+&= \Omega\,[D_\mu,\,D_\nu]\,\Omega^\dag\, .
+\end{align*}
+%
+We therefore define the gluon field strength tensor to be
+%
+\begin{equation}
+F_{\mu\nu} = \frac{i}{g}\,[D_\mu,\, D_\nu]
+\end{equation}
+%
+Expanding this definition, $F_{\mu\nu}$ may also be written
+%
+\begin{align}
+F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu - ig[A_\mu,\,A_\nu]
+\end{align}
+%
 \section{Pure Gauge Action}
 For the purpose of this research, we are interested in the behaviour of gluons, and as such we need to develop a description of pure gauge fields. In the continuum, a pure gauge field has the Lagrangian\cite{ryder1996quantum}
 %
 \begin{equation}
 \mathcal{L}=\frac{1}{2}F_{\mu\nu}\,F^{\mu\nu}
-\label{QCDLagrangian}
+\label{eq:QCDLagrangian}
 \end{equation}
 %
 and corresponding action
 \begin{equation}
 \mathcal{S}=\int~d^4x~\mathcal{L},
-\label{QCDAction}
+\label{eq:QCDAction}
 \end{equation}
 where $F_{\mu\nu}$ is the field-strength tensor, and can be written in terms of the traceless, Hermitian, gauge potential $A_\mu$ as
 \begin{equation}
 F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu -ig[A_\mu,\,A_\nu]
-\label{FieldStrengthTensor}
+\label{eq:FieldStrengthTensor}
 \end{equation}
 When considering the path integral formulation of a gauge field theory, integrals such as the generating functional,
 \begin{equation}
@@ -73,10 +140,10 @@ The generating functional now becomes
 \end{equation}
 The Wick rotation also has the consequence of reducing the metric $g_{\mu\nu}$ to the identity, meaning that there is no longer any differentiation between covariant and contravariant tensors.\\
 
-Within this framework, we can now consider discretising spacetime into a finite lattice, with each lattice site separated by a spacing $a$. When spacetime is discretised, it becomes necessary to consider derivatives as finite differences and integrals as finite sums. For example, we can construct the lattice form of Eq.~\ref{FieldStrengthTensor} as
+Within this framework, we can now consider discretising spacetime into a finite lattice, with each lattice site separated by a spacing $a$. When spacetime is discretised, it becomes necessary to consider derivatives as finite differences and integrals as finite sums. For example, we can construct the lattice form of Eq.~\ref{eq:FieldStrengthTensor} as
 \begin{equation}
 F_{\text{Lat}}^{\mu\nu}(x) = \frac{A_\nu(x+a\hat{\mu})-A_\nu(x)}{a}-\frac{A_\mu(x+a\hat{\nu})-A_\mu(x)}{a}-ig[A_\mu(x),\,A_\nu(x)].
-\label{DiscreteFST}
+\label{eq:DiscreteFST}
 \end{equation}
 The notation $A_\nu(x+a\hat{\mu})$ denotes the field $A_\nu$ located at the site one lattice spacing in the $\hat{\mu}$ direction from $x$.
 \section{Gauge Fixing}
