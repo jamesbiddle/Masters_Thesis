@@ -16,45 +16,46 @@ A level-1 auxiliary file: Chapter8/chapter8.aux
 The style file: unsrt.bst
 Database file #1: ./References/references.bib
 Warning--empty journal in Bing:1999ee
-You've used 16 entries,
+Warning--empty publisher in Zweig:1964jf
+You've used 26 entries,
             1791 wiz_defined-function locations,
-            563 strings with 6574 characters,
-and the built_in function-call counts, 3696 in all, are:
-= -- 310
-> -- 163
-< -- 2
-+ -- 62
-- -- 46
-* -- 241
-:= -- 603
-add.period$ -- 49
-call.type$ -- 16
-change.case$ -- 14
+            633 strings with 8049 characters,
+and the built_in function-call counts, 6072 in all, are:
+= -- 537
+> -- 233
+< -- 3
++ -- 90
+- -- 64
+* -- 393
+:= -- 977
+add.period$ -- 83
+call.type$ -- 26
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 165
-empty$ -- 372
-format.name$ -- 46
-if$ -- 829
+cite$ -- 28
+duplicate$ -- 266
+empty$ -- 619
+format.name$ -- 64
+if$ -- 1375
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 18
-newline$ -- 84
-num.names$ -- 16
-pop$ -- 41
+int.to.str$ -- 26
+missing$ -- 28
+newline$ -- 137
+num.names$ -- 28
+pop$ -- 54
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 67
+skip$ -- 110
 stack$ -- 0
-substring$ -- 259
-swap$ -- 31
-text.length$ -- 2
+substring$ -- 480
+swap$ -- 48
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 31
-width$ -- 18
-write$ -- 176
-(There was 1 warning)
+warning$ -- 2
+while$ -- 53
+width$ -- 28
+write$ -- 292
+(There were 2 warnings)

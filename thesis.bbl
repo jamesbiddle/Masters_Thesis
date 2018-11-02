@@ -33,6 +33,19 @@ G.~P. Lepage.
   Proceedings, 13th Annual Hampton University Graduate Studies, HUGS'98,
   Newport News, USA, May 26-June 12, 1998}}, pages 49--90, 1998.
 
+\bibitem{Leinweber:1998im}
+Derek~B. Leinweber, Jon~Ivar Skullerud, Anthony~G. Williams, and Claudio
+  Parrinello.
+\newblock {Gluon propagator in the infrared region}.
+\newblock {\em Phys. Rev.}, D58:031501, 1998.
+
+\bibitem{Alles:1996ka}
+B.~Alles, D.~Henty, H.~Panagopoulos, C.~Parrinello, C.~Pittori, and D.~G.
+  Richards.
+\newblock {$\alpha_s$ from the nonperturbatively renormalised lattice three
+  gluon vertex}.
+\newblock {\em Nucl. Phys.}, B502:325--342, 1997.
+
 \bibitem{Gupta:1997nd}
 Rajan Gupta.
 \newblock {Introduction to lattice QCD: Course}.
@@ -40,6 +53,80 @@ Rajan Gupta.
   Proceedings, Summer School in Theoretical Physics, NATO Advanced Study
   Institute, 68th session, Les Houches, France, July 28-September 5, 1997. Pt.
   1, 2}}, pages 83--219, 1997.
+
+\bibitem{Alford:1995hw}
+Mark~G. Alford, W.~Dimm, G.~P. Lepage, G.~Hockney, and P.~B. Mackenzie.
+\newblock {Lattice QCD on small computers}.
+\newblock {\em Phys. Lett.}, B361:87--94, 1995.
+
+\bibitem{Symanzik:1983dc}
+K.~Symanzik.
+\newblock {Continuum Limit and Improved Action in Lattice Theories. 1.
+  Principles and phi**4 Theory}.
+\newblock {\em Nucl. Phys.}, B226:187--204, 1983.
+
+\bibitem{Symanzik:1983gh}
+K.~Symanzik.
+\newblock {Continuum Limit and Improved Action in Lattice Theories. 2. O(N)
+  Nonlinear Sigma Model in Perturbation Theory}.
+\newblock {\em Nucl. Phys.}, B226:205--227, 1983.
+
+\bibitem{Luscher:1984xn}
+M.~Luscher and P.~Weisz.
+\newblock {On-Shell Improved Lattice Gauge Theories}.
+\newblock {\em Commun. Math. Phys.}, 97:59, 1985.
+\newblock [Erratum: Commun. Math. Phys.98,433(1985)].
+
+\bibitem{Bonnet:1999mj}
+Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
+  Williams, and David~G. Richards.
+\newblock {Discretization errors in Landau gauge on the lattice}.
+\newblock {\em Austral. J. Phys.}, 52:939--948, 1999.
+
+\bibitem{Lepage:1992xa}
+G.~Peter Lepage and Paul~B. Mackenzie.
+\newblock {On the viability of lattice perturbation theory}.
+\newblock {\em Phys. Rev.}, D48:2250--2264, 1993.
+
+\bibitem{GellMann:1964nj}
+Murray Gell-Mann.
+\newblock {A Schematic Model of Baryons and Mesons}.
+\newblock {\em Phys. Lett.}, 8:214--215, 1964.
+
+\bibitem{Zweig:1964jf}
+G.~Zweig.
+\newblock {An SU(3) model for strong interaction symmetry and its breaking.
+  Version 2}.
+\newblock In D.B. Lichtenberg and Simon~Peter Rosen, editors, {\em DEVELOPMENTS
+  IN THE QUARK THEORY OF HADRONS. VOL. 1. 1964 - 1978}, pages 22--101. 1964.
+
+\bibitem{Hofstadter:1956qs}
+Robert Hofstadter.
+\newblock {Electron scattering and nuclear structure}.
+\newblock {\em Rev. Mod. Phys.}, 28:214--254, 1956.
+
+\bibitem{Bloom:1969kc}
+Elliott~D. Bloom et~al.
+\newblock {High-Energy Inelastic e p Scattering at 6-Degrees and 10-Degrees}.
+\newblock {\em Phys. Rev. Lett.}, 23:930--934, 1969.
+
+\bibitem{Breidenbach:1969kd}
+Martin Breidenbach, Jerome~I. Friedman, Henry~W. Kendall, Elliott~D. Bloom,
+  D.~H. Coward, H.~C. DeStaebler, J.~Drees, Luke~W. Mo, and Richard~E. Taylor.
+\newblock {Observed Behavior of Highly Inelastic electron-Proton Scattering}.
+\newblock {\em Phys. Rev. Lett.}, 23:935--939, 1969.
+
+\bibitem{Feynman:1969ej}
+Richard~P. Feynman.
+\newblock {Very high-energy collisions of hadrons}.
+\newblock {\em Phys. Rev. Lett.}, 23:1415--1417, 1969.
+\newblock [,494(1969)].
+
+\bibitem{Gross:1973id}
+David~J. Gross and Frank Wilczek.
+\newblock {Ultraviolet Behavior of Nonabelian Gauge Theories}.
+\newblock {\em Phys. Rev. Lett.}, 30:1343--1346, 1973.
+\newblock [,271(1973)].
 
 \bibitem{Zwanziger:1991gz}
 D.~Zwanziger.
@@ -58,43 +145,11 @@ K.~Langfeld, H.~Reinhardt, and J.~Gattnar.
 \newblock {Gluon propagators and quark confinement}.
 \newblock {\em Nucl. Phys.}, B621:131--156, 2002.
 
-\bibitem{Leinweber:1998im}
-Derek~B. Leinweber, Jon~Ivar Skullerud, Anthony~G. Williams, and Claudio
-  Parrinello.
-\newblock {Gluon propagator in the infrared region}.
-\newblock {\em Phys. Rev.}, D58:031501, 1998.
-
 \bibitem{Bonnet:2001uh}
 Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
   Williams, and James~M. Zanotti.
 \newblock {Infinite volume and continuum limits of the Landau gauge gluon
   propagator}.
 \newblock {\em Phys. Rev.}, D64:034501, 2001.
-
-\bibitem{Alles:1996ka}
-B.~Alles, D.~Henty, H.~Panagopoulos, C.~Parrinello, C.~Pittori, and D.~G.
-  Richards.
-\newblock {$\alpha_s$ from the nonperturbatively renormalised lattice three
-  gluon vertex}.
-\newblock {\em Nucl. Phys.}, B502:325--342, 1997.
-
-\bibitem{Davies:1987vs}
-C.~T.~H. Davies, G.~G. Batrouni, G.~R. Katz, Andreas~S. Kronfeld, G.~P. Lepage,
-  K.~G. Wilson, P.~Rossi, and B.~Svetitsky.
-\newblock {Fourier Acceleration in Lattice Gauge Theories. 1. Landau Gauge
-  Fixing}.
-\newblock {\em Phys. Rev.}, D37:1581, 1988.
-
-\bibitem{Bonnet:1999mj}
-Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
-  Williams, and David~G. Richards.
-\newblock {Discretization errors in Landau gauge on the lattice}.
-\newblock {\em Austral. J. Phys.}, 52:939--948, 1999.
-
-\bibitem{Roberts:2010cz}
-Dale~S. Roberts, Patrick~O. Bowman, Waseem Kamleh, and Derek~B. Leinweber.
-\newblock {Wave Functions of the Proton Ground State in the Presence of a
-  Uniform Background Magnetic Field in Lattice QCD}.
-\newblock {\em Phys. Rev.}, D83:094504, 2011.
 
 \end{thebibliography}
