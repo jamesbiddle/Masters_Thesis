@@ -169,7 +169,7 @@ The generating functional now becomes
 The Wick rotation also has the consequence of reducing the metric $g_{\mu\nu}$ to the identity, meaning that there is no longer any differentiation between covariant and contravariant tensors.\\
 
 
-\section{Lattice Discretisation}
+\section{Lattice Discretisation}\label{sec:LatticeDiscretisation}
 Within this framework, we can now consider discretising spacetime into a finite lattice with $N_s$ lattice sites in the spacial directions and $N_t$ sites in the time direction. Each lattice site is separated by a spacing $a$, resulting in a total lattice volume $V=(N_s\,a)^3\times N_t\,a$. This discretisation is shown in two dimensions in Fig.~\ref{fig:LatticeExample}. We also must impose periodic boundary conditions, such that $x+(N+1)a\hat{\mu}=x$.\\
 %
 \begin{figure}[h]
@@ -264,6 +264,7 @@ We have now arrived at a definition of the contracted field strength tensor that
 %
 \begin{equation}
 \mathcal{S}_\text{lat} = \frac{6}{g^2}\sum_x\,\sum_{\mu<\nu} \frac{1}{3}\Tr\left(I-\frac{1}{2}\left(P_{\mu\nu}+P_{\mu\nu}^\dag\right)\right)\, .
+\label{eq:WilsonAction}
 \end{equation}
 %
 To remove higher order errors from the lattice action, it is possible to take into account terms containing larger Wilson loops, following procedure similar to the one outlined above~\cite{Alford:1995hw,Symanzik:1983dc,Symanzik:1983gh}. For the purpose of this work, the gauge fields were generated using the $\mathcal{O}(a^2)$-improved L\"uscher and Weisz action~\cite{Luscher:1984xn}, which consists of a linear combination of $1\times 1$ plaquettes and $2\times 1$ rectangles.\\

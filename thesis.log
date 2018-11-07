@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.14)  2 NOV 2018 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.14)  7 NOV 2018 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1979,7 +1979,7 @@ Package microtype Info: Loading generic settings for font family
 \PHD@Title=\box85
 \PHD@crest=\box86
 
-<Figs/UofA-LogoVertical.png, id=167, 996.72375pt x 833.1125pt>
+<Figs/UofA-LogoVertical.png, id=175, 996.72375pt x 833.1125pt>
 File: Figs/UofA-LogoVertical.png Graphic file (type png)
 
 <use Figs/UofA-LogoVertical.png>
@@ -2053,23 +2053,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 ] [12
 
 
-] (./thesis.lof)
+] (./thesis.lof
+
+LaTeX Warning: Reference `1to10sweepscooling' on page xiii undefined on input l
+ine 14.
+
+[13])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [13] [14
-
-] (./thesis.lot)
+ [14] (./thesis.lot)
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [15] [16
+ [15
+
+] [16
 
 ]
 \openout2 = `Chapter1/chapter1.aux'.
 
-
-(./Chapter1/chapter1.tex
+ (./Chapter1/chapter1.tex
 Chapter 1.
 ) [1
 
@@ -2113,12 +2117,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
+Underfull \hbox (badness 10000) in paragraph at lines 268--271
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 305--309
+Underfull \hbox (badness 10000) in paragraph at lines 306--310
 
  []
 
@@ -2132,62 +2136,212 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
 [15
 
 
 
-]) [16]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+[16]) [17]
 \openout2 = `Chapter4/chapter4.aux'.
 
- (./Chapter4/chapter4.tex
+ (./Chapter4/chapter4.tex [18
+
+
+
+]
 Chapter 4.
-[17
-
-
-
-] [18]) [19]
+[19] [20]) [21]
 \openout2 = `Chapter5/chapter5.aux'.
 
- (./Chapter5/chapter5.tex [20
+ (./Chapter5/chapter5.tex [22
 
 
 
 ]
 Chapter 5.
-) [21]
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+<Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf, id=590, 415.93329pt x 333.35
+114pt>
+File: Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf Graphic file (type pdf)
+ <use Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf>
+Package pdftex.def Info: Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf used 
+on input line 25.
+(pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
+ [23]
+<Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf, id=598, 415.93329pt x 333.
+35114pt>
+File: Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf Graphic file (type pdf
+)
+ <use Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf>
+Package pdftex.def Info: Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf use
+d on input line 34.
+(pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+[25 <./Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf>]) [26 <./Chapter5/Figs
+/./ScalarGluComp_q2_SmearCoolComp.pdf>]
 \openout2 = `Chapter6/chapter6.aux'.
 
- (./Chapter6/chapter6.tex [22
-
-
-
-]
+ (./Chapter6/chapter6.tex
 Chapter 6.
-) [23]
+
+<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf, id=728, 415.93329pt x 333.3511
+4pt>
+File: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf Graphic file (type pdf)
+ <use Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf>
+Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf used on
+ input line 24.
+(pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
+
+<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf, id=729, 415.93329pt x 333.351
+14pt>
+File: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf Graphic file (type pdf)
+ <use Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf>
+Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf used o
+n input line 30.
+(pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Package natbib Warning: Citation `Stack:2002sy' on page 27 undefined on input l
+ine 36.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+[27
+
+
+
+] [28 <./Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf>]
+<Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf, id=803, 424.33969pt x 333.351
+14pt>
+File: Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf Graphic file (type pdf)
+ <use Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf>
+Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf used o
+n input line 44.
+(pdftex.def)             Requested size: 437.46112pt x 343.67595pt.
+ [29 <./Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf>] [30 <./Chapter6/Figs/
+./ScalarGluComp_q2_CrossTerms.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+
+ []
+
+[32]
+<Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf, id=932, 415.93329pt x 333.35
+114pt>
+File: Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf Graphic file (type pdf)
+ <use Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf>
+Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf used 
+on input line 124.
+(pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+<Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf, id=937, 415.93329pt x 333.
+35114pt>
+File: Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf Graphic file (type pdf
+)
+ <use Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf>
+Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf use
+d on input line 135.
+(pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
+
+
+LaTeX Warning: Reference `1to10sweepscooling' on page 33 undefined on input lin
+e 136.
+
+
+LaTeX Warning: Reference `1to10sweepscooling' on page 33 undefined on input lin
+e 136.
+
+<Chapter6/Figs/./ActionMatch.pdf, id=944, 437.95305pt x 333.64912pt>
+File: Chapter6/Figs/./ActionMatch.pdf Graphic file (type pdf)
+
+<use Chapter6/Figs/./ActionMatch.pdf>
+Package pdftex.def Info: Chapter6/Figs/./ActionMatch.pdf used on input line 143
+.
+(pdftex.def)             Requested size: 437.46112pt x 333.28174pt.
+
+<Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf, id=945, 415.93329pt x 333
+.35114pt>
+File: Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf Graphic file (type pd
+f)
+ <use Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf>
+Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf us
+ed on input line 166.
+(pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
+ [33])
+Underfull \hbox (badness 10000) in paragraph at lines 171--141
+
+ []
+
+[34 <./Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf>] [35 <./Chapter6/Figs/
+./ScalarGluComp_q2_1to10sweepsVO.pdf>] [36 <./Chapter6/Figs/./ActionMatch.pdf>]
+[37 <./Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf>]
 \openout2 = `Chapter7/chapter7.aux'.
 
- (./Chapter7/chapter7.tex [24
+
+(./Chapter7/chapter7.tex [38
 
 
 
 ]
 Chapter 7.
-) [25]
+) [39]
 \openout2 = `Chapter8/chapter8.aux'.
 
- (./Chapter8/chapter8.tex [26
+ (./Chapter8/chapter8.tex [40
 
 
 
 ]
 Chapter 8.
-) [27] [28
+) [41] [42
 
 
-] (./thesis.bbl [29
+] (./thesis.bbl [43
 
-]) [30]
+] [44] [45]) [46]
 No file thesis.ind.
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
 (./thesis.aux (./Dedication/dedication.aux) (./Declaration/declaration.aux)
@@ -2198,16 +2352,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6A313EBA76DB2FBB47A52626ED0F34BC;6798.
+(rerunfilecheck)             Checksum: D5E75679F3B6ED469198AAC0037555E4;7251.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 39195 strings out of 493029
- 767453 string characters out of 6136233
- 833280 words of memory out of 5000000
- 41688 multiletter control sequences out of 15000+600000
- 102425 words of font info for 141 fonts, out of 8000000 for 9000
+ 39438 strings out of 493029
+ 773001 string characters out of 6136233
+ 838389 words of memory out of 5000000
+ 41819 multiletter control sequences out of 15000+600000
+ 103259 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,92p,10383b,942s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,13n,92p,10383b,1066s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -2221,10 +2379,10 @@ e/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.p
 fb>
-Output written on thesis.pdf (46 pages, 348472 bytes).
+Output written on thesis.pdf (62 pages, 652870 bytes).
 PDF statistics:
- 658 PDF objects out of 1000 (max. 8388607)
- 572 compressed objects within 6 object streams
- 161 named destinations out of 1000 (max. 500000)
- 31058 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1335 PDF objects out of 1440 (max. 8388607)
+ 910 compressed objects within 10 object streams
+ 242 named destinations out of 1000 (max. 500000)
+ 31119 words of extra memory for PDF output out of 35830 (max. 10000000)
 

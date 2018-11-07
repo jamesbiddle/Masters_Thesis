@@ -128,11 +128,89 @@ David~J. Gross and Frank Wilczek.
 \newblock {\em Phys. Rev. Lett.}, 30:1343--1346, 1973.
 \newblock [,271(1973)].
 
+\bibitem{Born:1993cq}
+K.~D. Born, E.~Laermann, R.~Sommer, P.~M. Zerwas, and T.~F. Walsh.
+\newblock {The Interquark potential: A QCD lattice analysis}.
+\newblock {\em Phys. Lett.}, B329:325--331, 1994.
+
+\bibitem{Bonnet:1999gt}
+Frederic D.~R. Bonnet, Derek~B. Leinweber, Anthony~G. Williams, and James~M.
+  Zanotti.
+\newblock {Towards string breaking in the static quark potential}.
+\newblock {\em Submitted to: Phys. Rev. D}, 1999.
+
+\bibitem{Creutz:1980hb}
+Michael Creutz.
+\newblock {Monte Carlo Study of Renormalization in Lattice Gauge Theory}.
+\newblock {\em Phys. Rev.}, D23:1815, 1981.
+
+\bibitem{DiGiacomo:1990hc}
+Adriano Di~Giacomo, Michele Maggiore, and Stefan Olejnik.
+\newblock {Confinement and Chromoelectric Flux Tubes in Lattice {QCD}}.
+\newblock {\em Nucl. Phys.}, B347:441--460, 1990.
+
 \bibitem{Zwanziger:1991gz}
 D.~Zwanziger.
 \newblock {Vanishing of zero momentum lattice gluon propagator and color
   confinement}.
 \newblock {\em Nucl. Phys.}, B364:127--161, 1991.
+
+\bibitem{Iwasaki:1991mr}
+Y.~Iwasaki, K.~Kanaya, S.~Sakai, and T.~Yoshie.
+\newblock {Quark confinement and number of flavors in strong coupling lattice
+  QCD}.
+\newblock {\em Phys. Rev. Lett.}, 69:21--24, 1992.
+
+\bibitem{Belavin:1975fg}
+A.~A. Belavin, Alexander~M. Polyakov, A.~S. Schwartz, and {\relax Yu}.~S.
+  Tyupkin.
+\newblock {Pseudoparticle Solutions of the Yang-Mills Equations}.
+\newblock {\em Phys. Lett.}, B59:85--87, 1975.
+\newblock [,350(1975)].
+
+\bibitem{tHooft:1986ooh}
+Gerard 't~Hooft.
+\newblock {How Instantons Solve the U(1) Problem}.
+\newblock {\em Phys. Rept.}, 142:357--387, 1986.
+
+\bibitem{Ivanenko:1990xu}
+T.~L. Ivanenko, A.~V. Pochinsky, and M.~I. Polikarpov.
+\newblock {Extended Abelian monopoles and confinement in the SU(2) lattice
+  gauge theory}.
+\newblock {\em Phys. Lett.}, B252:631--635, 1990.
+
+\bibitem{Chernodub:1995tt}
+M.~N. Chernodub and F.~V. Gubarev.
+\newblock {Instantons and monopoles in maximal Abelian projection of SU(2)
+  gluodynamics}.
+\newblock {\em JETP Lett.}, 62:100--104, 1995.
+
+\bibitem{Callan:1977qs}
+Curtis~G. Callan, Jr., Roger~F. Dashen, and David~J. Gross.
+\newblock {A Mechanism for Quark Confinement}.
+\newblock {\em Phys. Lett.}, 66B:375--381, 1977.
+
+\bibitem{Mandelstam:1974pi}
+S.~Mandelstam.
+\newblock {Vortices and Quark Confinement in Nonabelian Gauge Theories}.
+\newblock {\em Phys. Rept.}, 23:245--249, 1976.
+
+\bibitem{tHooft:1982ylj}
+Gerard 't~Hooft.
+\newblock {The Topological Mechanism for Permanent Quark Confinement in a
+  Nonabelian Gauge Theory}.
+\newblock {\em Phys. Scripta}, 25:133--142, 1982.
+
+\bibitem{'tHooft:1977hy}
+Gerard 't~Hooft.
+\newblock {On the Phase Transition Towards Permanent Quark Confinement}.
+\newblock {\em Nucl.Phys.}, B138:1, 1978.
+
+\bibitem{'tHooft:1979uj}
+Gerard 't~Hooft.
+\newblock {A Property of Electric and Magnetic Flux in Nonabelian Gauge
+  Theories}.
+\newblock {\em Nucl.Phys.}, B153:141, 1979.
 
 \bibitem{Cucchieri:1999sz}
 Attilio Cucchieri.
@@ -151,5 +229,70 @@ Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
 \newblock {Infinite volume and continuum limits of the Landau gauge gluon
   propagator}.
 \newblock {\em Phys. Rev.}, D64:034501, 2001.
+
+\bibitem{Bonnet:2000dc}
+Frederic D.~R. Bonnet, Patrick Fitzhenry, Derek~B. Leinweber, Mark~R. Stanford,
+  and Anthony~G. Williams.
+\newblock {Calibration of smearing and cooling algorithms in SU(3): Color gauge
+  theory}.
+\newblock {\em Phys. Rev.}, D62:094509, 2000.
+
+\bibitem{Moran:2008ra}
+Peter~J. Moran and Derek~B. Leinweber.
+\newblock {Over-improved stout-link smearing}.
+\newblock {\em Phys. Rev.}, D77:094501, 2008.
+
+\bibitem{Trewartha:2015ida}
+Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
+\newblock {Connection between center vortices and instantons through
+  gauge-field smoothing}.
+\newblock {\em Phys. Rev.}, D92(7):074507, 2015.
+
+\bibitem{Trewartha:2015nna}
+Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
+\newblock {Evidence that centre vortices underpin dynamical chiral symmetry
+  breaking in SU(3) gauge theory}.
+\newblock {\em Phys. Lett.}, B747:373--377, 2015.
+
+\bibitem{Trewartha:2017ive}
+Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
+\newblock {Centre vortex removal restores chiral symmetry}.
+\newblock {\em J. Phys.}, G44(12):125002, 2017.
+
+\bibitem{BilsonThompson:2003zi}
+Sundance~O. Bilson-Thompson, Derek~B. Leinweber, Anthony~G. Williams, and
+  Gerald~V. Dunne.
+\newblock {Comparison of |Q| = 1 and |Q| = 2 gauge-field configurations on the
+  lattice four-torus}.
+\newblock {\em Annals Phys.}, 311:267--287, 2004.
+
+\bibitem{Thomas:2014tda}
+Samuel~D. Thomas, Waseem Kamleh, and Derek~B. Leinweber.
+\newblock {Instanton contributions to the low-lying hadron mass spectrum}.
+\newblock {\em Phys. Rev.}, D92(9):094515, 2015.
+
+\bibitem{Cais:2008za}
+Alan O'Cais, Waseem Kamleh, Kurt Langfeld, Ben Lasscock, Derek Leinweber, Peter
+  Moran, Andre Sternbeck, and Lorenz von Smekal.
+\newblock {Preconditioning Maximal Center Gauge with Stout Link Smearing in
+  SU(3)}.
+\newblock {\em Phys. Rev.}, D82:114512, 2010.
+
+\bibitem{DelDebbio:1998luz}
+L.~Del~Debbio, Manfried Faber, J.~Giedt, J.~Greensite, and S.~Olejnik.
+\newblock {Detection of center vortices in the lattice Yang-Mills vacuum}.
+\newblock {\em Phys. Rev.}, D58:094501, 1998.
+
+\bibitem{Bowman:2010zr}
+Patrick~O. Bowman, Kurt Langfeld, Derek~B. Leinweber, Andre Sternbeck, Lorenz
+  von Smekal, and Anthony~G. Williams.
+\newblock {Role of center vortices in chiral symmetry breaking in SU(3) gauge
+  theory}.
+\newblock {\em Phys. Rev.}, D84:034501, 2011.
+
+\bibitem{Langfeld:2003ev}
+Kurt Langfeld.
+\newblock {Vortex structures in pure SU(3) lattice gauge theory}.
+\newblock {\em Phys. Rev.}, D69:014503, 2004.
 
 \end{thebibliography}

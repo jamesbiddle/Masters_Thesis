@@ -4,12 +4,168 @@
 %*******************************************************************************
 
 \chapter{Gluon Propagator on Vortex-Modified Backgrounds}
-\section{Results}
-\section{Cooling and the Average Action}
-\section{Summary}
-
 \ifpdf
     \graphicspath{{Chapter6/Figs/Raster/}{Chapter6/Figs/PDF/}{Chapter6/Figs/}}
 \else
     \graphicspath{{Chapter6/Figs/Vector/}{Chapter6/Figs/}}
 \fi
+Here we present the results from the gluon propagator, calculated according to method outlined in Chapter~\ref{chapter:GluonPropagator}, on our three vortex-modified configurations:
+\begin{enumerate}
+\item Original `untouched' fields, $U_{\mu}(x),$
+
+\item Projected vortex-only fields, $Z_{\mu}(x),$
+
+\item Vortex-removed fields, $R_\mu(x) = Z^{\dagger}_{\mu}(x)\,U_{\mu}(x).$
+\end{enumerate} 
+\section{Preliminary Results}
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{./ScalarGluComp_q2_NoCoolSum.pdf}
+\caption{\label{fig:NoCool}The gluon propagator calculated from the original untouched (red dots), shown with the vortex removed (blue triangles) and vortex only (green open circles) results. Here, the renormalisation factor for the vortex removed and vortex only propagators is chosen to be the same as for the untouched propagator.}
+\end{figure}
+%
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{./ScalarGluComp_q2_NoCoolSum2.pdf}
+\caption{\label{fig:NoCoolSum}The gluon propagator from the original untouched ensemble as in Fig.~\ref{fig:NoCool}, now shown with the independently renormalised sum (cyan triangles) of the vortex removed and vortex only propagators. The two vortex modified propagators are also shown, but here their renormalisation factor is chosen to be the same as for the summed propagator.}
+\end{figure}
+
+Calculating the scalar propagator on untouched, vortex-removed and vortex only configurations gives the results illustrated in Fig.~\ref{fig:NoCool}. To make contact with the tree-level propagator at large $q^2$, we renormalise such that $q^2D(q^2)=1$ for $qa = 3.0$ on the original configurations, and apply this same renormalisation factor to the vortex removed and vortex only propagators. The vortex removed configurations display the expected behaviour, with vortex removal corresponding to significant infrared suppression of the propagator when compared to the untouched propagator, in agreement with the results of Ref.~\cite{Bowman:2010zr}. The increased roughness of the gauge fields after vortex removal is evidenced by the enhancement of the propagator at large $q$. This reflects the increase in short-distance fluctuations that have been introduced to the gauge fields by the vortex removal procedure.\\
+
+It is interesting to note that the vortex only propagator retains approximately two thirds of the untouched propagator's peak strength. This is comparable to previous work showing partial recovery of the string tension on vortex only configurations~\cite{Trewartha:2015ida,Trewartha:2017ive,Langfeld:2003ev,Stack:2002sy}. Despite only recovering a portion of the original strength, the infrared peak is still considerably greater than the peak observed in the vortex removed propagator. The loss of strength is most likely in part because of the known imperfections in the vortex identification algorithm that results in some vortex matter remaining in the vortex removed configurations. The vortex only configurations also exhibit a loss of short range strength, due to the absence of the high frequency modes that are instead contained within the vortex removed field.\\
+
+If we sum the vortex only and vortex removed propagators and independently renormalise such that $q^2\,D(q^2)=1$ at $qa=3.0$, we obtain the result shown in Fig.~\ref{fig:NoCoolSum}. Here we observe agreement between the untouched and summed propagators. This indicates that vortex modification effectively partitions the lattice configuration into short range physics on the vortex removed configurations and long range physics on the vortex only configurations, up to errors in the vortex identification procedure.
+
+\subsection{Partitioning}
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{./ScalarGluComp_q2_CrossTerms.pdf}
+\caption{\label{fig:CrossTerms} Calculation of the cross-terms arising from Eq.~\ref{eq:Partition}}
+\end{figure}
+
+This partitioning is expected if the vortex removed and vortex only configurations are orthogonal. To see how this behaviour emerges, suppose that we can decompose the gluon field $A_\mu$ into two independent fields as follows
+\begin{equation}
+  A_\mu(p) = B_\mu(p) + C_\mu(p).
+\end{equation}
+In the context of this work, we associate $B_\mu$ with the background field of short-range gluon fluctuations and $C_\mu$ with the centre vortex field.
+Note also that if $B$ and $C$ are in Landau gauge then so is $A.$ Using this partitioning it follows that the gluon propagator for $A$ can be written as the sum of the respective gluon propagators for $B$ and $C,$
+\begin{align}
+  D^{A}_{\mu\nu}(p) &= \frac{1}{V}\langle A_\mu(p) \, A_\nu(-p) \rangle\nonumber \\
+  &= \frac{1}{V}\Big(\langle B_\mu(p)B_\nu(-p)\rangle + \langle C_\mu(p)C_\nu(-p)\rangle\nonumber\\
+   &~~~~~~~+ \langle B_\mu(p)C_\nu(-p)+ C_\mu(p)B_\nu(-p) \rangle\Big)\nonumber \\
+  &= D^{B}_{\mu\nu}(p) + D^{C}_{\mu\nu}(p),\label{eq:Partition}
+\end{align}
+where we have made use of the fact that $B$ and $C$ represent orthogonal degrees of freedom in the gauge field and hence in the ensemble average the cross-correlations should vanish. These cross-correlations are explicitly calculated by evaluating 
+\begin{equation}
+D_{\text{cross-terms}}(p^2) = \frac { 2 } { 3 \left( n _ { c } ^ { 2 } - 1 \right) V } \left\langle \operatorname { Tr } \left( B_\mu(p)C_\mu(-p)+ C_\mu(p)B_\mu(-p) \right) \right\rangle\, ,
+\label{eq:CTprop}
+\end{equation}
+analogous to the scalar gluon propagator derived in Chapter~\ref{chapter:GluonPropagator}. The results of this calculation are shown in Fig.~\ref{fig:CrossTerms}. As can be clearly seen, in the ensemble average Eq.~\ref{eq:CTprop} vanishes, indicating that the vortex only and vortex removed configurations truly do represent a orthogonal degrees of freedom.\\  
+
+To elucidate the connection to the unitary formulation of the lattice gauge links, we suppose that we can transform $A$ to an ``ideal centre gauge'' such that in lattice units the field $C$ consists purely of centre phases,
+\begin{equation}
+C_\mu(x) = k\,\frac{2\pi}{3} I,\quad k\in \{-1,0,+1\}.
+\end{equation}
+On a continuous manifold we can write the Wilson line corresponding to a lattice link as a path-ordered exponential,
+\begin{equation}
+U_{\mu}(x) = \mathcal{P} e^{i\int_0^1 d\lambda \,A_{\mu}(x+\lambda\hat{\mu})}.
+\end{equation}
+The lattice midpoint approximation replaces the integral as follows,
+\begin{equation}
+U_{\mu}(x) = e^{iA_{\mu}(x+\hat{\mu}/2)}.
+\end{equation}
+As $A = B + C$ it immediately follows that we can write
+\begin{equation}
+U_{\mu}(x) = e^{i B_{\mu}(x+\hat{\mu}/2)} \, e^{i C_{\mu}(x+\hat{\mu}/2)},
+\end{equation}
+noting that in our ideal centre gauge $[B,C] = 0$ so the Baker-Campbell-Haussdorff relation is trivial. Identifying
+\begin{equation}
+Z_{\mu}(x) = e^{i C_{\mu}(x+\hat{\mu}/2)}
+\end{equation}
+as the vortex-projected field, and
+\begin{equation}
+R_{\mu}(x) = e^{i B_{\mu}(x+\hat{\mu}/2)}
+\end{equation}
+as the background remainder field we thus recover the decomposition of the links used herein,
+\begin{equation}
+U_{\mu}(x) = Z_{\mu}(x)\cdot R_{\mu}(x).
+\end{equation}
+In practise, on the lattice the maximal centre gauge fixing that is implemented will differ from the ideal centre gauge postulated here due to apparent numerical difficulties in simultaneously identifying all vortex matter within an $SU(3)$ gauge field. What this means is that the projected field $Z$ may not capture all of the vortex matter such that there is some non-trivial topological structures that remain in the background field $R.$ The infrared enhancement in the vortex removed results in Fig.~\ref{fig:NoCool} suggests this is the case.\\
+
+\subsection{Renormalisation}
+
+In Fig.~\ref{fig:NoCoolSum} it proved necessary to independently renormalise the untouched and summed propagators such that they agree at $qa=3.0$. The necessity of this renormalisation is worth discussing, as it is important to motivate why comparison between the original and reconstructed propagators is valid.
+
+\textcolor{red}{\textbf{Renormalisation steps:}
+\begin{enumerate}
+\item Calculation contains divergent integrals that must be isolated.
+\item Dimensional regularisation isolates the infinities in the integral.
+\item Redefine the mass/coupling to absorb these infinities. The new constant is \textit{finite}, whereas the original constant is taken to be \textit{infinite}.
+\item Alternatively, the counter term method can be used.
+\item The counter term method states that the original constant is \textit{finite}, that are modified by infinite constants.
+\item Upon calculating physical quantities, the infinite constants cancel off the infinities arising from the loop integrals.
+\end{enumerate}
+\textbf{Questions:}
+\begin{enumerate}
+\item At what scale does $D_{\text{QED}}(q^2) = \frac{1}{q^2}$?
+\item At what scale can we suppose that $D_{\text{QED}}(q^2) = D_{\text{QCD}}(q^2)$
+\item Is it reasonable to say that the condition that must be enforced on the combined propagator is $D(q^2) = \frac{1}{q^2}$ at some large momentum, and as such this is the normalisation that should be applied to the VR and VO propagators?
+\item Does $D_{\text{QCD}}(q^2)$ equal the bare continuum propagator at a fixed cutoff?
+\item What does the renormalised propagator correspond to in the continuum? 
+\end{enumerate}
+}
+
+\section{Impact of Cooling}
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{./ScalarGluComp_q2_10sweepsAll.pdf}
+\caption{\label{fig:10SweepsCooling}The gluon propagator calculated on the three ensembles after 10 sweeps of cooling. We now observe an improved agreement between the untouched and vortex only propagators.}
+\end{figure}  
+%
+After performing 10 sweeps of cooling on the untouched, vortex-removed and vortex-only ensembles, we obtain the results shown in Fig.~\ref{fig:10SweepsCooling}. As is typical of cooling, the removal of short range structures means that all three ensembles tend to zero as $q\rightarrow\infty$. There is now a noticeable improvement in the agreement between the untouched and vortex only configurations; however there is still a difference present, especially in the $qa\approx0.5$ and $qa\approx1.5$ regions.\\
+
+We perform the same analysis of the vortex only propagator under cooling as performed in Sec.~\ref{sec:CoolingGluProp} on the untouched propagator. Once again in gauge fixing, each sweep is preconditioned by the Landau gauge transformation of the previous sweep in descending order. The result of this analysis is shown in Fig.~\ref{fig:1to10VO}. This figure shows a similar change in the vortex only propagator when compared to the untouched propagator in Fig.~\ref{fig:1to10SweepsCooling}, with an enhancement in the infrared and suppression in the UV modes. The UV suppression is less noticeable in this case due to the prior removal of short range effects brought about by the vortex identification.\\
+
+%
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{./ScalarGluComp_q2_1to10sweepsVO.pdf}
+\caption{\label{fig:1to10VO}The vortex only propagator after different sweeps of cooling. A trend similar to Fig.~\ref{1to10sweepscooling} is observed, with enhancement in the infrared and suppression in the UV region.}
+\end{figure}
+%
+We observe that the vortex only and untouched propagators in Fig.~\ref{fig:10SweepsCooling} resemble the gluon propagator under a differing number of sweeps of cooling, as shown in Fig.~\ref{fig:1to10SweepsCooling} and Fig.~\ref{fig:1to10VO}. The vortex only propagator has a peak that sits below the untouched propagator, and the untouched propagator is further suppressed in the $qa\approx 1.5$ region. Following the trend in Fig.~\ref{fig:1to10SweepsCooling} and Fig.~\ref{fig:1to10VO}, this indicates that further cooling on the vortex only propagator would align it with the untouched propagator. This follows from an understanding that the vortex-only configurations are initially much rougher than their untouched counterparts~\cite{Trewartha:2015nna}, and should therefore require additional cooling to obtain agreement with the untouched configurations.\\
+%
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{./ActionMatch.pdf}
+\caption{\label{fig:ActionMatch}The average action calculated on the untouched and vortex-only configurations as a function of cooling sweeps, $n$. The vortex only configurations are initially rougher than the untouched, as evidenced by the higher average action.}
+\end{figure}
+%
+\begin{table}[tb]
+\caption{\label{tab:ActionMatch}Comparison of the number of cooling sweeps on the untouched ($n_U$) and vortex only ($n_{VO}$) configurations required to match the average action.}
+\centering
+\begin{tabular}{c | c | c | c}
+$n_U$ & $\bar{S}/S_0$ & $n_{VO}$ & $\bar{S}/ S_0$\\
+\hline
+5 & $734.83$ & 11 & $727.67$\\
+10 & $344.22$ & 15 & $357.68$\\
+15 & $238.21$ & 20 & $231.19$\\
+20 & $187.55$ & 24 & $184.68$\\
+25 & $156.92$ & 28 & $155.72$\\
+30 & $135.91$ & 32 & $135.61$\\
+35 & $120.29$ & 36 & $120.66$\\
+40 & $107.08$ & 40 & $109.02$\\
+\end{tabular}
+\end{table}
+%
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{./ScalarGluComp_q2_UVOActionMatch.pdf}
+\caption{\label{fig:UVOActionMatch}Comparison of the gluon propagator on the untouched and vortex only configurations after tuning the number of cooling sweeps to best match the average plaquette action. This procedure gives a much better agreement in the shape of the gluon propagator from the two configurations.}
+\end{figure}
+%
+
+We take the average $\mathcal{O}(a^4)$ three-loop improved action of the lattice divided by the single instanton action $S_0=\frac{8\pi^2}{g^2}$, denoted $\bar{S}/S_0$, to be a measure of roughness. We observe that for $n<20$ cooling sweeps the vortex-only configurations have a significantly higher action than their untouched counterparts after the same number of sweeps of cooling, as illustrated in Fig.~\ref{fig:ActionMatch}. We therefore seek to find the number of sweeps required to best match the action between the vortex-only and untouched configurations. The results of this procedure are shown in Table \ref{tab:ActionMatch}. If we now plot these matched configurations, we obtain the results shown in Fig.~\ref{fig:UVOActionMatch}. Here we have truncated the plot at large $qa$ to better show the agreement in the mid-$qa$ region. By matching the actions as closely as possible with an integer number of cooling sweeps, we see that there is a better agreement between the untouched and vortex-only gluon propagators.\\
