@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+Consider a square of dimensions $L\times L$, pierced by $2N$ vortices. Assuming there are an approximately equal number of $+1$ and $-1$ vortices piercing this square, the probability of $n$ $+1$ or $-1$ vortices piercing some area $A \in L^2$ is
+\begin{equation}
+P_N(n) = {N\choose n} \left(\frac{A}{L^2}\right)^n \left(1-\frac{A}{L^2}\right)^{N-n}\, .
+\end{equation}
+Therefore, by assuming the different vortex phases are uncorrelated, the expectation value of the Wilson loop can be written as
+\begin{equation}
+\langle W(\partial A)\rangle = \sum_{n=0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^n\,P_{N}(n)\,\sum_{m=0}^{N}\left(\exp\left(\frac{-2\pi i}{3}\right)\right)^m\,P_{N}(m)\, .
+\end{equation}
+Taking just the first sum, it evaluates to
+\begin{align*}
+\left(1-\frac{A}{L^2}\right)^{N}\sum_{n=0}^{N} {N\choose n} \left(\exp\left(\frac{2\pi i}{3}\right)\,\frac{A}{L^2}\left(1-\frac{A}{L^2}\right)^{-1}\right)^n=\left(1+\left(\exp\left(\frac{2\pi i}{3}\right) - 1\right)\frac{A}{L^2}\right)^N\, . 
+\end{align*}
+So the total expectation value is
+\begin{align*}
+\langle W(\partial A)\rangle &=\left(1+\left(\exp\left(\frac{2\pi i}{3}\right) - 1\right)\frac{A}{L^2}\right)^N\, \left(1+\left(\exp\left(\frac{-2\pi i}{3}\right) - 1\right)\frac{A}{L^2}\right)^N\\
+&=\left(1 -3\frac{A}{L^2} + 3\left(\frac{A}{L^2}\right)^2\right)^N\\
+&= \left(\left(\frac{A}{L^2}\right)^3+\left(1-\frac{A}{L^2}\right)^3\right)^N\, .
+\end{align*}
+Rewriting this in terms of the vortex density $\rho = \frac{N}{L^2}$, we have
+\begin{equation}
+\langle W(\partial A)\rangle = \left(\left(\frac{A\rho}{N}\right)^3+\left(1-\frac{A\rho}{N}\right)^3\right)^N\, .
+\end{equation}
+Taking the limit as $N,L^2\rightarrow\infty$, keeping $\rho$ constant, this becomes
+\begin{equation}
+\langle W(\partial A)\rangle = \exp(-3\rho A)\, .
+\end{equation}
+Hence we have a simple model for area-law confinement from the vortex model.
+\end{document}

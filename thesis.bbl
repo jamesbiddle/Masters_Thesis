@@ -77,16 +77,16 @@ M.~Luscher and P.~Weisz.
 \newblock {\em Commun. Math. Phys.}, 97:59, 1985.
 \newblock [Erratum: Commun. Math. Phys.98,433(1985)].
 
+\bibitem{Lepage:1992xa}
+G.~Peter Lepage and Paul~B. Mackenzie.
+\newblock {On the viability of lattice perturbation theory}.
+\newblock {\em Phys. Rev.}, D48:2250--2264, 1993.
+
 \bibitem{Bonnet:1999mj}
 Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
   Williams, and David~G. Richards.
 \newblock {Discretization errors in Landau gauge on the lattice}.
 \newblock {\em Austral. J. Phys.}, 52:939--948, 1999.
-
-\bibitem{Lepage:1992xa}
-G.~Peter Lepage and Paul~B. Mackenzie.
-\newblock {On the viability of lattice perturbation theory}.
-\newblock {\em Phys. Rev.}, D48:2250--2264, 1993.
 
 \bibitem{GellMann:1964nj}
 Murray Gell-Mann.
@@ -212,6 +212,16 @@ Gerard 't~Hooft.
   Theories}.
 \newblock {\em Nucl.Phys.}, B153:141, 1979.
 
+\bibitem{Greensite:2016pfc}
+Jeff Greensite.
+\newblock {Confinement from Center Vortices: A review of old and new results}.
+\newblock {\em EPJ Web Conf.}, 137:01009, 2017.
+
+\bibitem{Makeenko:2009dw}
+Yuri Makeenko.
+\newblock {A Brief Introduction to Wilson Loops and Large N}.
+\newblock {\em Phys. Atom. Nucl.}, 73:878--894, 2010.
+
 \bibitem{Cucchieri:1999sz}
 Attilio Cucchieri.
 \newblock {Infrared behavior of the gluon propagator in lattice Landau gauge:
@@ -259,12 +269,42 @@ Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
 \newblock {Centre vortex removal restores chiral symmetry}.
 \newblock {\em J. Phys.}, G44(12):125002, 2017.
 
-\bibitem{BilsonThompson:2003zi}
-Sundance~O. Bilson-Thompson, Derek~B. Leinweber, Anthony~G. Williams, and
-  Gerald~V. Dunne.
-\newblock {Comparison of |Q| = 1 and |Q| = 2 gauge-field configurations on the
-  lattice four-torus}.
-\newblock {\em Annals Phys.}, 311:267--287, 2004.
+\bibitem{Berg:1981nw}
+B.~Berg.
+\newblock {Dislocations and Topological Background in the Lattice O(3) $\sigma$
+  Model}.
+\newblock {\em Phys. Lett.}, 104B:475--480, 1981.
+
+\bibitem{Cabibbo:1982zn}
+N.~Cabibbo and E.~Marinari.
+\newblock {A New Method for Updating SU(N) Matrices in Computer Simulations of
+  Gauge Theories}.
+\newblock {\em Phys. Lett.}, 119B:387--390, 1982.
+
+\bibitem{Creutz:1980zw}
+M.~Creutz.
+\newblock {Monte Carlo Study of Quantized SU(2) Gauge Theory}.
+\newblock {\em Phys. Rev.}, D21:2308--2315, 1980.
+
+\bibitem{BilsonThompson:2002jk}
+Sundance~O. Bilson-Thompson, Derek~B. Leinweber, and Anthony~G. Williams.
+\newblock {Highly improved lattice field strength tensor}.
+\newblock {\em Annals Phys.}, 304:1--21, 2003.
+
+\bibitem{Albanese:1987ds}
+M.~Albanese et~al.
+\newblock {Glueball Masses and String Tension in Lattice QCD}.
+\newblock {\em Phys. Lett.}, B192:163--169, 1987.
+
+\bibitem{Falcioni:1984ei}
+M.~Falcioni, M.~L. Paciello, G.~Parisi, and B.~Taglienti.
+\newblock {AGAIN ON SU(3) GLUEBALL MASS}.
+\newblock {\em Nucl. Phys.}, B251:624--632, 1985.
+
+\bibitem{Morningstar:2003gk}
+Colin Morningstar and Mike~J. Peardon.
+\newblock {Analytic smearing of SU(3) link variables in lattice QCD}.
+\newblock {\em Phys. Rev.}, D69:054501, 2004.
 
 \bibitem{Thomas:2014tda}
 Samuel~D. Thomas, Waseem Kamleh, and Derek~B. Leinweber.
@@ -294,5 +334,11 @@ Patrick~O. Bowman, Kurt Langfeld, Derek~B. Leinweber, Andre Sternbeck, Lorenz
 Kurt Langfeld.
 \newblock {Vortex structures in pure SU(3) lattice gauge theory}.
 \newblock {\em Phys. Rev.}, D69:014503, 2004.
+
+\bibitem{Stack:2002sy}
+John~D. Stack, W.~W. Tucker, and Roy~J. Wensley.
+\newblock {The Maximal Abelian gauge, monopoles, and vortices in SU(3) lattice
+  gauge theory}.
+\newblock {\em Nucl. Phys.}, B639:203--222, 2002.
 
 \end{thebibliography}

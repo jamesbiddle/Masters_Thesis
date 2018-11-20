@@ -71,15 +71,23 @@ which can be substituted into equation~\ref{eq:scalarProp} to obtain the final e
 D(p^2) = \frac{2}{3\,(n_c^2-1)\,V}\big\langle {\rm Tr}\, A_\mu(p)\,A_\mu(-p) \big\rangle \,. \label{eq:scalarProp2}
 \end{equation}
 
-As defined in Eq.~\ref{eq:GaugePotentialLat}, we make use of the midpoint definition of the gauge potential in terms of the lattice link variables. Once the link variables are fixed to Landau gauge following the procedure described in Sec.~\ref{sec:LandauGauge}, we obtain the momentum-space gauge potential
+To calculate Eq.~\ref{eq:scalarProp2} on the lattice, we need to define $A_\mu(p)$. As defined in Eq.~\ref{eq:GaugePotentialLat}, we make use of the midpoint definition of the coordinate-space gauge potential in terms of the lattice link variables. Once the link variables are fixed to Landau gauge following the procedure described in Sec.~\ref{sec:LandauGauge}, we obtain the momentum-space gauge potential
 %
 \begin{equation}
 A_\mu(p) = \sum_x e^{-ip\cdot(x+\hat{\mu}/2)}\, A_\mu(x+\hat{\mu}/2)\, .
 \end{equation}
+%
+We have now constructed the necessary tools to calculate the Landau gauge scalar gluon propagator within the lattice framework established in Chapter \ref{chapter:LatticeQCD}.
 
 %The gluon fields $U_\mu(x)$ are first gauge-fixed by maximizing an $\mathcal{O}(a^{2})$-improved functional using a Fourier-accelerated algorithm~\cite{Davies:1987vs,Bonnet:1999mj,Roberts:2010cz}. The gauge potential in momentum space is then obtained by taking the discrete Fourier transform, 
 
 \section{Momentum Variables}
+As discussed in Sec.~\ref{sec:Confinement}, it is understood that at QCD is asymptotically free. With this understanding, we expect that at high momentum the Landau gauge gluon propagator will tend towards the Landau gauge photon propagator~\cite{ryder1996quantum}
+%
+\begin{equation}
+D_\gamma(p^2) = \frac{1}{p^2}\, .
+\end{equation}
+%
 
 \section{Lattice Parameters and Data Cuts}
 

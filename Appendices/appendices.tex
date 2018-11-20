@@ -1,0 +1,30 @@
+%!TEX root = ../thesis.tex
+% ******************************* Thesis Appendix A ****************************
+\chapter{Evaluation of $\operatorname{Re}\Tr(F_1(U)^\dagger \,U)$}\label{app:CoolingMaximise}
+
+It is apparent that we can write Eq.~\ref{eq:MaximisedCooling} in the form
+\begin{equation}
+\Re\Tr(F_1(U)^\dagger\, U)\, ,
+\end{equation}
+where $U = U_\mu\, \bar{U}$. Expanding this, we have
+\begin{align*}
+\Re\Tr(F_1(U)^\dagger\, U) &=\Re \left( \frac{1}{2}\,U_{11} \left(U_{22} + U_{11}^*\right) - \frac{1}{2}\,U_{21} \left(U_{12} - U_{21}^*\right)\right.\\
+&~~~~+ \left. \frac{1}{2}\,U_{22} \left(U_{11} + U_{22}^*\right)
+- \frac{1}{2}\,U_{12} \left(U_{21} - U_{12}^*\right) +U_{33}\right)\\
+&= \Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21} + U_{33}\right)\, .
+\end{align*}
+We now wish to make use of the known determinant of $F_1(U)$ to simplify this expression.
+\begin{align*}
+\det(F_1(U)) &= \frac{1}{4} \left(U_{11}+ U_{22}^*\right)\left(U_{11}^* + U_{22}\right)\\
+&~~~~-\frac{1}{4}\left(U_{12} - U_{21}^*\right)\left( U_{21} - U_{12}^*\right)\\
+&=\frac{1}{4}\left( |U_{11}|^2 + |U_{22}|^2 + |U_{12}|^2 + |U_{21}|^2\right.\\
+&~~~~+ U_{11}\,U_{22} + U_{11}^*\,U_{22}^* + U_{12}\,U_{21} + U_{12}^*\,U_{21}^*\big) = 1\, ,
+\end{align*}
+and hence
+\begin{equation}
+\Re(\det(F_1(U))) = \frac{1}{2}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21}\right) = 1\, .
+\end{equation}
+So we find the desired result
+\begin{equation}
+\Re\Tr(F_1(U)^\dagger\, U) = 2 + \Re(U_{33})
+\end{equation}

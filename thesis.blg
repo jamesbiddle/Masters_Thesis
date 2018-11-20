@@ -14,49 +14,49 @@ A level-1 auxiliary file: Chapter6/chapter6.aux
 A level-1 auxiliary file: Chapter7/chapter7.aux
 A level-1 auxiliary file: Chapter8/chapter8.aux
 The style file: unsrt.bst
+A level-1 auxiliary file: Appendices/appendices.aux
 Database file #1: ./References/references.bib
-Warning--I didn't find a database entry for "Stack:2002sy"
 Warning--empty journal in Bing:1999ee
 Warning--empty publisher in Zweig:1964jf
-You've used 51 entries,
+You've used 60 entries,
             1791 wiz_defined-function locations,
-            802 strings with 12261 characters,
-and the built_in function-call counts, 11689 in all, are:
-= -- 1010
-> -- 507
+            861 strings with 13627 characters,
+and the built_in function-call counts, 13625 in all, are:
+= -- 1189
+> -- 569
 < -- 3
-+ -- 192
-- -- 141
-* -- 811
-:= -- 1925
-add.period$ -- 159
-call.type$ -- 51
-change.case$ -- 49
++ -- 217
+- -- 157
+* -- 939
+:= -- 2239
+add.period$ -- 186
+call.type$ -- 60
+change.case$ -- 58
 chr.to.int$ -- 0
-cite$ -- 53
-duplicate$ -- 490
-empty$ -- 1162
-format.name$ -- 141
-if$ -- 2600
+cite$ -- 62
+duplicate$ -- 571
+empty$ -- 1365
+format.name$ -- 157
+if$ -- 3035
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 53
-newline$ -- 263
-num.names$ -- 53
-pop$ -- 80
+int.to.str$ -- 60
+missing$ -- 62
+newline$ -- 308
+num.names$ -- 62
+pop$ -- 89
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 187
+skip$ -- 217
 stack$ -- 0
-substring$ -- 906
-swap$ -- 73
+substring$ -- 1083
+swap$ -- 82
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 102
-width$ -- 53
-write$ -- 568
-(There were 3 warnings)
+while$ -- 120
+width$ -- 62
+write$ -- 667
+(There were 2 warnings)
