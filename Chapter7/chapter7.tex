@@ -4,10 +4,81 @@
 %*******************************************************************************
 
 \chapter{Centre Vortex Visualisations}
-\section{3D Models}
-\subsection{Time Slices}
-\subsection{Time-Oriented Links}
-\subsection{Topological Charge}
+In previous chapters we have motivated the significance of centre vortices in QCD through the calculation of the gluon propagator. Although we can predict many of the properties of vortices through calculation, these properties can also be explored through visualisations of the lattice. To this end, in this chapter we present a novel visualisation technique that allows us to view thin centre vortices on the lattice through the use of three-dimensional (3D) models.
+
+\section{Time Slices}
+As the lattice is a four-dimensional hypercube, we visualise the centre vortices on 3D slices. The choice of dimension to take slices along is irrelevant in Euclidean space, so we choose to take slices along the $x$-axis, resulting in $N_x$ slices each with dimension $N_y\times N_z\times N_t$. Within these slices we can visualise all vortices associated with an $y-z$, $y-t$ or $z-t$ plaquette. These vortices are plotted as shown in Fig.~\ref{fig:SpacialVortices}
+
+{\centering
+\begin{figure}
+  \begin{subfigure}[b]{0.5\textwidth}
+\begin{tikzpicture}[scale=1]
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.5 with {\arrow[scale=2]{stealth}}}
+    ] 
+  % bottom right to top right                    x,y start of line    label  x,y end
+  \draw[line width=1.0,postaction={decorate}](1.5,-1.5)-- node[left]{$Z_y(n+\hat x)\ $} (3.25,1.5)node(g){};
+  % top right to top left
+  \draw[line width=1.0,postaction={decorate}](3.25,1.5)-- node[above]{${}\ \ Z_x^*(n+\hat y)$} (-1.5,1.5);
+  % top left to bottom left
+  \draw[line width=1.0,postaction={decorate}](-1.5,1.5)-- node[left]{$Z_y^*(n)$}(-4,-1.5);
+
+  % Jet triangle
+  % bottom left	
+  \draw (-0.3,-2) node(a){}
+  -- (0.1,-2) node(b){}   % bottom right
+  -- (-0.1,2) node(c){}   % top
+  -- cycle;               % complete
+  \fill[blue] (a.center) -- (b.center) -- (c.center);
+  
+  % bottom left to bottom right
+  \draw[line width=1.0,postaction={decorate}](-4,-1.5)-- node[above]{$Z_x(n)$}(1.5,-1.5)node(f){};
+  
+  % Coordinate axes       arrow head          x,y start -- x,y finish [position] label
+  %\draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(4.5,0.0)node[right]{\large $x$};
+  %\draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(3.9,0.8)node[right]{\large $y$};
+  %\draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(3.5,1.0)node[above]{\large $z$};
+  \end{scope}
+\end{tikzpicture}
+  
+  \end{subfigure}             
+  \begin{subfigure}[b]{0.3\textwidth}
+\begin{tikzpicture}[scale=1]
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.5 with {\arrow[scale=2]{stealth}}}
+    ] 
+  % bottom right to top right                    x,y start of line    label  x,y end
+  \draw[line width=1.0,postaction={decorate}](1.5,-1.5)-- node[left]{$Z_y(n+\hat x)\ $} (3.25,1.5)node(g){};
+  % top right to top left
+  \draw[line width=1.0,postaction={decorate}](3.25,1.5)-- node[above]{\quad $Z_x^*(n+\hat y)$} (-1.5,1.5);
+  % top left to bottom left
+  \draw[line width=1.0,postaction={decorate}](-1.5,1.5)-- node[left]{$Z_y^*(n)$}(-4,-1.5);
+
+  % Jet triangle
+  \draw (-0.3,2) node(a){}
+  -- (0.1,2) node(b){}
+  -- (-0.1,-2)node(c){}
+  -- cycle;
+  \fill[red] (a.center) -- (b.center) -- (c.center);
+  
+  % bottom left to bottom right
+  \draw[line width=1.0,postaction={decorate}](-4,-1.5)-- node[above]{$Z_x(n)$}(1.5,-1.5)node(f){};
+  
+  % Coordinate axes       arrow head          x,y start -- x,y finish [position] label
+  \draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(4.5,0.0)node[right]{\large $x$};
+  \draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(3.9,0.8)node[right]{\large $y$};
+  \draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(3.5,1.0)node[above]{\large $z$};
+  \end{scope}
+\end{tikzpicture}
+  \end{subfigure}             
+  \caption{Vortex plotting}
+  \label{fig:SpacialVortices}
+\end{figure}}
+
+\section{Time-Oriented Links}
+\section{Topological Charge}
 \section{Centre Vortices and Topological Charge}
 
 \ifpdf

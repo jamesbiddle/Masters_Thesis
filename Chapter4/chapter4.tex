@@ -3,15 +3,17 @@
 %*********************************** Fourth Chapter *****************************
 %*******************************************************************************
 
-\chapter{Landau Gauge Gluon Propagator} \label{chapter:GluonPropagator}
+\chapter{Lattice Configurations and the Gluon Propagator} \label{chapter:GluonPropagator}
 \ifpdf
     \graphicspath{{Chapter4/Figs/Raster/}{Chapter4/Figs/PDF/}{Chapter4/Figs/}}
 \else
     \graphicspath{{Chapter4/Figs/Vector/}{Chapter4/Figs/}}
 \fi
-In a gauge field theory, the position-space propagator, $D_{\mu\nu}(x-y)$, of the gauge boson is the two-point correlation function, which in the case of $SU(3)$ can be interpreted as the probability of a gluon being created at position $x$, propagating to $y$, and then being annihilated. The propagator therefore serves as a useful measure of the behaviour of gluons as a function of distance; or, correspondingly, as a function of momentum in the momentum-space representation. In this chapter we detail how the Landau gauge gluon propagator is calculated on the lattice.
+
+Now that we have developed the required background understanding of lattice QCD and the topological objects of interest to this research, we can detail how our calculations are performed. This chapter will first describe how we calculate the primary quantity of interest, the Landau gauge gluon propagator, on the lattice. Then, details of the lattices used for this research will be presented, as well as the choice of momentum variables used in calculations of the gluon propagator. Finall, the choice of data cuts will be described and motivated.
+
 \section{Lattice Definition of the Gluon Propagator}
-We begin with the definition of the coordinate space propagator~\cite{Zwanziger:1991gz,Cucchieri:1999sz,Langfeld:2001cz}.
+In a gauge field theory, the position-space propagator, $D_{\mu\nu}(x,y)$, of the gauge boson is the two-point correlation function, which in the case of $SU(3)$ can be interpreted as the probability of a gluon being created at the space-time point $x$, propagating to $y$, and then being annihilated. The propagator therefore serves as a useful measure of the behaviour of gluons as a function of distance; or, correspondingly, as a function of momentum in the momentum-space representation. In this section we detail how the Landau gauge gluon propagator is calculated on the lattice. We begin with the definition of the coordinate space propagator as a two-point correlator~\cite{Zwanziger:1991gz,Cucchieri:1999sz,Langfeld:2001cz}.
 \begin{equation}
 D^{ab}_{\mu\nu}(x) = \langle A^a_\mu(x) \, A^b_\nu(0)\rangle.
 \label{eq:coordGluonProp}
@@ -79,8 +81,6 @@ A_\mu(p) = \sum_x e^{-ip\cdot(x+\hat{\mu}/2)}\, A_\mu(x+\hat{\mu}/2)\, .
 %
 We have now constructed the necessary tools to calculate the Landau gauge scalar gluon propagator within the lattice framework established in Chapter \ref{chapter:LatticeQCD}.
 
-%The gluon fields $U_\mu(x)$ are first gauge-fixed by maximizing an $\mathcal{O}(a^{2})$-improved functional using a Fourier-accelerated algorithm~\cite{Davies:1987vs,Bonnet:1999mj,Roberts:2010cz}. The gauge potential in momentum space is then obtained by taking the discrete Fourier transform, 
-
 \section{Momentum Variables}
 As discussed in Sec.~\ref{sec:Confinement}, it is understood that at QCD is asymptotically free. With this understanding, we expect that at high momentum the Landau gauge gluon propagator will tend towards the Landau gauge photon propagator~\cite{ryder1996quantum}
 %
@@ -88,6 +88,31 @@ As discussed in Sec.~\ref{sec:Confinement}, it is understood that at QCD is asym
 D_\gamma(p^2) = \frac{1}{p^2}\, .
 \end{equation}
 %
-
 \section{Lattice Parameters and Data Cuts}
+We calculate the gluon propagator on 100 configurations of a $20^3\times 40$ $SU(3)$ lattice with spacing $a=0.125\,\si{fm}$, as used in Refs.~\cite{Trewartha:2015nna,OMalley:2011aa}. Following the procedure of Ref.~\cite{Bonnet:2001uh,Leinweber:1998im} all results are plotted after a momentum half-cut. The momentum half-cut corresponds to only considering lattice momenta in the range
+%
+\begin{equation}
+p_\mu = \frac{2\pi n_\mu}{a N_\mu},~n_\mu\in \left(-\frac{N_\mu}{4},\,\frac{N_\mu}{4}\right]\, .
+\end{equation}
+%
+This cut limits the positive range of the kinematically corrected $q_\mu$ to
+%
+\begin{equation}
+q_\mu \in \left[0,\, \frac{2\sqrt{21}}{3a}\right]\, .
+\end{equation}
+%
+Furthermore, a cylinder cut of radius $pa=2$ lattice units is performed such that we only consider points within two lattice units of the diagonal, $n(d)=d\,\hat{n} = \frac{d}{2}(1,\,1,\,1,\,1)$. This cut is implemented by considering points satisfying
+%
+\begin{equation}
+|pa|^2\, \sin(\theta_c) \leq 2\, ,
+\end{equation}
+%
+where
+%
+\begin{equation}
+\theta_c = \cos^{-1}\left(\frac{pa \cdot \hat{n}}{|pa|}\right)
+\end{equation}
+%
+This is performed so that all directions are equally sampled, whilst omitting points where one direction dominates the signal. This assists in filtering out high-momentum systematic errors. Finally, we can take advantage of the rotational symmetry of the scalar propagator to perform $Z(3)$ averaging over the Cartesian coordinates. This means that we average over all points with the same Cartesian radius; for example, we would average across the points $(n_x,n_y,n_z)=(2,1,1),\,(1,2,1)$ and $(1,1,2)$. These choices of cuts assist in producing a cleaner signal that accurately represents the behaviour of the continuum propagator.
+
 

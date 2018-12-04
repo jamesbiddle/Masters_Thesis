@@ -1,0 +1,7 @@
+import numpy as np
+import matplotlib as mplt
+import matplotlib.pyplot as pypl
+
+file='./vortexDist.dat'
+
+data = np.loadtxt(file, skiprows=0)

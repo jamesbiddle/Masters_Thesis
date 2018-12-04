@@ -18,45 +18,45 @@ A level-1 auxiliary file: Appendices/appendices.aux
 Database file #1: ./References/references.bib
 Warning--empty journal in Bing:1999ee
 Warning--empty publisher in Zweig:1964jf
-You've used 60 entries,
+You've used 65 entries,
             1791 wiz_defined-function locations,
-            861 strings with 13627 characters,
-and the built_in function-call counts, 13625 in all, are:
-= -- 1189
-> -- 569
+            892 strings with 14470 characters,
+and the built_in function-call counts, 14827 in all, are:
+= -- 1290
+> -- 633
 < -- 3
-+ -- 217
-- -- 157
-* -- 939
-:= -- 2239
-add.period$ -- 186
-call.type$ -- 60
-change.case$ -- 58
++ -- 240
+- -- 175
+* -- 1031
+:= -- 2442
+add.period$ -- 202
+call.type$ -- 65
+change.case$ -- 63
 chr.to.int$ -- 0
-cite$ -- 62
-duplicate$ -- 571
-empty$ -- 1365
-format.name$ -- 157
-if$ -- 3035
+cite$ -- 67
+duplicate$ -- 616
+empty$ -- 1477
+format.name$ -- 175
+if$ -- 3296
 int.to.chr$ -- 0
-int.to.str$ -- 60
-missing$ -- 62
-newline$ -- 308
-num.names$ -- 62
-pop$ -- 89
+int.to.str$ -- 65
+missing$ -- 67
+newline$ -- 334
+num.names$ -- 67
+pop$ -- 93
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 217
+skip$ -- 233
 stack$ -- 0
-substring$ -- 1083
-swap$ -- 82
+substring$ -- 1179
+swap$ -- 87
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 120
-width$ -- 62
-write$ -- 667
+while$ -- 130
+width$ -- 67
+write$ -- 724
 (There were 2 warnings)

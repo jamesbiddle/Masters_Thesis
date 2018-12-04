@@ -147,6 +147,12 @@
 \let\Im\relax
 \DeclareMathOperator{\Im}{Im}
 
+\makeatletter
+\newcommand*{\textoverline}[1]{%
+  $\m@th\overline{\mbox{#1}\raisebox{3.5mm}{}}$%
+}
+\makeatother
+
 
 % ********************** TOC depth and numbering depth *************************
 

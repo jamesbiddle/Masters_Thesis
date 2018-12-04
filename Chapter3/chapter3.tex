@@ -19,6 +19,7 @@ These experimental and theoretical results led in part to the development of the
 Lattice calculations are currently the only method by which it is possible to investigate low-energy QCD phenomena from first-principles. Calculations of the static potential between two massive quarks, both recent and old~\cite{Born:1993cq, Bonnet:1999gt, Creutz:1980hb, DiGiacomo:1990hc}, have shown that the potential rises linearly at sufficiently large separation distances. This behaviour is precisely what is expected of a colour confining theory. Other confinement mechanisms have also been proposed on the lattice, including mechanisms based on the behaviour of the gluon propagator at $q=0$~\cite{Zwanziger:1991gz} and the behaviour of the pion mass and Polyakov loop at light quark masses~\cite{Iwasaki:1991mr}. All lattice results so far have indicated that QCD is in fact a confining theory at low energy.\\
 
 There is good evidence that confinement has its roots in the topological properties of the QCD vacuum. It is well understood that the QCD vacuum, unlike the QED vacuum, admits non-trivial instanton solutions: solutions of the vacuum field configurations that are all minima of the classical action, yet are distinguished from one another by a topological quantum number~\cite{Belavin:1975fg}. The presence of instanton solutions was significant in resolving the $U(1)$ anomaly~\cite{tHooft:1986ooh}, and provides an excellent method of calculating the ground state hadron spectrum~\cite{Schafer:1996wv}. The non-trivial topology of the QCD vacuum, and the success of topological features in resolving QCD anomalies, motivates the search for a topological explanation of confinement. A variety of features have been proposed, including: Abelian monopoles~\cite{Ivanenko:1990xu, Chernodub:1995tt}, merons~\cite{Callan:1977qs} and dual superconductors~\cite{Mandelstam:1974pi,tHooft:1982ylj}. One of the most promising models in recent years is known as the \textit{Centre Vortex Model}, and it is this model that forms the backbone of this research.
+
 \section{Centre Vortices}
 Originally proposed by 't Hooft in 1978~\cite{'tHooft:1977hy,'tHooft:1979uj}, centre vortices are closed two-dimensional surfaces present in four-dimensional Euclidean space. The key property of a centre vortex is that in three dimensions, where the vortices appear as tubes, any Wilson loop (see Sec.~\ref{sec:LatticeDiscretisation}) that encloses a vortex will acquire a centre phase, such that
 %
@@ -38,7 +39,7 @@ When considering the value of any given Wilson loop, the centre vortex model sug
 W(C) = \prod_i z_i\times \lbrace\text{short-distance physics}\rbrace\, ,
 \end{equation}
 %
-where the $z_i$ correspond to the phases of the centre vortices intersecting the loop $C$. A simple visualisation of this idea is shown in Fig.~\ref{fig:CentreVortex}. It is not immediately apparent why this form of the Wilson loop is related to confinement, however a simple $SU(2)$ calculation motivates the relevance of this model~\cite{Greensite:2016pfc}. To understand the significance of this calculation it is worth first deviating slightly to detail the relationship between the Wilson loop and the potential energy between two massive (static) quarks.\\
+where the $z_i$ correspond to the phases of the centre vortices intersecting the loop $C$. A simple visualisation of this idea is shown in Fig.~\ref{fig:CentreVortex}. It is not immediately apparent why this form of the Wilson loop is related to confinement, however a simple $SU(3)$ calculation motivates the relevance of this model~\cite{Greensite:2016pfc}. To understand the significance of this calculation it is worth first deviating slightly to detail the relationship between the Wilson loop and the potential energy between two massive (static) quarks.\\
 % 
 \begin{figure}
 \centering
@@ -66,45 +67,72 @@ As $T\rightarrow \infty$, the only surviving contribution will be the lowest ene
 \lim_{T\rightarrow \infty} W(R\times T) \propto e^{-E_0(R)\, T}\, .
 \label{eq:WilsonEnergy}
 \end{equation}
-\\%
+\\
 
-With Eq.~\ref{eq:WilsonEnergy} in mind, we return to the aforementioned $SU(2)$ confinement model. Consider a two-dimensional plane with area $L^2$, with $N$ vortices piercing the plane. Then the vortex density $\rho = \frac{N}{L^2}$. The probability of finding $n$ vortex in some region of the plane $A$ is equal to the probability that at least $n$ vortices are in $A$, multiplied by the probability that at least $N-n$ vortices are outside of $A$. Expressed mathematically, this is
+With Eq.~\ref{eq:WilsonEnergy} in mind, we return to the aforementioned $SU(3)$ confinement model. Consider a two-dimensional plane with area $L^2$, with $2N$ vortices piercing the plane. Assuming an even distribution of vortices, the total vortex density is $\rho = \frac{2N}{L^2}$. As there are two $SU(3)$ vortex types, corresponding to the two non-trivial phases $\exp\left(\frac{\pm 2\pi i}{3}\right)$, we assume that there is an equal distribution of vortex phases, i.e. there are $N$ vortices of each type. The probability of finding $n$ vortices of a given phase in some region of the plane $A\subseteq L^2$ is equal to the probability that exactly $n$ vortices are in $A$, multiplied by the probability that exactly $N-n$ vortices are outside of $A$, multiplied by the number of ways this situation can occur. Expressed mathematically, this is
 %
 \begin{equation}
 P_N(n) = {N\choose n} \left(\frac{A}{L^2}\right)^n \left(1-\frac{A}{L^2}\right)^{N-n}\, .
 \end{equation}
 %
-In $SU(2)$ the group centre is simply $Z(2) = \pm I$, so the vortices each contribute a phase of $-1$. So the expectation value of the Wilson loop around the perimeter of $A$ takes the value
+The expectation value of the Wilson loop around the perimeter of $A$ can be written as
+%
+\begin{equation}
+\langle W(\partial A)\rangle = \sum_{m,n = 0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^n P_N(n)\, \left(\exp\left(\frac{2\pi i}{3}\right)\right)^m P_N(m)\, .
+\end{equation}
+%
+If we assume the vortex phases are uncorrelated, then we can make use of the following property of uncorrelated random variables $X$ and $Y$
+%
+\begin{equation}
+E[XY] = E[X]E[Y]\, ,
+\end{equation}
+%
+to write
+%
+\begin{equation}
+\langle W(\partial A)\rangle = \sum_{n=0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^n P_N(n)\,\sum_{m=0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^m P_N(m)\, .
+\label{eq:WilsonExpectation}
+\end{equation}
+%
+We consider just the first sum in Eq.~\ref{eq:WilsonExpectation} and calculate
+%
+\begin{align*}
+\sum_{n=0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^n P_N(n) & = \left(1-\frac{A}{L^2}\right)^{N}\sum_{n=0}^{N} {N\choose n} \left(\exp\left(\frac{2\pi i}{3}\right)\,\frac{A}{L^2}\left(1-\frac{A}{L^2}\right)^{-1}\right)^n\\
+&=\left(1+\left(\exp\left(\frac{2\pi i}{3}\right) - 1\right)\frac{A}{L^2}\right)^N\, ,
+\end{align*}
+%
+where we have made use of the binomial series to evaluate the sum. Hence the total expectation value is
 %
 \begin{align}
-\langle W(\partial A) \rangle &= \sum_{n=0}^N (-1)^n\,P_N(n)\\
-&= \left(1-\frac{A}{L^2}\right)^N\,\sum_{n=0}^N {N\choose n} \left( -\frac{A}{L^2}\left(1-\frac{A}{L^2}\right)^{-1}\right)^n \label{eq:BinomialSum}
+\langle W(\partial A)\rangle &=\left(1+\left(\exp\left(\frac{2\pi i}{3}\right) - 1\right)\frac{A}{L^2}\right)^N\, \left(1+\left(\exp\left(\frac{-2\pi i}{3}\right) - 1\right)\frac{A}{L^2}\right)^N\nonumber\\
+&=\left(1 -3\frac{A}{L^2} + 3\left(\frac{A}{L^2}\right)^2\right)^N\nonumber\\
+&= \left(\left(\frac{A}{L^2}\right)^3+\left(1-\frac{A}{L^2}\right)^3\right)^N\, .\label{eq:WilsonExpectationSimple}
 \end{align}
 %
-Making use of the binomial theorem to evaluate the sum in Eq.~\ref{eq:BinomialSum}, we find
+Rewriting Eq.~\ref{eq:WilsonExpectationSimple} in terms of the vortex density $\rho$, we have
 %
 \begin{equation}
-\langle W(\partial A) \rangle = \left(1-\frac{2A}{L^2}\right)^N\, . \label{eq:WilsonFiniteArea}
+\langle W(\partial A)\rangle = \left(\left(\frac{A\rho}{2N}\right)^3+\left(1-\frac{A\rho}{2N}\right)^3\right)^N\, .
 \end{equation}
 %
-We then re-express Eq.~\ref{eq:WilsonFiniteArea} in terms of the vortex density $\rho$
+Now we take the limit as $N,L^2\rightarrow\infty$, keeping $\rho$ constant. Taking the limit, we find
 %
 \begin{equation}
-\langle W(\partial A) \rangle = \left(1-\frac{2\rho A}{N}\right)^N\, ,
+\langle W(\partial A)\rangle = \exp\left(-\frac{3}{2}\rho A\right)
+\label{eq:WilsonAreaLaw}
 \end{equation}
 %
-and take the limit as $L^2,N\rightarrow \infty$ whilst keeping $\rho$ constant to obtain the final result
-%
-\begin{equation}
-\lim_{N\rightarrow \infty} \langle W(\partial A) \rangle = \exp(-2\rho A)\, .
-\label{eq:AreaLawFalloff}
-\end{equation}
-%
-Taking $A = R\times T$, we see that from Eq.~\ref{eq:WilsonEnergy}, Eq.~\ref{eq:AreaLawFalloff} implies that $E_0 = 2\rho \,R$. Hence, the potential energy between two massive, static quarks increases linearly with the distance $R$ separating them, which is precisely the confinement scenario!\\
+Letting $A=R\times T$ as in Eq.~\ref{eq:WilsonEnergy}, we see that $E_0(R) = -\frac{3}{2}\rho R$, so the static quark potential rises linearly with distance between them, exactly as it should in a confining theory. Eq.~\ref{eq:WilsonAreaLaw} demonstrates an {\it area law} behaviour of the Wilson loop; this is often taken as a requirement for confinement~\cite{DelDebbio:1998luz,Dosch:1988ha}.\\
 
-It is important to highlight the assumptions and simplifications made in the above argument. Firstly, this 
+%
+\begin{figure}[h]
+\includegraphics{./VortexDistribution.png}
+\caption{\label{fig:VortexDistribution}A plot of the vortex phase distribution of 100 Monte-Carlo generated configurations, as a percentage of the total number of vortices. The method by which vortices are identified will be detailed in Sec.~\ref{sec:LocatingVortices}.}
+\end{figure}
+%
+It is important to highlight the assumptions and simplifications made in the above argument. Most easily addressed is the assumption that there is an equal number of $+1$ and $-1$ vortices. By identifying vortices in Monte-Carlo generated configurations and plotting the distribution of phases in Fig.~\ref{fig:VortexDistribution}, we see that there is little deviation from an even distribution, especially in the ensemble average. This is an expected result, as we shall see later that vortices are required to form closed loops in 3d to conserve the vortex flux, so a vortex line should pierce a 2D surface once in each direction, corresponding to the two non-trivial phases. The assumption that the vortex density is constant is, however, less well motivated. As might be expected, in the limit as the area $A$ becomes small, on the order of the size of the vortex, 
 
-\section{Locating Vortices}
+\section{Locating Vortices}\label{sec:LocatingVortices}
 \subsection{Maximal Centre Gauge}\label{sec:MCG}
 \subsection{Centre Projection}
 \section{Instantons}

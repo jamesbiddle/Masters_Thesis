@@ -96,26 +96,63 @@ In practise, on the lattice the maximal centre gauge fixing that is implemented 
 
 \subsection{Renormalisation}
 
-In Fig.~\ref{fig:NoCoolSum} it proved necessary to independently renormalise the untouched and summed propagators such that they agree at $qa=3.0$. The necessity of this renormalisation is worth discussing, as it is important to motivate why comparison between the original and reconstructed propagators is valid.
+In Fig.~\ref{fig:NoCoolSum} it proved necessary to independently renormalise the untouched and summed propagators such that they agree at $qa=3.0$. The necessity of this renormalisation is worth discussing, as it is important to motivate why comparison between the original and reconstructed propagators is valid. To do this, it is beneficial to first consider the renormalised gluon propagator in the continuum. The renormalised propagator at any loop order, $D_R^\text{C}(q^2)$ can be related to the bare propagator, $D^\text{C}(q^2)$ via the relationship
+%
+\begin{equation}
+D^\text{C}(q^2) = Z^\text{C}_3 \, D_R^\text{C}(q^2)\, .
+\label{eq:ContinuumRenormalisation}
+\end{equation}
+%
+Typically $Z^\text{C}_3$ and $D^\text{C}(q)$ are infinite, whereas $D_R^\text{C}(q)$ is finite. The renormalised propagator is not independent of the renormalisation scheme, and the expression for $Z^\text{C}_3$ depends on the renormalisation scheme employed. For example, in the minimal subtraction scheme (MS) at one-loop order with no quarks, $Z_3^\text{C}=1+\frac{5g^2}{8\pi^2\epsilon}$~\cite{ryder1996quantum}, where the quantity $\epsilon$ is introduced as part of the analytic continuation to $d = 4-\epsilon$ dimensions as part of the dimensional regularisation procedure. However, regardless of the scheme, the renormalised propagator can always be expressed in the form shown in Eq.~\ref{eq:ContinuumRenormalisation}~\cite{vanRitbergen:1997va}.\\
 
-\textcolor{red}{\textbf{Renormalisation steps:}
-\begin{enumerate}
-\item Calculation contains divergent integrals that must be isolated.
-\item Dimensional regularisation isolates the infinities in the integral.
-\item Redefine the mass/coupling to absorb these infinities. The new constant is \textit{finite}, whereas the original constant is taken to be \textit{infinite}.
-\item Alternatively, the counter term method can be used.
-\item The counter term method states that the original constant is \textit{finite}, that are modified by infinite constants.
-\item Upon calculating physical quantities, the infinite constants cancel off the infinities arising from the loop integrals.
-\end{enumerate}
-\textbf{Questions:}
-\begin{enumerate}
-\item At what scale does $D_{\text{QED}}(q^2) = \frac{1}{q^2}$?
-\item At what scale can we suppose that $D_{\text{QED}}(q^2) = D_{\text{QCD}}(q^2)$
-\item Is it reasonable to say that the condition that must be enforced on the combined propagator is $D(q^2) = \frac{1}{q^2}$ at some large momentum, and as such this is the normalisation that should be applied to the VR and VO propagators?
-\item Does $D_{\text{QCD}}(q^2)$ equal the bare continuum propagator at a fixed cutoff?
-\item What does the renormalised propagator correspond to in the continuum? 
-\end{enumerate}
-}
+On the lattice, we can explicitly calculate the now finite bare dimensionless propagator $D^\text{L}(q^2)$, as the lattice introduces an explicit momentum cutoff of $\frac{\pi}{a}$. In the language of the continuum, this can be thought of as an approximation of the continuum bare propagator to all loop orders. Similarly, the lattice renormalisation constant $Z_3(\mu, a)$ is also finite. On the lattice, Eq.~\ref{eq:ContinuumRenormalisation} becomes
+%
+\begin{equation}
+a^2 D^\text{L}(q^2) = Z_3(\mu, a)\, D_R(q^2)\, ,
+\label{eq:LatticeRenormalisation}
+\end{equation}
+%
+where the $a^2$ factor restores the dimensionality of the left-hand side of the equation. Despite the finiteness of $D^\text{L}(q^2)$ and $Z_3(\mu, a)$, it is still necessary to enforce a renormalisation scheme to be able to draw meaningful comparisons between propagators. As such, we employ the momentum space subtraction (MOM) scheme~\cite{Bowman:2004jm,Leinweber:1998uu,Bonnet:2001uh}, which requires that for some sufficiently large $\mu$
+%
+\begin{equation}
+D_R(q^2)\big|_{q^2=\mu^2}=\frac{1}{\mu^2}\, .
+\end{equation}
+%
+This sets the value of the renormalisation constant to be
+%
+\begin{equation}
+Z_3(\mu,a) = a^2 \, \mu^2 \, D^\text{L}(\mu^2)\, ,
+\end{equation}
+such that
+%
+\begin{equation}
+D_R(q^2) = \frac{D^\text{L}(q^2)}{\mu^2 \, D^\text{L}(\mu^2)}\, .
+\end{equation}
+%
+This renormalised propagator is what we plot in e.g. Fig.~\ref{fig:NoCoolSum}. The value of $\mu$ is arbitrary, however it is necessary that it is sufficiently large such that it is outside the infrared region where the gluon propagator exhibits substantial deviation from tree-level behaviour. Furthermore, $\mu$ must be away from the momentum cutoff, as the renormalisation constant is only independent of the cutoff in the limit that the cutoff tends towards infinity. Given the momentum range of $qa\in [0,4.6]$ \textcolor{red}{ [reference chapter 4]}, a choice of $\mu =3.0$ satisfies both conditions. Additionally, it also falls below the momentum half-cut of $qa = 3.1$. Once the renormalisation scheme has been imposed, it is then possible to connect the lattice results with those obtained from perturbation theory by connecting the renormalisation constant with those obtained from the MS or modified minimal subtraction (\textoverline{\text{MS}}) schemes.\\
+
+This discussion of renormalisation has motivated why it is acceptable to compare the untouched and summed propagators in Fig.~\ref{fig:NoCoolSum}; it is the renormalised propagator, not the bare propagator, that carries the physical meaning. Hence, the fact that the untouched and summed propagators agree after renormalisation is an important result indicating the effective partitioning of the gluon propagator under vortex modification.\\
+
+The final point worth discussing is the renormalisation applied to the vortex only and vortex removed propagators. Given that we don't have an {\it a priori} expectation of the tree-level behaviour, imposing the MOM condition lacks meaning. Instead, to facilitate comparisons, we make use of the original $Z_3(\mu, a)$ obtained for the untouched propagator unless specified otherwise. Maintaining this consistency is sufficient to comment on the qualitative shape of the propagator, which is the most significant point of interest in this research. 
+
+%\textcolor{red}{\textbf{Renormalisation steps:}
+%\begin{enumerate}
+%\item Calculation contains divergent integrals that must be isolated.
+%\item Dimensional regularisation isolates the infinities in the integral.
+%\item Redefine the mass/coupling to absorb these infinities. The new constant is \textit{finite}, whereas the original constant is taken to be \textit{infinite}.
+%\item Alternatively, the counter term method can be used.
+%\item The counter term method states that the original constant is \textit{finite}, that are modified by infinite constants.
+%\item Upon calculating physical quantities, the infinite constants cancel off the infinities arising from the loop integrals.
+%\end{enumerate}
+%\textbf{Questions:}
+%\begin{enumerate}
+%\item At what scale does $D_{\text{QED}}(q^2) = \frac{1}{q^2}$?
+%\item At what scale can we suppose that $D_{\text{QED}}(q^2) = D_{\text{QCD}}(q^2)$
+%\item Is it reasonable to say that the condition that must be enforced on the combined propagator is $D(q^2) = \frac{1}{q^2}$ at some large momentum, and as such this is the normalisation that should be applied to the VR and VO propagators?
+%\item Does $D_{\text{QCD}}(q^2)$ equal the bare continuum propagator at a fixed cutoff?
+%\item What does the renormalised propagator correspond to in the continuum? 
+%\end{enumerate}
+%}
 
 \section{Impact of Cooling}
 

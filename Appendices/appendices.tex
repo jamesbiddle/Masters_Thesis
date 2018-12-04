@@ -1,5 +1,53 @@
 %!TEX root = ../thesis.tex
-% ******************************* Thesis Appendix A ****************************
+\chapter{Taylor expansion of $P_{\mu\nu}$}\label{app:TEPlaquette}
+First, we recall the definitions of the gauge link in the continuum
+%
+\begin{equation}
+U_\mu(x) = \mathcal{P}\exp\left(ig\int_x^{x+a\hat{\mu}}dx^\prime \, A_\mu(x^\prime)\right)  \, ,
+\label{eq:GaugeLink(app)}
+\end{equation}
+%
+and the plaquette formed from the product of the gauge links around a $1\times 1$ loop
+\begin{equation}
+P_{\mu\nu} = U_\mu(x)\,U_\nu(x+a\hat{\mu})\,U^\dagger_\mu(x+a\hat{\nu})\,U^\dagger_\nu(x)\, .
+\label{eq:Plaquette(app)}
+\end{equation} 
+
+We can approximate the integral in Eq.~\ref{eq:GaugeLink(app)} by Taylor expanding $A_\mu(x^\prime)$ around $x^\prime=x$ and explicitly evaluating the integral. Note that once we have Taylor expanded $A_\mu(x^\prime)$, the term within the integral becomes Abelian for all values of $x^\prime$, allowing us to omit the path ordering from Eq.~\ref{eq:GaugeLink(app)}. Performing the expansion, we find that
+%
+\begin{align}
+U_\mu(x)&=\exp\left(ig\int_x^{x+a\hat{\mu}} dx^\prime A_\mu\left(x\right) + \left(\partial^\prime_\sigma A_\mu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
+&=\exp\left(iag A_\mu\left(x\right) + \frac{1}{2}ia^2 g\, \partial_\mu A_\mu\left(x\right)\right)\, . \label{eq:UTaylor}
+\end{align}
+%
+Note that $\sigma$ index is summed over, however only the $x^\mu$ term survives the integration, as for all $x^\sigma$, $\sigma\neq \mu$, $(x^{\prime\sigma}-x^\sigma)=0$. Similarly, we evaluate
+%
+\begin{align}
+U_\nu(x+a\hat{\mu}) &= \exp\left(ig\int_{x+a\hat{\mu}}^{x+a\hat{\mu}+a\hat{\nu}} dx^\prime A_\nu\left(x\right) + \left(\partial^\prime_\sigma A_\nu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
+&= \exp\left( iag A_\nu(x) + iag\,\partial_\mu A_\nu (x) + ig\int_{x_\nu}^{x_\nu+a} dx^\prime_\nu \, \partial_\nu A_\nu (x) (x^{\prime\nu} - x^\nu)\right)\nonumber\\
+&= \exp\left(iag A_\nu(x) + ia^2g\,\partial_\mu A_\nu(x) + \frac{1}{2}ia^2 g\,\partial_\nu A_\nu(x)\right)\, ,\label{eq:UTaylor2}
+\end{align}
+%
+where once again the $\sigma$ index is summed over. We retain the $\partial_\mu A_\nu (x)$ term as for $\sigma = \mu$ we have $(x^{\prime\mu} - x^\mu) = (x^\mu + a\hat{\mu} - x^\mu) = a\hat{\mu}$.\\
+
+We will also require the Baker-Campbell-Hausdorff identity for non-Abelian matrix exponentials
+%
+\begin{equation}
+\exp(A)\,\exp(B) = \exp\left(A + B +\frac{1}{2}[A,\,B]\right)\, .
+\end{equation}
+%
+Substituting Eq.~\ref{eq:UTaylor} and Eq.~\ref{eq:UTaylor2} into Eq.~\ref{eq:Plaquette(app)} and retaining only terms up to $\mathcal{O}(a^2)$ we have
+%
+\begin{alignat*}{2}
+P_{\mu\nu} &= &&\exp\left(ig\left(a\,A_\mu(x)+\frac{1}{2}a^2\,\partial_\mu A_\mu(x) \right)\right)\\
+& &&\times\exp\left(ig\left(aA_\nu(x) + \frac{1}{2}a^2\,\partial_\nu A_\nu(x) + a^2\,\partial_\mu A_\nu(x)\right)\right)\\
+& &&\times\exp\left(-ig\left(aA_\mu(x) + \frac{1}{2}a^2\,\partial_\mu A_\mu(x) + a^2\,\partial_\nu A_\mu(x)\right)\right)\\
+& &&\times\exp\left(-ig\left(a\,A_\nu(x)+\frac{1}{2}a^2\,\partial_\mu A_\nu(x) + \right)\right)\\
+&= &&\exp\left(ia^2g\,\partial_\mu A_\nu(x) - ia^2g\,\partial_\nu A_\mu(x) -\frac{a^2g^2}{2}[A_\mu(x),\,A_\nu(x)] + \frac{a^2g^2}{2}[A_\nu(x),\,A_\mu(x)]\right)\\
+&= &&\exp\left(ia^2g F_{\mu\nu}(x)\right)\\
+&\approx &&\, I + ia^2 g F_{\mu\nu} -a^4 g^2 F_{\mu\nu}^2\, .
+\end{alignat*}
+
 \chapter{Evaluation of $\operatorname{Re}\Tr(F_1(U)^\dagger \,U)$}\label{app:CoolingMaximise}
 
 It is apparent that we can write Eq.~\ref{eq:MaximisedCooling} in the form

@@ -21,6 +21,12 @@ Thomas Schäfer and Edward~V. Shuryak.
 \newblock {Instantons in QCD}.
 \newblock {\em Rev. Mod. Phys.}, 70:323--426, 1998.
 
+\bibitem{Luscher:1984xn}
+M.~Luscher and P.~Weisz.
+\newblock {On-Shell Improved Lattice Gauge Theories}.
+\newblock {\em Commun. Math. Phys.}, 97:59, 1985.
+\newblock [Erratum: Commun. Math. Phys.98,433(1985)].
+
 \bibitem{Bing:1999ee}
 Hurl Bing and Lin He.
 \newblock {Gauge symmetry from integral viewpoint}.
@@ -70,12 +76,6 @@ K.~Symanzik.
 \newblock {Continuum Limit and Improved Action in Lattice Theories. 2. O(N)
   Nonlinear Sigma Model in Perturbation Theory}.
 \newblock {\em Nucl. Phys.}, B226:205--227, 1983.
-
-\bibitem{Luscher:1984xn}
-M.~Luscher and P.~Weisz.
-\newblock {On-Shell Improved Lattice Gauge Theories}.
-\newblock {\em Commun. Math. Phys.}, 97:59, 1985.
-\newblock [Erratum: Commun. Math. Phys.98,433(1985)].
 
 \bibitem{Lepage:1992xa}
 G.~Peter Lepage and Paul~B. Mackenzie.
@@ -222,6 +222,16 @@ Yuri Makeenko.
 \newblock {A Brief Introduction to Wilson Loops and Large N}.
 \newblock {\em Phys. Atom. Nucl.}, 73:878--894, 2010.
 
+\bibitem{DelDebbio:1998luz}
+L.~Del~Debbio, Manfried Faber, J.~Giedt, J.~Greensite, and S.~Olejnik.
+\newblock {Detection of center vortices in the lattice Yang-Mills vacuum}.
+\newblock {\em Phys. Rev.}, D58:094501, 1998.
+
+\bibitem{Dosch:1988ha}
+Hans~Gunter Dosch and {\relax Yu}.~A. Simonov.
+\newblock {The Area Law of the Wilson Loop and Vacuum Field Correlators}.
+\newblock {\em Phys. Lett.}, B205:339--344, 1988.
+
 \bibitem{Cucchieri:1999sz}
 Attilio Cucchieri.
 \newblock {Infrared behavior of the gluon propagator in lattice Landau gauge:
@@ -240,6 +250,18 @@ Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
   propagator}.
 \newblock {\em Phys. Rev.}, D64:034501, 2001.
 
+\bibitem{Trewartha:2015nna}
+Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
+\newblock {Evidence that centre vortices underpin dynamical chiral symmetry
+  breaking in SU(3) gauge theory}.
+\newblock {\em Phys. Lett.}, B747:373--377, 2015.
+
+\bibitem{OMalley:2011aa}
+Elyse-Ann O'Malley, Waseem Kamleh, Derek Leinweber, and Peter Moran.
+\newblock {SU(3) centre vortices underpin confinement and dynamical chiral
+  symmetry breaking}.
+\newblock {\em Phys. Rev.}, D86:054503, 2012.
+
 \bibitem{Bonnet:2000dc}
 Frederic D.~R. Bonnet, Patrick Fitzhenry, Derek~B. Leinweber, Mark~R. Stanford,
   and Anthony~G. Williams.
@@ -257,12 +279,6 @@ Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
 \newblock {Connection between center vortices and instantons through
   gauge-field smoothing}.
 \newblock {\em Phys. Rev.}, D92(7):074507, 2015.
-
-\bibitem{Trewartha:2015nna}
-Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
-\newblock {Evidence that centre vortices underpin dynamical chiral symmetry
-  breaking in SU(3) gauge theory}.
-\newblock {\em Phys. Lett.}, B747:373--377, 2015.
 
 \bibitem{Trewartha:2017ive}
 Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
@@ -318,11 +334,6 @@ Alan O'Cais, Waseem Kamleh, Kurt Langfeld, Ben Lasscock, Derek Leinweber, Peter
   SU(3)}.
 \newblock {\em Phys. Rev.}, D82:114512, 2010.
 
-\bibitem{DelDebbio:1998luz}
-L.~Del~Debbio, Manfried Faber, J.~Giedt, J.~Greensite, and S.~Olejnik.
-\newblock {Detection of center vortices in the lattice Yang-Mills vacuum}.
-\newblock {\em Phys. Rev.}, D58:094501, 1998.
-
 \bibitem{Bowman:2010zr}
 Patrick~O. Bowman, Kurt Langfeld, Derek~B. Leinweber, Andre Sternbeck, Lorenz
   von Smekal, and Anthony~G. Williams.
@@ -340,5 +351,23 @@ John~D. Stack, W.~W. Tucker, and Roy~J. Wensley.
 \newblock {The Maximal Abelian gauge, monopoles, and vortices in SU(3) lattice
   gauge theory}.
 \newblock {\em Nucl. Phys.}, B639:203--222, 2002.
+
+\bibitem{vanRitbergen:1997va}
+T.~van Ritbergen, J.~A.~M. Vermaseren, and S.~A. Larin.
+\newblock {The Four loop beta function in quantum chromodynamics}.
+\newblock {\em Phys. Lett.}, B400:379--384, 1997.
+
+\bibitem{Bowman:2004jm}
+Patrick~O. Bowman, Urs~M. Heller, Derek~B. Leinweber, Maria~B. Parappilly, and
+  Anthony~G. Williams.
+\newblock {Unquenched gluon propagator in Landau gauge}.
+\newblock {\em Phys. Rev.}, D70:034509, 2004.
+
+\bibitem{Leinweber:1998uu}
+Derek~B. Leinweber, Jon~Ivar Skullerud, Anthony~G. Williams, and Claudio
+  Parrinello.
+\newblock {Asymptotic scaling and infrared behavior of the gluon propagator}.
+\newblock {\em Phys. Rev.}, D60:094507, 1999.
+\newblock [Erratum: Phys. Rev.D61,079901(2000)].
 
 \end{thebibliography}
