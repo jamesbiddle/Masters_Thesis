@@ -1,373 +1,640 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{91}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{Wilson:1974sk}
+\bibitem[Wilson(1974)]{Wilson:1974sk}
 Kenneth~G. Wilson.
 \newblock {Confinement of Quarks}.
-\newblock {\em Phys. Rev.}, D10:2445--2459, 1974.
+\newblock \emph{Phys. Rev.}, D10:\penalty0 2445--2459, 1974.
+\newblock \doi{10.1103/PhysRevD.10.2445}.
 \newblock [,319(1974)].
 
-\bibitem{peskin2018introduction}
+\bibitem[Peskin(2018)]{peskin2018introduction}
 Michael~E Peskin.
-\newblock {\em An introduction to quantum field theory}.
+\newblock \emph{An introduction to quantum field theory}.
 \newblock CRC Press, 2018.
 
-\bibitem{ryder1996quantum}
+\bibitem[Ryder(1996)]{ryder1996quantum}
 Lewis~H Ryder.
-\newblock {\em Quantum field theory}.
+\newblock \emph{Quantum field theory}.
 \newblock Cambridge university press, 1996.
 
-\bibitem{Schafer:1996wv}
+\bibitem[Schäfer and Shuryak(1998)]{Schafer:1996wv}
 Thomas Schäfer and Edward~V. Shuryak.
 \newblock {Instantons in QCD}.
-\newblock {\em Rev. Mod. Phys.}, 70:323--426, 1998.
+\newblock \emph{Rev. Mod. Phys.}, 70:\penalty0 323--426, 1998.
+\newblock \doi{10.1103/RevModPhys.70.323}.
 
-\bibitem{Luscher:1984xn}
+\bibitem[Luscher and Weisz(1985{\natexlab{a}})]{Luscher:1984xn}
 M.~Luscher and P.~Weisz.
 \newblock {On-Shell Improved Lattice Gauge Theories}.
-\newblock {\em Commun. Math. Phys.}, 97:59, 1985.
+\newblock \emph{Commun. Math. Phys.}, 97:\penalty0 59, 1985{\natexlab{a}}.
+\newblock \doi{10.1007/BF01206178}.
 \newblock [Erratum: Commun. Math. Phys.98,433(1985)].
 
-\bibitem{Bing:1999ee}
+\bibitem[Bing and He(1999)]{Bing:1999ee}
 Hurl Bing and Lin He.
 \newblock {Gauge symmetry from integral viewpoint}.
 \newblock 1999.
 
-\bibitem{Lepage:1998dt}
+\bibitem[Lepage(1998)]{Lepage:1998dt}
 G.~P. Lepage.
 \newblock {Lattice QCD for novices}.
-\newblock In {\em {Strong interactions at low and intermediate energies.
+\newblock In \emph{{Strong interactions at low and intermediate energies.
   Proceedings, 13th Annual Hampton University Graduate Studies, HUGS'98,
   Newport News, USA, May 26-June 12, 1998}}, pages 49--90, 1998.
 
-\bibitem{Leinweber:1998im}
+\bibitem[Leinweber et~al.(1998)Leinweber, Skullerud, Williams, and
+  Parrinello]{Leinweber:1998im}
 Derek~B. Leinweber, Jon~Ivar Skullerud, Anthony~G. Williams, and Claudio
   Parrinello.
 \newblock {Gluon propagator in the infrared region}.
-\newblock {\em Phys. Rev.}, D58:031501, 1998.
+\newblock \emph{Phys. Rev.}, D58:\penalty0 031501, 1998.
+\newblock \doi{10.1103/PhysRevD.58.031501}.
 
-\bibitem{Alles:1996ka}
+\bibitem[Alles et~al.(1997)Alles, Henty, Panagopoulos, Parrinello, Pittori, and
+  Richards]{Alles:1996ka}
 B.~Alles, D.~Henty, H.~Panagopoulos, C.~Parrinello, C.~Pittori, and D.~G.
   Richards.
 \newblock {$\alpha_s$ from the nonperturbatively renormalised lattice three
   gluon vertex}.
-\newblock {\em Nucl. Phys.}, B502:325--342, 1997.
+\newblock \emph{Nucl. Phys.}, B502:\penalty0 325--342, 1997.
+\newblock \doi{10.1016/S0550-3213(97)00483-5}.
 
-\bibitem{Gupta:1997nd}
+\bibitem[Gupta(1997)]{Gupta:1997nd}
 Rajan Gupta.
 \newblock {Introduction to lattice QCD: Course}.
-\newblock In {\em {Probing the standard model of particle interactions.
+\newblock In \emph{{Probing the standard model of particle interactions.
   Proceedings, Summer School in Theoretical Physics, NATO Advanced Study
   Institute, 68th session, Les Houches, France, July 28-September 5, 1997. Pt.
   1, 2}}, pages 83--219, 1997.
 
-\bibitem{Alford:1995hw}
+\bibitem[Alford et~al.(1995)Alford, Dimm, Lepage, Hockney, and
+  Mackenzie]{Alford:1995hw}
 Mark~G. Alford, W.~Dimm, G.~P. Lepage, G.~Hockney, and P.~B. Mackenzie.
 \newblock {Lattice QCD on small computers}.
-\newblock {\em Phys. Lett.}, B361:87--94, 1995.
+\newblock \emph{Phys. Lett.}, B361:\penalty0 87--94, 1995.
+\newblock \doi{10.1016/0370-2693(95)01131-9}.
 
-\bibitem{Symanzik:1983dc}
+\bibitem[Symanzik(1983{\natexlab{a}})]{Symanzik:1983dc}
 K.~Symanzik.
 \newblock {Continuum Limit and Improved Action in Lattice Theories. 1.
   Principles and phi**4 Theory}.
-\newblock {\em Nucl. Phys.}, B226:187--204, 1983.
+\newblock \emph{Nucl. Phys.}, B226:\penalty0 187--204, 1983{\natexlab{a}}.
+\newblock \doi{10.1016/0550-3213(83)90468-6}.
 
-\bibitem{Symanzik:1983gh}
+\bibitem[Symanzik(1983{\natexlab{b}})]{Symanzik:1983gh}
 K.~Symanzik.
 \newblock {Continuum Limit and Improved Action in Lattice Theories. 2. O(N)
   Nonlinear Sigma Model in Perturbation Theory}.
-\newblock {\em Nucl. Phys.}, B226:205--227, 1983.
+\newblock \emph{Nucl. Phys.}, B226:\penalty0 205--227, 1983{\natexlab{b}}.
+\newblock \doi{10.1016/0550-3213(83)90469-8}.
 
-\bibitem{Lepage:1992xa}
+\bibitem[Lepage and Mackenzie(1993)]{Lepage:1992xa}
 G.~Peter Lepage and Paul~B. Mackenzie.
 \newblock {On the viability of lattice perturbation theory}.
-\newblock {\em Phys. Rev.}, D48:2250--2264, 1993.
+\newblock \emph{Phys. Rev.}, D48:\penalty0 2250--2264, 1993.
+\newblock \doi{10.1103/PhysRevD.48.2250}.
 
-\bibitem{Bonnet:1999mj}
+\bibitem[Bonnet et~al.(1999{\natexlab{a}})Bonnet, Bowman, Leinweber, Williams,
+  and Richards]{Bonnet:1999mj}
 Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
   Williams, and David~G. Richards.
 \newblock {Discretization errors in Landau gauge on the lattice}.
-\newblock {\em Austral. J. Phys.}, 52:939--948, 1999.
+\newblock \emph{Austral. J. Phys.}, 52:\penalty0 939--948, 1999{\natexlab{a}}.
+\newblock \doi{10.1071/PH99047}.
 
-\bibitem{GellMann:1964nj}
-Murray Gell-Mann.
-\newblock {A Schematic Model of Baryons and Mesons}.
-\newblock {\em Phys. Lett.}, 8:214--215, 1964.
+\bibitem['t~Hooft(1981)]{tHooft:1981bkw}
+Gerard 't~Hooft.
+\newblock {Topology of the Gauge Condition and New Confinement Phases in
+  Nonabelian Gauge Theories}.
+\newblock \emph{Nucl. Phys.}, B190:\penalty0 455--478, 1981.
+\newblock \doi{10.1016/0550-3213(81)90442-9}.
 
-\bibitem{Zweig:1964jf}
-G.~Zweig.
-\newblock {An SU(3) model for strong interaction symmetry and its breaking.
-  Version 2}.
-\newblock In D.B. Lichtenberg and Simon~Peter Rosen, editors, {\em DEVELOPMENTS
-  IN THE QUARK THEORY OF HADRONS. VOL. 1. 1964 - 1978}, pages 22--101. 1964.
+\bibitem[Smit and van~der Sijs(1991)]{Smit:1989vg}
+Jan Smit and Arjan van~der Sijs.
+\newblock {Monopoles and Confinement}.
+\newblock \emph{Nucl. Phys.}, B355:\penalty0 603--648, 1991.
+\newblock \doi{10.1016/0550-3213(91)90489-K}.
 
-\bibitem{Hofstadter:1956qs}
-Robert Hofstadter.
-\newblock {Electron scattering and nuclear structure}.
-\newblock {\em Rev. Mod. Phys.}, 28:214--254, 1956.
+\bibitem[Matsubara et~al.(1994)Matsubara, Ejiri, and Suzuki]{Matsubara:1993nq}
+Yoshimi Matsubara, Shinji Ejiri, and Tsuneoo Suzuki.
+\newblock {The (dual) Meissner effect in SU(2) and SU(3) QCD}.
+\newblock \emph{Nucl. Phys. Proc. Suppl.}, 34:\penalty0 176--178, 1994.
+\newblock \doi{10.1016/0920-5632(94)90337-9}.
 
-\bibitem{Bloom:1969kc}
-Elliott~D. Bloom et~al.
-\newblock {High-Energy Inelastic e p Scattering at 6-Degrees and 10-Degrees}.
-\newblock {\em Phys. Rev. Lett.}, 23:930--934, 1969.
+\bibitem[Suzuki and Yotsuyanagi(1990)]{Suzuki:1989gp}
+Tsuneo Suzuki and Ichiro Yotsuyanagi.
+\newblock {A possible evidence for Abelian dominance in quark confinement}.
+\newblock \emph{Phys. Rev.}, D42:\penalty0 4257--4260, 1990.
+\newblock \doi{10.1103/PhysRevD.42.4257}.
 
-\bibitem{Breidenbach:1969kd}
-Martin Breidenbach, Jerome~I. Friedman, Henry~W. Kendall, Elliott~D. Bloom,
-  D.~H. Coward, H.~C. DeStaebler, J.~Drees, Luke~W. Mo, and Richard~E. Taylor.
-\newblock {Observed Behavior of Highly Inelastic electron-Proton Scattering}.
-\newblock {\em Phys. Rev. Lett.}, 23:935--939, 1969.
+\bibitem[Mandelstam(1976)]{Mandelstam:1974pi}
+S.~Mandelstam.
+\newblock {Vortices and Quark Confinement in Nonabelian Gauge Theories}.
+\newblock \emph{Phys. Rept.}, 23:\penalty0 245--249, 1976.
+\newblock \doi{10.1016/0370-1573(76)90043-0}.
 
-\bibitem{Feynman:1969ej}
-Richard~P. Feynman.
-\newblock {Very high-energy collisions of hadrons}.
-\newblock {\em Phys. Rev. Lett.}, 23:1415--1417, 1969.
-\newblock [,494(1969)].
+\bibitem[Kronfeld et~al.(1987)Kronfeld, Laursen, Schierholz, and
+  Wiese]{Kronfeld:1987ri}
+Andreas~S. Kronfeld, M.~L. Laursen, G.~Schierholz, and U.~J. Wiese.
+\newblock {Monopole Condensation and Color Confinement}.
+\newblock \emph{Phys. Lett.}, B198:\penalty0 516--520, 1987.
+\newblock \doi{10.1016/0370-2693(87)90910-5}.
 
-\bibitem{Gross:1973id}
-David~J. Gross and Frank Wilczek.
-\newblock {Ultraviolet Behavior of Nonabelian Gauge Theories}.
-\newblock {\em Phys. Rev. Lett.}, 30:1343--1346, 1973.
-\newblock [,271(1973)].
-
-\bibitem{Born:1993cq}
-K.~D. Born, E.~Laermann, R.~Sommer, P.~M. Zerwas, and T.~F. Walsh.
-\newblock {The Interquark potential: A QCD lattice analysis}.
-\newblock {\em Phys. Lett.}, B329:325--331, 1994.
-
-\bibitem{Bonnet:1999gt}
-Frederic D.~R. Bonnet, Derek~B. Leinweber, Anthony~G. Williams, and James~M.
-  Zanotti.
-\newblock {Towards string breaking in the static quark potential}.
-\newblock {\em Submitted to: Phys. Rev. D}, 1999.
-
-\bibitem{Creutz:1980hb}
-Michael Creutz.
-\newblock {Monte Carlo Study of Renormalization in Lattice Gauge Theory}.
-\newblock {\em Phys. Rev.}, D23:1815, 1981.
-
-\bibitem{DiGiacomo:1990hc}
-Adriano Di~Giacomo, Michele Maggiore, and Stefan Olejnik.
-\newblock {Confinement and Chromoelectric Flux Tubes in Lattice {QCD}}.
-\newblock {\em Nucl. Phys.}, B347:441--460, 1990.
-
-\bibitem{Zwanziger:1991gz}
-D.~Zwanziger.
-\newblock {Vanishing of zero momentum lattice gluon propagator and color
-  confinement}.
-\newblock {\em Nucl. Phys.}, B364:127--161, 1991.
-
-\bibitem{Iwasaki:1991mr}
-Y.~Iwasaki, K.~Kanaya, S.~Sakai, and T.~Yoshie.
-\newblock {Quark confinement and number of flavors in strong coupling lattice
-  QCD}.
-\newblock {\em Phys. Rev. Lett.}, 69:21--24, 1992.
-
-\bibitem{Belavin:1975fg}
+\bibitem[Belavin et~al.(1975)Belavin, Polyakov, Schwartz, and
+  Tyupkin]{Belavin:1975fg}
 A.~A. Belavin, Alexander~M. Polyakov, A.~S. Schwartz, and {\relax Yu}.~S.
   Tyupkin.
 \newblock {Pseudoparticle Solutions of the Yang-Mills Equations}.
-\newblock {\em Phys. Lett.}, B59:85--87, 1975.
+\newblock \emph{Phys. Lett.}, B59:\penalty0 85--87, 1975.
+\newblock \doi{10.1016/0370-2693(75)90163-X}.
 \newblock [,350(1975)].
 
-\bibitem{tHooft:1986ooh}
-Gerard 't~Hooft.
-\newblock {How Instantons Solve the U(1) Problem}.
-\newblock {\em Phys. Rept.}, 142:357--387, 1986.
+\bibitem[Witten(1979)]{Witten:1978bc}
+Edward Witten.
+\newblock {Instantons, the Quark Model, and the 1/n Expansion}.
+\newblock \emph{Nucl. Phys.}, B149:\penalty0 285--320, 1979.
+\newblock \doi{10.1016/0550-3213(79)90243-8}.
 
-\bibitem{Ivanenko:1990xu}
-T.~L. Ivanenko, A.~V. Pochinsky, and M.~I. Polikarpov.
-\newblock {Extended Abelian monopoles and confinement in the SU(2) lattice
-  gauge theory}.
-\newblock {\em Phys. Lett.}, B252:631--635, 1990.
-
-\bibitem{Chernodub:1995tt}
-M.~N. Chernodub and F.~V. Gubarev.
-\newblock {Instantons and monopoles in maximal Abelian projection of SU(2)
-  gluodynamics}.
-\newblock {\em JETP Lett.}, 62:100--104, 1995.
-
-\bibitem{Callan:1977qs}
+\bibitem[Callan et~al.(1978)Callan, Dashen, and Gross]{Callan:1977gz}
 Curtis~G. Callan, Jr., Roger~F. Dashen, and David~J. Gross.
-\newblock {A Mechanism for Quark Confinement}.
-\newblock {\em Phys. Lett.}, 66B:375--381, 1977.
+\newblock {Toward a Theory of the Strong Interactions}.
+\newblock \emph{Phys. Rev.}, D17:\penalty0 2717, 1978.
+\newblock \doi{10.1103/PhysRevD.17.2717}.
+\newblock [,36(1977)].
 
-\bibitem{Mandelstam:1974pi}
-S.~Mandelstam.
-\newblock {Vortices and Quark Confinement in Nonabelian Gauge Theories}.
-\newblock {\em Phys. Rept.}, 23:245--249, 1976.
+\bibitem[Trewartha et~al.(2013)Trewartha, Kamleh, Leinweber, and
+  Roberts]{Trewartha:2013qga}
+Daniel Trewartha, Waseem Kamleh, Derek Leinweber, and Dale~S. Roberts.
+\newblock {Quark Propagation in the Instantons of Lattice QCD}.
+\newblock \emph{Phys. Rev.}, D88:\penalty0 034501, 2013.
+\newblock \doi{10.1103/PhysRevD.88.034501}.
 
-\bibitem{tHooft:1982ylj}
-Gerard 't~Hooft.
-\newblock {The Topological Mechanism for Permanent Quark Confinement in a
-  Nonabelian Gauge Theory}.
-\newblock {\em Phys. Scripta}, 25:133--142, 1982.
+\bibitem[Aharonov et~al.(1978)Aharonov, Casher, and
+  Yankielowicz]{Aharonov:1978jd}
+Y.~Aharonov, A.~Casher, and S.~Yankielowicz.
+\newblock {Instantons and Confinement}.
+\newblock \emph{Nucl. Phys.}, B146:\penalty0 256--272, 1978.
+\newblock \doi{10.1016/0550-3213(78)90442-X}.
 
-\bibitem{'tHooft:1977hy}
+\bibitem['t~Hooft(1978)]{'tHooft:1977hy}
 Gerard 't~Hooft.
 \newblock {On the Phase Transition Towards Permanent Quark Confinement}.
-\newblock {\em Nucl.Phys.}, B138:1, 1978.
+\newblock \emph{Nucl.Phys.}, B138:\penalty0 1, 1978.
+\newblock \doi{10.1016/0550-3213(78)90153-0}.
 
-\bibitem{'tHooft:1979uj}
+\bibitem['t~Hooft(1979)]{'tHooft:1979uj}
 Gerard 't~Hooft.
 \newblock {A Property of Electric and Magnetic Flux in Nonabelian Gauge
   Theories}.
-\newblock {\em Nucl.Phys.}, B153:141, 1979.
+\newblock \emph{Nucl.Phys.}, B153:\penalty0 141, 1979.
+\newblock \doi{10.1016/0550-3213(79)90595-9}.
 
-\bibitem{Greensite:2016pfc}
-Jeff Greensite.
-\newblock {Confinement from Center Vortices: A review of old and new results}.
-\newblock {\em EPJ Web Conf.}, 137:01009, 2017.
+\bibitem[Feynman(1981)]{Feynman:1981ss}
+Richard~P. Feynman.
+\newblock {The Qualitative Behavior of Yang-Mills Theory in (2+1)-Dimensions}.
+\newblock \emph{Nucl. Phys.}, B188:\penalty0 479--512, 1981.
+\newblock \doi{10.1016/0550-3213(81)90005-5}.
 
-\bibitem{Makeenko:2009dw}
-Yuri Makeenko.
-\newblock {A Brief Introduction to Wilson Loops and Large N}.
-\newblock {\em Phys. Atom. Nucl.}, 73:878--894, 2010.
+\bibitem[Cornwall(1979)]{Cornwall:1979hz}
+John~M. Cornwall.
+\newblock {Quark Confinement and Vortices in Massive Gauge Invariant QCD}.
+\newblock \emph{Nucl. Phys.}, B157:\penalty0 392--412, 1979.
+\newblock \doi{10.1016/0550-3213(79)90111-1}.
 
-\bibitem{DelDebbio:1998luz}
+\bibitem[Nielsen and Olesen(1979)]{Nielsen:1979xu}
+Holger~Bech Nielsen and P.~Olesen.
+\newblock {A Quantum Liquid Model for the QCD Vacuum: Gauge and Rotational
+  Invariance of Domained and Quantized Homogeneous Color Fields}.
+\newblock \emph{Nucl. Phys.}, B160:\penalty0 380--396, 1979.
+\newblock \doi{10.1016/0550-3213(79)90065-8}.
+
+\bibitem[Biddle et~al.(2018)Biddle, Kamleh, and Leinweber]{Biddle:2018dtc}
+James~C. Biddle, Waseem Kamleh, and Derek~B. Leinweber.
+\newblock {Gluon propagator on a center-vortex background}.
+\newblock \emph{Phys. Rev.}, D98\penalty0 (9):\penalty0 094504, 2018.
+\newblock \doi{10.1103/PhysRevD.98.094504}.
+
+\bibitem[Faber et~al.(1998)Faber, Greensite, and Olejnik]{Faber:1997rp}
+Manfried Faber, J.~Greensite, and S.~Olejnik.
+\newblock {Casimir scaling from center vortices: Towards an understanding of
+  the adjoint string tension}.
+\newblock \emph{Phys. Rev.}, D57:\penalty0 2603--2609, 1998.
+\newblock \doi{10.1103/PhysRevD.57.2603}.
+
+\bibitem[Langfeld et~al.(1999)Langfeld, Tennert, Engelhardt, and
+  Reinhardt]{Langfeld:1998cz}
+K.~Langfeld, O.~Tennert, M.~Engelhardt, and H.~Reinhardt.
+\newblock {Center vortices of Yang-Mills theory at finite temperatures}.
+\newblock \emph{Phys. Lett.}, B452:\penalty0 301, 1999.
+\newblock \doi{10.1016/S0370-2693(99)00252-X}.
+
+\bibitem[Bowman et~al.(2008)Bowman, Langfeld, Leinweber, O'~Cais, Sternbeck,
+  von Smekal, and Williams]{Bowman:2008qd}
+Patrick~O. Bowman, Kurt Langfeld, Derek~B. Leinweber, Alan O'~Cais, Andre
+  Sternbeck, Lorenz von Smekal, and Anthony~G. Williams.
+\newblock {Center vortices and the quark propagator in SU(2) gauge theory}.
+\newblock \emph{Phys. Rev.}, D78:\penalty0 054509, 2008.
+\newblock \doi{10.1103/PhysRevD.78.054509}.
+
+\bibitem[Trewartha et~al.(2015{\natexlab{a}})Trewartha, Kamleh, and
+  Leinweber]{Trewartha:2015ida}
+Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
+\newblock {Connection between center vortices and instantons through
+  gauge-field smoothing}.
+\newblock \emph{Phys. Rev.}, D92\penalty0 (7):\penalty0 074507,
+  2015{\natexlab{a}}.
+\newblock \doi{10.1103/PhysRevD.92.074507}.
+
+\bibitem[Trewartha et~al.(2015{\natexlab{b}})Trewartha, Kamleh, and
+  Leinweber]{Trewartha:2015nna}
+Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
+\newblock {Evidence that centre vortices underpin dynamical chiral symmetry
+  breaking in SU(3) gauge theory}.
+\newblock \emph{Phys. Lett.}, B747:\penalty0 373--377, 2015{\natexlab{b}}.
+\newblock \doi{10.1016/j.physletb.2015.06.025}.
+
+\bibitem[Trewartha et~al.(2017)Trewartha, Kamleh, and
+  Leinweber]{Trewartha:2017ive}
+Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
+\newblock {Centre vortex removal restores chiral symmetry}.
+\newblock \emph{J. Phys.}, G44\penalty0 (12):\penalty0 125002, 2017.
+\newblock \doi{10.1088/1361-6471/aa9443}.
+
+\bibitem[Del~Debbio et~al.(1997)Del~Debbio, Faber, Greensite, and
+  Olejnik]{DelDebbio:1996lih}
+L.~Del~Debbio, Manfried Faber, J.~Greensite, and S.~Olejnik.
+\newblock {Center dominance and Z(2) vortices in SU(2) lattice gauge theory}.
+\newblock \emph{Phys. Rev.}, D55:\penalty0 2298--2306, 1997.
+\newblock \doi{10.1103/PhysRevD.55.2298}.
+
+\bibitem[Greensite(2003)]{Greensite:2003bk}
+J.~Greensite.
+\newblock {The Confinement problem in lattice gauge theory}.
+\newblock \emph{Prog. Part. Nucl. Phys.}, 51:\penalty0 1, 2003.
+\newblock \doi{10.1016/S0146-6410(03)90012-3}.
+
+\bibitem[Del~Debbio et~al.(1998)Del~Debbio, Faber, Giedt, Greensite, and
+  Olejnik]{DelDebbio:1998luz}
 L.~Del~Debbio, Manfried Faber, J.~Giedt, J.~Greensite, and S.~Olejnik.
 \newblock {Detection of center vortices in the lattice Yang-Mills vacuum}.
-\newblock {\em Phys. Rev.}, D58:094501, 1998.
+\newblock \emph{Phys. Rev.}, D58:\penalty0 094501, 1998.
+\newblock \doi{10.1103/PhysRevD.58.094501}.
 
-\bibitem{Dosch:1988ha}
+\bibitem[O'Malley et~al.(2012)O'Malley, Kamleh, Leinweber, and
+  Moran]{OMalley:2011aa}
+Elyse-Ann O'Malley, Waseem Kamleh, Derek Leinweber, and Peter Moran.
+\newblock {SU(3) centre vortices underpin confinement and dynamical chiral
+  symmetry breaking}.
+\newblock \emph{Phys. Rev.}, D86:\penalty0 054503, 2012.
+\newblock \doi{10.1103/PhysRevD.86.054503}.
+
+\bibitem[Langfeld(2004)]{Langfeld:2003ev}
+Kurt Langfeld.
+\newblock {Vortex structures in pure SU(3) lattice gauge theory}.
+\newblock \emph{Phys. Rev.}, D69:\penalty0 014503, 2004.
+\newblock \doi{10.1103/PhysRevD.69.014503}.
+
+\bibitem[Gell-Mann(1964)]{GellMann:1964nj}
+Murray Gell-Mann.
+\newblock {A Schematic Model of Baryons and Mesons}.
+\newblock \emph{Phys. Lett.}, 8:\penalty0 214--215, 1964.
+\newblock \doi{10.1016/S0031-9163(64)92001-3}.
+
+\bibitem[Zweig(1964)]{Zweig:1964jf}
+G.~Zweig.
+\newblock {An SU(3) model for strong interaction symmetry and its breaking.
+  Version 2}.
+\newblock In D.B. Lichtenberg and Simon~Peter Rosen, editors,
+  \emph{DEVELOPMENTS IN THE QUARK THEORY OF HADRONS. VOL. 1. 1964 - 1978},
+  pages 22--101. 1964.
+
+\bibitem[Hofstadter(1956)]{Hofstadter:1956qs}
+Robert Hofstadter.
+\newblock {Electron scattering and nuclear structure}.
+\newblock \emph{Rev. Mod. Phys.}, 28:\penalty0 214--254, 1956.
+\newblock \doi{10.1103/RevModPhys.28.214}.
+
+\bibitem[Bloom et~al.(1969)]{Bloom:1969kc}
+Elliott~D. Bloom et~al.
+\newblock {High-Energy Inelastic e p Scattering at 6-Degrees and 10-Degrees}.
+\newblock \emph{Phys. Rev. Lett.}, 23:\penalty0 930--934, 1969.
+\newblock \doi{10.1103/PhysRevLett.23.930}.
+
+\bibitem[Breidenbach et~al.(1969)Breidenbach, Friedman, Kendall, Bloom, Coward,
+  DeStaebler, Drees, Mo, and Taylor]{Breidenbach:1969kd}
+Martin Breidenbach, Jerome~I. Friedman, Henry~W. Kendall, Elliott~D. Bloom,
+  D.~H. Coward, H.~C. DeStaebler, J.~Drees, Luke~W. Mo, and Richard~E. Taylor.
+\newblock {Observed Behavior of Highly Inelastic electron-Proton Scattering}.
+\newblock \emph{Phys. Rev. Lett.}, 23:\penalty0 935--939, 1969.
+\newblock \doi{10.1103/PhysRevLett.23.935}.
+
+\bibitem[Feynman(1969)]{Feynman:1969ej}
+Richard~P. Feynman.
+\newblock {Very high-energy collisions of hadrons}.
+\newblock \emph{Phys. Rev. Lett.}, 23:\penalty0 1415--1417, 1969.
+\newblock \doi{10.1103/PhysRevLett.23.1415}.
+\newblock [,494(1969)].
+
+\bibitem[Gross and Wilczek(1973)]{Gross:1973id}
+David~J. Gross and Frank Wilczek.
+\newblock {Ultraviolet Behavior of Nonabelian Gauge Theories}.
+\newblock \emph{Phys. Rev. Lett.}, 30:\penalty0 1343--1346, 1973.
+\newblock \doi{10.1103/PhysRevLett.30.1343}.
+\newblock [,271(1973)].
+
+\bibitem[Born et~al.(1994)Born, Laermann, Sommer, Zerwas, and
+  Walsh]{Born:1993cq}
+K.~D. Born, E.~Laermann, R.~Sommer, P.~M. Zerwas, and T.~F. Walsh.
+\newblock {The Interquark potential: A QCD lattice analysis}.
+\newblock \emph{Phys. Lett.}, B329:\penalty0 325--331, 1994.
+\newblock \doi{10.1016/0370-2693(94)90780-3}.
+
+\bibitem[Bonnet et~al.(1999{\natexlab{b}})Bonnet, Leinweber, Williams, and
+  Zanotti]{Bonnet:1999gt}
+Frederic D.~R. Bonnet, Derek~B. Leinweber, Anthony~G. Williams, and James~M.
+  Zanotti.
+\newblock {Towards string breaking in the static quark potential}.
+\newblock \emph{Submitted to: Phys. Rev. D}, 1999{\natexlab{b}}.
+
+\bibitem[Creutz(1981)]{Creutz:1980hb}
+Michael Creutz.
+\newblock {Monte Carlo Study of Renormalization in Lattice Gauge Theory}.
+\newblock \emph{Phys. Rev.}, D23:\penalty0 1815, 1981.
+\newblock \doi{10.1103/PhysRevD.23.1815}.
+
+\bibitem[Di~Giacomo et~al.(1990)Di~Giacomo, Maggiore, and
+  Olejnik]{DiGiacomo:1990hc}
+Adriano Di~Giacomo, Michele Maggiore, and Stefan Olejnik.
+\newblock {Confinement and Chromoelectric Flux Tubes in Lattice {QCD}}.
+\newblock \emph{Nucl. Phys.}, B347:\penalty0 441--460, 1990.
+\newblock \doi{10.1016/0550-3213(90)90567-W}.
+
+\bibitem[Zwanziger(1991)]{Zwanziger:1991gz}
+D.~Zwanziger.
+\newblock {Vanishing of zero momentum lattice gluon propagator and color
+  confinement}.
+\newblock \emph{Nucl. Phys.}, B364:\penalty0 127--161, 1991.
+\newblock \doi{10.1016/0550-3213(91)90581-H}.
+
+\bibitem[Iwasaki et~al.(1992)Iwasaki, Kanaya, Sakai, and
+  Yoshie]{Iwasaki:1991mr}
+Y.~Iwasaki, K.~Kanaya, S.~Sakai, and T.~Yoshie.
+\newblock {Quark confinement and number of flavors in strong coupling lattice
+  QCD}.
+\newblock \emph{Phys. Rev. Lett.}, 69:\penalty0 21--24, 1992.
+\newblock \doi{10.1103/PhysRevLett.69.21}.
+
+\bibitem['t~Hooft(1986)]{tHooft:1986ooh}
+Gerard 't~Hooft.
+\newblock {How Instantons Solve the U(1) Problem}.
+\newblock \emph{Phys. Rept.}, 142:\penalty0 357--387, 1986.
+\newblock \doi{10.1016/0370-1573(86)90117-1}.
+
+\bibitem[Ivanenko et~al.(1990)Ivanenko, Pochinsky, and
+  Polikarpov]{Ivanenko:1990xu}
+T.~L. Ivanenko, A.~V. Pochinsky, and M.~I. Polikarpov.
+\newblock {Extended Abelian monopoles and confinement in the SU(2) lattice
+  gauge theory}.
+\newblock \emph{Phys. Lett.}, B252:\penalty0 631--635, 1990.
+\newblock \doi{10.1016/0370-2693(90)90497-T}.
+
+\bibitem[Chernodub and Gubarev(1995)]{Chernodub:1995tt}
+M.~N. Chernodub and F.~V. Gubarev.
+\newblock {Instantons and monopoles in maximal Abelian projection of SU(2)
+  gluodynamics}.
+\newblock \emph{JETP Lett.}, 62:\penalty0 100--104, 1995.
+
+\bibitem[Callan et~al.(1977)Callan, Dashen, and Gross]{Callan:1977qs}
+Curtis~G. Callan, Jr., Roger~F. Dashen, and David~J. Gross.
+\newblock {A Mechanism for Quark Confinement}.
+\newblock \emph{Phys. Lett.}, 66B:\penalty0 375--381, 1977.
+\newblock \doi{10.1016/0370-2693(77)90019-3}.
+
+\bibitem['t~Hooft(1982)]{tHooft:1982ylj}
+Gerard 't~Hooft.
+\newblock {The Topological Mechanism for Permanent Quark Confinement in a
+  Nonabelian Gauge Theory}.
+\newblock \emph{Phys. Scripta}, 25:\penalty0 133--142, 1982.
+\newblock \doi{10.1088/0031-8949/25/1B/005}.
+
+\bibitem[Greensite(2017)]{Greensite:2016pfc}
+Jeff Greensite.
+\newblock {Confinement from Center Vortices: A review of old and new results}.
+\newblock \emph{EPJ Web Conf.}, 137:\penalty0 01009, 2017.
+\newblock \doi{10.1051/epjconf/201713701009}.
+
+\bibitem[Makeenko(2010)]{Makeenko:2009dw}
+Yuri Makeenko.
+\newblock {A Brief Introduction to Wilson Loops and Large N}.
+\newblock \emph{Phys. Atom. Nucl.}, 73:\penalty0 878--894, 2010.
+\newblock \doi{10.1134/S106377881005011X}.
+
+\bibitem[Dosch and Simonov(1988)]{Dosch:1988ha}
 Hans~Gunter Dosch and {\relax Yu}.~A. Simonov.
 \newblock {The Area Law of the Wilson Loop and Vacuum Field Correlators}.
-\newblock {\em Phys. Lett.}, B205:339--344, 1988.
+\newblock \emph{Phys. Lett.}, B205:\penalty0 339--344, 1988.
+\newblock \doi{10.1016/0370-2693(88)91675-9}.
 
-\bibitem{Cucchieri:1999sz}
+\bibitem[Greensite and Halpern(1983)]{Greensite:1982be}
+J.~Greensite and M.~B. Halpern.
+\newblock {Suppression of Color Screening at Large $N$}.
+\newblock \emph{Phys. Rev.}, D27:\penalty0 2545, 1983.
+\newblock \doi{10.1103/PhysRevD.27.2545}.
+
+\bibitem[Engelhardt et~al.(2000)Engelhardt, Langfeld, Reinhardt, and
+  Tennert]{Engelhardt:1999fd}
+M.~Engelhardt, K.~Langfeld, H.~Reinhardt, and O.~Tennert.
+\newblock {Deconfinement in SU(2) Yang-Mills theory as a center vortex
+  percolation transition}.
+\newblock \emph{Phys. Rev.}, D61:\penalty0 054504, 2000.
+\newblock \doi{10.1103/PhysRevD.61.054504}.
+
+\bibitem[Cucchieri(1999)]{Cucchieri:1999sz}
 Attilio Cucchieri.
 \newblock {Infrared behavior of the gluon propagator in lattice Landau gauge:
   The Three-dimensional case}.
-\newblock {\em Phys. Rev.}, D60:034508, 1999.
+\newblock \emph{Phys. Rev.}, D60:\penalty0 034508, 1999.
+\newblock \doi{10.1103/PhysRevD.60.034508}.
 
-\bibitem{Langfeld:2001cz}
+\bibitem[Langfeld et~al.(2002)Langfeld, Reinhardt, and
+  Gattnar]{Langfeld:2001cz}
 K.~Langfeld, H.~Reinhardt, and J.~Gattnar.
 \newblock {Gluon propagators and quark confinement}.
-\newblock {\em Nucl. Phys.}, B621:131--156, 2002.
+\newblock \emph{Nucl. Phys.}, B621:\penalty0 131--156, 2002.
+\newblock \doi{10.1016/S0550-3213(01)00574-0}.
 
-\bibitem{Bonnet:2001uh}
+\bibitem[Bonnet et~al.(2001)Bonnet, Bowman, Leinweber, Williams, and
+  Zanotti]{Bonnet:2001uh}
 Frederic D.~R. Bonnet, Patrick~O. Bowman, Derek~B. Leinweber, Anthony~G.
   Williams, and James~M. Zanotti.
 \newblock {Infinite volume and continuum limits of the Landau gauge gluon
   propagator}.
-\newblock {\em Phys. Rev.}, D64:034501, 2001.
+\newblock \emph{Phys. Rev.}, D64:\penalty0 034501, 2001.
+\newblock \doi{10.1103/PhysRevD.64.034501}.
 
-\bibitem{Trewartha:2015nna}
-Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
-\newblock {Evidence that centre vortices underpin dynamical chiral symmetry
-  breaking in SU(3) gauge theory}.
-\newblock {\em Phys. Lett.}, B747:373--377, 2015.
+\bibitem[Weisz(1983)]{Weisz:1982zw}
+P.~Weisz.
+\newblock {Continuum Limit Improved Lattice Action for Pure Yang-Mills Theory.
+  1.}
+\newblock \emph{Nucl. Phys.}, B212:\penalty0 1--17, 1983.
+\newblock \doi{10.1016/0550-3213(83)90595-3}.
 
-\bibitem{OMalley:2011aa}
-Elyse-Ann O'Malley, Waseem Kamleh, Derek Leinweber, and Peter Moran.
-\newblock {SU(3) centre vortices underpin confinement and dynamical chiral
-  symmetry breaking}.
-\newblock {\em Phys. Rev.}, D86:054503, 2012.
+\bibitem[Weisz and Wohlert(1984)]{Weisz:1983bn}
+P.~Weisz and R.~Wohlert.
+\newblock {Continuum Limit Improved Lattice Action for Pure Yang-Mills Theory.
+  2.}
+\newblock \emph{Nucl. Phys.}, B236:\penalty0 397, 1984.
+\newblock \doi{10.1016/0550-3213(84)90563-7, 10.1016/0550-3213(84)90543-1}.
+\newblock [Erratum: Nucl. Phys.B247,544(1984)].
 
-\bibitem{Bonnet:2000dc}
+\bibitem[Luscher and Weisz(1985{\natexlab{b}})]{Luscher:1985zq}
+M.~Luscher and P.~Weisz.
+\newblock {Computation of the Action for On-Shell Improved Lattice Gauge
+  Theories at Weak Coupling}.
+\newblock \emph{Phys. Lett.}, 158B:\penalty0 250--254, 1985{\natexlab{b}}.
+\newblock \doi{10.1016/0370-2693(85)90966-9}.
+
+\bibitem[Marenzoni et~al.(1995)Marenzoni, Martinelli, and
+  Stella]{Marenzoni:1994ap}
+P.~Marenzoni, G.~Martinelli, and N.~Stella.
+\newblock {The Gluon propagator on a large volume, at beta = 6.0}.
+\newblock \emph{Nucl. Phys.}, B455:\penalty0 339--356, 1995.
+\newblock \doi{10.1016/0550-3213(95)00405-H}.
+
+\bibitem[Bonnet et~al.(2000)Bonnet, Fitzhenry, Leinweber, Stanford, and
+  Williams]{Bonnet:2000dc}
 Frederic D.~R. Bonnet, Patrick Fitzhenry, Derek~B. Leinweber, Mark~R. Stanford,
   and Anthony~G. Williams.
 \newblock {Calibration of smearing and cooling algorithms in SU(3): Color gauge
   theory}.
-\newblock {\em Phys. Rev.}, D62:094509, 2000.
+\newblock \emph{Phys. Rev.}, D62:\penalty0 094509, 2000.
+\newblock \doi{10.1103/PhysRevD.62.094509}.
 
-\bibitem{Moran:2008ra}
+\bibitem[Moran and Leinweber(2008)]{Moran:2008ra}
 Peter~J. Moran and Derek~B. Leinweber.
 \newblock {Over-improved stout-link smearing}.
-\newblock {\em Phys. Rev.}, D77:094501, 2008.
+\newblock \emph{Phys. Rev.}, D77:\penalty0 094501, 2008.
+\newblock \doi{10.1103/PhysRevD.77.094501}.
 
-\bibitem{Trewartha:2015ida}
-Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
-\newblock {Connection between center vortices and instantons through
-  gauge-field smoothing}.
-\newblock {\em Phys. Rev.}, D92(7):074507, 2015.
-
-\bibitem{Trewartha:2017ive}
-Daniel Trewartha, Waseem Kamleh, and Derek Leinweber.
-\newblock {Centre vortex removal restores chiral symmetry}.
-\newblock {\em J. Phys.}, G44(12):125002, 2017.
-
-\bibitem{Berg:1981nw}
+\bibitem[Berg(1981)]{Berg:1981nw}
 B.~Berg.
 \newblock {Dislocations and Topological Background in the Lattice O(3) $\sigma$
   Model}.
-\newblock {\em Phys. Lett.}, 104B:475--480, 1981.
+\newblock \emph{Phys. Lett.}, 104B:\penalty0 475--480, 1981.
+\newblock \doi{10.1016/0370-2693(81)90518-9}.
 
-\bibitem{Cabibbo:1982zn}
+\bibitem[Cabibbo and Marinari(1982)]{Cabibbo:1982zn}
 N.~Cabibbo and E.~Marinari.
 \newblock {A New Method for Updating SU(N) Matrices in Computer Simulations of
   Gauge Theories}.
-\newblock {\em Phys. Lett.}, 119B:387--390, 1982.
+\newblock \emph{Phys. Lett.}, 119B:\penalty0 387--390, 1982.
+\newblock \doi{10.1016/0370-2693(82)90696-7}.
 
-\bibitem{Creutz:1980zw}
+\bibitem[Creutz(1980)]{Creutz:1980zw}
 M.~Creutz.
 \newblock {Monte Carlo Study of Quantized SU(2) Gauge Theory}.
-\newblock {\em Phys. Rev.}, D21:2308--2315, 1980.
+\newblock \emph{Phys. Rev.}, D21:\penalty0 2308--2315, 1980.
+\newblock \doi{10.1103/PhysRevD.21.2308}.
 
-\bibitem{BilsonThompson:2002jk}
+\bibitem[Bilson-Thompson et~al.(2003)Bilson-Thompson, Leinweber, and
+  Williams]{BilsonThompson:2002jk}
 Sundance~O. Bilson-Thompson, Derek~B. Leinweber, and Anthony~G. Williams.
 \newblock {Highly improved lattice field strength tensor}.
-\newblock {\em Annals Phys.}, 304:1--21, 2003.
+\newblock \emph{Annals Phys.}, 304:\penalty0 1--21, 2003.
+\newblock \doi{10.1016/S0003-4916(03)00009-5}.
 
-\bibitem{Albanese:1987ds}
+\bibitem[Albanese et~al.(1987)]{Albanese:1987ds}
 M.~Albanese et~al.
 \newblock {Glueball Masses and String Tension in Lattice QCD}.
-\newblock {\em Phys. Lett.}, B192:163--169, 1987.
+\newblock \emph{Phys. Lett.}, B192:\penalty0 163--169, 1987.
+\newblock \doi{10.1016/0370-2693(87)91160-9}.
 
-\bibitem{Falcioni:1984ei}
+\bibitem[Falcioni et~al.(1985)Falcioni, Paciello, Parisi, and
+  Taglienti]{Falcioni:1984ei}
 M.~Falcioni, M.~L. Paciello, G.~Parisi, and B.~Taglienti.
 \newblock {AGAIN ON SU(3) GLUEBALL MASS}.
-\newblock {\em Nucl. Phys.}, B251:624--632, 1985.
+\newblock \emph{Nucl. Phys.}, B251:\penalty0 624--632, 1985.
+\newblock \doi{10.1016/0550-3213(85)90280-9}.
 
-\bibitem{Morningstar:2003gk}
+\bibitem[Morningstar and Peardon(2004)]{Morningstar:2003gk}
 Colin Morningstar and Mike~J. Peardon.
 \newblock {Analytic smearing of SU(3) link variables in lattice QCD}.
-\newblock {\em Phys. Rev.}, D69:054501, 2004.
+\newblock \emph{Phys. Rev.}, D69:\penalty0 054501, 2004.
+\newblock \doi{10.1103/PhysRevD.69.054501}.
 
-\bibitem{Thomas:2014tda}
+\bibitem[Thomas et~al.(2015)Thomas, Kamleh, and Leinweber]{Thomas:2014tda}
 Samuel~D. Thomas, Waseem Kamleh, and Derek~B. Leinweber.
 \newblock {Instanton contributions to the low-lying hadron mass spectrum}.
-\newblock {\em Phys. Rev.}, D92(9):094515, 2015.
+\newblock \emph{Phys. Rev.}, D92\penalty0 (9):\penalty0 094515, 2015.
+\newblock \doi{10.1103/PhysRevD.92.094515}.
 
-\bibitem{Cais:2008za}
+\bibitem[O'Cais et~al.(2010)O'Cais, Kamleh, Langfeld, Lasscock, Leinweber,
+  Moran, Sternbeck, and von Smekal]{Cais:2008za}
 Alan O'Cais, Waseem Kamleh, Kurt Langfeld, Ben Lasscock, Derek Leinweber, Peter
   Moran, Andre Sternbeck, and Lorenz von Smekal.
 \newblock {Preconditioning Maximal Center Gauge with Stout Link Smearing in
   SU(3)}.
-\newblock {\em Phys. Rev.}, D82:114512, 2010.
+\newblock \emph{Phys. Rev.}, D82:\penalty0 114512, 2010.
+\newblock \doi{10.1103/PhysRevD.82.114512}.
 
-\bibitem{Bowman:2010zr}
+\bibitem[Bowman et~al.(2011)Bowman, Langfeld, Leinweber, Sternbeck, von Smekal,
+  and Williams]{Bowman:2010zr}
 Patrick~O. Bowman, Kurt Langfeld, Derek~B. Leinweber, Andre Sternbeck, Lorenz
   von Smekal, and Anthony~G. Williams.
 \newblock {Role of center vortices in chiral symmetry breaking in SU(3) gauge
   theory}.
-\newblock {\em Phys. Rev.}, D84:034501, 2011.
+\newblock \emph{Phys. Rev.}, D84:\penalty0 034501, 2011.
+\newblock \doi{10.1103/PhysRevD.84.034501}.
 
-\bibitem{Langfeld:2003ev}
-Kurt Langfeld.
-\newblock {Vortex structures in pure SU(3) lattice gauge theory}.
-\newblock {\em Phys. Rev.}, D69:014503, 2004.
-
-\bibitem{Stack:2002sy}
+\bibitem[Stack et~al.(2002)Stack, Tucker, and Wensley]{Stack:2002sy}
 John~D. Stack, W.~W. Tucker, and Roy~J. Wensley.
 \newblock {The Maximal Abelian gauge, monopoles, and vortices in SU(3) lattice
   gauge theory}.
-\newblock {\em Nucl. Phys.}, B639:203--222, 2002.
+\newblock \emph{Nucl. Phys.}, B639:\penalty0 203--222, 2002.
+\newblock \doi{10.1016/S0550-3213(02)00537-0}.
 
-\bibitem{vanRitbergen:1997va}
+\bibitem[van Ritbergen et~al.(1997)van Ritbergen, Vermaseren, and
+  Larin]{vanRitbergen:1997va}
 T.~van Ritbergen, J.~A.~M. Vermaseren, and S.~A. Larin.
 \newblock {The Four loop beta function in quantum chromodynamics}.
-\newblock {\em Phys. Lett.}, B400:379--384, 1997.
+\newblock \emph{Phys. Lett.}, B400:\penalty0 379--384, 1997.
+\newblock \doi{10.1016/S0370-2693(97)00370-5}.
 
-\bibitem{Bowman:2004jm}
+\bibitem[Bowman et~al.(2004)Bowman, Heller, Leinweber, Parappilly, and
+  Williams]{Bowman:2004jm}
 Patrick~O. Bowman, Urs~M. Heller, Derek~B. Leinweber, Maria~B. Parappilly, and
   Anthony~G. Williams.
 \newblock {Unquenched gluon propagator in Landau gauge}.
-\newblock {\em Phys. Rev.}, D70:034509, 2004.
+\newblock \emph{Phys. Rev.}, D70:\penalty0 034509, 2004.
+\newblock \doi{10.1103/PhysRevD.70.034509}.
 
-\bibitem{Leinweber:1998uu}
+\bibitem[Leinweber et~al.(1999)Leinweber, Skullerud, Williams, and
+  Parrinello]{Leinweber:1998uu}
 Derek~B. Leinweber, Jon~Ivar Skullerud, Anthony~G. Williams, and Claudio
   Parrinello.
 \newblock {Asymptotic scaling and infrared behavior of the gluon propagator}.
-\newblock {\em Phys. Rev.}, D60:094507, 1999.
+\newblock \emph{Phys. Rev.}, D60:\penalty0 094507, 1999.
+\newblock \doi{10.1103/PhysRevD.61.079901, 10.1103/PhysRevD.60.094507}.
 \newblock [Erratum: Phys. Rev.D61,079901(2000)].
+
+\bibitem[Boucaud et~al.(2006)Boucaud, Bruntjen, Leroy, Le~Yaouanc, Lokhov,
+  Micheli, Pene, Rodriguez-Quintero, and Roiesnel]{Boucaud:2006pc}
+Philippe Boucaud, Th. Bruntjen, J.~P. Leroy, A.~Le~Yaouanc, A.~Y. Lokhov,
+  J.~Micheli, O.~Pene, J.~Rodriguez-Quintero, and C.~Roiesnel.
+\newblock {Short comment about the lattice gluon propagator at vanishing
+  momentum}.
+\newblock 2006.
+
+\bibitem[Bertle et~al.(2001)Bertle, Engelhardt, and Faber]{Bertle:2001xd}
+R.~Bertle, M.~Engelhardt, and Manfried Faber.
+\newblock {Topological susceptibility of Yang-Mills center projection
+  vortices}.
+\newblock \emph{Phys. Rev.}, D64:\penalty0 074504, 2001.
+\newblock \doi{10.1103/PhysRevD.64.074504}.
 
 \end{thebibliography}

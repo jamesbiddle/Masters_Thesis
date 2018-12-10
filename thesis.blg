@@ -13,50 +13,51 @@ A level-1 auxiliary file: Chapter5/chapter5.aux
 A level-1 auxiliary file: Chapter6/chapter6.aux
 A level-1 auxiliary file: Chapter7/chapter7.aux
 A level-1 auxiliary file: Chapter8/chapter8.aux
-The style file: unsrt.bst
+The style file: unsrtnat.bst
 A level-1 auxiliary file: Appendices/appendices.aux
 Database file #1: ./References/references.bib
 Warning--empty journal in Bing:1999ee
 Warning--empty publisher in Zweig:1964jf
-You've used 65 entries,
-            1791 wiz_defined-function locations,
-            892 strings with 14470 characters,
-and the built_in function-call counts, 14827 in all, are:
-= -- 1290
-> -- 633
-< -- 3
-+ -- 240
-- -- 175
-* -- 1031
-:= -- 2442
-add.period$ -- 202
-call.type$ -- 65
-change.case$ -- 63
-chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 616
-empty$ -- 1477
-format.name$ -- 175
-if$ -- 3296
-int.to.chr$ -- 0
-int.to.str$ -- 65
-missing$ -- 67
-newline$ -- 334
-num.names$ -- 67
-pop$ -- 93
+Warning--empty journal in Boucaud:2006pc
+You've used 91 entries,
+            2481 wiz_defined-function locations,
+            1235 strings with 21630 characters,
+and the built_in function-call counts, 35924 in all, are:
+= -- 3112
+> -- 1709
+< -- 51
++ -- 684
+- -- 498
+* -- 2835
+:= -- 5865
+add.period$ -- 364
+call.type$ -- 91
+change.case$ -- 180
+chr.to.int$ -- 87
+cite$ -- 94
+duplicate$ -- 1757
+empty$ -- 3310
+format.name$ -- 623
+if$ -- 7676
+int.to.chr$ -- 5
+int.to.str$ -- 92
+missing$ -- 93
+newline$ -- 553
+num.names$ -- 275
+pop$ -- 583
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 91
 quote$ -- 0
-skip$ -- 233
+skip$ -- 992
 stack$ -- 0
-substring$ -- 1179
-swap$ -- 87
+substring$ -- 1820
+swap$ -- 211
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 2
-while$ -- 130
-width$ -- 67
-write$ -- 724
-(There were 2 warnings)
+type$ -- 631
+warning$ -- 3
+while$ -- 272
+width$ -- 0
+write$ -- 1363
+(There were 3 warnings)

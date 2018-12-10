@@ -10,7 +10,7 @@
     \graphicspath{{Chapter4/Figs/Vector/}{Chapter4/Figs/}}
 \fi
 
-Now that we have developed the required background understanding of lattice QCD and the topological objects of interest to this research, we can detail how our calculations are performed. This chapter will first describe how we calculate the primary quantity of interest, the Landau gauge gluon propagator, on the lattice. Then, details of the lattices used for this research will be presented, as well as the choice of momentum variables used in calculations of the gluon propagator. Finall, the choice of data cuts will be described and motivated.
+Now that we have developed the required background understanding of lattice QCD and the topological objects of interest to this research, we can detail how our calculations are performed. This chapter will first describe how we calculate the primary quantity of interest, the Landau gauge gluon propagator, on the lattice. Then, details of the lattices used for this research will be presented, as well as the choice of momentum variables used in calculations of the gluon propagator. Finally, the choice of data cuts will be described and motivated.
 
 \section{Lattice Definition of the Gluon Propagator}
 In a gauge field theory, the position-space propagator, $D_{\mu\nu}(x,y)$, of the gauge boson is the two-point correlation function, which in the case of $SU(3)$ can be interpreted as the probability of a gluon being created at the space-time point $x$, propagating to $y$, and then being annihilated. The propagator therefore serves as a useful measure of the behaviour of gluons as a function of distance; or, correspondingly, as a function of momentum in the momentum-space representation. In this section we detail how the Landau gauge gluon propagator is calculated on the lattice. We begin with the definition of the coordinate space propagator as a two-point correlator~\cite{Zwanziger:1991gz,Cucchieri:1999sz,Langfeld:2001cz}.
@@ -42,26 +42,26 @@ D_{\mu\nu}^{ab}(p) \equiv \frac{1}{V}\left \langle A^a_\mu (p)\,A^b_\nu(-p)\righ
 In the continuum, the Landau-gauge momentum-space gluon propagator has the following form~\cite{Leinweber:1998im,Bonnet:2001uh}
 %
 \begin{equation}
-D^{ab}_{\mu\nu}(q) = \left ( \delta_{\mu\nu} - \frac{q_\mu q_\nu}{q^2} \right )\,\delta^{ab}\,D(q^2) \, ,
+D^{ab}_{\mu\nu}(p) = \left ( \delta_{\mu\nu} - \frac{p_\mu p_\nu}{p^2} \right )\,\delta^{ab}\,D(p^2) \, ,
 \end{equation}
 %
-where $D(q^2)$ is the scalar gluon propagator.  Contracting Gell-Mann index $b$ with $a$ and
+where $D(p^2)$ is the scalar gluon propagator.  Contracting Gell-Mann index $b$ with $a$ and
 Lorentz index $\nu$ with $\mu$ one has
 %
 \begin{equation}
-D^{aa}_{\mu\mu}(q) = (4-1)\,(n_c^2-1)\,D(q^2) \, ,
+D^{aa}_{\mu\mu}(p) = (4-1)\,(n_c^2-1)\,D(p^2) \, ,
 \end{equation}
 %
 such that the scalar function can be obtained from the gluon propagator via
 %
 \begin{equation}
-D(q^2) = \frac{1}{3(n_c^2-1)}\,D^{aa}_{\mu\mu}(q) \, ,
+D(p^2) = \frac{1}{3(n_c^2-1)}\,D^{aa}_{\mu\mu}(p) \, ,
 \label{eq:scalarProp}
 \end{equation}
 %
 where $n_c = 3$ is the number of colours.
 
-As the lattice gauge links $U_\mu(x)$ naturally reside in the $3\times 3$ fundamental representation of $SU(3),$ we now wish to work in the matrix representation of $A_\mu(x)$, as introduced in Eq.~\ref{eq:CovariantDerivative}. Using the orthogonality relation $\Tr(\lambda_a\lambda_b) = \delta_{ab}$ for the Gell-Mann matrices, it is straightforward to see that
+As the lattice gauge links $U_\mu(x)$ naturally reside in the $3\times 3$ fundamental representation of $SU(3),$ we now wish to work in the matrix representation of $A_\mu(x)$, as introduced in Eq.~\ref{eq:CovariantDerivative}. Using the orthogonality relation $\Tr(\lambda_a\lambda_b) = 2\delta_{ab}$ for the Gell-Mann matrices, it is straightforward to see that
 %
 \begin{equation}
 2\Tr(A_\mu\,A_\mu) = A^a_\mu A^a_\mu\, ,
@@ -81,14 +81,90 @@ A_\mu(p) = \sum_x e^{-ip\cdot(x+\hat{\mu}/2)}\, A_\mu(x+\hat{\mu}/2)\, .
 %
 We have now constructed the necessary tools to calculate the Landau gauge scalar gluon propagator within the lattice framework established in Chapter \ref{chapter:LatticeQCD}.
 
-\section{Momentum Variables}
+\section{Momentum Variables}\label{sec:MomentumVariables}
 As discussed in Sec.~\ref{sec:Confinement}, it is understood that at QCD is asymptotically free. With this understanding, we expect that at high momentum the Landau gauge gluon propagator will tend towards the Landau gauge photon propagator~\cite{ryder1996quantum}
 %
 \begin{equation}
 D_\gamma(p^2) = \frac{1}{p^2}\, .
 \end{equation}
 %
-\section{Lattice Parameters and Data Cuts}
+However, lattice discretisation errors cause a deviation from this idealised behaviour that we would like to systematically account for. To do this, we follow the work of Refs.~\cite{Weisz:1982zw, Weisz:1983bn,Luscher:1985zq,Symanzik:1983dc,Symanzik:1983gh} and consider the behaviour of the photon propagator on the lattice. We therefore consider for this section only an Abelian $A_\mu(x+\frac{\hat{\mu}}{2})$ field, on a lattice generated using the Wilson action (see Eq.~\ref{eq:WilsonAction}). From Eq.~\ref{eq:FieldStrengthPlaquette} we know that the Wilson action can be written as $\mathcal{S}_\text{W} = a^4\frac{1}{2}\sum_x F_{\mu\nu}F^{\mu\nu} + \mathcal{O}(a^4)$. As we are interested in the momentum-space propagator, we write the field strength tensor at the plaquette midpoint $\tilde{x}$ as
+%
+\begin{align*}
+F_{\mu\nu}(\tilde{x}) &= \sum_p e^{ip\tilde{x}} \left(\frac{A_\nu\left(\tilde{x}+a\frac{\hat{\mu}}{2}\right) - A_\nu\left(\tilde{x}-a\frac{\hat{\mu}}{2} \right)}{a} - \frac{A_\mu\left(\tilde{x}+a\frac{\hat{\nu}}{2}\right) - A_\mu\left(\tilde{x}-a\frac{\hat{\nu}}{2} \right)}{a}\right)\\
+&= \frac{1}{a} \sum_p e^{ip\tilde{x}} \left(\tilde{A}_\nu(p)\, e^{-iap\frac{\hat{\mu}}{2}} - \tilde{A}_\nu(p)\, e^{iap\frac{\hat{\mu}}{2}} - \tilde{A}_\mu(p)\, e^{-iap\frac{\hat{\nu}}{2}} + \tilde{A}_\mu(p)\, e^{iap\frac{\hat{\nu}}{2}}\right)\\
+&= -\frac{1}{a} \sum_p e^{ip\tilde{x}}\left(2i\sin\left(\frac{a p_\mu}{2}\right)\tilde{A}_\nu(p) - 2i\sin\left(\frac{a p_\nu}{2}\right)\tilde{A}_\mu(p)\right)\\
+&= - \sum_p e^{ip\tilde{x}}\tilde{f}_{\mu\nu}(p)\, ,
+\end{align*}
+%
+where
+%
+\begin{equation}
+\tilde{f}_{\mu\nu}(p) = i\left(\hat{k}_\mu \tilde{A}_\nu(p) - \hat{k}_\nu \tilde{A}_\mu(p)\right)\, ,~\hat{k}_\mu = \frac{2}{a}\sin\left(\frac{ap_\mu}{2}\right)\, .
+\end{equation}
+%
+The Wilson action can therefore be written as
+%
+\begin{align}
+\mathcal{S}_\text{W} &= a^4\frac{1}{2}\sum_{\tilde{x}}\sum_{p,\,p^\prime}e^{i\tilde{x}(p+p^\prime)}\tilde{f}_{\mu\nu}(p) \, \tilde{f}^{\mu\nu}(p^\prime)\nonumber\\
+&=a^4\frac{1}{2}\sum_{p,\,p^\prime} \delta(p+p^\prime)\tilde{f}_{\mu\nu}(p) \, \tilde{f}^{\mu\nu}(p^\prime) \nonumber\\
+&= a^4\frac{1}{2}\sum_{p}\tilde{f}_{\mu\nu}(p) \, \tilde{f}^{\mu\nu}(-p) + \mathcal{O}(a^4)\, . \label{eq:WilsonMomentum}
+\end{align}
+%
+We are now in a position to consider the propagator. The propagator is defined to be the Green's function of the equations of motion, satisfying
+%
+\begin{equation}
+M_{\mu\nu}D^{\nu\lambda}(p) = \delta_\mu^\lambda\, .
+\end{equation}
+%
+However, it is understood that in the continuum the equations of motion are not invertible unless an additional gauge fixing term is added, with a gauge fixing parameter $\alpha$. Hence, the equations of motion for the photon field in momentum space are given by Maxwell's equations with an additional gauge fixing term~\cite{ryder1996quantum}
+%
+\begin{equation}
+M_{\mu\nu} = k^2\delta_{\mu\nu} - \left(1-\frac{1}{\alpha}\right)k_\mu k_\nu\, .
+\end{equation}
+By inspection, we see that Eq.~\ref{eq:WilsonMomentum} will have the same equations of motion, with the substitution $k_\mu\rightarrow \hat{k}_\mu$. In turn, this gives the propagator
+%
+\begin{equation}
+D_{\mu\nu}(p) = \frac{1}{\hat{k}^2}\left[\delta_{\mu\nu} + (\alpha-1)\frac{\hat{k}_\mu \hat{k}_\nu}{\hat{k}^2}\right]\, .
+\end{equation}
+Landau gauge corresponds to setting $\alpha=0$, so we find that
+%
+\begin{equation}
+D_{\mu\mu}(p) = \frac{3}{\hat{k}^2}\, ,
+\end{equation}
+%
+and therefore by comparison with Eq.~\ref{eq:scalarProp} we see that
+%
+\begin{equation}
+D(p^2) = \frac{1}{\hat{k}^2}\, .
+\end{equation}
+%
+This suggests that for the Wilson action we should make the substitution $p_\mu\rightarrow q_\mu = \hat{k}_\mu = \frac{2}{a}\sin\left(\frac{a p_\mu}{2}\right)$ so that at tree-level we observe the expected behaviour of the gluon propagator.\\
+
+A similar analysis can be performed for the L\"uscher and Weisz action, taking into account the contributions from the rectangle terms \textcolor{red}{[appendix proof]}. The L\"uscher and Weisz action written in the same form as Eq.~\ref{eq:WilsonMomentum} is
+%
+\begin{equation}
+\mathcal{L}_\text{LW} = a^4\frac{1}{2}\sum_p \left(1+\frac{1}{12}a^2\hat{k}^2\right) \tilde{f}_{\mu\nu}(p) \, \tilde{f}^{\mu\nu}(-p) + \mathcal{O}(a^6)\, .
+\end{equation}
+%
+The equations of motion then become
+%
+\begin{equation}
+M_{\mu\nu} = \left(\hat{k}^2 + \frac{1}{12}a^2\hat{k}^4\right)\delta_{\mu\nu} - \left(1-\frac{1}{\alpha}\right)\left(\sqrt{\hat{k}_\mu^2 + \frac{1}{12}a^2\hat{k}_\mu^4}\right)\left(\sqrt{\hat{k}_\nu^2 + \frac{1}{12}a^2\hat{k}_\nu^4}\right)\, .
+\end{equation}
+Therefore the propagator is
+%
+\begin{equation}
+D_{\mu\nu}(p) = \frac{1}{\hat{q}^2}\left[\delta_{\mu\nu} + (\alpha-1)\frac{\hat{q}_\mu \hat{q}_\nu}{\hat{q}^2}\right]\, ,
+\end{equation}
+with
+\begin{equation}
+q_\mu = \sqrt{\hat{k}_\mu^2 + \frac{1}{12}a^2\hat{k}_\mu^4} = \frac{2}{a}\sqrt { \sin ^ { 2 } \left( \frac { p _ { \mu } a } { 2 } \right) + \frac { 1 } { 3 } \sin ^ { 4 } \left( \frac { p _ { \mu } a } { 2 } \right) }\, .
+\end{equation}
+%
+In this work we therefore make the variable substitution $p_\mu\rightarrow q_\mu$ to ensure that at high momentum where we expect the gluon propagator to tend towards tree level we observe $q^2 D(q^2) = 1$. The momentum variables chosen for both the Wilson and L\"uscher and Weisz action have been numerically verified to provide better tree level agreement in Refs.~\cite{Marenzoni:1994ap, Bonnet:2001uh}.\\
+
+\section{Lattice Parameters and Data Cuts} \label{sec:LatticeParameters}
 We calculate the gluon propagator on 100 configurations of a $20^3\times 40$ $SU(3)$ lattice with spacing $a=0.125\,\si{fm}$, as used in Refs.~\cite{Trewartha:2015nna,OMalley:2011aa}. Following the procedure of Ref.~\cite{Bonnet:2001uh,Leinweber:1998im} all results are plotted after a momentum half-cut. The momentum half-cut corresponds to only considering lattice momenta in the range
 %
 \begin{equation}

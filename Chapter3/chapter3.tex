@@ -10,7 +10,14 @@
 \else
     \graphicspath{{Chapter3/Figs/Vector/}{Chapter3/Figs/}}
 \fi
-QCD presents two properties that distinguish it from the other forces of nature: confinement and dynamical chiral symmetry breaking. Both these properties have been experimentally observed, however a unified theoretical understanding of how they arise from the current standard model of QCD is still a subject of interest.
+QCD presents two key properties that distinguish it from the other forces of nature:
+\begin{enumerate}
+\item Confinement of quarks, resulting in the absence of isolated quarks.
+\item Dynamical chiral symmetry breaking, leading to dynamical generation of mass. This results in a substantial discrepancy between the mass of hadrons and the sum of the masses of the quarks that comprise them.
+\end{enumerate}
+These properties are experimentally verified to exist in nature, however the question of how they arise from the gauge theory of QCD developed in the preceding chapter is still the subject of intense investigation. It is believed that both these properties are connected by some underlying topological structure of the QCD vacuum. Proposed candidates include Abelian monopoles~\cite{tHooft:1981bkw,Smit:1989vg,Matsubara:1993nq,Suzuki:1989gp,Mandelstam:1974pi,Kronfeld:1987ri}, instantons~\cite{Belavin:1975fg,Witten:1978bc,Callan:1977gz,Schafer:1996wv,Trewartha:2013qga,Aharonov:1978jd} and centre vortices~\cite{'tHooft:1977hy,'tHooft:1979uj,Feynman:1981ss,Aharonov:1978jd,Cornwall:1979hz,Nielsen:1979xu}. With the advent of lattice simulations, the most promising of these appears to be the centre vortex model. Numerical evidence from the lattice has been amassed that indicates that topological objects known as centre vortices are tied to both confinement and dynamical chiral symmetry breaking~\cite{Biddle:2018dtc,Faber:1997rp,Langfeld:1998cz,Bowman:2008qd,Trewartha:2015ida,Trewartha:2015nna,Trewartha:2017ive,DelDebbio:1996lih,Greensite:2003bk,DelDebbio:1998luz,OMalley:2011aa,Langfeld:2003ev}. It is therefore the subject of this research to further extend the investigation into the properties of centre vortices, specifically in the gluonic sector of QCD.\\
+
+As dynamical chiral symmetry breaking is primarily concerned with quarks, we will omit a detailed discussion of this property and instead begin this chapter outlining the confinement property exhibited by the strong force. We will then introduce centre vortices and motivate how they provide a potential explanation for confinement in QCD. From here we will survey the lattice results found in current literature pertaining to centre vortices, and describe how it is that we can identify centre vortices on the lattice. Finally we will briefly describe instantons and topological charge, in preparation for later chapters that draw on these concepts.  
 \section{Confinement}\label{sec:Confinement}
 The confinement property of QCD, and the accompanying notion of asymptotic freedom, is one of the defining low-energy features of the theory of the strong interaction. With Gell-mann and Zweig's concurrent proposal of quarks as the elementary constituents of baryons and mesons~\cite{GellMann:1964nj,Zweig:1964jf}, it is natural to then attempt to observe these new particles in isolation. However, efforts to observe quarks proved impossible. Early experiments testing the behaviour of electron-proton collisions demonstrated that protons scatter elastically, behaving as though they are finite-sized particles recoiling electromagnetically from the incident electron~\cite{Hofstadter:1956qs}. These experiments indicated no further substructure to the proton, inconsistent with the quark model. As accelerator energies improved, later experiments~\cite{Bloom:1969kc, Breidenbach:1969kd}, using electron energies of $7$ and $10~\si{GeV}$ found that inelastic scattering effects became dominant, with electrons behaving as though they were scattering off of loosely bound constituent particles. To explain this behaviour, Feynman proposed what is known as the 'parton' model~\cite{Feynman:1969ej}, treating the proton as being comprised of non-interacting electrically charged particles in the limit that the incident electron energy tends towards infinity. This is precisely the notion of asymptotic freedom; at large distance scales the partons are tightly bound, whereas at short distances they behave as free particles. It did not take long for the separate theories of quarks and partons to recognised as complementary, and by the early 70's the quark-parton model of hadrons accurately explained the the experimental results observed in particle colliders.\\
 
@@ -21,7 +28,7 @@ Lattice calculations are currently the only method by which it is possible to in
 There is good evidence that confinement has its roots in the topological properties of the QCD vacuum. It is well understood that the QCD vacuum, unlike the QED vacuum, admits non-trivial instanton solutions: solutions of the vacuum field configurations that are all minima of the classical action, yet are distinguished from one another by a topological quantum number~\cite{Belavin:1975fg}. The presence of instanton solutions was significant in resolving the $U(1)$ anomaly~\cite{tHooft:1986ooh}, and provides an excellent method of calculating the ground state hadron spectrum~\cite{Schafer:1996wv}. The non-trivial topology of the QCD vacuum, and the success of topological features in resolving QCD anomalies, motivates the search for a topological explanation of confinement. A variety of features have been proposed, including: Abelian monopoles~\cite{Ivanenko:1990xu, Chernodub:1995tt}, merons~\cite{Callan:1977qs} and dual superconductors~\cite{Mandelstam:1974pi,tHooft:1982ylj}. One of the most promising models in recent years is known as the \textit{Centre Vortex Model}, and it is this model that forms the backbone of this research.
 
 \section{Centre Vortices}
-Originally proposed by 't Hooft in 1978~\cite{'tHooft:1977hy,'tHooft:1979uj}, centre vortices are closed two-dimensional surfaces present in four-dimensional Euclidean space. The key property of a centre vortex is that in three dimensions, where the vortices appear as tubes, any Wilson loop (see Sec.~\ref{sec:LatticeDiscretisation}) that encloses a vortex will acquire a centre phase, such that
+Originally proposed by 't Hooft in 1978~\cite{'tHooft:1977hy,'tHooft:1979uj}, centre vortices are closed two-dimensional surfaces present in four-dimensional Euclidean space that carry colour-magnetic flux. The key property of a centre vortex is that in three dimensions, where the vortices appear as tubes, any Wilson loop (see Sec.~\ref{sec:LatticeDiscretisation}) that encloses a vortex will acquire a centre phase, such that
 %
 \begin{equation}
 W(C)\rightarrow z \,W(C)\, ,
@@ -130,12 +137,50 @@ Letting $A=R\times T$ as in Eq.~\ref{eq:WilsonEnergy}, we see that $E_0(R) = -\f
 \caption{\label{fig:VortexDistribution}A plot of the vortex phase distribution of 100 Monte-Carlo generated configurations, as a percentage of the total number of vortices. The method by which vortices are identified will be detailed in Sec.~\ref{sec:LocatingVortices}.}
 \end{figure}
 %
-It is important to highlight the assumptions and simplifications made in the above argument. Most easily addressed is the assumption that there is an equal number of $+1$ and $-1$ vortices. By identifying vortices in Monte-Carlo generated configurations and plotting the distribution of phases in Fig.~\ref{fig:VortexDistribution}, we see that there is little deviation from an even distribution, especially in the ensemble average. This is an expected result, as we shall see later that vortices are required to form closed loops in 3d to conserve the vortex flux, so a vortex line should pierce a 2D surface once in each direction, corresponding to the two non-trivial phases. The assumption that the vortex density is constant is, however, less well motivated. As might be expected, in the limit as the area $A$ becomes small, on the order of the size of the vortex, 
+It is important to highlight the assumptions and simplifications made in the above argument. Most easily addressed is the assumption that there is an equal number of $+1$ and $-1$ vortices. By identifying vortices in Monte-Carlo generated configurations and plotting the distribution of phases in Fig.~\ref{fig:VortexDistribution}, we see that there is little deviation from an even distribution, especially in the ensemble average. This is an expected result, as we shall see later that vortices are required to form closed loops in 3D to conserve the vortex flux, so a vortex line should pierce a 2D surface once in each direction, corresponding to the two non-trivial phases.\\
 
-\section{Locating Vortices}\label{sec:LocatingVortices}
+The assumption that the vortex density is constant is, however, less well motivated. So far we have treated vortices as infinitesimally thin sheets in 4D, which is not physically motivated. An infinitely thin vortex introduces a singularity in the action, as the vortex flux must be constrained to an infinitely thin cross-section. Rather, physical vortices are `thick'; they have a finite cross-section in the direction perpendicular to the vortex sheet. If the vortex is contained entirely within the area $A$ it contributes the centre phase as described above. However, as $A$ approaches the size of the vortex cross section, one must account for vortices that are only partially inside $A$, and thus not necessarily contributing a pure centre phase. Although this consideration spoils the elegance of the above confinement mechanism for small Wilson loops, it does potentially save the model from a previously noted pitfall related to the Casimir scaling of the Wilson loop expectation value~\cite{Greensite:1982be}, as will be described in more detail in Sec.~\ref{}. Finally, it is worth noting that this issue is only relevant to Wilson loops of similar size to the vortex cross-section. As the Wilson loop increases in size, the majority of the vortices will be contained entirely within the loop, with a diminishing number of thick vortices overlapping the perimeter of the loop, as shown in Fig.~\ref{fig:VortexSizes}.\\
+%
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=\linewidth]{./LargeVortex.pdf}
+\caption{\label{fig:VortexSizes}An example of two Wilson loops (dashed lines) lying in a plane, pierced by vortices of finite cross-section (solid lines). \textbf{Left:} The majority of vortices contributing to the phase are fully contained within the large loop, with only a few overlapping at the perimeter. \textbf{Right:} For a small loop, the contribution from overlapping vortices is significant as there are few vortices fully inside the loop.}
+\end{figure}
+
+The final assumption is that the vortex locations are random and uncorrelated from one another. This is perhaps the most significant assumption made in the above picture, as can be seen from the following calculation~\cite{Engelhardt:1999fd}. As vortices must form closed lines in 3D, let us suppose that instead of being randomly distributed, the vortices come in pairs separated by a maximum distance $d$. This corresponds to requiring that vortex lines form a closed loop of some maximum diameter $d$. If this vortex line pierces the Wilson loop in both directions, then the product of the phases, $\exp\left(\frac{2\pi i}{3}\right)\times \exp\left(\frac{-2\pi i}{3}\right) = 1$, results in no contribution to the Wilson loop. Hence, the only vortices capable of contributing a non-trivial phase to the Wilson loop are those contained within a strip of width $d$ about the perimeter of the loop. Note that not every vortex within this strip will contribute a non-trivial phase, as for example the vortex may be smaller than $d$ or oriented such that the vortex flows in direction of $\partial A$ and thus still pierces twice. We will take the most generous case, however, and assume that every vortex piercing this strip contributes a non-trivial phase. To first order, the area of relevance to to the expectation value of the Wilson loop is now $A_\text{strip}=\partial A\, d$. The probability to find $N$ vortices lying within this strip is 
+%
+\begin{equation}
+P_N(n) = {N\choose n} \left(\frac{\partial A d}{L^2}\right)^n \left(1-\frac{\partial A d}{L^2}\right)^{N-n}\, .
+\end{equation}
+%
+By following the same steps used to arrive at Eq.~\ref{eq:WilsonAreaLaw}, we find
+%
+\begin{equation}
+\langle W(\partial A)\rangle = e^{-\frac{3}{2}\rho\, d\, \partial A}\, .
+\end{equation}
+%
+So we see that instead of an area law, we now have a perimeter law for the Wilson loop, dependent on the upper bound for the vortex size. This implies that if there is some upper limit on the size of a vortex, we can no longer expect to see confining behaviour. We deduce therefore that to obtain a confining theory, it is necessary to allow the vortex size to be potentially infinite. In the language of the vortex model, this is called \textit{vortex percolation}. Conversely, the presence of an upper bound on the vortex size would imply a deconfined phase. This suggests that the size of vortices can be used as an \textit{order parameter} for confinement~\cite{Langfeld:1998cz}, with two distinct phases:
+\begin{enumerate}
+\item Vortex percolation $\implies$ confinement.
+\item Loss of vortex percolation $\implies$ deconfinement.
+\end{enumerate}
+\subsection{Current Evidence for Centre Vortices}
+\subsubsection{String Tension}
+
+\subsubsection{Hadron Spectrum}
+
+\subsubsection{Mass Function}
+
+\subsubsection{Gluon Propagator}
+
+\subsubsection{Casimir Scaling}
+
+
+\section{Locating Centre Vortices}\label{sec:LocatingVortices}
 \subsection{Maximal Centre Gauge}\label{sec:MCG}
 \subsection{Centre Projection}
-\section{Instantons}
+\section{Further Topological Quantities}
+\subsection{Instantons}
 \subsection{Topological Charge}
 
 %A frequently seen mistake is to use `\textbackslash begin\{center\}' \dots `\textbackslash end\{center\}' inside a figure or table environment. This center environment can cause additional vertical space. If you want to avoid that just use `\textbackslash centering'
