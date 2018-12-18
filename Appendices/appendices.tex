@@ -16,19 +16,19 @@ P_{\mu\nu} = U_\mu(x)\,U_\nu(x+a\hat{\mu})\,U^\dagger_\mu(x+a\hat{\nu})\,U^\dagg
 We can approximate the integral in Eq.~\ref{eq:GaugeLink(app)} by Taylor expanding $A_\mu(x^\prime)$ around $x^\prime=x$ and explicitly evaluating the integral. Note that once we have Taylor expanded $A_\mu(x^\prime)$, the term within the integral becomes Abelian for all values of $x^\prime$, allowing us to omit the path ordering from Eq.~\ref{eq:GaugeLink(app)}. Performing the expansion, we find that
 %
 \begin{align}
-U_\mu(x)&=\exp\left(ig\int_x^{x+a\hat{\mu}} dx^\prime A_\mu\left(x\right) + \left(\partial^\prime_\sigma A_\mu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
+U_\mu(x)&=\exp\left(ig\int_x^{x+a\hat{\mu}} dx^\prime A_\mu\left(x\right) + \sum_\sigma \, \left(\partial^\prime_\sigma A_\mu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
 &=\exp\left(iag A_\mu\left(x\right) + \frac{1}{2}ia^2 g\, \partial_\mu A_\mu\left(x\right)\right)\, . \label{eq:UTaylor}
 \end{align}
 %
-Note that $\sigma$ index is summed over, however only the $x^\mu$ term survives the integration, as for all $x^\sigma$, $\sigma\neq \mu$, $(x^{\prime\sigma}-x^\sigma)=0$. Similarly, we evaluate
+Note that whilst the $\sigma$ index is summed over only the $x^\mu$ term survives the integration, as for all $x^\sigma$, $\sigma\neq \mu$, $(x^{\prime\sigma}-x^\sigma)=0$. Similarly, we evaluate
 %
 \begin{align}
-U_\nu(x+a\hat{\mu}) &= \exp\left(ig\int_{x+a\hat{\mu}}^{x+a\hat{\mu}+a\hat{\nu}} dx^\prime A_\nu\left(x\right) + \left(\partial^\prime_\sigma A_\nu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
+U_\nu(x+a\hat{\mu}) &= \exp\left(ig\int_{x+a\hat{\mu}}^{x+a\hat{\mu}+a\hat{\nu}} dx^\prime A_\nu\left(x\right) + \sum_\sigma\,\left(\partial^\prime_\sigma A_\nu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
 &= \exp\left( iag A_\nu(x) + iag\,\partial_\mu A_\nu (x) + ig\int_{x_\nu}^{x_\nu+a} dx^\prime_\nu \, \partial_\nu A_\nu (x) (x^{\prime\nu} - x^\nu)\right)\nonumber\\
-&= \exp\left(iag A_\nu(x) + ia^2g\,\partial_\mu A_\nu(x) + \frac{1}{2}ia^2 g\,\partial_\nu A_\nu(x)\right)\, ,\label{eq:UTaylor2}
+&= \exp\left(iag A_\nu(x) + ia^2g\,\partial_\mu A_\nu(x) + \frac{1}{2}ia^2 g\,\partial_\nu A_\nu(x)\right)\, . \label{eq:UTaylor2}
 \end{align}
 %
-where once again the $\sigma$ index is summed over. We retain the $\partial_\mu A_\nu (x)$ term as for $\sigma = \mu$ we have $(x^{\prime\mu} - x^\mu) = (x^\mu + a\hat{\mu} - x^\mu) = a\hat{\mu}$.\\
+The $\partial_\mu A_\nu (x)$ term is retained because for $\sigma = \mu$ we have $(x^{\prime\mu} - x^\mu) = (x^\mu + a\hat{\mu} - x^\mu) = a\hat{\mu}$.\\
 
 We will also require the Baker-Campbell-Hausdorff identity for non-Abelian matrix exponentials
 %
@@ -42,11 +42,63 @@ Substituting Eq.~\ref{eq:UTaylor} and Eq.~\ref{eq:UTaylor2} into Eq.~\ref{eq:Pla
 P_{\mu\nu} &= &&\exp\left(ig\left(a\,A_\mu(x)+\frac{1}{2}a^2\,\partial_\mu A_\mu(x) \right)\right)\\
 & &&\times\exp\left(ig\left(aA_\nu(x) + \frac{1}{2}a^2\,\partial_\nu A_\nu(x) + a^2\,\partial_\mu A_\nu(x)\right)\right)\\
 & &&\times\exp\left(-ig\left(aA_\mu(x) + \frac{1}{2}a^2\,\partial_\mu A_\mu(x) + a^2\,\partial_\nu A_\mu(x)\right)\right)\\
-& &&\times\exp\left(-ig\left(a\,A_\nu(x)+\frac{1}{2}a^2\,\partial_\mu A_\nu(x) + \right)\right)\\
+& &&\times\exp\left(-ig\left(a\,A_\nu(x)+\frac{1}{2}a^2\,\partial_\nu A_\nu(x) + \right)\right)\\
 &= &&\exp\left(ia^2g\,\partial_\mu A_\nu(x) - ia^2g\,\partial_\nu A_\mu(x) -\frac{a^2g^2}{2}[A_\mu(x),\,A_\nu(x)] + \frac{a^2g^2}{2}[A_\nu(x),\,A_\mu(x)]\right)\\
 &= &&\exp\left(ia^2g F_{\mu\nu}(x)\right)\\
-&\approx &&\, I + ia^2 g F_{\mu\nu} -a^4 g^2 F_{\mu\nu}^2\, .
+&\approx &&\, I + ia^2 g F_{\mu\nu} -\frac{a^4 g^2}{2} F_{\mu\nu}^2\, .
 \end{alignat*}
+
+\chapter{Properties of the adjoint representation}
+\label{app:RepMapProof}
+Consider the mapping $D:SU(3)^F\rightarrow SU(3)^A$ defined by
+%
+\begin{equation}
+\left[D(U)\right]_{ij} = \frac{1}{2}\Tr\left(\lambda_i \, U \, \lambda_j\, U^\dagger\right)\, .
+\label{eq:FundMap(app)}
+\end{equation}
+%
+We want to show that for $U,V\in SU(3)^F$
+%
+\begin{equation}
+\left[D(U)\right]_{ij}\left[D(V)\right]^{jk} = \left[D(U V)\right]_i^{~k}\, .
+\label{eq:MapPreserve(app)}
+\end{equation}
+%
+To do this, we will need to make use of the following Fierz completeness relations for the $SU(3)$  generators
+%
+\begin{equation}
+\lambda _ { b } ^ { b } \cdot \lambda _ { c } ^ { d } = 2\, \delta _ { c } ^ { a } \delta _ { b } ^ { d } - \frac { 2 } { 3 } \delta _ { b } ^ { a } \delta _ { c } ^ { d }\, .
+\end{equation}
+%
+Substituting Eq.~\ref{eq:FundMap(app)} into Eq.~\ref{eq:MapPreserve(app)} and noting that repeated indicies are summed over, we have
+\begin{align*}
+\left[D(U)\right]_{\alpha\beta}\left[D(V)\right]^{\beta\gamma} &= \frac{1}{2} \lambda^\alpha_{ab}\, U_{bc}\,\lambda^\beta_{cd}\, U^\dagger_{da} \times \frac{1}{2} \lambda^\beta_{ef}\, V_{fg}\,\lambda^\gamma_{gh}\, V^\dagger_{he}\\
+&=\frac{1}{2} U_{bc}\,U^\dagger_{da}\,V_{fg}\,V^\dagger_{he}\,\lambda^\alpha_{ab}\, \lambda^\gamma_{gh} \left(\delta_{cf}\,\delta_{de} - \frac{1}{3}\delta_{cd}\delta_{ef}\right)\\
+&=\frac{1}{2}U_{bc} \, V_{cg} \, \lambda^\gamma_{gh} \, V^\dagger_{hd} \, U^\dagger_{da} \, \lambda^\alpha_{ab} - \frac{1}{6} U_{bc} \, U^\dagger_{ca} \, V^\dagger_{he} \, V_{eg} \lambda^\alpha_{ab}\, \lambda^\gamma_{gh}\\
+&= \frac{1}{2}U_{bc} \, V_{cg} \, \lambda^\gamma_{gh} \, V^\dagger_{hd} \, U^\dagger_{da} \, \lambda^\alpha_{ab} - \frac{1}{6}\delta_{ba}\delta_{hg} \lambda^\alpha_{ab}\, \lambda^\gamma_{gh}\\
+&=\frac{1}{2}\Tr\left(U \, V \, \lambda^\gamma \, (U \, V)^\dagger \lambda^\alpha\right) - \frac{1}{6}\Tr\left(\lambda^\alpha\right) \, \Tr\left(\lambda^\gamma\right)\, .
+\end{align*}
+Making use of the cyclic property of the trace and the fact that the Gell-Mann matrices are traceless, we find the desired result,
+%
+\begin{align*}
+\left[D(U)\right]_{\alpha\beta}\left[D(V)\right]^{\beta\gamma} &= \frac{1}{2}\Tr\left(\lambda^\alpha U \, V \, \lambda^\gamma \, (U \, V)^\dagger \right)\\
+&= \left[D(UV)\right]_{\alpha\gamma} \, .
+\end{align*}\\
+
+We also wish to show that for $U^A\in SU(3)^A$ and $U\in SU(3)^F$ that
+%
+\begin{equation}
+\Tr\left(U^A\right) = \left|\Tr(U)\right|^2 -1\, .
+\end{equation}
+%
+Making use of Eq.~\ref{eq:FundMap(app)}, we have
+\begin{align*}
+\Tr\left(U^A\right) &= \sum_{\alpha=1}^8 \frac{1}{2}\Tr\left(\lambda^\alpha \, U_\mu(x) \, \lambda^\alpha \, U_\mu^\dagger(x)\right)\\
+&= \frac{1}{2}U_{bc} \, U^\dagger_{da} \, \lambda_{ab}^\alpha \, \lambda_{cd}^\alpha\\
+&= U_{bc} \, U^\dagger_{da} \left(\delta_{ad}\,\delta_{bc} - \frac{1}{3}\delta_{ab}\,\delta_{cd}\right)\\
+&= \Tr\left(U\right) \, \Tr\left( U^\dagger \right) - \frac{1}{3}\Tr\left(U\, U^\dagger\right)\\
+&= \left|\Tr(U)\right|^2 -1
+\end{align*}
 
 \chapter{Evaluation of $\operatorname{Re}\Tr(F_1(U)^\dagger \,U)$}\label{app:CoolingMaximise}
 
@@ -56,23 +108,21 @@ It is apparent that we can write Eq.~\ref{eq:MaximisedCooling} in the form
 \end{equation}
 where $U = U_\mu\, \bar{U}$. Expanding this, we have
 \begin{align*}
-\Re\Tr(F_1(U)^\dagger\, U) &=\Re \left( \frac{1}{2}\,U_{11} \left(U_{22} + U_{11}^*\right) - \frac{1}{2}\,U_{21} \left(U_{12} - U_{21}^*\right)\right.\\
-&~~~~+ \left. \frac{1}{2}\,U_{22} \left(U_{11} + U_{22}^*\right)
-- \frac{1}{2}\,U_{12} \left(U_{21} - U_{12}^*\right) +U_{33}\right)\\
-&= \Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21} + U_{33}\right)\, .
+\Re\Tr(F_1(U)^\dagger\, U) &=\Re \left(\frac{1}{k_1}\left[ \frac{1}{2}\,U_{11} \left(U_{22} + U_{11}^*\right) - \frac{1}{2}\,U_{21} \left(U_{12} - U_{21}^*\right)\right.\right.\\
+&~~~~+ \left. \left.\frac{1}{2}\,U_{22} \left(U_{11} + U_{22}^*\right)
+- \frac{1}{2}\,U_{12} \left(U_{21} - U_{12}^*\right) +k_1\,U_{33}\right]\right)\\
+&= \frac{1}{k_1}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21} + k_1\,U_{33}\right)\, .
 \end{align*}
-We now wish to make use of the known determinant of $F_1(U)$ to simplify this expression.
+Where we have used the fact that by the construction of $F_1(U)$, $k_1$ is real. We now wish to make use of the known determinant of $F_1(U)$ to simplify this expression.
 \begin{align*}
-\det(F_1(U)) &= \frac{1}{4} \left(U_{11}+ U_{22}^*\right)\left(U_{11}^* + U_{22}\right)\\
-&~~~~-\frac{1}{4}\left(U_{12} - U_{21}^*\right)\left( U_{21} - U_{12}^*\right)\\
-&=\frac{1}{4}\left( |U_{11}|^2 + |U_{22}|^2 + |U_{12}|^2 + |U_{21}|^2\right.\\
-&~~~~+ U_{11}\,U_{22} + U_{11}^*\,U_{22}^* + U_{12}\,U_{21} + U_{12}^*\,U_{21}^*\big) = 1\, ,
+\det(F_1(U)) &= \frac{1}{4\,k_1^2} \left(\left(U_{11}+ U_{22}^*\right)\left(U_{11}^* + U_{22}\right)-\left(U_{12} - U_{21}^*\right)\left( U_{21} - U_{12}^*\right)\right)\\
+&=\frac{1}{4\,k_1^2}\left( |U_{11}|^2 + |U_{22}|^2 + |U_{12}|^2 + |U_{21}|^2\right.\\
+&~~~~+ U_{11}\,U_{22} + U_{11}^*\,U_{22}^* + U_{12}\,U_{21} + U_{12}^*\,U_{21}^*\big)\\
+&= \frac{1}{2\,k_1^2}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21}\right)\\
+&=1\, .
 \end{align*}
-and hence
-\begin{equation}
-\Re(\det(F_1(U))) = \frac{1}{2}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21}\right) = 1\, .
-\end{equation}
-So we find the desired result
-\begin{equation}
-\Re\Tr(F_1(U)^\dagger\, U) = 2 + \Re(U_{33})
-\end{equation}
+This gives the desired result,
+\begin{align*}
+\Re\Tr(F_1(U)^\dagger\, U) &= \Re\left(\frac{1}{k_1}(2k_1^2 + k_1\,U_{33}))\right)\\
+&=2\,k_1 + \Re\left(U_{33}\right)
+\end{align*}

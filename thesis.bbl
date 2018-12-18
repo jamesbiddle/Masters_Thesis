@@ -1,4 +1,4 @@
-\begin{thebibliography}{91}
+\begin{thebibliography}{101}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,7 +20,7 @@ Michael~E Peskin.
 \bibitem[Ryder(1996)]{ryder1996quantum}
 Lewis~H Ryder.
 \newblock \emph{Quantum field theory}.
-\newblock Cambridge university press, 1996.
+\newblock Cambridge University Press, 1996.
 
 \bibitem[Schäfer and Shuryak(1998)]{Schafer:1996wv}
 Thomas Schäfer and Edward~V. Shuryak.
@@ -213,6 +213,13 @@ Holger~Bech Nielsen and P.~Olesen.
 \newblock \emph{Nucl. Phys.}, B160:\penalty0 380--396, 1979.
 \newblock \doi{10.1016/0550-3213(79)90065-8}.
 
+\bibitem[Mack and Petkova(1979)]{Mack:1978rq}
+G.~Mack and V.~B. Petkova.
+\newblock {Comparison of Lattice Gauge Theories with Gauge Groups Z(2) and
+  SU(2)}.
+\newblock \emph{Annals Phys.}, 123:\penalty0 442, 1979.
+\newblock \doi{10.1016/0003-4916(79)90346-4}.
+
 \bibitem[Biddle et~al.(2018)Biddle, Kamleh, and Leinweber]{Biddle:2018dtc}
 James~C. Biddle, Waseem Kamleh, and Derek~B. Leinweber.
 \newblock {Gluon propagator on a center-vortex background}.
@@ -298,6 +305,15 @@ Kurt Langfeld.
 \newblock {Vortex structures in pure SU(3) lattice gauge theory}.
 \newblock \emph{Phys. Rev.}, D69:\penalty0 014503, 2004.
 \newblock \doi{10.1103/PhysRevD.69.014503}.
+
+\bibitem[Bowman et~al.(2011)Bowman, Langfeld, Leinweber, Sternbeck, von Smekal,
+  and Williams]{Bowman:2010zr}
+Patrick~O. Bowman, Kurt Langfeld, Derek~B. Leinweber, Andre Sternbeck, Lorenz
+  von Smekal, and Anthony~G. Williams.
+\newblock {Role of center vortices in chiral symmetry breaking in SU(3) gauge
+  theory}.
+\newblock \emph{Phys. Rev.}, D84:\penalty0 034501, 2011.
+\newblock \doi{10.1103/PhysRevD.84.034501}.
 
 \bibitem[Gell-Mann(1964)]{GellMann:1964nj}
 Murray Gell-Mann.
@@ -454,6 +470,66 @@ M.~Engelhardt, K.~Langfeld, H.~Reinhardt, and O.~Tennert.
 \newblock \emph{Phys. Rev.}, D61:\penalty0 054504, 2000.
 \newblock \doi{10.1103/PhysRevD.61.054504}.
 
+\bibitem[Faber et~al.(1999)Faber, Greensite, Olejnik, and Yamada]{Faber:1999gu}
+Manfried Faber, J.~Greensite, S.~Olejnik, and Daiske Yamada.
+\newblock {The Vortex finding property of maximal center (and other) gauges}.
+\newblock \emph{JHEP}, 12:\penalty0 012, 1999.
+\newblock \doi{10.1088/1126-6708/1999/12/012}.
+
+\bibitem[Montero(1999)]{Montero:1999by}
+Alvaro Montero.
+\newblock {Study of SU(3) vortex - like configurations with a new maximal
+  center gauge fixing method}.
+\newblock \emph{Phys. Lett.}, B467:\penalty0 106--111, 1999.
+\newblock \doi{10.1016/S0370-2693(99)01113-2}.
+
+\bibitem[Faber et~al.(2000)Faber, Greensite, and Olejnik]{Faber:1999sq}
+Manfried Faber, Jeff Greensite, and Stefan Olejnik.
+\newblock {First evidence for center dominance in SU(3) lattice gauge theory}.
+\newblock \emph{Phys. Lett.}, B474:\penalty0 177--181, 2000.
+\newblock \doi{10.1016/S0370-2693(00)00013-7}.
+
+\bibitem[Spengler et~al.(2018)Spengler, Quandt, and
+  Reinhardt]{Spengler:2018dxt}
+Felix Spengler, Markus Quandt, and Hugo Reinhardt.
+\newblock {Branching of Center Vortices in SU(3) Lattice Gauge Theory}.
+\newblock \emph{Phys. Rev.}, D98\penalty0 (9):\penalty0 094508, 2018.
+\newblock \doi{10.1103/PhysRevD.98.094508}.
+
+\bibitem[Reinhardt(2002)]{Reinhardt:2001kf}
+H.~Reinhardt.
+\newblock {Topology of center vortices}.
+\newblock \emph{Nucl. Phys.}, B628:\penalty0 133--166, 2002.
+\newblock \doi{10.1016/S0550-3213(02)00130-X}.
+
+\bibitem[Moran and Leinweber(2008{\natexlab{a}})]{Moran:2008ra}
+Peter~J. Moran and Derek~B. Leinweber.
+\newblock {Over-improved stout-link smearing}.
+\newblock \emph{Phys. Rev.}, D77:\penalty0 094501, 2008{\natexlab{a}}.
+\newblock \doi{10.1103/PhysRevD.77.094501}.
+
+\bibitem[Alexandrou et~al.(2017)Alexandrou, Athenodorou, Cichy, Dromard,
+  Garcia-Ramos, Jansen, Wenger, and Zimmermann]{Alexandrou:2017hqw}
+Constantia Alexandrou, Andreas Athenodorou, Krzysztof Cichy, Arthur Dromard,
+  Elena Garcia-Ramos, Karl Jansen, Urs Wenger, and Falk Zimmermann.
+\newblock {Comparison of topological charge definitions in Lattice QCD}.
+\newblock 2017.
+
+\bibitem[Bilson-Thompson et~al.(2002)Bilson-Thompson, Bonnet, Leinweber, and
+  Williams]{BilsonThompson:2001ca}
+Sundance~O. Bilson-Thompson, F.~D.~R. Bonnet, D.~B. Leinweber, and Anthony~G.
+  Williams.
+\newblock {Cooling for instantons and the wrath of Nahm}.
+\newblock \emph{Nucl. Phys. Proc. Suppl.}, 109A:\penalty0 116--120, 2002.
+\newblock \doi{10.1016/S0920-5632(02)01399-3}.
+\newblock [,116(2001)].
+
+\bibitem[Moran and Leinweber(2008{\natexlab{b}})]{Moran:2008qd}
+Peter~J. Moran and Derek~B. Leinweber.
+\newblock {Impact of Dynamical Fermions on QCD Vacuum Structure}.
+\newblock \emph{Phys. Rev.}, D78:\penalty0 054506, 2008{\natexlab{b}}.
+\newblock \doi{10.1103/PhysRevD.78.054506}.
+
 \bibitem[Cucchieri(1999)]{Cucchieri:1999sz}
 Attilio Cucchieri.
 \newblock {Infrared behavior of the gluon propagator in lattice Landau gauge:
@@ -515,12 +591,6 @@ Frederic D.~R. Bonnet, Patrick Fitzhenry, Derek~B. Leinweber, Mark~R. Stanford,
 \newblock \emph{Phys. Rev.}, D62:\penalty0 094509, 2000.
 \newblock \doi{10.1103/PhysRevD.62.094509}.
 
-\bibitem[Moran and Leinweber(2008)]{Moran:2008ra}
-Peter~J. Moran and Derek~B. Leinweber.
-\newblock {Over-improved stout-link smearing}.
-\newblock \emph{Phys. Rev.}, D77:\penalty0 094501, 2008.
-\newblock \doi{10.1103/PhysRevD.77.094501}.
-
 \bibitem[Berg(1981)]{Berg:1981nw}
 B.~Berg.
 \newblock {Dislocations and Topological Background in the Lattice O(3) $\sigma$
@@ -567,6 +637,14 @@ Colin Morningstar and Mike~J. Peardon.
 \newblock \emph{Phys. Rev.}, D69:\penalty0 054501, 2004.
 \newblock \doi{10.1103/PhysRevD.69.054501}.
 
+\bibitem[Garcia~Perez et~al.(1994)Garcia~Perez, Gonzalez-Arroyo, Snippe, and
+  van Baal]{GarciaPerez:1993lic}
+Margarita Garcia~Perez, Antonio Gonzalez-Arroyo, Jeroen~R. Snippe, and Pierre
+  van Baal.
+\newblock {Instantons from over - improved cooling}.
+\newblock \emph{Nucl. Phys.}, B413:\penalty0 535--552, 1994.
+\newblock \doi{10.1016/0550-3213(94)90631-9}.
+
 \bibitem[Thomas et~al.(2015)Thomas, Kamleh, and Leinweber]{Thomas:2014tda}
 Samuel~D. Thomas, Waseem Kamleh, and Derek~B. Leinweber.
 \newblock {Instanton contributions to the low-lying hadron mass spectrum}.
@@ -581,15 +659,6 @@ Alan O'Cais, Waseem Kamleh, Kurt Langfeld, Ben Lasscock, Derek Leinweber, Peter
   SU(3)}.
 \newblock \emph{Phys. Rev.}, D82:\penalty0 114512, 2010.
 \newblock \doi{10.1103/PhysRevD.82.114512}.
-
-\bibitem[Bowman et~al.(2011)Bowman, Langfeld, Leinweber, Sternbeck, von Smekal,
-  and Williams]{Bowman:2010zr}
-Patrick~O. Bowman, Kurt Langfeld, Derek~B. Leinweber, Andre Sternbeck, Lorenz
-  von Smekal, and Anthony~G. Williams.
-\newblock {Role of center vortices in chiral symmetry breaking in SU(3) gauge
-  theory}.
-\newblock \emph{Phys. Rev.}, D84:\penalty0 034501, 2011.
-\newblock \doi{10.1103/PhysRevD.84.034501}.
 
 \bibitem[Stack et~al.(2002)Stack, Tucker, and Wensley]{Stack:2002sy}
 John~D. Stack, W.~W. Tucker, and Roy~J. Wensley.

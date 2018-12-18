@@ -18,46 +18,47 @@ A level-1 auxiliary file: Appendices/appendices.aux
 Database file #1: ./References/references.bib
 Warning--empty journal in Bing:1999ee
 Warning--empty publisher in Zweig:1964jf
+Warning--empty journal in Alexandrou:2017hqw
 Warning--empty journal in Boucaud:2006pc
-You've used 91 entries,
+You've used 101 entries,
             2481 wiz_defined-function locations,
-            1235 strings with 21630 characters,
-and the built_in function-call counts, 35924 in all, are:
-= -- 3112
-> -- 1709
-< -- 51
-+ -- 684
-- -- 498
-* -- 2835
-:= -- 5865
-add.period$ -- 364
-call.type$ -- 91
-change.case$ -- 180
-chr.to.int$ -- 87
-cite$ -- 94
-duplicate$ -- 1757
-empty$ -- 3310
-format.name$ -- 623
-if$ -- 7676
-int.to.chr$ -- 5
-int.to.str$ -- 92
-missing$ -- 93
-newline$ -- 553
-num.names$ -- 275
-pop$ -- 583
+            1301 strings with 23543 characters,
+and the built_in function-call counts, 39903 in all, are:
+= -- 3445
+> -- 1927
+< -- 55
++ -- 769
+- -- 562
+* -- 3166
+:= -- 6526
+add.period$ -- 404
+call.type$ -- 101
+change.case$ -- 200
+chr.to.int$ -- 96
+cite$ -- 105
+duplicate$ -- 1946
+empty$ -- 3662
+format.name$ -- 701
+if$ -- 8514
+int.to.chr$ -- 6
+int.to.str$ -- 102
+missing$ -- 103
+newline$ -- 613
+num.names$ -- 305
+pop$ -- 647
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 101
 quote$ -- 0
-skip$ -- 992
+skip$ -- 1095
 stack$ -- 0
-substring$ -- 1820
-swap$ -- 211
+substring$ -- 1999
+swap$ -- 232
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 631
-warning$ -- 3
-while$ -- 272
+type$ -- 701
+warning$ -- 4
+while$ -- 301
 width$ -- 0
-write$ -- 1363
-(There were 3 warnings)
+write$ -- 1511
+(There were 4 warnings)

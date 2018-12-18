@@ -21,32 +21,34 @@
 \contentsline {subsubsection}{Gluon Propagator}{26}{section*.14}
 \contentsline {subsubsection}{Casimir Scaling}{26}{section*.15}
 \contentsline {section}{\numberline {3.3}Locating Centre Vortices}{26}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Maximal Centre Gauge}{26}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Centre Projection}{26}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Further Topological Quantities}{26}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Instantons}{26}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Topological Charge}{26}{subsection.3.4.2}
-\contentsline {chapter}{\numberline {4}Lattice Configurations and the Gluon Propagator}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Lattice Definition of the Gluon Propagator}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}Momentum Variables}{29}{section.4.2}
-\contentsline {section}{\numberline {4.3}Lattice Parameters and Data Cuts}{32}{section.4.3}
-\contentsline {chapter}{\numberline {5}Smoothing}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Smoothing Methods}{34}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Cooling}{34}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Over-Improved Smearing}{37}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Results from the Gluon Propagator}{38}{section.5.2}
-\contentsline {chapter}{\numberline {6}Gluon Propagator on Vortex-Modified Backgrounds}{41}{chapter.6}
-\contentsline {section}{\numberline {6.1}Preliminary Results}{41}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Partitioning}{43}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Renormalisation}{46}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Impact of Cooling}{48}{section.6.2}
-\contentsline {section}{\numberline {6.3}Summary}{51}{section.6.3}
-\contentsline {chapter}{\numberline {7}Centre Vortex Visualisations}{55}{chapter.7}
-\contentsline {section}{\numberline {7.1}Time Slices}{55}{section.7.1}
-\contentsline {section}{\numberline {7.2}Time-Oriented Links}{57}{section.7.2}
-\contentsline {section}{\numberline {7.3}Topological Charge}{57}{section.7.3}
-\contentsline {section}{\numberline {7.4}Centre Vortices and Topological Charge}{57}{section.7.4}
-\contentsline {chapter}{\numberline {8}Conclusion}{59}{chapter.8}
-\contentsline {chapter}{References}{61}{chapter*.32}
-\contentsline {chapter}{Appendix \numberline {A}Taylor expansion of $P_{\mu \nu }$}{69}{Appendix.a.A}
-\contentsline {chapter}{Appendix \numberline {B}Evaluation of $\operatorname {Re}\Tr (F_1(U)^\dagger \tmspace +\thinmuskip {.1667em}U)$}{71}{Appendix.a.B}
+\contentsline {subsection}{\numberline {3.3.1}Maximal Centre Gauge}{28}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Centre Projection}{29}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Further Topological Quantities}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Topological Charge}{30}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Instantons}{31}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Summary}{32}{section.3.5}
+\contentsline {chapter}{\numberline {4}Lattice Configurations and the Gluon Propagator}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Lattice Definition of the Gluon Propagator}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Momentum Variables}{35}{section.4.2}
+\contentsline {section}{\numberline {4.3}Lattice Parameters and Data Cuts}{38}{section.4.3}
+\contentsline {chapter}{\numberline {5}Smoothing}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Smoothing Methods}{40}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Cooling}{40}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Over-Improved Smearing}{43}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Results from the Gluon Propagator}{46}{section.5.2}
+\contentsline {chapter}{\numberline {6}Gluon Propagator on Vortex-Modified Backgrounds}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Preliminary Results}{49}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Partitioning}{51}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Renormalisation}{54}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Impact of Cooling}{56}{section.6.2}
+\contentsline {section}{\numberline {6.3}Summary}{59}{section.6.3}
+\contentsline {chapter}{\numberline {7}Centre Vortex Visualisations}{63}{chapter.7}
+\contentsline {section}{\numberline {7.1}Time Slices}{63}{section.7.1}
+\contentsline {section}{\numberline {7.2}Time-Oriented Links}{65}{section.7.2}
+\contentsline {section}{\numberline {7.3}Topological Charge}{65}{section.7.3}
+\contentsline {section}{\numberline {7.4}Centre Vortices and Topological Charge}{65}{section.7.4}
+\contentsline {chapter}{\numberline {8}Conclusion}{67}{chapter.8}
+\contentsline {chapter}{References}{69}{chapter*.34}
+\contentsline {chapter}{Appendix \numberline {A}Taylor expansion of $P_{\mu \nu }$}{77}{Appendix.a.A}
+\contentsline {chapter}{Appendix \numberline {B}Properties of the adjoint representation}{79}{Appendix.a.B}
+\contentsline {chapter}{Appendix \numberline {C}Evaluation of $\operatorname {Re}\Tr (F_1(U)^\dagger \tmspace +\thinmuskip {.1667em}U)$}{81}{Appendix.a.C}
