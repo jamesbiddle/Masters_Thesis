@@ -1,0 +1,40 @@
+\begin{tikzpicture}[scale=0.7]
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.5 with {\arrow[scale=2]{stealth}}}
+    ] 
+
+  % orange line first to make it look transparent
+  \draw[line width=5,color=orange,-{Latex[length=6mm]}](-4.0,-1.5)--(1.5,-1.5);
+
+  % bottom right to top right                    x,y start of line    label  x,y end
+  \draw[line width=1.0,postaction={decorate}](1.5,-1.5)--node[right]{} (3.25,1.5)node(g){};
+  % top right to top left
+  \draw[line width=1.0,postaction={decorate}](3.25,1.5)--node[above]{} (-1.5,1.5);
+  % top left to bottom left
+  \draw[line width=1.0,postaction={decorate}](-1.5,1.5)--node[left]{} (-4,-1.5);
+
+    \filldraw[fill=red,fill opacity=0.2] (-4,-1.5) -- (1.5,-1.5) -- (1.5,4) -- (-4,4)--cycle;
+  
+  %% % Jet triangle
+  %% % bottom left	
+  %% \draw (-0.3,-2) node(a){}
+  %% -- (0.1,-2) node(b){}   % bottom right
+  %% -- (-0.1,2) node(c){}   % top
+  %% -- cycle;               % complete
+  %% \fill[red] (a.center) -- (b.center) -- (c.center);
+  
+  % bottom left to bottom right
+  \draw[line width=1.0,postaction={decorate}](-4.0,-1.5)--node[above]{}(1.5,-1.5)node(f){};
+  
+  % t direction  
+  \draw[line width=1.0,postaction={decorate}]( 1.5,-1.5)--node[right]{} (1.5,4.0);    % width  3.25-(-1.5) = 4.75
+  \draw[line width=1.0,postaction={decorate}]( 1.5, 4.0)--node[above]{}(-4.0,4.0);    % height 6.25-1.5    = 4.75
+  \draw[line width=1.0,postaction={decorate}](-4.0, 4.0)--node[left]{}(-4.0,-1.5);
+
+  % Coordinate axes       arrow head          x,y start -- x,y finish [position] label
+  \draw[line width=1.0,-{Latex[length=2mm]}](3,-1.5)--(4,-1.5)node[right]{\large $x$};
+  \draw[line width=1.0,-{Latex[length=2mm]}](3,-1.5)--(3.4,-0.7)node[right]{\large $y$};
+  \draw[line width=1.0,-{Latex[length=2mm]}](3,-1.5)--(3,-0.5)node[above]{\large $t$};
+  \end{scope}
+\end{tikzpicture}

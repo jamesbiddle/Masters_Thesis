@@ -20,45 +20,45 @@ Warning--empty journal in Bing:1999ee
 Warning--empty publisher in Zweig:1964jf
 Warning--empty journal in Alexandrou:2017hqw
 Warning--empty journal in Boucaud:2006pc
-You've used 101 entries,
+You've used 104 entries,
             2481 wiz_defined-function locations,
-            1301 strings with 23543 characters,
-and the built_in function-call counts, 39903 in all, are:
-= -- 3445
-> -- 1927
-< -- 55
-+ -- 769
-- -- 562
-* -- 3166
-:= -- 6526
-add.period$ -- 404
-call.type$ -- 101
-change.case$ -- 200
-chr.to.int$ -- 96
-cite$ -- 105
-duplicate$ -- 1946
-empty$ -- 3662
-format.name$ -- 701
-if$ -- 8514
+            1318 strings with 24006 characters,
+and the built_in function-call counts, 40990 in all, are:
+= -- 3545
+> -- 1962
+< -- 57
++ -- 785
+- -- 572
+* -- 3245
+:= -- 6701
+add.period$ -- 416
+call.type$ -- 104
+change.case$ -- 206
+chr.to.int$ -- 99
+cite$ -- 108
+duplicate$ -- 2003
+empty$ -- 3771
+format.name$ -- 714
+if$ -- 8748
 int.to.chr$ -- 6
-int.to.str$ -- 102
-missing$ -- 103
-newline$ -- 613
-num.names$ -- 305
-pop$ -- 647
+int.to.str$ -- 105
+missing$ -- 106
+newline$ -- 631
+num.names$ -- 314
+pop$ -- 665
 preamble$ -- 1
-purify$ -- 101
+purify$ -- 104
 quote$ -- 0
-skip$ -- 1095
+skip$ -- 1127
 stack$ -- 0
-substring$ -- 1999
-swap$ -- 232
+substring$ -- 2062
+swap$ -- 238
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 701
+type$ -- 722
 warning$ -- 4
-while$ -- 301
+while$ -- 310
 width$ -- 0
-write$ -- 1511
+write$ -- 1556
 (There were 4 warnings)

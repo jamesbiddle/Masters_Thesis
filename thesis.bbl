@@ -1,4 +1,4 @@
-\begin{thebibliography}{101}
+\begin{thebibliography}{104}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -705,5 +705,25 @@ R.~Bertle, M.~Engelhardt, and Manfried Faber.
   vortices}.
 \newblock \emph{Phys. Rev.}, D64:\penalty0 074504, 2001.
 \newblock \doi{10.1103/PhysRevD.64.074504}.
+
+\bibitem[Engelhardt et~al.(2004)Engelhardt, Quandt, and
+  Reinhardt]{Engelhardt:2003wm}
+M.~Engelhardt, M.~Quandt, and H.~Reinhardt.
+\newblock {Center vortex model for the infrared sector of SU(3) Yang-Mills
+  theory: Confinement and deconfinement}.
+\newblock \emph{Nucl. Phys.}, B685:\penalty0 227--248, 2004.
+\newblock \doi{10.1016/j.nuclphysb.2004.02.036}.
+
+\bibitem[Cornwall(2000)]{Cornwall:1999xw}
+John~M. Cornwall.
+\newblock {Center vortices, nexuses, and fractional topological charge}.
+\newblock \emph{Phys. Rev.}, D61:\penalty0 085012, 2000.
+\newblock \doi{10.1103/PhysRevD.61.085012}.
+
+\bibitem[Cornwall(1998)]{Cornwall:1998ef}
+John~M. Cornwall.
+\newblock {Nexus solitons in the center vortex picture of QCD}.
+\newblock \emph{Phys. Rev.}, D58:\penalty0 105028, 1998.
+\newblock \doi{10.1103/PhysRevD.58.105028}.
 
 \end{thebibliography}
