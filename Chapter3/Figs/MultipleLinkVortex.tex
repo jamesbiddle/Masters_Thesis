@@ -1,0 +1,31 @@
+\begin{tikzpicture}[scale=0.9]
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.5 with {\arrow[scale=2]{stealth}}}
+    ] 
+
+  % bottom right to top right                    x,y start of line    label  x,y end
+  %\draw[line width=1.0,postaction={decorate}](1.5,-1.5)--node[right]{} (3.25,1.5)node(g){};
+  % top right to top left
+  %\draw[line width=1.0,postaction={decorate}](3.25,1.5)--node[above]{} (-1.5,1.5);
+  % top left to bottom left
+  %\draw[line width=1.0,postaction={decorate}](-1.5,1.5)--node[left]{} (-4,-1.5);
+  
+  % bottom left to middle right
+  \draw[line width=1.0,postaction={decorate}](-4,-1.5)--node[above]{}(1.5,-1.5)node(f){};
+  
+  % z direction  
+  \draw[line width=1.0]( 1.5,-1.5)--node[right]{} (1.5,4.0);    % width  3.25-(-1.5) = 4.75
+  \draw[line width=1.0,postaction={decorate},color=cyan]( 1.5, 4.0)--node[above,color=black]{$\exp{\left(\pi i Q\right)}$}(-4.0,4.0);    % height 6.25-1.5    = 4.75
+  \draw[line width=1.0,postaction={decorate}](-4.0, 4.0)--node[left]{}(-4.0,-1.5);
+  
+  \draw[line width=1.0,postaction={decorate}](1.5,-1.5) --(7,-1.5);
+  \draw[line width=1.0,postaction={decorate}](7,-1.5) -- (7,4);
+  \draw[line width=1.0,postaction={decorate},color=cyan](7,4) --node[above,color=black]{$\exp{\left(\pi i Q\right)}$} (1.5,4);
+
+  % Coordinate axes       arrow head          x,y start -- x,y finish [position] label
+  %\draw[line width=1.0,-{Latex[length=2mm]}](3,-1.5)--(4,-1.5)node[right]{\large $x$};
+  %\draw[line width=1.0,-{Latex[length=2mm]}](3,-1.5)--(3.4,-0.7)node[right]{\large $y$};
+  %\draw[line width=1.0,-{Latex[length=2mm]}](3,-1.5)--(3,-0.5)node[above]{\large $z$};
+  \end{scope}
+\end{tikzpicture}

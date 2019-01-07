@@ -1,4 +1,18 @@
 %!TEX root = ../thesis.tex
+\chapter{Gell-Mann matrices}\label{app:GellMann}
+The Gell-Mann matrices $\lambda_a$ are related to the generators of $SU(3)$, $t_a$, by
+%
+\begin{equation}
+t_a = \frac{\lambda_a}{2}\, .
+\end{equation}
+%
+The matrices are given by
+%
+\begin{align*}
+\lambda _ { 1 } &= \left( \begin{array} { c c c } { 0 } & { 1 } & { 0 } \\ { 1 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 2 } = \left( \begin{array} { c c c } { 0 } & { - i } & { 0 } \\ { i } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 3 } = \left( \begin{array} { c c c } { 1 } & { 0 } & { 0 } \\ { 0 } & { - 1 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right)\\
+\lambda _ { 4 } &= \left( \begin{array} { c c c } { 0 } & { 0 } & { 1 } \\ { 0 } & { 0 } & { 0 } \\ { 1 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 5 } = \left( \begin{array} { c c c } { 0 } & { 0 } & { - i } \\ { 0 } & { 0 } & { 0 } \\ { i } & { 0 } & { 0 } \end{array} \right)\\
+\lambda _ { 6 } &= \left( \begin{array} { c c c } { 0 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 1 } \\ { 0 } & { 1 } & { 0 } \end{array} \right) \quad \lambda _ { 7 } = \left( \begin{array} { c c c } { 0 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { - i } \\ { 0 } & { i } & { 0 } \end{array} \right) \quad \lambda _ { 8 } = \frac { 1 } { \sqrt { 3 } } \left( \begin{array} { c c c } { 1 } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { - 2 } \end{array} \right)\, .
+\end{align*}
 \chapter{Taylor expansion of $P_{\mu\nu}$}\label{app:TEPlaquette}
 First, we recall the definitions of the gauge link in the continuum
 %
@@ -48,6 +62,31 @@ P_{\mu\nu} &= &&\exp\left(ig\left(a\,A_\mu(x)+\frac{1}{2}a^2\,\partial_\mu A_\mu
 &\approx &&\, I + ia^2 g F_{\mu\nu} -\frac{a^4 g^2}{2} F_{\mu\nu}^2\, .
 \end{alignat*}
 
+\chapter{Wilson line gauge transformation}\label{app:WilsonLineGT}
+We wish to show that the Wilson line obeys the gauge transformation property
+%
+\begin{equation}
+U(z,y)\rightarrow \Omega(z)\,U(z,y)\,\Omega^\dagger(y)\, .
+\label{eq:WilsonLineGT}
+\end{equation}
+%
+to show this, first recall the parallel transport equation
+%
+\begin{equation}
+\frac{dx^\mu}{dt}\left(\partial_\mu -ig\,A_\mu(x)\right)U(x,y)=0
+\label{eq:ParallelTransport(app)}
+\end{equation}
+%
+If we apply a gauge transformation to $A_\mu(x)$ and our proposed transformation to $U(x,y)$, Eq.~\ref{eq:ParallelTransport(app)} becomes
+%
+\begin{alignat*}{2}
+&\frac{dx^\mu}{dt} && \left(\partial_\mu -ig\,\left[ \Omega(x)A_\mu(x)\Omega^\dagger(x) -\frac{i}{g}(\partial_\mu \, \Omega(x))\,\Omega(x)^\dagger\right]\right)\Omega(x) U(x,y)\Omega(y)^\dagger\\
+&=&&\frac{dx^\mu}{dt}\left((\partial_\mu\,\Omega(x))U(x,y)\Omega(y)^\dagger + \Omega(x)(\partial_\mu\,U(x,y))\Omega(y)^\dagger + \Omega(x)U(x,y)(\partial_\mu \Omega(y)^\dagger) \right.\\
+& &&\left.-ig\,\left[ \Omega(x)A_\mu(x)-\frac{i}{g}(\partial_\mu \, \Omega(x))\right]U(x,y)\Omega(y)^\dagger\right)\\
+&=&& \frac{dx^\mu}{dt}\Omega(x)(\partial_\mu U(x,y) - ig\,A_\mu(x)U(x,y))\Omega(y)^\dagger\\
+&=&& 0\, .
+\end{alignat*}
+We therefore see that $\Omega(x)\,U(x,y)\,\Omega^\dagger(y)$ is a solution to the parallel transport equation under a gauge transformation, and furthermore it satisfies the boundary condition $\Omega(y)\,U(y,y)\,\Omega^\dagger(y)=I$. Therefore, by the existence and uniqueness theorem, we find that Eq.~\ref{eq:WilsonLineGT} is the gauge transformation for the Wilson Line. 
 \chapter{Properties of the adjoint representation}
 \label{app:RepMapProof}
 Consider the mapping $D:SU(3)^F\rightarrow SU(3)^A$ defined by

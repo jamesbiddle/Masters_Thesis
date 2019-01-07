@@ -10,18 +10,18 @@
 \else
     \graphicspath{{Chapter2/Figs/Vector/}{Chapter2/Figs/}}
 \fi
-Since the first efforts to construct a non-perturbative approach to QCD in 1974\cite{Wilson:1974sk}, lattice QCD has developed over the past 40 years into a powerful tool used to probe the behaviour of the strong nuclear force. Rather than treat spacetime as a set of continuous axes, it is instead discretised into a finite set of points on a four-dimensional hypercube. This prescription allows for the explicit calculation of path integrals present in QCD, at the cost of introducing finite-spacing errors that must be systematically accounted for. In this chapter we will discuss the behaviour of QCD when spacetime is continuous (hereafter referred to as the continuum), and demonstrate how the transition can be made to a finite set of coordinates on a lattice. We will then briefly detail how this formulation can be used to generate simulations of the QCD vacuum. Finally, we use this framework to describe how our generated configurations can be fixed to Landau gauge, one of the two gauge choices used in this research.
+Currently, lattice QCD represents the only technique able to perform accurate low-energy QCD calculations. The lattice prescription allows for the explicit calculation of path integrals present in continuum QCD, at the cost of introducing finite-spacing errors that must be systematically accounted for. In this chapter we will discuss the behaviour of QCD in the continuum, and demonstrate how the transition can be made to a finite set of coordinates on a lattice. We will then briefly detail how this formulation can be used to generate simulations of the QCD vacuum. Finally, we use this framework to describe how our generated configurations can be fixed to Landau gauge, one of the two gauge choices used in this research.
 
 \section{QCD in the Continuum}
 \subsection{Quarks and Gauge Invariance}
-QCD is the gauge field theory that describes the interactions of quarks and gluons. Like all gauge theories, it has an internal symmetry group under which the Lagrangian is invariant. In the case of QCD there are three quark colours, which leads to the symmetry group being $SU(3)$, the group of $3\times 3$ unitary matrices of determinant 1 \footnote{This description is only true in the fundamental representation of the group, but this is the symmetry we observe in the Lagrangian and is a useful way to visualise the group.}. We can observe this $SU(3)$ symmetry by inspecting the QCD quark Lagrangian
+QCD is the gauge field theory that describes the interactions of quarks and gluons. Like all gauge theories, it has an internal symmetry group under which the Lagrangian is invariant. In the case of QCD there are three quark colours, which leads to the symmetry group being $SU(3)$, the group of $3\times 3$ unitary matrices of determinant 1~\footnote{This description of $SU(3)$ is only true in the fundamental representation of the group, but it is an intuitive way to think of the group as it is clearly the symmetry of the Lagrangian.}. We can observe this $SU(3)$ symmetry by inspecting the QCD quark Lagrangian
 %
 \begin{equation}
 \mathcal{L}_0 = \bar{\psi}(x)\,(i\slashed{\partial}-m)\,\psi(x)\,.
 \label{eq:GlobalQuarkLagrangian}
 \end{equation}
 %
-where $\psi(x)$ and $\bar{\psi}(x)$ are our quark and ant-quark fields respectively, and $\slashed{\partial}=\partial_\mu\,\gamma^\mu$. If we apply an $SU(3)$ transformation $\Omega$ to the three colour indices of the quark and anti-quark fields such that
+where $\psi(x)$ and $\bar{\psi}(x)$ contain the three quark and anti-quark fields respectively, $m$ is the quark mass and $\slashed{\partial}=\partial_\mu\,\gamma^\mu$. If we apply an $SU(3)$ transformation $\Omega$ to the three colour indices of the quark and anti-quark fields such that
 %
 \begin{align*}
 \psi(x)&\rightarrow\Omega\,\psi(x)\\
@@ -34,22 +34,22 @@ we see that
 \mathcal{L}_0\rightarrow\mathcal{L'}_0&=\bar{\psi}(x)\,\Omega^\dag\,(i\slashed{\partial}-m)\,\Omega\,\psi(x)\\
 &= \bar{\psi}(x)\,(i\slashed{\partial}-m)\,\psi(x)\,\Omega^\dag\,\Omega\\
 &= \bar{\psi}(x)\,(i\slashed{\partial}-m)\,\psi(x)\\
-&= \mathcal{L}_0\, .
+&= \mathcal{L}_0\, ,
 \end{align*}
 %
-Here we have made use of the unitarity property $U\,U^\dag = I$. If this symmetry were all we required then $\mathcal{L}_0$ would be our free Lagrangian and our theory would be pleasantly simple. However, we find that we need our gauge symmetry to be \textit{local}; that is, we demand that our gauge transformation itself be a function of $x$~\cite{peskin2018introduction}. In this case, we find that the derivative in Eq.~\ref{eq:GlobalQuarkLagrangian} results in a loss of $SU(3)$ symmetry. We can write an arbitrary local $SU(3)$ gauge transformation as an exponential of the eight traceless, Hermitian group generators $\lambda_a$ (known as the Gell-Mann matrices) such that 
+where we have made use of the unitarity property, $U\,U^\dag = I$. If this symmetry were all we required then $\mathcal{L}_0$ would be our free Lagrangian and our theory would be pleasantly simple. However, we find that we need our gauge symmetry to be \textit{local}; that is, we demand that our gauge transformation itself be a function of $x$~\cite{peskin2018introduction}. In this case, we find that the derivative in Eq.~\ref{eq:GlobalQuarkLagrangian} acting on the gauge transformation results in a loss of $SU(3)$ symmetry. We can write an arbitrary local $SU(3)$ gauge transformation as an exponential of the eight traceless, Hermitian group generators $\lambda_a$, known as the Gell-Mann matrices (see Appendix~\ref{app:GellMann} for their values), such that 
 %
 \begin{equation}
 \Omega(x)=\exp\left(i\omega^a(x)\,\frac{\lambda_a}{2}\right)\, .
 \label{eq:LocalGaugeTransformation}
 \end{equation}
 %
-In this form, the spacial dependence is encapsulated entirely in the eight parameters $\omega^a(x)$.  Using this form for $\Omega(x)$, we find that under a gauge transformation the Lagrangian is now
+Note that we make use of the summation convention to imply a sum over the repeated indices. In this form, the spacial dependence is encapsulated entirely in the eight parameters, $\omega^a(x)$.  Using this form for $\Omega(x)$, we find that under a gauge transformation the Lagrangian is now
 %
 \begin{align}
-\mathcal{L}_0\rightarrow\mathcal{L'}_0&=\bar{\psi}(x)\,\Omega^\dag(x)\,(i\slashed{\partial}-m)\,\Omega(x)\,\psi(x)\nonumber\\
+\mathcal{L}_0\rightarrow\mathcal{L^\prime}_0&=\bar{\psi}(x)\,\Omega^\dag(x)\,(i\slashed{\partial}-m)\,\Omega(x)\,\psi(x)\nonumber\\
 &=\bar{\psi}(x)\,\Omega^\dag(x)\left[-\frac{\lambda_a}{2}\,(\slashed{\partial}\,\omega^a(x))+i\,\Omega(x)\,(\slashed{\partial}\,\psi(x))-m\,\Omega(x)\,\psi(x)\right]\nonumber\\
-&= \mathcal{L}_0-\bar{\psi}(x)\,\Omega^\dag(x)\,\frac{\lambda_a}{2}(\slashed{\partial}\,\omega^a(x))\,\Omega(x)\,\psi(x)\, .\\
+&= \mathcal{L}_0-\bar{\psi}(x)\,\Omega^\dag(x)\,\frac{\lambda_a}{2}\,(\slashed{\partial}\,\omega^a(x))\,\Omega(x)\,\psi(x)\, .
 \label{eq:LocalTrans}
 \end{align}
 %
@@ -60,7 +60,7 @@ D_\mu = \partial_\mu - ig A_\mu(x)\, ,
 \label{eq:CovariantDerivative}
 \end{equation}
 %
-where $A_\mu(x)=A_\mu^a(x)\,\frac{\lambda_a}{2}$, and $A_\mu^a(x)$ are eight new `gauge potentials', and $g$ is the strong coupling constant. In the context of QCD, these gauge potentials are also known as the gluon field. For the sake of cleanliness, we will stop explicitly writing the dependence of our fields and gauge transformations on $x$ from here on, but it should be remembered that all gauge transformations are local unless explicitly stated otherwise. Making the substitution $\partial_\mu\rightarrow D_\mu$, we obtain the new Lagrangian
+where $A_\mu(x)=A_\mu^a(x)\,\frac{\lambda_a}{2}$ encapsulates the eight new `gauge potentials' and $g$ is the strong coupling constant. In the context of QCD, these gauge potentials are also known as the gluon field. For the sake of cleanliness, we will stop explicitly writing the dependence of our fields and gauge transformations on $x$ from here on, but it should be remembered that all gauge transformations are local unless explicitly stated otherwise. Making the substitution $\partial_\mu\rightarrow D_\mu$, we obtain the new Lagrangian
 %
 \begin{equation}
 \mathcal{L}_\text{local} = \bar{\psi}\,(i\slashed{D}-m)\,\psi\,.
@@ -84,16 +84,15 @@ Making use of the transformation properties of $\psi$ and $\bar{\psi}$, this imp
 \begin{equation}
 A_\mu\rightarrow \Omega\,A_\mu\,\Omega^\dag - \frac{i}{g}\,(\partial_\mu\,\Omega)\,\Omega^\dag\, . 
 \label{eq:GaugePotentialTrans}
-\end{equation}\\
+\end{equation}
 %
-
 This transformation property can also be expressed in terms of the covariant derivative. Doing so, we find that
 %
-\begin{align*}
-D_\mu\,\psi \rightarrow &\left(\partial_\mu -ig\,\Omega\,A_\mu\,\Omega^\dag - (\partial_\mu\,\Omega)\,\Omega^\dag\right)\,\Omega\,\psi\\
-&= (\partial_\mu\,\Omega)\,\psi + \Omega\,(\partial_\mu\,\psi) - ig\,\Omega\,A_\mu\,\psi - (\partial_\mu\,\Omega)\psi\\
-&=\Omega\,D_\mu\,\psi\, .
-\end{align*}
+\begin{align}
+D_\mu\,\psi \rightarrow &\left(\partial_\mu -ig\,\Omega\,A_\mu\,\Omega^\dag - (\partial_\mu\,\Omega)\,\Omega^\dag\right)\,\Omega\,\psi\nonumber\\
+&= (\partial_\mu\,\Omega)\,\psi + \Omega\,(\partial_\mu\,\psi) - ig\,\Omega\,A_\mu\,\psi - (\partial_\mu\,\Omega)\psi\nonumber\\
+&=\Omega\,D_\mu\,\psi\, .\label{eq:CovariantTransformation}
+\end{align}
 %
 And therefore
 %
@@ -101,13 +100,13 @@ And therefore
 D_{\mu}\rightarrow\Omega\,D_\mu \Omega^\dag
 \end{equation}
 %
-This result tells us that the covariant derivative of a quark field transforms in the same way as the quark field itself. The covariant derivative can then be thought of as a connection between two points that may have a different underlying gauge. For example, if we consider an infinitesimal translation in the quark field
+Eq.~\ref{eq:CovariantTransformation} tells us that the covariant derivative of a quark field transforms in the same way as the quark field itself. This implies that the covariant derivative can be understood as a connection between two points that may have a different underlying gauge. For example, if we consider an infinitesimal translation in the quark field
 %
 \begin{equation*}
 d\psi(x) = \psi(x+dx)-\psi(x)\, ,
 \end{equation*} 
 %
-we note that the gauge at the point $x$ and at $x+dx$ in general will differ, so it doesn't make sense to compare the field values through the usual understanding of the derivative. Instead, the covariant derivative accounts for this underlying gauge structure, `transporting' the field from one position to another. This is entirely analogous to the covariant derivative used in general relativity, however in this case the transport occurs over an internal gauge space, rather than an external curved space-time.\\
+we note that the gauge at the point $x$ and at $x+dx$ in general will differ, so it doesn't make sense to compare the field values through the usual understanding of the derivative, as this ignores the change in local gauge. Instead, the covariant derivative accounts for this underlying gauge structure, `transporting' the field from one position to another. This is entirely analogous to the covariant derivative present in general relativity, however in this case the transport occurs over an internal gauge space, rather than an external curved space-time.\\
 
 \subsection{Field Strength Tensor}
 Using local gauge invariance as a guide, we can now seek other gauge invariant terms to insert into the Lagrangian. If we consider the commutator of the covariant derivative, we have
@@ -121,13 +120,13 @@ Using local gauge invariance as a guide, we can now seek other gauge invariant t
 We therefore define the gluon field strength tensor to be
 %
 \begin{equation}
-F_{\mu\nu} = \frac{i}{g}\,[D_\mu,\, D_\nu]
+F_{\mu\nu} = \frac{i}{g}\,[D_\mu,\, D_\nu]\, .
 \end{equation}
 %
 Expanding this definition, $F_{\mu\nu}$ may also be written
 %
 \begin{align}
-F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu - ig[A_\mu,\,A_\nu]
+F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu - ig[A_\mu,\,A_\nu]\, .
 \label{eq:FieldStrengthTensor}
 \end{align}
 %
@@ -136,23 +135,23 @@ To obtain a gauge invariant quantity, we take the trace of the contracted field 
 \begin{align*}
 \Tr(F_{\mu\nu}\,F^{\mu\nu})\rightarrow&-\frac{1}{g^2}\Tr\left(\Omega\,[D_\mu,\,D_\nu]\,\Omega^\dag\,\Omega\,[D^\mu,\,D^\nu]\,\Omega^\dag\right)\\
 &=-\frac{1}{g^2}\Tr\left(\Omega^\dag\,\Omega\,[D_\mu,\,D_\nu]\,[D^\mu,\,D^\nu]\,\right)\\
-&=\Tr(F_{\mu\nu}\,F^{\mu\nu})
+&=\Tr(F_{\mu\nu}\,F^{\mu\nu})\, .
 \end{align*}
 %
 Thus we define the full gauge invariant QCD Lagrangian to be
 %
 \begin{equation}
-\mathcal{L_{\text{QCD}}}=\bar{\psi}(x)\,(i\slashed{D}-m)\,\psi(x)-\frac{1}{2}\,\Tr(F_{\mu\nu}(x)\,F^{\mu\nu}(x))
+\mathcal{L_{\text{QCD}}}=\bar{\psi}(x)\,(i\slashed{D}-m)\,\psi(x)-\frac{1}{2}\,\Tr(F_{\mu\nu}(x)\,F^{\mu\nu}(x))\, .
 \label{eq:QCDLagrangian}
 \end{equation}\\
 
-This gluon term is not the only gauge invariant quantity we could construct; for example, $\bar{\psi}\,\psi\,\bar{\psi}\,\psi$ is clearly gauge invariant. However, it turns out that there is a further condition that must be satisfied by each term in the Lagrangian; each term must be \textit{renormalisable}~\cite{peskin2018introduction}. A complete discussion of renormalisation is unnecessary for this work, but renormalisability can be quickly summarised by looking at the dimensionality of each term in the Lagrangian. The Lagrangian must have units of $(\text{Energy})^4$, which in natural units is $(\text{mass})^4$ (hereafter referred to as just dimension 4). We therefore require that each term and its accompanying coupling constant give the same dimensionality. The fermion field has dimension $\frac{3}{2}$, the gauge potential has dimension 1 and $\partial_\mu$ has dimension 1. Then we see that the terms present in Eq.~\ref{eq:QCDLagrangian} have dimension
+This gluon term is not the only gauge invariant quantity we could construct; for example, $\bar{\psi}\,\psi\,\bar{\psi}\,\psi$ is clearly gauge invariant. However, it turns out that there is a further condition that must be satisfied by each term in the Lagrangian; each term must be \textit{renormalisable}~\cite{peskin2018introduction}. A complete discussion of renormalisation is unnecessary for this work, but renormalisability can be quickly summarised by looking at the dimensionality of each term in the Lagrangian. The Lagrangian must have units of $(\text{Energy})^4$, which in natural units is $(\text{mass})^4$,  hereafter referred to as just dimension $D=4$. We therefore require that each term and its accompanying coupling constant give the same dimensionality. The fermion field has dimension $\frac{3}{2}$, the gauge potential has dimension 1 and $\partial_\mu$ has dimension 1. Thus, the terms present in Eq.~\ref{eq:QCDLagrangian} have dimension
 %
 \begin{align*}
 \text{D}[\bar{\psi}(x)\,\gamma^\mu\,\partial_\mu\,\psi(x)]&=\frac{3}{2}+1+\frac{3}{2}=4\\
 \text{D}[\bar{\psi}(x)\,\gamma^\mu\,A_\mu\,\psi(x)]&=\frac{3}{2}+1+\frac{3}{2}=4\\
 \text{D}[\bar{m\psi}(x)\,\psi(x)]&=1+\frac{3}{2}+\frac{3}{2}=4\\
-\text{D}[F_{\mu\nu}\,F^{\mu\nu}] &= 2+2=4
+\text{D}[F_{\mu\nu}\,F^{\mu\nu}] &= 2+2=4\, ,
 \end{align*}
 %
 as required. This also tells us that the coupling constant $g$ is dimensionless. If a new gauge invariant term $h\bar{\psi}\,\psi\,\bar{\psi}\,\psi$ with coupling constant $h$ is introduced, we then require that $h$ have dimension $-2$. It turns out that if the dimensionality of the coupling constant is less than 0 then the term in non-renormalisable. This means that integrals involving this new term will diverge in such a way that they cannot be systematically be made finite through the use of a renormalisation scheme, and hence they cannot form part of any physical theory. By applying the requirements of gauge invariance and renormalisability, it is apparent that Eq.~\ref{eq:QCDLagrangian} is the full QCD Lagrangian.
@@ -179,7 +178,7 @@ When considering the path integral formulation of a gauge field theory, integral
 \label{eq:GeneratingFunctional}
 \end{equation}
 %
-and others of a similar form appear frequently. This integral closely resembles the partition function found in statistical mechanics, $Z_{\text{classical}}=\int d^3x\,d^3p\,\exp\left(-\beta\,H(x,p)\right)$, with the notable exception of the factor of $i$ in the exponential. From the statistical mechanics perspective, the $\exp(\ldots)$ term in the generating functional is a probability weighting for each `path' through gauge space. The factor of $i$ in Eq.~\ref{eq:GeneratingFunctional} results in an oscillatory weighting, rendering numerical simulations untenable. To ensure that the weight factor is purely real, it is necessary to perform a Wick rotation into Euclidean space~\cite{Schafer:1996wv,Wilson:1974sk}
+and others of a similar form appear frequently. This integral closely resembles the partition function found in statistical mechanics, $Z_{\text{classical}}=\int d^3x\,d^3p\,\exp\left(-\beta\,H(x,p)\right)$, with the notable exception of the factor of $i$ in the exponential. From the statistical mechanics perspective, the $\exp(\ldots)$ term in Eq.~\ref{eq:GeneratingFunctional} is a probability weighting for a given gauge potential. However, unlike the classical case, the factor of $i$ in Eq.~\ref{eq:GeneratingFunctional} results in an oscillatory weighting, rendering numerical simulations untenable. To ensure that the weight factor is purely real, it is necessary to perform a Wick rotation into Euclidean space~\cite{Schafer:1996wv,Wilson:1974sk}
 \begin{align*}
 x_0\rightarrow -ix_0
 \end{align*}
@@ -187,15 +186,15 @@ The generating functional now becomes
 \begin{equation}
 \mathcal{Z}_{\text{Eucl}} =\int \mathcal{D} A_\mu \exp\left(-\mathcal{S}_{\text{Eucl}}\,[A_\mu]\right).
 \end{equation}
-The Wick rotation also has the consequence of reducing the metric $g_{\mu\nu}$ to the identity, meaning that there is no longer any differentiation between covariant and contravariant tensors.\\
+The Wick rotation also has the consequence of reducing the metric $g_{\mu\nu}$ to the identity, meaning that there is no longer any differentiation between covariant and contravariant tensor indices.\\
 
-In Euclidean space, we can write the expectation value of some operator $Q[A_\mu]$ as~\cite{Luscher:1984xn}
+In Euclidean space, we can make use of the generating functional to write the expectation value of an arbitrary operator $Q[A_\mu]$ as~\cite{Luscher:1984xn}
 %
 \begin{equation}
 \langle Q \rangle = \frac{1}{\mathcal{Z}}\int \mathcal{D} A_\mu Q[A_\mu] \exp\left(-\mathcal{S}_{\text{Eucl}}\,[A_\mu]\right)\, .
 \end{equation}
 %
-This definition of the expectation value, whilst potentially difficult or even impossible to calculate analytically, has a simple interpretation. To calculate the expectation value of some operator, we integrate over every possible configuration of $A_\mu(x)$, weighted by the action of that configuration. In the case where the coupling constant $g$ of the theory is small, as is the case for QED or high-energy QCD, it is possible to expand $\exp\left(-\mathcal{S}_{\text{Eucl}}\,[A_\mu]\right)$ in terms of the coupling constant, leading to a perturbative expansion. Alternatively, if the only relevant configurations in the theory are those near the classical action, satisfying $\frac{\delta S[A_\mu]}{\delta A_\mu}\big|_{A_\mu = A_\mu^\text{cl}}=0$, then the action can be expanded around the classical solution. However, in the case of low-energy QCD, both of these approximations are invalid, and as such it becomes essential to sample all possible configurations of $A_\mu(x)$ and generate a finite subset that can be used to approximate the continuum expectation value. Obtaining this subset on which we can perform calculations is ultimately the goal of lattice QCD.
+This definition of the expectation value, whilst potentially difficult or even impossible to calculate analytically, has an intuitive interpretation. To calculate the expectation value of some operator, we integrate over every possible configuration of $A_\mu(x)$, weighted by the action of that configuration. In the case where the coupling constant $g$ of the theory is sufficiently small, as is the case for QED or high-energy QCD, it is possible to expand $\exp\left(-\mathcal{S}_{\text{Eucl}}\,[A_\mu]\right)$ in terms of the coupling constant, leading to a perturbative expansion. Alternatively, if the only relevant configurations in the theory are those near the classical action satisfying $\frac{\delta S[A_\mu]}{\delta A_\mu}=0$, then the action can be expanded around the classical solution. However, in the case of low-energy QCD, both of these approximations are invalid, and as such it becomes essential to sample possible configurations of $A_\mu(x)$ and generate a representative finite subset that can be used to approximate the continuum expectation value. Obtaining this subset on which we can perform calculations is one of the key aims of lattice QCD.
 
 \section{Lattice Discretisation}\label{sec:LatticeDiscretisation}
 With the continuum understanding developed in the previous section, we can now consider discretising spacetime into a finite lattice. The lattice is a hypercube with $N_s$ lattice sites in the spacial directions and $N_t$ sites in the time direction. Each lattice site is separated by a spacing $a$, resulting in a total lattice volume $V=(N_s\,a)^3\times N_t\,a$. This discretisation is shown in two dimensions in Fig.~\ref{fig:LatticeExample}. For labelling points on the lattice, the notation $\hat{\mu}$ is often used. $\hat{\mu}$ denotes the unit vector in the $\mu$ direction; for example, $\hat{y} = (0,0,1,0)$. We also must impose boundary conditions for the lattice; in this work we choose periodic boundary conditions such that $x+(N+1)a\hat{\mu}=x$.\\
@@ -227,20 +226,27 @@ F_{\text{Lat}}^{\mu\nu}(x) = \frac{A_\nu(x+a\hat{\mu})-A_\nu(x)}{a}-\frac{A_\mu(
 \label{eq:DiscreteFST}
 \end{equation}
 %
-The notation $A_\nu(x+a\hat{\mu})$ denotes the field $A_\nu$ located at the site one lattice spacing in the $\hat{\mu}$ direction from $x$. We could continue to reformulate our lattice theory by imposing this method of discretisation, and indeed this is historically how the lattice framework was constructed\cite{Wilson:1974sk}. However, it is useful to instead formulate our lattice theory in terms of the gauge {\it links}. Analogous to how we introduced the covariant derivative to compensate for the fact that the quark field at infinitesimally different points in space has a different underlying gauge, we now want to have a mechanism for comparing gluon fields at some finite separation. This requires us to solve the parallel transport equation of our gauge field~\cite{Bing:1999ee}
+The notation $A_\nu(x+a\hat{\mu})$ denotes the field $A_\nu$ located at the site one lattice spacing in the $\hat{\mu}$ direction from $x$. We could continue to reformulate our lattice theory by imposing this method of discretisation, and indeed this is historically how the lattice framework was constructed~\cite{Wilson:1974sk}. However, it is useful to instead formulate our lattice theory in terms of gauge {\it links}. Analogous to how we introduced the covariant derivative to compensate for the fact that the quark field at infinitesimally different points in space has a different underlying gauge, we now want to have a mechanism for comparing gluon fields at some finite separation. This requires us to solve the parallel transport equation of our gauge field~\cite{Bing:1999ee,peskin2018introduction}
 %
 \begin{equation}
-\frac{dx_\mu(t)}{dt}\,D_\mu U(x_\mu(t))=0,~t\in [0,1]\, ,
+\frac{dx^\mu(t)}{dt}\,D_\mu \,U(x(t),y)=0\, ,
 \label{eq:ParallelTransport}
 \end{equation}
 %
-where $U(x_\mu(t))$ is an $SU(3)$ element satisfying $U(x_\mu(0))=I$. We can make use of the explicit parametrisation of the path between two adjacent lattice sites, $x_\mu(t) = x_\mu+a\,t\,\hat{\nu}$, where $x_\mu$ is a fixed position and $\nu$ is the direction we are transporting the field. Substituting this into Eq.~\ref{eq:ParallelTransport} we have
+where $U(x(t),y)$ is an $SU(3)$ element and $x(t)$ is some path parametrised by $t\,\in\,[0,1]$ satisfying $x(0)=y$. We further require that $U(y,y)=I$, as the parallel transport from $y\rightarrow y$ is trivial. We can now make use of the explicit parametrisation of the path between two adjacent lattice sites, $x(t) = x_\mu+a\,t\,\hat{\nu}$, where $x_\mu$ is a fixed position and $\nu$ is the direction we are transporting the field. Substituting this into Eq.~\ref{eq:ParallelTransport} we have
 \begin{align*}
 &a\,\delta^\nu_\mu\, (\partial_\mu-igA_\mu)\,U(x_\mu+a\,t\,\hat{\nu})=0\\
 &a\partial_\nu\, U(x_\mu+a\,t\,\hat{\nu}) = iag\, A_\nu\,U(x_\mu+a\,t\,\hat{\nu})\\
 &\frac{\partial}{\partial t}U(x_\mu+a\,t\,\hat{\nu}) = iag\,A_\nu\, U(x_\mu+a\,t\,\hat{\nu})\, .
 \end{align*}
-For a non-Abelian field, this is precisely the differential equation solved by the path-ordered exponential \textcolor{red}{[appendix proof]}, so we find for each direction the gauge links
+For a non-Abelian field, this is precisely the differential equation solved by the path-ordered exponential, known as the Wilson line
+%
+\begin{align*}
+U(x(t),y) &= \mathcal{P}\exp\left(\int_0^t \,dt^\prime\, iag \,A_\nu(t^\prime)\right)\\
+&=\mathcal{P}\exp\left(ig\int_{x_\mu}^{x_\mu+at}\,dx_\nu^\prime\, A_\nu(x^\prime)\right)\, .
+\end{align*}
+%
+Hence, for each direction $\hat{\mu}$, we define the gauge links between adjacent lattice sites to be
 \begin{equation}
 U_\mu(x) = \mathcal{P}\exp\left(ig\int_x^{x+a\hat{\mu}}dx'\,A_\mu(x')\right)\, .
 \label{eq:GaugeLink}
@@ -250,10 +256,13 @@ From this definition we also see that we can write the gauge link in the opposit
 \mathcal{P}\exp\left(ig\int^x_{x+a\hat{\mu}}dx'\,A_\mu(x')\right) &= \mathcal{P}\exp\left(-ig\int_x^{x+a\hat{\mu}}dx'\,A_\mu(x')\right)\\
 &=U^\dag_\mu(x)\, .
 \end{align*}
-These gauge links have the simple gauge transformation property\textcolor{red}{[appendix proof]}~\cite{Lepage:1998dt}
+These gauge links have the simple gauge transformation property~\cite{Lepage:1998dt} (see Appendix~\ref{app:WilsonLineGT})
+%
 \begin{equation}
-U_\mu\rightarrow \Omega(x)\,U_\mu(x)\,\Omega^\dag(x+a\hat{\mu})\, .
+U_\mu(x)\rightarrow \Omega(x+a\hat{\mu})\,U_\mu(x)\,\Omega^\dag(x)\, .
+\label{eq:LinkTransformation}
 \end{equation}
+%
 Making use of this gauge transformation property, we can construct gauge invariant Wilson loops by taking the trace of the product of the $U_\mu$'s around a closed loop. The simplest such loop, the $1\times 1$ square, is called the \textit{plaquette}, and is defined as
 \begin{equation}
 P_{\mu\nu}(x) = U_\mu(x)\,U_\nu(x+a\hat{\mu})\, U_\mu^\dag(x+a\hat{\nu})\, U_\nu^\dag(x)\, .
@@ -266,7 +275,7 @@ Calculating the Wilson loop by taking the trace of the plaquette we see that by 
 =&\Tr\left(P_{\mu\nu}(x)\right)\, .
 \end{align*}\\
 
-We now return to the lattice formulation, making use of the gauge links to define our quantities of interest. Firstly, we approximate our gauge links using a midpoint definition, such that
+We now return to the lattice formulation, making use of the gauge links to define our quantities of interest. Firstly, we approximate our gauge links on the lattice by using a midpoint definition, such that
 \begin{equation}
 U_\mu^\text{lat}(x) = \exp\left(iag\, A_\mu\left(x+\frac{a}{2}\hat{\mu}\right)\right)\, .
 \label{eq:GaugeLinkLat}
@@ -286,11 +295,11 @@ P_{\mu\nu} = I+ia^2g\, F_{\mu\nu} - \frac{a^4 g^2}{2}F^2_{\mu\nu} +\mathcal{O}(a
 and hence to $\mathcal{O}(a^2)$
 %
 \begin{align}
-a^4\Tr\left(F_{\mu\nu}F^{\mu\nu}\right) = \sum_{\mu,\,\nu}\frac{2}{g^2}\Tr\left(I-\frac{1}{2}\left(P_{\mu\nu}+P_{\mu\nu}^\dag\right)\right)\, .
+\frac{1}{2}^4\Tr\left(F_{\mu\nu}F^{\mu\nu}\right) = \sum_{\mu,\,\nu}\frac{1}{g^2}\Tr\left(I-\frac{1}{2}\left(P_{\mu\nu}+P_{\mu\nu}^\dag\right)\right)\, .
 \label{eq:FieldStrengthPlaquette}
 \end{align}
 %
-We have now arrived at a definition of the contracted field strength tensor that can be used to define our lattice action. As we sum over the 6 unique plaquettes, we take into account a factor of $2$ to arrive at the definition 
+We have now arrived at a definition of the contracted field strength tensor that can be used to define our lattice action. As we only sum over the 6 unique plaquettes, we take into account a factor of $2$ to arrive at the definition 
 %
 \begin{equation}
 \mathcal{S}_\text{W} = \beta\sum_x\,\sum_{\mu<\nu} \frac{1}{3}\Tr\left(I-\frac{1}{2}\left(P_{\mu\nu}+P_{\mu\nu}^\dag\right)\right)\, ,
@@ -316,10 +325,10 @@ and $R_{\mu\nu}$ is the $2\times 1$ rectangle Wilson loop, defined similarly to 
 \end{align}
 The presence of the `tadpole' improvement factor $u_0$ is necessary to modify the coupling constant such that the action has better agreement with the continuum over small distances~\cite{Lepage:1992xa}. This choice of action provides reduced errors in comparison to the Wilson action.\\
 
-This lattice framework provides the tools necessary to explicitly calculate quantities of interest from a first-principles standpoint. Firstly, the gauge links are generated by monte-carlo methods, using $\exp\left(-\mathcal{S}\right)$ as a probability weighting for a given configuration. Once these configurations are generated, gauge fixing can be performed (Sec.~\ref{sec:LandauGauge}, \ref{sec:MCG}), and quantities such as the gluon propagator (Chapter~\ref{chapter:GluonPropagator}) can be obtained.
+This lattice framework provides the tools necessary to explicitly calculate quantities of interest from a first-principles standpoint. Firstly, the gauge links are generated by monte-carlo methods, using $\exp\left(-\mathcal{S}\right)$ as a probability weighting for a given configuration. Once these configurations are generated, gauge fixing can be performed (Sec.~\ref{sec:LandauGauge}, \ref{sec:MCG}), and quantities of interest such as the gluon propagator (Chapter~\ref{chapter:GluonPropagator}) can be obtained.
 
 \section{Gauge Fixing}
-The choice of gauge is crucial when performing calculations on the lattice, or more generally in any gauge field theory calculation. There are two choices of gauge relevant to this study: Landau gauge and maximal centre gauge. Maximal centre gauge is best explored in the context of centre vortices, and will therefore be detailed in chapter~\ref{sec:MCG}, however the Landau gauge fixing condition provides a good introduction to the gauge fixing procedure, and as such will be described here.
+The choice of gauge is crucial when performing calculations on the lattice, or, more generally, in any gauge field theory calculation. There are two choices of gauge relevant to this study: Landau gauge and maximal centre gauge. Maximal centre gauge is best explored in the context of centre vortices, and will therefore be detailed in chapter~\ref{sec:MCG}, however the Landau gauge fixing condition provides a good introduction to the gauge fixing procedure, and as such will be described here.
 
 \subsection{Landau Gauge}\label{sec:LandauGauge}
 
@@ -369,10 +378,10 @@ where
 \mathcal{F}_2 &= \sum _ { \mu , x } \frac { 1 } { 2 } \operatorname { Tr } \left\{ U _ { \mu } ^ { G } ( x ) \,U _ { \mu } ^ { G } ( x + a\hat { \mu } ) + U _ { \mu } ^ { G } ( x + a\hat { \mu } )^\dagger\, U _ { \mu } ^ { G } ( x )^\dagger  \right\}\, .
 \end{align*}
 %
-We explicitly write $U^G_\mu$ to indicate that we are considering gauge links under an as-yet unknown gauge transformation. It becomes apparent why this we seek the extrema of this particular functional when we take the functional derivative \textcolor{red}{[appendix proof]} with respect to the free parameters of the gauge transformation (see Eq.~\ref{eq:LocalGaugeTransformation}), $\omega^a(x)$.
+We explicitly write $U^\Omega_\mu$ to indicate that we are considering gauge links under an as-yet unknown gauge transformation $\Omega$. It becomes apparent why we seek the extrema of this particular functional when we take the functional derivative with respect to the free parameters of the gauge transformation , $\omega^a(x)$ (see Eq.~\ref{eq:LocalGaugeTransformation}).
 %
 \begin{equation}
-\frac { \delta \left\{ \frac { 4 } { 3 } \mathcal { F } _ { 1 } - \frac { 1 } { 12 u _ { 0 } } \mathcal { F } _ { 2 } \right\} } { \delta \omega ^ { a } ( x ) } = g a ^ { 2 } \sum _ { \mu } \operatorname { Tr } \left\{ \left[ \partial _ { \mu } A _ { \mu } ( x ) - \frac { 4 } { 360 } a ^ { 4 } \partial _ { \mu } ^ { 5 } A _ { \mu } ( x ) + \mathcal { O } \left( a ^ { 6 } \right) \right] \frac{\lambda^a}{2} \right\} + \mathcal { O } \left( g ^ { 3 } a ^ { 4 } \right)
+\frac { \delta \left\{ \frac { 4 } { 3 } \mathcal { F } _ { 1 } - \frac { 1 } { 12 u _ { 0 } } \mathcal { F } _ { 2 } \right\} } { \delta \omega ^ { a } ( x ) } = g a ^ { 2 } \sum _ { \mu } \operatorname { Tr } \left\{ \left[ \partial _ { \mu } A _ { \mu } ( x ) - \frac { 4 } { 360 } a ^ { 4 } \partial _ { \mu } ^ { 5 } A _ { \mu } ( x ) + \mathcal { O } \left( a ^ { 6 } \right) \right] \frac{\lambda^a}{2} \right\} + \mathcal { O } \left( g ^ { 3 } a ^ { 4 } \right)\, .
 \label{eq:LGFunctionalDeriv}
 \end{equation}
 %

@@ -3,16 +3,16 @@
 %*********************************** Seventh Chapter *****************************
 %*******************************************************************************
 
-\chapter{Centre Vortex Visualisations}
+\chapter{Centre Vortex Visualisations}\label{chapter:Visualisations}
 \ifpdf
     \graphicspath{{Chapter7/Figs/Raster/}{Chapter7/Figs/PDF/}{Chapter7/Figs/}}
 \else
     \graphicspath{{Chapter7/Figs/Vector/}{Chapter7/Figs/}}
 \fi
 
-In previous chapters we have motivated the significance of centre vortices in QCD through the calculation of the gluon propagator. Although we can predict many of the properties of vortices through calculation, these properties can also be explored through visualisations of the lattice. To this end, in this chapter we present a novel visualisation technique that allows us to view thin centre vortices on the lattice through the use of three-dimensional (3D) models.
+In previous chapters we have motivated the significance of centre vortices in QCD through the calculation of the gluon propagator. Although we can predict many of the properties of vortices through calculation, these properties can also be explored through visualisations of the lattice. To this end, in this chapter we present a novel visualisation technique that allows us to view thin centre vortices on the lattice through the use of 3D models~\footnote{All 3D models have been generated using Advanced Visual Systems (AVS) Express Visualisation Edition, version 8.4.1.}.
 
-\section{Time Slices}
+\section{Space-Oriented Vortices}
 As the lattice is a four-dimensional hypercube, we visualise the centre vortices on 3D slices. The choice of dimension to take slices along is irrelevant in Euclidean space, so we choose to take slices along the $x$-axis, resulting in $N_x$ slices each with dimension $N_y\times N_z\times N_t$. This choice of axis to slice along allows for the largest volume per slice.  However, the transition between slices is best thought of as `stepping though time', so we re-label our coordinates such that each slice is a snapshot at fixed $t$, with local coordinates $(x,y,z)$. Within each slice we can visualise all vortices associated with an $x-y$, $x-z$ or $y-z$ plaquette by calculating $P_{x\,y}(\bf{x})$, $P_{y,z}(\bf{x})$ and $P_{z,x}(\bf{x})$ for all $\bf{x}$ in the slice. These vortices will be referred to as the `space-oriented' vortices, as they are fixed in time. The plaquettes are evaluated on a centre projected configuration, so $P_{\mu\nu}\in \lbrace -1,\,0,\,+1\rbrace$. For a $+1$ vortex, a blue jet is plotted piercing the centre of the plaquette, and for a $-1$ vortex a red jet is plotted. The direction of the jet is set according to a right-hand rule, such that
 \begin{itemize}[leftmargin=*,itemsep=0pt,labelsep=12pt]
 \item $P_{x\,y}=\pm 1\implies \pm\hat{z}$ direction.
@@ -40,14 +40,14 @@ The 3D slices for $t=1,2$ with the space-oriented vortices plotted appear as in 
 
 %
 {\centering
-\begin{figure}[htb!]
+\begin{figure}
 \includegraphics[width=\linewidth]{Plaq_CFG95_T01.png}
 \caption{\label{fig:PlaqT01}The $t=1$ slice with all space-oriented vortices plotted.}
 \end{figure}
 }
 %
 {\centering
-\begin{figure}[htb!]
+\begin{figure}
 \includegraphics[width=\linewidth]{Plaq_CFG95_T02.png}
 \caption{\label{fig:PlaqT02}The $t=2$ slice with all space-oriented vortices plotted.}
 \end{figure}
@@ -67,9 +67,9 @@ The 3D slices for $t=1,2$ with the space-oriented vortices plotted appear as in 
     \caption{\label{fig:VortexFeatures} \textbf{Left:} Vortices form continuous lines. Note that because of the lattice periodicity, these lines may wrap around to the opposite edge of the lattice. \textbf{Middle:} Vortices must form closed loops to conserve the vortex flux. \textbf{Right:} $SU(3)$ vortices are capable of forming monopoles or branching points where three vortices emerge or converge at a single point.}
 \end{figure}
 %
-It is an excellent sanity check to see that the vortices do indeed form closed lines, as they must to conserve the centre flux and satisfy the Bianchi identity~\cite{Engelhardt:2003wm,Spengler:2018dxt}. We also observe that with the exception of the $1\times 1$ vortex loops (see the middle image in Fig.~\ref{fig:VortexFeatures}) which can be readily attributed to incorrectly identified centre phases, the vortex loops are large and do not form isolated loops within the 3D volume. This agrees with the observation made of $SU(2)$ vortices in Ref.~\cite{Engelhardt:1999fd} that below the critical deconfinement temperature, $T_C$, almost all vortices identified had the maximum possible extent. It will be the subject of future work to investigate whether as the temperature increases the $SU(3)$ vortices begin to shrink and cease to percolate, indicating a transition to the deconfining phase.\\
+It is an excellent sanity check to see that the vortices do indeed form closed lines, as they must to conserve the centre flux and satisfy the Bianchi identity~\cite{Engelhardt:2003wm,Spengler:2018dxt}. We also observe that with the exception of the $1\times 1$ vortex loops (see the middle image in Fig.~\ref{fig:VortexFeatures}) which can be readily attributed to incorrectly identified centre phases, the vortex loops are large and rarely form isolated loops within the 3D volume. This agrees with the observation made of $SU(2)$ vortices in Refs.~\cite{Engelhardt:1999fd,Bertle:1999tw} that below the critical deconfinement temperature, $T_C$, almost all vortices identified had the maximum possible extent. It will be the subject of future work to investigate whether as the temperature increases the $SU(3)$ vortices begin to shrink and cease to percolate, indicating a transition to the deconfining phase.\\
 
-The presence of branching/monopole points is of particular interest, as previous studies have primarily focussed on $SU(2)$ theory which is free from these structures. This is because it is only in $SU(3)$ (or more generally, $SU(N)$ with $N>2$) that it is possible to conserve the centre flux at the intersection of 3 vortices, as shown in Fig.~\ref{fig:VortexBranching}. It is clear from our visualisations that these points occur frequently in the confining phase, in agreement with the findings of Ref.~\cite{Spengler:2018dxt}. The ambiguity between monopoles and branching points arises from the lack of definite orientation for the vortex line. As $P_{\mu\nu} = P_{\nu\mu}^\dagger$, the ordering by which the plaquette is calculated will invert the sign of the vortex, and as such the choice of ordering can change a monopole into a branching point, or vice-versa. The significance of this ambiguity is unclear, but it is worth emphasising its existence. The presence of these points may also be related to the non-vanishing total topological charge observed in the vacuum, and enforces an integer topological charge when they are considered to be `nexus' solutions, as described in Refs.~\cite{Cornwall:1999xw,Cornwall:1998ef}.
+The presence of branching/monopole points is of particular interest, as previous studies have primarily focussed on $SU(2)$ theory which is free from these structures. This is because it is only in $SU(3)$ (or more generally, $SU(N)$ with $N>2$) that it is possible to conserve the centre flux at the intersection of 3 vortices, as shown in Fig.~\ref{fig:VortexBranching}. It is clear from our visualisations that these points occur frequently in the confining phase, in agreement with the findings of Ref.~\cite{Spengler:2018dxt}. The ambiguity between monopoles and branching points arises from the lack of definite orientation for the vortex line. As $P_{\nu\mu} = P_{\mu\nu}^\dagger$, the ordering by which the plaquette is calculated will invert the sign of the vortex, and as such the choice of ordering can change a monopole into a branching point, or vice-versa. The lack of definite orientation for vortices is an important property, as it permits non-vanishing topological charge, and is indeed a key property of the vortex model~\cite{Engelhardt:2010ft,Engelhardt:1999xw}. The presence of these points may also enforce an integer topological charge when they are considered to be `nexus' solutions, as described in Refs.~\cite{Cornwall:1999xw,Cornwall:1998ef}.
 %
 \begin{figure}[htb!]
 \centering
@@ -77,7 +77,7 @@ The presence of branching/monopole points is of particular interest, as previous
 \caption{\label{fig:VortexBranching}\textbf{Left:} A vortex branching point. \textbf{Right:} A vortex monopole. Note that for both figures, the vortex charge is conserved at the vertex. By changing the orientation of the plaquette containing the left-most vortex, these two diagrams can be interchanged.}
 \end{figure}
 %
-\section{Time-Oriented vortices}
+\section{Time-Oriented Vortices}
 For each link in a given 3D slice there are two additional plaquettes that lie in the $x_i - t$ plane, pointing in the positive and negative time directions. Vortices associated with time-oriented plaquettes contain information of how the line-like vortices evolve with time, or equivalently, how the vortex surfaces appear in four dimensions. In a given 3D slice we only have access to one link associated with a time-oriented vortex, and as such we plot an arrow along this link to indicate its association with this vortex. We adopt the following plotting convention for these time-oriented vortices:
 \begin{itemize}[leftmargin=*,itemsep=0pt,labelsep=12pt]
 \item  \makebox[13em][l]{$+1$ vortex, forward in time}  $\implies$ cyan arrow, positively oriented.
@@ -102,13 +102,13 @@ An example of these conventions is shown in Fig.~\ref{fig:TimeVortices}. Utilisi
   \label{fig:TimeVortices}
 \end{figure}
 %
-\begin{figure}[htb!]
+\begin{figure}
 \centering
 \includegraphics[width=\linewidth]{PlaqLink_CFG95_T01.png}
 \caption{\label{fig:PlaqLinkT01}The $t=1$ slice with all space-oriented and time-oriented vortices plotted.}
 \end{figure}
 %
-\begin{figure}[htb!]
+\begin{figure}
 \centering
 \includegraphics[width=\linewidth]{PlaqLink_CFG95_T02.png}
 \caption{\label{fig:PlaqLinkT02}The $t=2$ slice with all space-oriented and time-oriented vortices plotted.}
@@ -133,7 +133,7 @@ As we step through time, we expect to see the positively oriented vortices swap 
 \caption{\label{fig:VortexArrows}As we step through time we observe the time-oriented arrows change direction, however the phase (colour) of the vortex remains the same.}
 \end{figure}
 %
-\begin{figure}[htb!]
+\begin{figure}
 \centering
 \begin{subfigure}[b]{0.45\textwidth}
 \centering
@@ -146,12 +146,13 @@ As we step through time, we expect to see the positively oriented vortices swap 
 \includegraphics[height=0.4\textheight]{./plaqlinet2_line&monopole.png}
 \caption{\label{fig:VortexMotion2}$t=2$}
 \end{subfigure}
-\caption{\label{fig:VortexMotion}An example of time-oriented vortices predicting the motion of the space-oriented vortices.}
+\caption{\label{fig:VortexMotion}An example of time-oriented vortices predicting the motion of the space-oriented vortices. We observe the $-1$ (red) vortex line with no associated time-oriented vortices remain stationary as we transition from $t=1$ to $t=2$.}
 \end{figure}
 %
 
 Another example of time-oriented vortices predicting the motion of vortices is shown in Fig.~\ref{fig:VortexLineMotion}. Here we see in Fig.~\ref{fig:VortexLineMotion1} a line of three $+1$ space-oriented vortices each with an associated $-1$ time-oriented vortex below them. As we step to $t=2$ in Fig.~\ref{fig:VortexLineMotion2} we observe the time-oriented arrows change direction as expected, and the space-oriented vortex line shifts one lattice spacing down such that the time-oriented vortices are now above them.\\
-\begin{figure}[htb!]
+%
+\begin{figure}
 \centering
 \begin{subfigure}[b]{0.45\textwidth}
 \centering
@@ -162,7 +163,7 @@ Another example of time-oriented vortices predicting the motion of vortices is s
 \begin{subfigure}[b]{0.45\textwidth}
 \centering
 \includegraphics[height=0.3\textheight]{./plaqlinet2_SW8_line.png}
-\caption{\label{fig:VortexLineMotion2}$t=2$}
+\subcaption{\label{fig:VortexLineMotion2}$t=2$}
 \end{subfigure}
 \caption{\label{fig:VortexLineMotion}A second example of time-oriented vortices predicting the motion of the space-oriented vortices. Here we see the $+1$ (blue) vortex line transition one lattice spacing down as we step from $t=1$ to $t=2$.}
 \end{figure}
@@ -170,10 +171,93 @@ Another example of time-oriented vortices predicting the motion of vortices is s
 
 The cases presented in Fig.~\ref{fig:VortexMotion} and Fig.~\ref{fig:VortexLineMotion} are ideal, where the space-oriented vortex shifts only one lattice spacing between time slices. However, it is frequently the case where the space-oriented vortices shift multiple lattice spacings per time step. To see how this occurs diagrammatically, consider Fig.~\ref{fig:ComplexStructure}. The shaded red plaquettes indicate the location of a space-oriented vortex which would be plotted in the suppressed $\hat{x}$ direction. The red line demonstrates how the vortex line pierces between the two time slices. Within each slice we would observe the time-oriented links shown, however the space-oriented vortex appears to move three plaquettes in one time step. These multiple transitions make it harder to track the motion of vortices between time slices; nevertheless, the time-oriented vortices are a useful tool for understanding how centre vortices evolve with time. It is worth making clear that if a space-oriented vortex has no associated time-oriented vortices then it is guaranteed to remain stationary. In this respect, the lack of time-oriented vortices is a clear and valuable indicator of vortex behaviour.
 %
-\begin{figure}[htb!]
+\begin{figure}
 \centering
 \input{Chapter7/Figs/VortexLineDiagram.tex}
 \caption{\label{fig:ComplexStructure}A demonstration of how space-oriented vortices can transition multiple lattice spacings in a single time step.}
 \end{figure}
 
 \section{Topological Charge}\label{sec:TopChargeVis}
+We now wish to observe the relationship between vortices and topological charge. As stated in Sec.~\ref{sec:TopQ}, the topological charge density is given by
+%
+\begin{equation}
+q ( x ) = \frac { 1 } { 32 \pi ^ { 2 } } \, \epsilon _ { \mu \nu \rho \sigma } \, \Tr\left( F _ { \mu \nu }( x ) \, F _ { \rho \sigma }(x) \right) \, .
+\end{equation}
+%
+Given the presence of the antisymmetric tensor, it is clear that for there to be non-trivial topological charge present on the projected vortex configurations, we require that the tangent vectors of the vortex surface span all four dimensions. This condition is met at \textit{singular points}, which can be broken into three categories~\cite{Engelhardt:2010ft,Engelhardt:2000wc}
+\begin{enumerate}
+\item Intersection points.
+\item Touching points.
+\item Writhing points.
+\end{enumerate}
+The contribution of each of these categories to the topological charge is discussed in detail in Ref.~\cite{} \textcolor{red}{Detail}. In our visualisations, these singular points appear as a space-oriented vortex running parallel to a time-oriented vortex, as shown in Fig.~\ref{fig:SingularPoint}.\\
+%
+\begin{figure}[htb!]
+\centering
+\input{Chapter7/Figs/SingularPoint.tex}
+\caption{\label{fig:SingularPoint} The signature of a singular point, in which the vortex surface spans all four directions. The colour and orientation of the vortices is irrelevant, so long as they are parallel.}
+\end{figure}
+%
+
+We calculate the topological charge via the method outlined in Sec.~\ref{sec:TopQ} on a lattice configuration after eight sweeps of cooling. This cooling is necessary to remove short-range fluctuations, but is a sufficiently low number of sweeps so as to minimally perturb the configuration. We plot regions of positive topological charge in blue, and regions of negative topological charge in red, with a colour gradient to indicate the magnitude. Only topological charge of sufficient magnitude is plotted to better emphasise regions of significant topological charge. Overlaying the topological charge visualisation onto Figs.~\ref{fig:PlaqLinkT01}, \ref{fig:PlaqLinkT02}, we obtain Figs.~\ref{fig:PlaqLinkQT01}, \ref{fig:PlaqLinkQT02}. By studying the regions of high topological charge, we note that we can indeed observe their relationship with singular points, as shown in Fig.~\ref{fig:SingularPointVis}.\\
+%
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{./PlaqLinkTopQ_CFG95_T01.png}
+\caption{\label{fig:PlaqLinkQT01}Topological charge density overlaying the $t=1$ slice.}
+\end{figure}
+%
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{./PlaqLinkTopQ_CFG95_T02.png}
+\caption{\label{fig:PlaqLinkQT02}Topological charge density overlaying the $t=2$ slice.}
+\end{figure}
+%
+\begin{figure}[htb!]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[height=0.2\textheight]{./PlaqLinkQt2_SingularCollection.png}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.5\textwidth}
+\centering
+\includegraphics[height=0.2\textheight]{./PlaqLinkt2_SingularCollection.png}
+\end{subfigure}
+\caption{\label{fig:SingularPointVis}A collection of singular points shown with (left) and without (right) topological charge overlaid.}
+\end{figure}
+%
+
+To quantify the correlation between vortex locations and topological charge, we use the following measure
+%
+\begin{equation}
+C = V\frac{\sum_x |q(x)|\,L(x)}{\sum_x |q(x)|\,\sum_x L(x)}\, ,
+\end{equation}
+%
+where $V$ is the lattice volume, and
+%
+\begin{equation}
+L(x) = 
+\begin{cases}
+1\, , & \text{Vortex associated with any plaquette touching $x$}\\
+0\, , & \text{No vortex associated with any plaquette touching $x$}
+\end{cases}\, .
+\end{equation}
+%
+In the case of no correlation, $C=1$. If there is correlation/anti-correlation, then $C>1$/$C<1$ respectively. The value of $C$ for our configurations is shown in Fig.~\ref{fig:Correlation}, with an average over all 100 configurations of $\bar{C} = 1.46$. This indicates a correlation between vortex locations and regions of high topological charge. Further work to investigate the precise nature of this correlation and its relationship to singular points is planned.\\
+%
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{./Correlation.pdf}
+\caption{\label{fig:Correlation} The correlation measure for each configuration is shown, alongside the average value across all 100 configurations.}
+\end{figure}
+%
+
+Finally, it is also interesting to study the vortex structure of the lattice after cooling. After eight sweeps of cooling, we obtain Fig.~\ref{fig:PlaqLinkTopQ_SW8}. We clearly see that the complexity of the vortex structure has been greatly reduced. \textcolor{red}{Recalculate correlation}
+%
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{./PlaqLinkTopQ_CFG95_T01_8SW.png}
+\caption{\label{fig:PlaqLinkTopQ_SW8}The vortex structure and topological charge after eight sweeps of cooling, for $t=1$.}
+\end{figure}
+\section{Summary}

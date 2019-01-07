@@ -1,4 +1,4 @@
-\begin{thebibliography}{104}
+\begin{thebibliography}{113}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -489,6 +489,58 @@ Manfried Faber, Jeff Greensite, and Stefan Olejnik.
 \newblock \emph{Phys. Lett.}, B474:\penalty0 177--181, 2000.
 \newblock \doi{10.1016/S0370-2693(00)00013-7}.
 
+\bibitem[Bogolubsky et~al.(2009)Bogolubsky, Ilgenfritz, Muller-Preussker, and
+  Sternbeck]{Bogolubsky:2009dc}
+I.~L. Bogolubsky, E.~M. Ilgenfritz, M.~Muller-Preussker, and A.~Sternbeck.
+\newblock {Lattice gluodynamics computation of Landau gauge Green's functions
+  in the deep infrared}.
+\newblock \emph{Phys. Lett.}, B676:\penalty0 69--73, 2009.
+\newblock \doi{10.1016/j.physletb.2009.04.076}.
+
+\bibitem[O'Cais et~al.(2010)O'Cais, Kamleh, Langfeld, Lasscock, Leinweber,
+  Moran, Sternbeck, and von Smekal]{Cais:2008za}
+Alan O'Cais, Waseem Kamleh, Kurt Langfeld, Ben Lasscock, Derek Leinweber, Peter
+  Moran, Andre Sternbeck, and Lorenz von Smekal.
+\newblock {Preconditioning Maximal Center Gauge with Stout Link Smearing in
+  SU(3)}.
+\newblock \emph{Phys. Rev.}, D82:\penalty0 114512, 2010.
+\newblock \doi{10.1103/PhysRevD.82.114512}.
+
+\bibitem[Ambjorn et~al.(1984{\natexlab{a}})Ambjorn, Olesen, and
+  Peterson]{Ambjorn:1984mb}
+Jan Ambjorn, P.~Olesen, and C.~Peterson.
+\newblock {Stochastic Confinement and Dimensional Reduction. 1.
+  Four-Dimensional SU(2) Lattice Gauge Theory}.
+\newblock \emph{Nucl. Phys.}, B240:\penalty0 189--212, 1984{\natexlab{a}}.
+\newblock \doi{10.1016/0550-3213(84)90475-9}.
+
+\bibitem[Ambjorn et~al.(1984{\natexlab{b}})Ambjorn, Olesen, and
+  Peterson]{Ambjorn:1984dp}
+Jan Ambjorn, P.~Olesen, and C.~Peterson.
+\newblock {Stochastic Confinement and Dimensional Reduction. 2.
+  Three-dimensional SU(2) Lattice Gauge Theory}.
+\newblock \emph{Nucl. Phys.}, B240:\penalty0 533--542, 1984{\natexlab{b}}.
+\newblock \doi{10.1016/0550-3213(84)90242-6}.
+
+\bibitem[Campbell et~al.(1986)Campbell, Jorysz, and Michael]{Campbell:1985kp}
+N.~A. Campbell, I.~H. Jorysz, and Christopher Michael.
+\newblock {The Adjoint Source Potential in SU(3) Lattice Gauge Theory}.
+\newblock \emph{Phys. Lett.}, 167B:\penalty0 91--93, 1986.
+\newblock \doi{10.1016/0370-2693(86)90552-6}.
+
+\bibitem[Langfeld et~al.(2002)Langfeld, Reinhardt, and
+  Gattnar]{Langfeld:2001cz}
+K.~Langfeld, H.~Reinhardt, and J.~Gattnar.
+\newblock {Gluon propagators and quark confinement}.
+\newblock \emph{Nucl. Phys.}, B621:\penalty0 131--156, 2002.
+\newblock \doi{10.1016/S0550-3213(01)00574-0}.
+
+\bibitem[Quandt et~al.(2010)Quandt, Reinhardt, and Burgio]{Quandt:2010yq}
+M.~Quandt, H.~Reinhardt, and G.~Burgio.
+\newblock {The role of center vortices in Gribov's confinement scenario}.
+\newblock \emph{Phys. Rev.}, D81:\penalty0 065016, 2010.
+\newblock \doi{10.1103/PhysRevD.81.065016}.
+
 \bibitem[Spengler et~al.(2018)Spengler, Quandt, and
   Reinhardt]{Spengler:2018dxt}
 Felix Spengler, Markus Quandt, and Hugo Reinhardt.
@@ -536,13 +588,6 @@ Attilio Cucchieri.
   The Three-dimensional case}.
 \newblock \emph{Phys. Rev.}, D60:\penalty0 034508, 1999.
 \newblock \doi{10.1103/PhysRevD.60.034508}.
-
-\bibitem[Langfeld et~al.(2002)Langfeld, Reinhardt, and
-  Gattnar]{Langfeld:2001cz}
-K.~Langfeld, H.~Reinhardt, and J.~Gattnar.
-\newblock {Gluon propagators and quark confinement}.
-\newblock \emph{Nucl. Phys.}, B621:\penalty0 131--156, 2002.
-\newblock \doi{10.1016/S0550-3213(01)00574-0}.
 
 \bibitem[Bonnet et~al.(2001)Bonnet, Bowman, Leinweber, Williams, and
   Zanotti]{Bonnet:2001uh}
@@ -627,7 +672,7 @@ M.~Albanese et~al.
 \bibitem[Falcioni et~al.(1985)Falcioni, Paciello, Parisi, and
   Taglienti]{Falcioni:1984ei}
 M.~Falcioni, M.~L. Paciello, G.~Parisi, and B.~Taglienti.
-\newblock {AGAIN ON SU(3) GLUEBALL MASS}.
+\newblock {Again on SU(3) Glueball Mass}.
 \newblock \emph{Nucl. Phys.}, B251:\penalty0 624--632, 1985.
 \newblock \doi{10.1016/0550-3213(85)90280-9}.
 
@@ -650,15 +695,6 @@ Samuel~D. Thomas, Waseem Kamleh, and Derek~B. Leinweber.
 \newblock {Instanton contributions to the low-lying hadron mass spectrum}.
 \newblock \emph{Phys. Rev.}, D92\penalty0 (9):\penalty0 094515, 2015.
 \newblock \doi{10.1103/PhysRevD.92.094515}.
-
-\bibitem[O'Cais et~al.(2010)O'Cais, Kamleh, Langfeld, Lasscock, Leinweber,
-  Moran, Sternbeck, and von Smekal]{Cais:2008za}
-Alan O'Cais, Waseem Kamleh, Kurt Langfeld, Ben Lasscock, Derek Leinweber, Peter
-  Moran, Andre Sternbeck, and Lorenz von Smekal.
-\newblock {Preconditioning Maximal Center Gauge with Stout Link Smearing in
-  SU(3)}.
-\newblock \emph{Phys. Rev.}, D82:\penalty0 114512, 2010.
-\newblock \doi{10.1103/PhysRevD.82.114512}.
 
 \bibitem[Stack et~al.(2002)Stack, Tucker, and Wensley]{Stack:2002sy}
 John~D. Stack, W.~W. Tucker, and Roy~J. Wensley.
@@ -714,6 +750,26 @@ M.~Engelhardt, M.~Quandt, and H.~Reinhardt.
 \newblock \emph{Nucl. Phys.}, B685:\penalty0 227--248, 2004.
 \newblock \doi{10.1016/j.nuclphysb.2004.02.036}.
 
+\bibitem[Bertle et~al.(1999)Bertle, Faber, Greensite, and
+  Olejnik]{Bertle:1999tw}
+R.~Bertle, Manfried Faber, J.~Greensite, and S.~Olejnik.
+\newblock {The Structure of projected center vortices in lattice gauge theory}.
+\newblock \emph{JHEP}, 03:\penalty0 019, 1999.
+\newblock \doi{10.1088/1126-6708/1999/03/019}.
+
+\bibitem[Engelhardt(2011)]{Engelhardt:2010ft}
+Michael Engelhardt.
+\newblock {Center vortex model for the infrared sector of SU(3) Yang-Mills
+  theory: Topological susceptibility}.
+\newblock \emph{Phys. Rev.}, D83:\penalty0 025015, 2011.
+\newblock \doi{10.1103/PhysRevD.83.025015}.
+
+\bibitem[Engelhardt and Reinhardt(2000)]{Engelhardt:1999xw}
+M.~Engelhardt and H.~Reinhardt.
+\newblock {Center projection vortices in continuum Yang-Mills theory}.
+\newblock \emph{Nucl. Phys.}, B567:\penalty0 249, 2000.
+\newblock \doi{10.1016/S0550-3213(99)00727-0}.
+
 \bibitem[Cornwall(2000)]{Cornwall:1999xw}
 John~M. Cornwall.
 \newblock {Center vortices, nexuses, and fractional topological charge}.
@@ -725,5 +781,12 @@ John~M. Cornwall.
 \newblock {Nexus solitons in the center vortex picture of QCD}.
 \newblock \emph{Phys. Rev.}, D58:\penalty0 105028, 1998.
 \newblock \doi{10.1103/PhysRevD.58.105028}.
+
+\bibitem[Engelhardt(2000)]{Engelhardt:2000wc}
+Michael Engelhardt.
+\newblock {Center vortex model for the infrared sector of Yang-Mills theory:
+  Topological susceptibility}.
+\newblock \emph{Nucl. Phys.}, B585:\penalty0 614, 2000.
+\newblock \doi{10.1016/S0550-3213(00)00350-3}.
 
 \end{thebibliography}

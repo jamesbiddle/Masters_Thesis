@@ -16,49 +16,50 @@ A level-1 auxiliary file: Chapter8/chapter8.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Appendices/appendices.aux
 Database file #1: ./References/references.bib
+Warning--I didn't find a database entry for ""
 Warning--empty journal in Bing:1999ee
 Warning--empty publisher in Zweig:1964jf
 Warning--empty journal in Alexandrou:2017hqw
 Warning--empty journal in Boucaud:2006pc
-You've used 104 entries,
+You've used 113 entries,
             2481 wiz_defined-function locations,
-            1318 strings with 24006 characters,
-and the built_in function-call counts, 40990 in all, are:
-= -- 3545
-> -- 1962
-< -- 57
-+ -- 785
-- -- 572
-* -- 3245
-:= -- 6701
-add.period$ -- 416
-call.type$ -- 104
-change.case$ -- 206
-chr.to.int$ -- 99
-cite$ -- 108
-duplicate$ -- 2003
-empty$ -- 3771
-format.name$ -- 714
-if$ -- 8748
-int.to.chr$ -- 6
-int.to.str$ -- 105
-missing$ -- 106
-newline$ -- 631
-num.names$ -- 314
-pop$ -- 665
+            1379 strings with 25681 characters,
+and the built_in function-call counts, 44426 in all, are:
+= -- 3843
+> -- 2129
+< -- 60
++ -- 852
+- -- 620
+* -- 3524
+:= -- 7268
+add.period$ -- 452
+call.type$ -- 113
+change.case$ -- 224
+chr.to.int$ -- 107
+cite$ -- 117
+duplicate$ -- 2174
+empty$ -- 4086
+format.name$ -- 773
+if$ -- 9478
+int.to.chr$ -- 7
+int.to.str$ -- 114
+missing$ -- 115
+newline$ -- 685
+num.names$ -- 341
+pop$ -- 719
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 113
 quote$ -- 0
-skip$ -- 1127
+skip$ -- 1218
 stack$ -- 0
-substring$ -- 2062
-swap$ -- 238
+substring$ -- 2215
+swap$ -- 258
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 722
+type$ -- 785
 warning$ -- 4
-while$ -- 310
+while$ -- 337
 width$ -- 0
-write$ -- 1556
-(There were 4 warnings)
+write$ -- 1691
+(There were 5 warnings)
