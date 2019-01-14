@@ -6,3 +6,4 @@ A = sym('A',[3 3]);
 
 expm(-(2*pi*1i)*(I3+(1/2)*Y))
 expm(-(pi*1i)*(I3+(1/2)*Y))
+trace(expm(-(pi*1i)*(I3+(1/2)*Y)))

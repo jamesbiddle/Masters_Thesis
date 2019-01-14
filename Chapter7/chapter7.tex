@@ -10,10 +10,10 @@
     \graphicspath{{Chapter7/Figs/Vector/}{Chapter7/Figs/}}
 \fi
 
-In previous chapters we have motivated the significance of centre vortices in QCD through the calculation of the gluon propagator. Although we can predict many of the properties of vortices through calculation, these properties can also be explored through visualisations of the lattice. To this end, in this chapter we present a novel visualisation technique that allows us to view thin centre vortices on the lattice through the use of 3D models~\footnote{All 3D models have been generated using Advanced Visual Systems (AVS) Express Visualisation Edition, version 8.4.1.}.
+In previous chapters we have motivated the significance of centre vortices in QCD through the calculation of the gluon propagator. Although we can predict many of the properties of vortices through calculation, these properties can also be explored through visualisations of the lattice. To this end, in this chapter we present a novel visualisation technique that allows us to view thin centre vortices on the lattice through the use of 3D models~\footnote{All 3D models have been generated using Advanced Visual Systems (AVS) Express Visualisation Edition, version 8.4.1.}. These models allow for a highly interactive exploration of the vortex structure of the QCD vacuum.
 
 \section{Space-Oriented Vortices}
-As the lattice is a four-dimensional hypercube, we visualise the centre vortices on 3D slices. The choice of dimension to take slices along is irrelevant in Euclidean space, so we choose to take slices along the $x$-axis, resulting in $N_x$ slices each with dimension $N_y\times N_z\times N_t$. This choice of axis to slice along allows for the largest volume per slice.  However, the transition between slices is best thought of as `stepping though time', so we re-label our coordinates such that each slice is a snapshot at fixed $t$, with local coordinates $(x,y,z)$. Within each slice we can visualise all vortices associated with an $x-y$, $x-z$ or $y-z$ plaquette by calculating $P_{x\,y}(\bf{x})$, $P_{y,z}(\bf{x})$ and $P_{z,x}(\bf{x})$ for all $\bf{x}$ in the slice. These vortices will be referred to as the `space-oriented' vortices, as they are fixed in time. The plaquettes are evaluated on a centre projected configuration, so $P_{\mu\nu}\in \lbrace -1,\,0,\,+1\rbrace$. For a $+1$ vortex, a blue jet is plotted piercing the centre of the plaquette, and for a $-1$ vortex a red jet is plotted. The direction of the jet is set according to a right-hand rule, such that
+As the lattice is a four-dimensional hypercube, we visualise the centre vortices on a set of 3D slices. The choice of dimension to take slices along is irrelevant in Euclidean space, so we choose to take slices along the $x$-axis, resulting in $N_x$ slices each with dimensions $N_y\times N_z\times N_t$. This choice of axis to slice along allows for the largest volume per slice.  However, the transition between slices is most intuitively thought of as `stepping though time', so we re-label our coordinates such that each slice is considered to be a snapshot at fixed $t$, with local coordinates $(x,y,z)$. Within each slice we can visualise all vortices associated with an $x-y$, $x-z$ or $y-z$ plaquette by calculating $P_{x\,y}(\bf{x})$, $P_{y,z}(\bf{x})$ and $P_{z,x}(\bf{x})$ for all $\bf{x}$ in the slice. These vortices will be referred to as the `space-oriented' vortices, as they are fixed in time. The plaquettes are evaluated on a centre projected configuration, so $P_{\mu\nu}\in \lbrace -1,\,0,\,+1\rbrace$. For a $+1$ vortex, a blue jet is plotted piercing the centre of the plaquette, and for a $-1$ vortex a red jet is plotted. The direction of the jet is set according to a right-hand rule, such that
 \begin{itemize}[leftmargin=*,itemsep=0pt,labelsep=12pt]
 \item $P_{x\,y}=\pm 1\implies \pm\hat{z}$ direction.
 \item $P_{y\,z}=\pm 1\implies \pm\hat{x}$ direction.
@@ -115,7 +115,7 @@ An example of these conventions is shown in Fig.~\ref{fig:TimeVortices}. Utilisi
 \end{figure}
 %
 
-As we step through time, we expect to see the positively oriented vortices swap direction as they transition from being forwards in time to backwards in time, as shown in Fig.~\ref{fig:VortexArrows}. The time-oriented vortices act as predictors of vortex motion between slices. To see this, consider Fig.~\ref{fig:VortexMotion}. In Fig.~\ref{fig:VortexMotion1}, we observe a line of four $-1$ (red) vortices with no time-oriented links associated with them, indicating that this line should remain fixed as we step through time. Alternatively, towards the top of the red line we observe a branching point with two associated $-1$ time-oriented arrows, indicating that this branching point should move in the direction of the time-oriented vortices. Observing the same region at $t=2$ in Fig.~\ref{fig:VortexMotion2}, we see that this is precisely what occurs. The vortex line has remained fixed, whereas the branching point has shifted one lattice spacing to the left, in accordance with the direction indicated by the time-oriented vortex.\\
+As we step through time, we expect to see the positively oriented vortices retain their colour but swap direction as they transition from being forwards in time to backwards in time, as shown in Fig.~\ref{fig:VortexArrows}. The time-oriented vortices act as predictors of vortex motion between slices. To see this, consider Fig.~\ref{fig:VortexMotion}. In Fig.~\ref{fig:VortexMotion1}, we observe a line of four $-1$ (red) space-oriented vortices with no time-oriented links associated with them, indicating that this line should remain fixed as we step through time. Alternatively, towards the top of the red line we observe a branching point with two associated $-1$ time-oriented arrows, indicating that this branching point should move in the direction of the time-oriented vortices. Observing the same region at $t=2$ in Fig.~\ref{fig:VortexMotion2}, we see that this is precisely what occurs. The vortex line has remained fixed, whereas the branching point has shifted one lattice spacing to the left, in accordance with the direction indicated by the time-oriented vortex.\\
 %
 \begin{figure}[htb!]
 \centering
@@ -190,7 +190,7 @@ Given the presence of the antisymmetric tensor, it is clear that for there to be
 \item Touching points.
 \item Writhing points.
 \end{enumerate}
-The contribution of each of these categories to the topological charge is discussed in detail in Ref.~\cite{} \textcolor{red}{Detail}. In our visualisations, these singular points appear as a space-oriented vortex running parallel to a time-oriented vortex, as shown in Fig.~\ref{fig:SingularPoint}.\\
+The contribution to the topological charge from these singular points is discussed in detail in Refs.~\cite{Bruckmann:2003yd,Engelhardt:2010ft,Engelhardt:2000wc,Engelhardt:1999xw}. In our visualisations, these singular points appear as a space-oriented vortex running parallel to a time-oriented vortex, as shown in Fig.~\ref{fig:SingularPoint}.\\
 %
 \begin{figure}[htb!]
 \centering
@@ -240,24 +240,33 @@ where $V$ is the lattice volume, and
 L(x) = 
 \begin{cases}
 1\, , & \text{Vortex associated with any plaquette touching $x$}\\
-0\, , & \text{No vortex associated with any plaquette touching $x$}
-\end{cases}\, .
+0\, , & \text{No vortex associated with any plaquette touching $x$}\, .
+\end{cases}
 \end{equation}
 %
-In the case of no correlation, $C=1$. If there is correlation/anti-correlation, then $C>1$/$C<1$ respectively. The value of $C$ for our configurations is shown in Fig.~\ref{fig:Correlation}, with an average over all 100 configurations of $\bar{C} = 1.46$. This indicates a correlation between vortex locations and regions of high topological charge. Further work to investigate the precise nature of this correlation and its relationship to singular points is planned.\\
+In the case of no correlation, $C=1$. If there is correlation or anti-correlation, then $C>1$ or $C<1$ respectively. The value of $C$ for our configurations is shown in Fig.~\ref{fig:Correlation}, with an average over all 100 configurations of $\bar{C} = 1.46$. This indicates a correlation between vortex locations and regions of high topological charge. Further work to investigate the precise nature of this correlation and its relationship to singular points is planned.\\
 %
-\begin{figure}
+\begin{figure}[htb!]
 \centering
-\includegraphics[width=\linewidth]{./Correlation.pdf}
-\caption{\label{fig:Correlation} The correlation measure for each configuration is shown, alongside the average value across all 100 configurations.}
+\includegraphics[width=0.8\linewidth]{./Correlation.pdf}
+\caption{\label{fig:Correlation} The correlation measure for each configuration is shown. The dashed line indicates the average value across all 100 configurations, with the one standard deviation region shown in green.}
 \end{figure}
-%
-
-Finally, it is also interesting to study the vortex structure of the lattice after cooling. After eight sweeps of cooling, we obtain Fig.~\ref{fig:PlaqLinkTopQ_SW8}. We clearly see that the complexity of the vortex structure has been greatly reduced. \textcolor{red}{Recalculate correlation}
 %
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{./PlaqLinkTopQ_CFG95_T01_8SW.png}
 \caption{\label{fig:PlaqLinkTopQ_SW8}The vortex structure and topological charge after eight sweeps of cooling, for $t=1$.}
 \end{figure}
+%
+
+Finally, it is also interesting to study the vortex structure of the lattice after cooling. After eight sweeps of cooling, we obtain Fig.~\ref{fig:PlaqLinkTopQ_SW8}. We clearly see that the complexity of the vortex structure has been greatly reduced, however the regions associated with topological charge have been less affected by the smoothing process. We can see this by recalculating the topological charge, shown in Fig.~\ref{fig:Correlation_sw07}. The average correlation has increased to a new average of $\bar{C}=1.76$, indicating that the residual vortices show a stronger correlation to the regions of high topological charge than those on the un-cooled configurations. This further supports the previously mentioned notion that cooling serves to isolate `genuine' topological objects and filter out those arising from fluctuations during the monte-carlo lattice generation process.
+%
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\linewidth]{./Correlation_sw07.pdf}
+\caption{\label{fig:Correlation_sw07}The correlation measure for each configuration after eight sweeps of cooling is shown. The dashed line indicates the average value across all 100 configurations, with the one standard deviation region shown in green.}
+\end{figure}
+
 \section{Summary}
+In this chapter we have presented a new way to visualise the four-dimensional structure of centre vortices on the lattice through the use of 3D visualisation techniques. These visualisations give new insight into the geometry and time-evolution of vortices, as well as revealing a direct connection to topological charge. The work presented here is preliminary, and in future it would be valuable to improve the ability to identify branching/monopole points and singular points such that they may be studied in a more quantitative way. Developing techniques to categorise the nature of singular points to further elucidate their connection to topological charge would also be another worthwhile avenue to pursue. From this work, it is clear that visualisations of centre vortices provide valuable information about the structure of the QCD vacuum that is otherwise not apparent through purely numerical results, and that visualisations elegantly complement more traditional calculation techniques.

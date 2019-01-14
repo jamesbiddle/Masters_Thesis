@@ -13,17 +13,17 @@
 \contentsline {chapter}{\numberline {3}Topology of the Lattice}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}Confinement}{20}{section.3.1}
 \contentsline {section}{\numberline {3.2}Centre Vortices}{21}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Locating Centre Vortices}{27}{subsection.3.2.1}
-\contentsline {subsubsection}{Maximal Centre Gauge}{30}{section*.11}
-\contentsline {subsection}{\numberline {3.2.2}Current Evidence for Centre Vortices}{32}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.1}Locating Centre Vortices}{28}{subsection.3.2.1}
+\contentsline {subsubsection}{Maximal Centre Gauge}{31}{section*.11}
+\contentsline {subsection}{\numberline {3.2.2}Current Evidence for Centre Vortices}{33}{subsection.3.2.2}
 \contentsline {subsubsection}{String Tension}{33}{section*.13}
-\contentsline {subsubsection}{Hadron Spectrum}{33}{section*.14}
+\contentsline {subsubsection}{Hadron Spectrum}{34}{section*.14}
 \contentsline {subsubsection}{Mass Function}{34}{section*.15}
 \contentsline {subsubsection}{Casimir Scaling}{34}{section*.16}
 \contentsline {subsubsection}{Gluon Propagator}{35}{section*.17}
 \contentsline {section}{\numberline {3.3}Further Topological Quantities}{35}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Topological Charge}{35}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Instantons}{36}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.1}Topological Charge}{36}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Instantons}{37}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}Lattice Configurations and the Gluon Propagator}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Lattice Definition of the Gluon Propagator}{39}{section.4.1}
 \contentsline {section}{\numberline {4.2}Momentum Variables}{41}{section.4.2}
@@ -37,17 +37,17 @@
 \contentsline {section}{\numberline {6.1}Preliminary Results}{59}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Partitioning}{61}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Renormalisation}{64}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Impact of Cooling}{66}{section.6.2}
+\contentsline {section}{\numberline {6.2}Impact of Cooling}{65}{section.6.2}
 \contentsline {section}{\numberline {6.3}Summary}{70}{section.6.3}
 \contentsline {chapter}{\numberline {7}Centre Vortex Visualisations}{73}{chapter.7}
 \contentsline {section}{\numberline {7.1}Space-Oriented Vortices}{73}{section.7.1}
 \contentsline {section}{\numberline {7.2}Time-Oriented Vortices}{76}{section.7.2}
 \contentsline {section}{\numberline {7.3}Topological Charge}{81}{section.7.3}
-\contentsline {section}{\numberline {7.4}Summary}{84}{section.7.4}
+\contentsline {section}{\numberline {7.4}Summary}{85}{section.7.4}
 \contentsline {chapter}{\numberline {8}Conclusion}{87}{chapter.8}
-\contentsline {chapter}{References}{89}{chapter*.51}
-\contentsline {chapter}{Appendix \numberline {A}Gell-Mann matrices}{99}{Appendix.a.A}
-\contentsline {chapter}{Appendix \numberline {B}Taylor expansion of $P_{\mu \nu }$}{101}{Appendix.a.B}
-\contentsline {chapter}{Appendix \numberline {C}Wilson line gauge transformation}{103}{Appendix.a.C}
-\contentsline {chapter}{Appendix \numberline {D}Properties of the adjoint representation}{105}{Appendix.a.D}
-\contentsline {chapter}{Appendix \numberline {E}Evaluation of $\operatorname {Re}\Tr (F_1(U)^\dagger \tmspace +\thinmuskip {.1667em}U)$}{107}{Appendix.a.E}
+\contentsline {chapter}{References}{89}{chapter*.52}
+\contentsline {chapter}{Appendix \numberline {A}Gell-Mann matrices}{97}{Appendix.a.A}
+\contentsline {chapter}{Appendix \numberline {B}Taylor expansion of $P_{\mu \nu }$}{99}{Appendix.a.B}
+\contentsline {chapter}{Appendix \numberline {C}Wilson line gauge transformation}{101}{Appendix.a.C}
+\contentsline {chapter}{Appendix \numberline {D}Properties of the adjoint representation}{103}{Appendix.a.D}
+\contentsline {chapter}{Appendix \numberline {E}Evaluation of $\operatorname {Re}\Tr (F_1(U)^\dagger \tmspace +\thinmuskip {.1667em}U)$}{105}{Appendix.a.E}
