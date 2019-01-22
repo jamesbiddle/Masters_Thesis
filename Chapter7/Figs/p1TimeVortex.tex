@@ -1,4 +1,10 @@
 \begin{tikzpicture}[scale=0.7]
+% Axes
+\tkzDefPoint(-6,-1.5){ax}
+\tkzDefShiftPoint[ax](1,0){axR}
+\tkzDefShiftPoint[ax](0,1){axT}
+\tkzDefShiftPoint[ax](0.6,0.8){axB}
+
 \begin{scope}[very thick,decoration={
     markings,
     mark=at position 0.5 with {\arrow[scale=2]{stealth}}}
@@ -33,4 +39,12 @@
   \draw[line width=1.0,postaction={decorate}](-4.0, 4.0)--node[left]{}(-4.0,-1.5);
 
   \end{scope}
+  
+% Draw Axes
+\tkzDrawSegments[thick,->, >=stealth](ax,axR)
+\tkzDrawSegments[thick,->, >=stealth](ax,axT)
+\tkzDrawSegments[thick,->, >=stealth](ax,axB)
+\tkzLabelPoint[right](axR){$x$}
+\tkzLabelPoint[above](axT){$t$}
+\tkzLabelPoint[above](axB){$y$}
 \end{tikzpicture}

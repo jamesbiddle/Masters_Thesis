@@ -1,0 +1,67 @@
+\begin{tikzpicture}
+\tkzDefPoint(0,0){F}
+\tkzDefPoint(1,2){B}
+\tkzDefShiftPoint[F](0.5,1){mid}
+
+\tkzDefShiftPoint[F](0,3){FT}
+\tkzDefShiftPoint[F](0,-3){FB}
+\tkzDefShiftPoint[F](3,0){FR}
+\tkzDefShiftPoint[F](-3,0){FL}
+
+\tkzDefShiftPoint[B](0,3){BT}
+\tkzDefShiftPoint[B](0,-3){BB}
+\tkzDefShiftPoint[B](3,0){BR}
+\tkzDefShiftPoint[B](-3,0){BL}
+
+\tkzDefShiftPoint[F](0.1,0){FoffsetR}
+\tkzDefShiftPoint[F](-0.1,0){FoffsetL}
+\tkzDefShiftPoint[B](0.1,0){BoffsetR}
+\tkzDefShiftPoint[B](-0.1,0){BoffsetL}
+
+% Vortex
+\tkzDefShiftPoint[mid](1.5,1.5){midTR}
+\tkzDefShiftPoint[mid](-1.5,1.5){midTL}
+\tkzDefShiftPoint[mid](-1.5,-1.5){midBL}
+\tkzDefShiftPoint[mid](1.5,-1.5){midBR}
+
+\tkzDefShiftPoint[mid](1.5,0){midR}
+\tkzDefShiftPoint[mid](-1.5,0){midL}
+\tkzDefShiftPoint[mid](0,-1.5){midB}
+\tkzDefShiftPoint[mid](0,1.5){midT}
+
+% Axes
+\tkzDefPoint(-3.5,-2.5){ax}
+\tkzDefPoint(-3.5,-1.5){axT}
+\tkzDefPoint(-2.5,-2.5){axR}
+\tkzDefPoint(-3.9,-3.3){axF}
+
+\fill[fill=blue,fill opacity=0.2](F)--(FR)--(BR)--(B)--cycle;
+\fill[fill=blue,fill opacity=0.2](F)--(FL)--(BL)--(B)--cycle;
+\fill[fill=blue,fill opacity=0.2](F)--(FT)--(BT)--(B)--cycle;
+\fill[fill=blue,fill opacity=0.2](F)--(FB)--(BB)--(B)--cycle;
+
+%\node at (midR)[circle,fill,inner sep=2pt,color=black!30!red]{};
+
+% Draw plaquettes
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.55 with {\arrow[scale=2]{stealth}}}
+    ] 
+\tkzDrawSegments[postaction={decorate},dashed,line width = 1.5pt](B,F);
+\tkzDrawSegments[postaction={decorate}](FR,BR BR,B);
+\tkzDrawSegments[postaction={decorate}](FL,BL BL,B);
+\tkzDrawSegments[postaction={decorate}](FT,BT BT,B);
+\tkzDrawSegments[postaction={decorate}](FB,BB BB,B);
+    
+\tkzDrawSegments[postaction={decorate},line width=1.3pt,color=blue](midBR,midTR midTR,midTL midTL,midBL midBL,midBR)   
+    
+\tkzDrawSegments[postaction={decorate}](F,FR F,FL F,FT F,FB)
+\end{scope}
+
+% Draw Axes
+\tkzDrawSegments[thick,->, >=stealth](ax,axR)
+\tkzDrawSegments[thick,->, >=stealth](ax,axT)
+\tkzDrawSegments[thick,->, >=stealth](ax,axF)
+\tkzLabelPoint[right](axR){$x$}
+\tkzLabelPoint[above](axT){$y$}
+\tkzLabelPoint[left](axF){$z$}

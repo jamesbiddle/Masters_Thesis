@@ -1,0 +1,53 @@
+\begin{tikzpicture}
+\tkzDefPoint(0,0){M}
+\tkzDefPoint(3,0){R}
+\tkzDefPoint(0,3){T}
+\tkzDefPoint(-3,0){L}
+\tkzDefPoint(0,-3){B}
+\tkzDefPoint(3,3){RT}
+\tkzDefPoint(-3,3){LT}
+\tkzDefPoint(3,-3){RB}
+\tkzDefPoint(-3,-3){LB}
+
+\tkzDefPoint(-4,-4){ax}
+\tkzDefPoint(-4,-3){axT}
+\tkzDefPoint(-3,-4){axR}
+
+\tkzDefShiftPoint[M](0.3,0.3){MRT}
+\tkzDefShiftPoint[M](-0.3,0.3){MLT}
+\tkzDefShiftPoint[M](0.3,-0.3){MRB}
+\tkzDefShiftPoint[M](-0.3,-0.3){MLB}
+
+\tkzDefShiftPoint[R](0,0.3){Rup}
+\tkzDefShiftPoint[R](0,-0.3){Rdown}
+\tkzDefShiftPoint[L](0,0.3){Lup}
+\tkzDefShiftPoint[L](0,-0.3){Ldown}
+\tkzDefShiftPoint[T](0.3,0){Tright}
+\tkzDefShiftPoint[T](-0.3,0){Tleft}
+\tkzDefShiftPoint[B](0.3,0){Bright}
+\tkzDefShiftPoint[B](-0.3,0){Bleft}
+
+\tkzDefShiftPoint[R](0.5,0){Rlong}
+\tkzDefShiftPoint[L](-0.5,0){Llong}
+\tkzDefShiftPoint[T](0,0.5){Tlong}
+\tkzDefShiftPoint[B](0,-0.5){Blong}
+
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.55 with {\arrow[scale=2]{stealth}}}
+    ] 
+\tkzDrawSegments[postaction={decorate}](MRT,Rup Rup,RT RT,Tright Tright,MRT);
+\tkzDrawSegments[postaction={decorate}](Lup,MLT LT,Lup Tleft,LT MLT,Tleft);
+\tkzDrawSegments[postaction={decorate}](LB,Bleft Bleft,MLB MLB,Ldown Ldown,LB);
+\tkzDrawSegments[postaction={decorate}](Bright,RB RB,Rdown Rdown,MRB MRB,Bright);
+\end{scope}
+
+\tkzDrawSegments[dashed,color=black!35!white,thick](M,Rlong M,Llong M,Tlong M,Blong)
+
+\tkzDrawSegments[thick,->, >=stealth](ax,axR)
+\tkzDrawSegments[thick,->, >=stealth](ax,axT)
+\tkzLabelPoint[right](axR){$\hat{\mu}$}
+\tkzLabelPoint[above](axT){$\hat{\nu}$}
+
+\node at (M)[circle,fill,inner sep=2pt,color=black!30!red]{};
+\end{tikzpicture}

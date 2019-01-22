@@ -103,7 +103,7 @@
 % To use choose `chapter' option in the document class
 
 \ifdefineChapter
- \includeonly{Chapter3/chapter3}
+ \includeonly{Chapter7/chapter7}
 \fi
 
 % ******************************** Front Matter ********************************
@@ -127,7 +127,8 @@
 %\listoftables
 
 % \printnomenclature[space] space can be set as 2em between symbol and description
-%\printnomenclature[3em]
+\include{nomenclature.nlo}
+\printnomenclature[3em]
 
 
 % ******************************** Main Matter *********************************
@@ -142,8 +143,6 @@
 \include{Chapter7/chapter7}
 \include{Chapter8/chapter8}
 
-
-
 % ********************************** Back Matter *******************************
 % Backmatter should be commented out, if you are using appendices after References
 %\backmatter
@@ -154,6 +153,7 @@
 % To use the conventional natbib style referencing
 % Bibliography style previews: http://nodonn.tipido.net/bibstyle.php
 % Reference styles: http://sites.stat.psu.edu/~surajit/present/bib.htm
+\nocite{apsrev41Control}
 \bibliographystyle{apsrev4-1}
 %\bibliographystyle{unsrtnat} % Use for unsorted references  
 %\bibliographystyle{plainnat} % use this to have URLs listed in References
@@ -182,5 +182,4 @@
 
 % *************************************** Index ********************************
 %\printthesisindex % If index is present
-
 \end{document}

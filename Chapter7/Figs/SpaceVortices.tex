@@ -1,0 +1,70 @@
+\begin{tikzpicture}[scale=1.3]
+% Plus 1 vortex
+\tkzDefPoint(0,0){BL1}
+\tkzDefPoint(1.66,2.5){TL1}
+\tkzDefShiftPoint[TL1](3,0){TR1}
+\tkzDefShiftPoint[BL1](3,0){BR1}
+
+% Triangle
+\tkzDefPoint(2.33,1.25){mid1}
+\tkzDefShiftPoint[mid1](-0.2,-2){triBL1}
+\tkzDefShiftPoint[mid1](0.2,-2){triBR1}
+\tkzDefShiftPoint[mid1](0,2){triT1}
+
+% Axes
+\tkzDefPoint(-1,-1){ax}
+\tkzDefShiftPoint[ax](1,0){axR}
+\tkzDefShiftPoint[ax](0,1){axT}
+\tkzDefShiftPoint[ax](0.6,0.8){axB}
+
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.55 with {\arrow[scale=2]{stealth}}}
+    ] 
+
+	\tkzDrawSegments[postaction={decorate}](TR1,TL1)
+	\filldraw[fill=blue, line width=1pt](triT1) -- (triBL1) -- (triBR1) -- cycle;
+	\tkzDrawSegments[postaction={decorate}](BR1,TR1 BL1,BR1 TL1,BL1); 
+    
+\end{scope}
+
+\tkzLabelSegment(BL1,BR1){$Z_x(x)$}
+\tkzLabelSegment[left](TL1,BL1){$Z^\dagger_y(x)$}
+\tkzLabelSegment[label={[label distance=-0.3cm]160:$Z_y(x+\hat{x})$}](BR1,TR1){}
+\tkzLabelSegment[above](TR1,TL1){$Z_x^\dagger(x+\hat{y})$}
+
+% Draw Axes
+\tkzDrawSegments[thick,->, >=stealth](ax,axR)
+\tkzDrawSegments[thick,->, >=stealth](ax,axT)
+\tkzDrawSegments[thick,->, >=stealth](ax,axB)
+\tkzLabelPoint[right](axR){$x$}
+\tkzLabelPoint[above](axT){$z$}
+\tkzLabelPoint[above](axB){$y$}
+
+% Minus 1 vortex
+\tkzDefPoint(5,0){BL2}
+\tkzDefPoint(6.66,2.5){TL2}
+\tkzDefShiftPoint[TL2](3,0){TR2}
+\tkzDefShiftPoint[BL2](3,0){BR2}
+
+% Triangle
+\tkzDefPoint(7.33,1.25){mid2}
+\tkzDefShiftPoint[mid2](-0.2,2){triBL2}
+\tkzDefShiftPoint[mid2](0.2,2){triBR2}
+\tkzDefShiftPoint[mid2](0,-2){triT2}
+
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.55 with {\arrow[scale=2]{stealth}}}
+    ] 
+
+	\tkzDrawSegments[postaction={decorate}](TR2,TL2)
+	\filldraw[fill=red, line width=1pt](triT2) -- (triBL2) -- (triBR2) -- cycle;
+	\tkzDrawSegments[postaction={decorate}](BR2,TR2 BL2,BR2 TL2,BL2);    
+    
+\end{scope}
+\tkzLabelSegment(BL2,BR2){$Z_x(x)$}
+\tkzLabelSegment[left](TL2,BL2){$Z^\dagger_y(x)$}
+\tkzLabelSegment[label={[label distance=-0.3cm]160:$Z_y(x+\hat{x})$}](BR2,TR2){}
+\tkzLabelSegment[label={[label distance=-0.3cm]87:$Z_x^\dagger(x+\hat{y})$}](TR2,TL2){}
+\end{tikzpicture}

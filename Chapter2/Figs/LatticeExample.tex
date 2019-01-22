@@ -1,0 +1,46 @@
+\begin{tikzpicture}
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(3,0){B}
+\tkzDefPoint(0,3){C}
+\tkzDefPoint(3,3){D}
+
+\tkzDefShiftPoint[A](0.15,-0.3){A'}
+\tkzDefShiftPoint[A](-0.3,0.3){A''}
+\tkzDefShiftPoint[A](0.3,0.3){A'''}
+\tkzDefShiftPoint[B](-0.15,-0.3){B'}
+\tkzDefShiftPoint[B](-0.3,0.3){B''}
+\tkzDefShiftPoint[C](-0.3,-0.3){C'}
+\tkzDefShiftPoint[C](0.3,-0.3){C''}
+\tkzDefShiftPoint[D](-0.3,-0.3){D'}
+
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.55 with {\arrow[scale=2.5]{stealth}}}
+    ] 
+\tkzDrawSegments[postaction={decorate}](A,C);
+\end{scope}
+
+\draw [step=3cm, line width=2pt] (-3-0.0001,-3-0.0001) grid (3,3);
+\draw plot[mark=*,mark size = 3pt,mark options={color=black!30!red}] coordinates {(-3,-3)(0,-3)(0,0)(-3,0)(-3,3)(0,3)(3,3)(3,0)(3,-3)};
+\node at (-0.25,-0.25) {$x$};
+\node at (3.9,0) {$x+a\hat{\mu}$};
+\node at (-3.9,0) {$x-a\hat{\mu}$};
+\node at (0.5,3.4) {$x+a\hat{\nu}$};
+\node at (0.5,-3.4) {$x-a\hat{\nu}$};
+
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.55 with {\arrow[scale=2]{stealth}}}
+    ] 
+\tkzDrawSegments[postaction={decorate}](A''',B'');
+\tkzDrawSegments[postaction={decorate}](B'',D');
+\tkzDrawSegments[postaction={decorate}](D',C'');
+\tkzDrawSegments[postaction={decorate}](C'',A''');
+\end{scope}
+
+\tkzDrawSegments[thick, <->, >=stealth](A',B') 
+
+\tkzLabelSegment[below=-0.25,fill=white,inner sep=5pt](A',B'){$a$}
+\tkzLabelSegment[left=0.15,fill=white,inner sep=5pt](A,C){$U_\nu(x)$}
+\tkzLabelSegment[above=0.75](A''',B''){$P_{\mu\nu}(x)$}
+\end{tikzpicture}

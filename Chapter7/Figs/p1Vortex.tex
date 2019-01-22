@@ -4,11 +4,11 @@
     mark=at position 0.5 with {\arrow[scale=2]{stealth}}}
     ] 
   % bottom right to top right                    x,y start of line    label  x,y end
-  \draw[line width=1.0,postaction={decorate}](1.5,-1.5)-- node[left]{$Z_y(n+\hat x)\ $} (3.25,1.5)node(g){};
+  \draw[line width=1.0,postaction={decorate}](1.5,-1.5)-- node[left]{$Z_y(x+\hat x)\ $} (3.25,1.5)node(g){};
   % top right to top left
-  \draw[line width=1.0,postaction={decorate}](3.25,1.5)-- node[above]{${}\ \ Z_x^*(n+\hat y)$} (-1.5,1.5);
+  \draw[line width=1.0,postaction={decorate}](3.25,1.5)-- node[above]{${}\ \ Z_x^*(x+\hat y)$} (-1.5,1.5);
   % top left to bottom left
-  \draw[line width=1.0,postaction={decorate}](-1.5,1.5)-- node[left]{$Z_y^*(n)$}(-4,-1.5);
+  \draw[line width=1.0,postaction={decorate}](-1.5,1.5)-- node[left]{$Z_y^*(x)$}(-4,-1.5);
 
   % Jet triangle
   % bottom left	
@@ -19,11 +19,11 @@
   \fill[blue] (a.center) -- (b.center) -- (c.center);
   
   % bottom left to bottom right
-  \draw[line width=1.0,postaction={decorate}](-4,-1.5)-- node[above]{$Z_x(n)$}(1.5,-1.5)node(f){};
+  \draw[line width=1.0,postaction={decorate}](-4,-1.5)-- node[above]{$Z_x(x)$}(1.5,-1.5)node(f){};
   
-  % Coordinate axes       arrow head          x,y start -- x,y finish [position] label
-  %\draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(4.5,0.0)node[right]{\large $x$};
-  %\draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(3.9,0.8)node[right]{\large $y$};
-  %\draw[line width=1.0,-{Latex[length=2mm]}](3.5,0)--(3.5,1.0)node[above]{\large $z$};
+  \draw[line width=1.0,-{Latex[length=2mm]}](-5,0)--(-4,0.0)node[right]{\large $x$};
+  \draw[line width=1.0,-{Latex[length=2mm]}](-5,0)--(-4.6,0.8)node[right]{\large $y$};
+  \draw[line width=1.0,-{Latex[length=2mm]}](-5,0)--(-5,1.0)node[above]{\large $z$};
   \end{scope}
+  
 \end{tikzpicture}

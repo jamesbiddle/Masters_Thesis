@@ -3,6 +3,13 @@
 
 \tdplotsetmaincoords{\angThe}{\angPhi}
 \scalebox{0.6}{\begin{tikzpicture}[tdplot_main_coords]
+
+% Axes
+\tkzDefPoint(-5,2){ax}
+\tkzDefShiftPoint[ax](2,0){axR}
+\tkzDefShiftPoint[ax](0,2){axT}
+\tkzDefShiftPoint[ax](1.2,1.6){axB}
+
 \begin{scope}[very thick,decoration={
     markings,
     mark=at position 0.5 with {\arrow[scale=2]{stealth}}}
@@ -83,11 +90,15 @@
 	\draw[line width=2,color=red,postaction={decorate}] (12.25,8) -- (15.6,10.15);
 
 % t labels
-	\draw[line width=1,loosely dotted] (6,-1.5) -- (14,-1.5)node[right]{$t=1$};
-	\draw[line width=1,loosely dotted] (11,3.5) -- (14,3.5)node[right]{$t=2$};
+	\draw[line width=1,loosely dotted] (6,-1.5) -- (14,-1.5)node[right]{$\resizebox{1.5cm}{!}{t=1}$};
+	\draw[line width=1,loosely dotted] (11,3.5) -- (14,3.5)node[right]{$\resizebox{1.5cm}{!}{t=2}$};
 	
-  \draw[line width=0.75,-{Latex[length=2mm]}](-3,5)--(-2,5)node[right]{\large $y$};
-  \draw[line width=0.75,-{Latex[length=2mm]}](-3,5)--(-2.6,5.8)node[right]{\large $z$};
-  \draw[line width=0.75,-{Latex[length=2mm]}](-3,5) -- (-3,6)node[above]{\large $t$};
+% Draw Axes
+\tkzDrawSegments[thick,->, >=stealth](ax,axR)
+\tkzDrawSegments[thick,->, >=stealth](ax,axT)
+\tkzDrawSegments[thick,->, >=stealth](ax,axB)
+\tkzLabelPoint[right](axR){$\resizebox{0.3cm}{!}{y}$}
+\tkzLabelPoint[above](axT){$\resizebox{0.3cm}{!}{t}$}
+\tkzLabelPoint[above](axB){$\resizebox{0.3cm}{!}{z}$}
   \end{scope}
 \end{tikzpicture}}

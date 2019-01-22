@@ -10,47 +10,42 @@
     \graphicspath{{Chapter5/Figs/Vector/}{Chapter5/Figs/}}
 \fi
 
-Lattice definitions of topological objects are plagued by random fluctuations originating from the Monte-Carlo generation of lattice configurations and as a result they can give inaccurate or even nonsensical results. Hence, when considering the behaviour of topological objects on the lattice, it has been proven to be necessary to remove the high frequency fluctuations in the gauge fields~\cite{Bonnet:2000dc}. Furthermore, when investigating the long range behaviour of the lattice it is also beneficial to filter off the short distance fluctuations to better reveal the physics in the domain of interest~\cite{Moran:2008ra}. This filtering process is known as smoothing, and it forms an important step in any study of lattice topological objects and long range behaviour. For example, it has previously been shown that smoothing is necessary to obtain agreement between the untouched and vortex only string tension, mass function and instanton content~\cite{Trewartha:2015ida,Trewartha:2015nna,Trewartha:2017ive}. The process of removing these fluctuations is known as smoothing, which in turn falls into two sub-categories: cooling and smearing.\\
+Lattice definitions of topological objects are plagued by random fluctuations originating from the Monte-Carlo generation of lattice configurations and as a result identification of topological objects can give inaccurate or even nonsensical results. Hence, when considering the behaviour of topological objects on the lattice, it has been proven to be necessary to remove the high frequency fluctuations in the gauge fields~\cite{Bonnet:2000dc}. Furthermore, when investigating the long range behaviour of the lattice it is also beneficial to filter off the short distance fluctuations to better reveal the physics in the domain of interest~\cite{Moran:2008ra}. This filtering process is known as smoothing, and it forms an important step in any study of lattice topological objects and long range behaviour. For example, it has previously been shown that smoothing is necessary to obtain agreement between the untouched and vortex only string tension, mass function and instanton content~\cite{Trewartha:2015ida,Trewartha:2015nna,Trewartha:2017ive}. The process of smoothing in turn falls into two sub-categories: cooling and smearing.\\
 
-The purpose of both these methods is similar, however, the algorithms used to implement them differ. Cooling assesses each link in turn, replacing the existing link with one that locally minimises some choice of action (see e.g. the Wilson action, Eq.~\ref{eq:WilsonAction}). Rather than explicitly minimising a given action, smearing  instead replaces each link with a weighted average of its nearest neighbours. Once every link in the lattice has been updated according to one of these methods, the configuration is said to have had one sweep of smoothing applied. The process can then be repeated to an arbitrary number of sweeps to achieve the desired degree of smoothness.  Due to the differences in the routines, it is important to compare the results from both to observe how they each perform and quantitatively observe how they alter the measured quantities.
+The purpose of both these methods is similar, however, the algorithms used to implement them differ. Cooling assesses each link in turn, replacing the existing link with one that locally minimises some choice of action (see e.g. the Wilson action, Eq.~\ref{eq:WilsonAction}). Rather than explicitly minimising a given action, smearing  instead replaces each link with a weighted average of its nearest neighbours. Once every link in the lattice has been updated according to one of these methods, the configuration is said to have had one sweep of smoothing applied. The process can then be repeated to an arbitrary number of sweeps to achieve the desired degree of smoothness.  Due to the differences in the routines, it is important to compare the results from both to observe how they each perform and quantify how they alter the result.
 
-
-%Motivated by these results, we now investigate the effect of both $\mathcal{O}(a^4)$-improved cooling~\cite{BilsonThompson:2003zi} and over-improved stoutlink smearing~\cite{Moran:2008ra}. Following the results of Ref.~\cite{Moran:2008ra}, the over-improved smearing parameters are $\rho=0.06$ and $\epsilon=0.25$ to best preserve the size of instantons on the lattice. To accomplish a similar preservation of topological objects under cooling, we used the three-loop improved algorithm as described in Ref.~\cite{BilsonThompson:2003zi}.\\
 \section{Smoothing Methods}
 \subsection{Cooling}
-Cooling is the original method devised for smoothing lattice gauge fields, first utilised in an analysis of the topological susceptibility of simplified lattice models~\cite{Berg:1981nw}. It was shown early on that the process of cooling can be used to distinguish between 'genuine' topological charge representative of classical minima of the action, and background Monte-Carlo topological charge brought about by random fluctuations created during the generation of the lattice configuration. Under cooling, the former is preserved whilst the latter is annihilated. The process of cooling according to the simplest Wilson action is based on the method outlined by Cabibbo and Marinari~\cite{Cabibbo:1982zn,Creutz:1980zw}, and is performed as follows:\\
+Cooling is the original method devised for smoothing lattice gauge fields, first utilised in an analysis of the topological susceptibility of simplified lattice models~\cite{Berg:1981nw}. It was shown early on that the process of cooling can be used to distinguish between `genuine' topological charge that is representative of classical minima of the action, and background Monte-Carlo topological charge brought about by random fluctuations created during the generation of the lattice configuration. Under cooling, the former is preserved whilst the latter is annihilated. The process of cooling according to the simplest Wilson action is based on the method outlined by Cabibbo and Marinari~\cite{Cabibbo:1982zn,Creutz:1980zw}, and is performed as follows:\\
 
-We first consider the Wilson action associated with a single link $U_\mu$, 
+We first define the `staple' associated with a link $U_\mu$. A staple is the product of all the link variables around a chosen loop, except for the link being cooled. For example, the $1\times 1$ plaquette staple associated with $U_\mu$ is
+%
+\begin{equation}
+\tilde { U }^{1\times 1} _ { \mu \nu}(x) = U _ { \nu } ( x + \hat { \mu } ) U _ { \mu } ^ { \dagger } ( x + \hat { \nu } ) U _ { \nu } ^ { \dagger } ( x )\, .
+\end{equation}
+%
+Graphically, this can be seen as in Fig.~\ref{fig:Staple}. Larger staples are defined similarly; for example a $2\times 2$ staple corresponds to the product of seven of the eight links in the $2\times 2$ square, with $U_\mu(x)$ omitted. For the Wilson action, which is all we shall consider for now, the six unique $1\times 1$ staples are the only ones required. Once all relevant staples are calculated, they are summed to obtain
+%
+\begin{equation}
+\bar{U} = \sum_{\alpha = 1} ^ 6 \tilde{U}_\alpha\, ,
+\label{eq:Staples}
+\end{equation}
+where $\alpha$ enumerates the staples, not the Lorentz index. We can now rewrite the Wilson action associated with a single link $U_\mu$ as, 
 %
 \begin{equation}
 S(U_\mu) = 3 - \operatorname{Re}\Tr (U_\mu \bar{U})\, ,
 \label{eq:WilsonActionCool}
 \end{equation}
 %
-which is a different, but completely equivalent, form of Eq.~\ref{eq:WilsonAction}. $\bar{U}$ is defined as the sum of the `staples' associated with $U_\mu$.  A staple is the product of all the link variables around a chosen loop, except for the link being cooled. For example, the $1\times 1$ plaquette staple associated with $U_\mu$ is
-%
-\begin{equation}
-\tilde { U }^{1\times 1} _ { \mu \nu}(x) = U _ { \nu } ( x + \hat { \mu } ) U _ { \mu } ^ { \dagger } ( x + \hat { \nu } ) U _ { \nu } ^ { \dagger } ( x )\, .
-\end{equation}
-%
-Graphically, this can be seen as in Fig.~\ref{fig:Staple}.
-%
-\begin{figure}[h!]
+which is a different, but completely equivalent, form of Eq.~\ref{eq:WilsonAction}.\\ % 
+\begin{figure}[ht!]
 \centering
 \input{Chapter5/Figs/staple.tex}
-\caption{\label{fig:Staple} An example $1\times 1$ staple, with the dashed link indicating the link the staple is relative to. The origin of the name staple is apparent from the shape of the 3 solid links.}
+\caption[An example $1\times 1$ staple.]{\label{fig:Staple} An example $1\times 1$ staple, with the dashed link indicating the link the staple is relative to. The origin of the name staple is apparent from the shape of the 3 solid links.}
 \end{figure}
 %
-Larger staples are defined similarly; for example a $2\times 2$ staple corresponds to the product of seven of the eight links in the $2\times 2$ square, with $U_\mu(x)$ omitted. For the Wilson action, the six unique $1\times 1$ staples are the only ones required. Once all relevant staples are calculated, they are summed to obtain
-%
-\begin{equation}
-\bar{U} = \sum_{\alpha = 1} ^ 6 \tilde{U}_\alpha\, ,
-\label{eq:Staples}
-\end{equation}
-where $\alpha$ enumerates the staples, not the Lorentz index.\\
-%
 
-The objective of cooling is to select a new $SU(3)$ matrix to replace $U_\mu$ with some $U_\mu^\prime$ that minimises Eq.~\ref{eq:WilsonActionCool}, or equivalently, maximises
+The objective of cooling is to select a new $SU(3)$ matrix, $U_\mu^\prime$, to replace $U_\mu$ with such that $U_\mu^\prime$ minimises Eq.~\ref{eq:WilsonActionCool}. This is equivalent to maximising
 %
 \begin{equation}
 R = \operatorname{Re} \Tr (U_\mu^\prime \, \bar{U})\, .
@@ -119,7 +114,7 @@ With this definition of $a_1$, the functional Eq.~\ref{eq:CoolFunctional} we are
 %
 The proof of this is given in Appendix \ref{app:CoolingMaximise}. By the matrix structure of $F_1(V)$ it is apparent that $\Re(U_\mu\, \bar{U})_{33}$ is invariant under pre-multiplication by $a_1$, so it is clear that Eq.~\ref{eq:MaximisedCooling} represents the maximum attainable value for this form of $U^{(1)}_\mu$. Similarly, we let $a_2=F_2(U_\mu\,\bar{U})^\dagger$ and $a_3=F_3(U_\mu\,\bar{U})^\dagger$ to obtain the final value of $U^\prime_\mu$ according to Eq.~\ref{eq:UPrime}. The above procedure is repeated over all three $SU(2)$ subgroups 12 times per lattice link to effectively minimise the local action. One sweep of cooling then constitutes applying this procedure to every link on the lattice.\\
 
-As detailed in Ref.~\cite{Bonnet:2000dc}, this process can be thought of as locally minimising the Wilson action of the three $SU(2)$ subgroups, which collectively minimises the Wilson action of the full $SU(3)$ link. It is then simple to extend this procedure to different actions by expanding the size and shape of the staples considered in the construction of $\bar{U}$. As all of the quantities utilised in the cooling procedure are gauge invariant, cooling can be performed in any gauge to arrive at the same cooled configuration. Cooling also maintains the Boltzmann distribution of the lattice links~\cite{Cabibbo:1982zn}, indicating that the new links can be considered a thermalised distribution. However, cooling is not a gauge transformation, and as such it represents a deviation from the original physical configuration. We therefore need to be careful when selecting the action used for the cooling routine to ensure that we are not removing the physics that we are interested in. To best study instantons and topological charge on a periodic lattice, it has been shown that a $\mathcal{O}(a^4)$ three-loop  improved action is most suitable~\cite{BilsonThompson:2002jk}. This choice of action combines both computational efficiency with an effective stabilisation of instantons and an accurate preservation of the topological charge under repeated cooling sweeps. This action is dubbed a `three-loop' action as it consists of a linear combination of $1\times 1$, $2\times 2$ and $3\times 3$ Wilson loops.
+As detailed in Ref.~\cite{Bonnet:2000dc}, this process can be thought of as locally minimising the Wilson action of the three $SU(2)$ subgroups, which collectively minimises the Wilson action of the full $SU(3)$ link. It is then simple to extend this procedure to different actions by expanding the size and shape of the staples considered in the construction of $\bar{U}$. As all of the quantities utilised in the cooling procedure are gauge invariant, cooling can be performed in any gauge to arrive at the same cooled configuration. Cooling also maintains the Boltzmann distribution of the lattice links~\cite{Cabibbo:1982zn}, indicating that the new links can be considered a thermalised distribution. However, cooling is not a gauge transformation, and as such it represents a deviation from the original physical configuration. We therefore need to be careful when selecting the action used for the cooling routine to ensure that we are not removing the physics that we are interested in. To best study instantons and topological charge on a periodic lattice, it has been shown that a $\mathcal{O}(a^4)$ three-loop  improved action is most suitable~\cite{BilsonThompson:2002jk}. This action is dubbed a `three-loop' action as it consists of a linear combination of $1\times 1$, $2\times 2$ and $3\times 3$ Wilson loops. This choice of action combines both computational efficiency with an effective stabilisation of instantons and an accurate preservation of the topological charge under repeated cooling sweeps. As a result, it is this three-loop cooling routine that will be utilised in this research.
 
 \subsection{Over-Improved Smearing}
 Despite the accurate results obtained from cooled lattice configurations, cooling presents certain computational inefficiencies. Given that the staples, $\bar{U}_\alpha$ must remain constant while updating a given link $U_\mu$, there are limitations to how  parallelised the algorithm can be, especially for larger combinations of loops such as those used in the chosen three-loop improved action. To avoid these issues, a different type of smoothing was developed, known as `smearing'. Rather than locally minimising the action by direct substitution of each link, the initial APE smearing~\cite{Albanese:1987ds, Falcioni:1984ei} routine replaces each link with a weighted average of its nearest neighbours, according to
@@ -130,7 +125,7 @@ U^\prime = (1-\alpha)\,U_\mu + \frac{\alpha}{6}\,\bar{U}^\dagger\, ,
 %
 where $\bar{U}$ is the sum of the staples given in Eq.~\ref{eq:Staples} and $\alpha$ is some weighting parameter. However, as stated in the previous section, a linear combination of $SU(3)$ matrices is not necessarily in $SU(3)$, so APE smearing is dependent on a choice of projection into the $SU(3)$ group. To remove the need for this projection step, the method of stout-link smearing was developed~\cite{Morningstar:2003gk}.\\
 
-We will first develop the stout-link smearing algorithm, then extend this to the over-improved stout-link smearing employed in this research. To begin, we define
+We will first outline the stout-link smearing algorithm, then extend this to the over-improved stout-link smearing employed in this research. To begin, we define
 %
 \begin{equation}
 \Sigma_\mu = \rho_\text{sm}\,(U_\mu\,\bar{U})^\dagger\, ,
@@ -147,9 +142,9 @@ By construction, $Q_\mu$ is Hermitian ($Q_\mu = Q_\mu^\dagger$) and traceless, s
 U_\mu^\prime = \exp(iQ_\mu)\,U_\mu\, .
 \end{equation}
 %
-This definition effectively corresponds to a complex sum of neighbouring link combinations, however it has numerically been demonstrated to give similar results to the previous APE smearing technique, provided that the smearing parameter $\rho_\text{sm}$ is selected appropriately~\cite{Morningstar:2003gk}. For this work, we choose $\rho_\text{sm}=0.06$~\cite{Moran:2008ra}. As in the case of cooling, the choice of staples used to define $\bar{U}$ has significant impact on the behaviour of topological objects under smearing. To this end, work has been done to tune the smearing algorithm so that it preserves instanton-like objects under repeated smearing sweeps, leading to the development of over-improved stoutlink smearing~\cite{Moran:2008ra}.\\
+This definition effectively corresponds to a complex sum of neighbouring link combinations, however it has numerically been demonstrated to give similar results to the previous APE smearing technique, provided that the smearing parameter $\rho_\text{sm}$ is selected appropriately~\cite{Morningstar:2003gk}. For this work, we choose $\rho_\text{sm}=0.06$, in accordance with the results of Ref.~\cite{Moran:2008ra}. As in the case of cooling, the choice of staples used to define $\bar{U}$ has significant impact on the behaviour of topological objects under smearing. To this end, work has been done to tune the smearing algorithm so that it preserves instanton-like objects under repeated smearing sweeps, leading to the development of over-improved stoutlink smearing~\cite{Moran:2008ra}.\\
 
-To quantitatively measure the effect of smearing on topological objects, it is common to calculate the instanton action in terms of the instanton radius. The error terms in the instanton action then give an indication of how the instanton radius will change as the action decreases under smearing. If the Baker-Campbell-Hausdorff plaquette expansion given in Appendix~\ref{app:TEPlaquette} is instead truncated at $\mathcal{O}(a^4)$ rather than $\mathcal{O}(a^2)$, the Wilson action becomes~\cite{GarciaPerez:1993lic}
+Before introducing over-improved stoutlink smearing, it is important to detail how we quantitatively measure the effect of smearing on topological objects. To do this, we calculate the instanton action in terms of the instanton radius. The error terms in the instanton action then give an indication of how the instanton radius will change as the action decreases under smearing. If the Baker-Campbell-Hausdorff plaquette expansion given in Appendix~\ref{app:TEPlaquette} is instead truncated at $\mathcal{O}(a^4)$ rather than $\mathcal{O}(a^2)$, the Wilson action becomes~\cite{GarciaPerez:1993lic}
 %
 \begin{equation}
 \mathcal{S}_\text{W} = a^4\sum_x\,\sum_{\mu,\,\nu} \Tr\left[\frac{1}{2}F_{\mu\nu}^2 + \frac{a^2}{24}\left\lbrace \left( D _ { \mu } F _ { \mu \nu } ( x ) \right) ^ { 2 } + \left( D _ { \nu } F _ { \mu \nu } ( x ) \right) ^ { 2 } \right\rbrace + \mathcal{O}(a^4)\right]\, .
@@ -161,13 +156,14 @@ Substituting in the instanton potential (Eq.~\ref{eq:InstantonSolution}) and fie
 S_\text{W}^\text{Inst} = \frac{8\pi^2}{g^2}\left\{1-\frac{1}{5}\left(\frac{a}{\rho}\right)^2 + \mathcal{O}\left(\frac{a}{\rho}\right)^4 \right\}\, ,
 \end{equation}
 %
-where $\rho$ is the instanton radius. We note then that as the Wilson action is minimised, the $-\frac{1}{5}\left(\frac{a}{\rho}\right)^2$ term must become increasingly negative, implying that the instanton radius decreases. This is precisely the effect we wish to avoid, as the instanton radius will shrink under smearing to the point where the instanton-like objects `fall through' the lattice as $\rho\rightarrow a$. A similar calculation can be done for the L\"uscher and Weisz action, showing that~\cite{GarciaPerez:1993lic}
+where $\rho$ is the instanton radius. We note then that as the Wilson action is minimised, the $-\frac{1}{5}\left(\frac{a}{\rho}\right)^2$ term must become increasingly negative, implying that the instanton radius decreases. This is precisely the effect we wish to avoid, as the instanton radius will shrink under smearing to the point where the instanton-like objects `fall through' the lattice as $\rho\rightarrow a$. A similar calculation can be done for the L\"uscher and Weisz action, showing that~\cite{GarciaPerez:1993lic}\\
 %
 \begin{equation}
 S_\text{LW}^\text{Inst} = \frac{8\pi^2}{g^2}\left\{ 1 - \frac { 17 } { 210 } \left(  \frac{a}{\rho} \right) ^ { 4 } + \mathcal { O } \left( \frac{a}{\rho} \right) ^ { 6 } \right\}\, .
 \end{equation}
 %
-In both cases, the leading error term is negative, resulting in a suppression of the instanton radius. To counteract this, we modify the action by taking a linear combination of $S_\text{W}$ and $S_\text{LW}$ and introducing a parameter $\epsilon$ that interpolates between them~\cite{Moran:2008ra}. This modified action is given as
+
+In both of the previous instanton actions, the leading error term is negative, resulting in a suppression of the instanton radius. To counteract this we `over-improve' the action by modifying it to be a linear combination of $S_\text{W}$ and $S_\text{LW}$, introducing a parameter $\epsilon$ that interpolates between them~\cite{Moran:2008ra}. This modified action is given as
 %
 \begin{equation}
 S ( \epsilon ) =  \beta \sum _ { x } \sum _ { \mu > \nu } \left[ \frac { 5 - 2 \epsilon } { 3 } \left( 1 - P _ { \mu \nu } ( x ) \right) - \frac { 1 - \epsilon } { 12 } \left( \left( 1 - R _ { \mu \nu } ( x ) \right) + \left( 1 - R _ { \nu \mu } ( x ) \right) \right) \right]\, .
@@ -177,26 +173,18 @@ We see that $S(1)=S_\text{W}$ and $S(0) = S_\text{LW}$. Expanding $S(\epsilon)$ 
 %
 \begin{equation}
 S^\text{Inst}(\epsilon) = \frac { 8 \pi ^ { 2 } } { g ^ { 2 } } \left[ 1 - \frac { \epsilon } { 5 } \left( \frac { a } { \rho  } \right) ^ { 2 } + \frac { 14 \epsilon - 17 } { 210 } \left( \frac { a } { \rho } \right) ^ { 4 } + \mathcal { O } \left( \frac{a}{\rho} \right) ^ { 6 } \right]\, .
-\end{equation}\\
+\end{equation}
 %
-
-The parameter $\epsilon$ can now be tuned so as to preserve instantons under smearing. The natural choice may be to follow Ref.~\cite{GarciaPerez:1993lic} and set $\epsilon=-1$ to ensure that the leading error term is positive. However, one then runs the risk of unphysically growing the instanton size such that it annihilates with anti-instantons present on the lattice. Furthermore, we wish to smear such that the instantons are minimally distorted as they undergo the smearing process. To this end, we follow the results of Ref.~\cite{Moran:2008ra} and choose $\epsilon = -0.25$. We then choose the corresponding staple parameter $\bar{U}$ to be the sum over the $1\times 1$ and $(2\times 1) + (1\times 2)$ loops with $U_\mu$ omitted, with respective weightings $\frac{5-2\epsilon}{3}$ and $-\frac{1-\epsilon}{12}$. With this definition of the smearing action, we can now utilise smearing to filter out the short distance physics, isolating the topological objects of interest.
+The parameter $\epsilon$ can now be tuned so as to preserve instantons under smearing. Performing stoutlink smearing with this choice of action dependent on $\epsilon$ is known as over-improved stoutlink smearing. When using this routine, it is necessary to select appropriate $\rho_{\text{sm}}$ and $\epsilon$ parameters. We keep the previous value of $\rho_{\text{sm}}=0.06$, however there is some subtlety to finding an appropriate $\epsilon$. The natural choice for $\epsilon$ may be to follow Ref.~\cite{GarciaPerez:1993lic} and set $\epsilon=-1$ to ensure that the leading error term is positive. However, one then runs the risk of unphysically growing the instanton size such that it annihilates with anti-instantons present on the lattice. Furthermore, we wish to smear such that the instantons are minimally distorted as they undergo the smearing process. To this end, we follow the results of Ref.~\cite{Moran:2008ra} and choose $\epsilon = -0.25$. We then choose the corresponding staple parameter $\bar{U}$ to be the sum over the $1\times 1$ and $(2\times 1) + (1\times 2)$ loops with $U_\mu$ omitted, with respective weightings $\frac{5-2\epsilon}{3}$ and $-\frac{1-\epsilon}{12}$. We can now utilise this over-improved stoutlink smearing routine to filter out short distance physics, isolating the topological objects of interest.
 
 \section{Results from the Gluon Propagator}\label{sec:CoolingGluProp}
-
-\begin{figure}[tb]
-\centering
-\includegraphics[width=\linewidth]{./ScalarGluComp_q2_1to10sweeps.pdf}
-\caption{\label{fig:1to10SweepsCooling}Comparison of the gluon propagator on the untouched configurations after cooling. For clarity we have selected a sample of sweeps between 1 and 8.}
-\end{figure}
-%
 
 Making use of the smoothing methods defined above, we now wish to compare their effect on the gluon propagator. Summarising the previous sections, we employ $\mathcal{O}(a^4)$-improved three-loop cooling and over-improved stoutlink smearing with smearing parameters $\rho_\text{sm}=0.06$ and $\epsilon=-0.25$. We first plot the untouched propagator after 0, 1, 2, 4 and 8 sweeps of cooling in Fig.~\ref{fig:1to10SweepsCooling}. In gauge fixing to Landau gauge, each sweep has been preconditioned by the Landau gauge transformation of the prior sweep in descending order (i.e. the transformation for sweep 10 preconditions sweep 9). This preconditioning is done to ensure that the Landau gauge functional is near the same local minima for each cooling sweep. We observe the expected removal of short distance fluctuations that is typical of smoothing, resulting in a suppressed propagator at large $q$. This is complemented by an amplification in the infra-red region which can be attributed to the increase in low momentum modes arising from the smoothing of the gauge fields.\\
 %
 \begin{figure}[tb]
 \centering
-\includegraphics[width=\linewidth]{./ScalarGluComp_q2_SmearCoolComp.pdf}
-\caption{\label{fig:SmearCoolComp}The gluon propagator after cooling or improved smearing. We see that the shape of the plot changes minimally between the smoothing routines. However cooling requires fewer sweeps to produce the same effect when compared to smearing.}
+\includegraphics[width=\linewidth]{./ScalarGluComp_q2_1to10sweeps.pdf}
+\caption[Comparison of the gluon propagator on the untouched configurations after cooling.]{\label{fig:1to10SweepsCooling}Comparison of the gluon propagator on the untouched configurations after cooling. For clarity we have selected a sample of sweeps between 1 and 8.}
 \end{figure}
 %
 
@@ -210,6 +198,13 @@ we deduce that the relationship between gradient flow time and cooling is
 \begin{equation}
 t\approx0.24\,n_{\text{cool}}\,.
 \end{equation}\\
+%
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{./ScalarGluComp_q2_SmearCoolComp.pdf}
+\caption[The gluon propagator after cooling or improved smearing.]{\label{fig:SmearCoolComp}The gluon propagator after cooling or improved smearing. We see that the shape of the plot changes minimally between the smoothing routines. However cooling requires fewer sweeps to produce the same effect when compared to smearing.}
+\end{figure}
+%
 
-It is well understood that smoothing alters the vortex background, and based on previous work~\cite{Cais:2008za,Trewartha:2015ida,DelDebbio:1998luz} we anticipate that the vortices identified on smoothed configurations would differ to those identified on the unsmoothed configurations. We therefore perform vortex identification only on the original configurations, with smoothing then being performed independently on the untouched, vortex-only and vortex-removed configurations. We choose to use cooling as the smoothing algorithm for the results presented in this research, however it is worth noting that similar results can be obtained with the use of over-improved smearing. 
+It is well understood that smoothing alters the vortex background, and based on previous work~\cite{Cais:2008za,Trewartha:2015ida,DelDebbio:1998luz} we anticipate that the vortices identified on smoothed configurations would differ to those identified on the unsmoothed configurations. We therefore perform vortex identification only on the untouched configurations, with smoothing then being performed independently on the untouched, vortex-only and vortex-removed configurations, as shown in Chapter~\ref{chapter:GluonPropagatorResults}. We choose to use cooling as the smoothing algorithm for the results presented in this research as it lowers the action of the lattice configurations faster than over-improved smearing, however it is worth noting that similar results can be obtained with the use of over-improved smearing. With this understanding of smoothing routines developed, we are now in a position to calculate the gluon propagator on our vortex modified configurations. We are now free to employ cooling to filter out the long-range physics and isolate the vortex contribution to the propagator, illuminating the significance of centre vortices. 
 
