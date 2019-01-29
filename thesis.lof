@@ -13,40 +13,36 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces The untouched gluon propagator with all data cuts and correct momentum variables utilised.}}{49}{figure.4.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces An example $1\times 1$ staple.}}{53}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of the gluon propagator on the untouched configurations after cooling.}}{59}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The gluon propagator after cooling or improved smearing.}}{60}{figure.5.3}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of the gluon propagator on the untouched configurations after cooling.}}{58}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The gluon propagator after cooling or improved smearing.}}{59}{figure.5.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The gluon propagator calculated from the original untouched, shown with the vortex removed and vortex only results.}}{64}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The gluon propagator from the original untouched alongside the independently renormalised sum of the vortex removed and vortex only propagators.}}{65}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Calculation of the cross-terms arising from Eq.\nobreakspace {}\ref {eq:Partition}\relax }}{67}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The gluon propagator calculated on the three ensembles after 10 sweeps of cooling.}}{70}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The vortex only propagator after different sweeps of cooling.}}{71}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces The average action calculated on the untouched and vortex-only configurations as a function of cooling sweeps.}}{72}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Comparison of the gluon propagator on the untouched and vortex only configurations after tuning the number of cooling sweeps to best match the average plaquette action.}}{73}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces The topological charge at the instanton centre is plotted against the instanton radius for the vortex modified configurations under 10 and 40 sweeps of cooling.}}{75}{figure.6.8}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The gluon propagator calculated from the original untouched, shown with the vortex removed and vortex only results.}}{62}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The gluon propagator from the original untouched alongside the independently renormalised sum of the vortex removed and vortex only propagators.}}{63}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Calculation of the cross-terms arising from Eq.\nobreakspace {}\ref {eq:Partition}\relax }}{65}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The gluon propagator calculated on the three ensembles after 10 sweeps of cooling.}}{68}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The vortex only propagator after different sweeps of cooling.}}{69}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The average action calculated on the untouched and vortex-only configurations as a function of cooling sweeps.}}{71}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Comparison of the gluon propagator on the untouched and vortex only configurations after tuning the number of cooling sweeps to best match the average plaquette action.}}{72}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The topological charge at the instanton centre is plotted against the instanton radius for the vortex modified configurations under 10 and 40 sweeps of cooling.}}{74}{figure.6.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces An example of the plotting convention for vortices located within a 3D time slice.}}{78}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces The $t=1$ slice with all space-oriented vortices plotted.\relax }}{79}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces The $t=2$ slice with all space-oriented vortices plotted.\relax }}{79}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Examples of the properties of projected vortices.}}{80}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Vortex branching and monopole points}}{80}{figure.7.5}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Example of the plotting convention used for time-oriented vortices.}}{81}{figure.7.6}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces The $t=1$ slice with all space-oriented and time-oriented vortices plotted.\relax }}{82}{figure.7.7}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces The $t=2$ slice with all space-oriented and time-oriented vortices plotted.\relax }}{82}{figure.7.8}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces The change in time-oriented vortices as we step through time.}}{83}{figure.7.9}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces An example of time-oriented vortices predicting the motion of the space-oriented vortices.}}{84}{figure.7.10}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces A second example of time-oriented vortices predicting the motion of the space-oriented vortices.}}{84}{figure.7.11}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces A demonstration of how space-oriented vortices can transition multiple lattice spacings in a single time step.\relax }}{85}{figure.7.12}
-\contentsline {figure}{\numberline {7.13}{\ignorespaces The signature of a singular point, in which the vortex surface spans all four directions.}}{86}{figure.7.13}
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Topological charge density overlaying the $t=1$ slice.\relax }}{87}{figure.7.14}
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Topological charge density overlaying the $t=2$ slice.\relax }}{87}{figure.7.15}
-\contentsline {figure}{\numberline {7.16}{\ignorespaces A collection of singular points shown with and without topological charge overlaid.}}{88}{figure.7.16}
-\contentsline {figure}{\numberline {7.17}{\ignorespaces The correlation measure for each configuration.}}{89}{figure.7.17}
-\contentsline {figure}{\numberline {7.18}{\ignorespaces The vortex structure and topological charge after eight sweeps of cooling, for $t=1$.\relax }}{89}{figure.7.18}
-\contentsline {figure}{\numberline {7.19}{\ignorespaces The correlation measure for each configuration after eight sweeps of cooling.}}{90}{figure.7.19}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces An example of the plotting convention for vortices located within a 3D time slice.}}{76}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The $t=1$ slice with all space-oriented vortices plotted.\relax }}{77}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces The $t=2$ slice with all space-oriented vortices plotted.\relax }}{77}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Examples of the properties of projected vortices.}}{78}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Vortex branching and monopole points}}{78}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Example of the plotting convention used for time-oriented vortices.}}{79}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces The $t=1$ slice with all space-oriented and time-oriented vortices plotted.\relax }}{80}{figure.7.7}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces The $t=2$ slice with all space-oriented and time-oriented vortices plotted.\relax }}{80}{figure.7.8}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces The change in time-oriented vortices as we step through time.}}{81}{figure.7.9}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces An example of time-oriented vortices predicting the motion of the space-oriented vortices.}}{82}{figure.7.10}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces A second example of time-oriented vortices predicting the motion of the space-oriented vortices.}}{82}{figure.7.11}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces A demonstration of how space-oriented vortices can transition multiple lattice spacings in a single time step.\relax }}{83}{figure.7.12}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces The signature of a singular point, in which the vortex surface spans all four directions.}}{84}{figure.7.13}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Topological charge density overlaying the $t=1$ slice.\relax }}{85}{figure.7.14}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Topological charge density overlaying the $t=2$ slice.\relax }}{85}{figure.7.15}
+\contentsline {figure}{\numberline {7.16}{\ignorespaces A collection of singular points shown with and without topological charge overlaid.}}{86}{figure.7.16}
+\contentsline {figure}{\numberline {7.17}{\ignorespaces The correlation measure for each configuration.}}{87}{figure.7.17}
+\contentsline {figure}{\numberline {7.18}{\ignorespaces The vortex structure and topological charge after eight sweeps of cooling, for $t=1$.\relax }}{87}{figure.7.18}
+\contentsline {figure}{\numberline {7.19}{\ignorespaces The correlation measure for each configuration after eight sweeps of cooling.}}{88}{figure.7.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

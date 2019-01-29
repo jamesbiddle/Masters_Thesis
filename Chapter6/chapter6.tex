@@ -9,6 +9,8 @@
 \else
     \graphicspath{{Chapter6/Figs/Vector/}{Chapter6/Figs/}}
 \fi
+\textit{This chapter is based on the paper ``Gluon propagator on a centre-vortex background'', }\citet{Biddle:2018dtc}.
+
 \section{Preliminary Results}
 Here we present the results from the gluon propagator, calculated according to method outlined in Chapter~\ref{chapter:GluonPropagator}, on our three vortex-modified configurations.
 %
@@ -198,10 +200,32 @@ $n_U$ & $\bar{S}/S_0$ & $n_{VO}$ & $\bar{S}/ S_0$\\
 The results presented above concur with the now significant body of evidence that centre vortices contain the essential degrees of freedom of the Yang-Mills vacuum, such that the application of smoothing enables the recreation of the major features of QCD~\cite{Bertle:2001xd,Trewartha:2015ida,Trewartha:2015nna,Trewartha:2017ive,DelDebbio:1998luz}. We have shown that vortex identification partitions the gluon propagator into low and high momentum modes, with the vortex only configurations encapsulating the majority of the infrared strength. Cross-correlation between the vortex only and vortex removed propagators can be seen to vanish in the ensemble average. By cooling the configurations, we observe that the vortex only configurations are continuously suppressed, while the infrared peak in the untouched and vortex only propagator acquires better agreement. By tuning the number of cooling sweeps to best match the average action of the vortex only and untouched configurations, we can effectively match the gluon propagators obtained from each of these configurations.\\
 
 %
-\begin{figure}[htb!]
-\centering
-\includegraphics[width=\linewidth]{./Instanton_Radius.png}
-\caption[The topological charge at the instanton centre is plotted against the instanton radius for the vortex modified configurations under 10 and 40 sweeps of cooling.]{\label{fig:InstantonRadius} The topological charge at the instanton centre, $q(x_0)$, is plotted against the instanton radius $\rho$ for the vortex modified configurations under 10 and 40 sweeps of cooling. The solid line represents the theoretical distribution. These plots are acquired from \citet{Trewartha:2015ida}.}
+\begin{figure}
+\begin{subfigure}[]{0.5\textwidth}
+\label{UTcool10}
+\includegraphics[width=\columnwidth]{./UTcool10.pdf}
+\end{subfigure}
+\begin{subfigure}[]{0.5\textwidth}
+\label{UTcool40}
+\includegraphics[width=\columnwidth]{./UTcool40.pdf}
+\end{subfigure}
+\begin{subfigure}[]{0.5\textwidth}
+\label{VOcool10}
+\includegraphics[width=\columnwidth]{./VOPGcool10.pdf}
+\end{subfigure}
+\begin{subfigure}[]{0.5\textwidth}
+\label{VOcool40}
+\includegraphics[width=\columnwidth]{./VOPGcool40.pdf}
+\end{subfigure}
+\begin{subfigure}[]{0.5\textwidth}
+\label{VRcool10}
+\includegraphics[width=\columnwidth]{./VRcool10.pdf}
+\end{subfigure}
+\begin{subfigure}[]{0.5\textwidth}
+\label{VRcool40}
+\includegraphics[width=\columnwidth]{./VRcool40.pdf}
+\end{subfigure}
+\caption[The topological charge at the instanton centre is plotted against the instanton radius for the vortex modified configurations under 10 and 40 sweeps of cooling.]{\label{fig:InstantonRadius} These plots are reproduced from \citet{Trewartha:2015ida}. The topological charge at the instanton centre, $q(x_0)$, is plotted against the instanton radius $\rho$ for the vortex modified configurations under 10 and 40 sweeps of cooling. The solid line represents the theoretical distribution. }
 \end{figure}
 %
 Noting that sufficient smoothing of a vortex-only field generates a topological background of instanton-like objects, we can regard the thin centre vortices as the seeds of instantons. The smoothing process that is applied on the vortex-only configurations raises a question regarding the precise role of vortices in the restoration of the infrared propagator: is it simply the presence of (sufficiently smoothed) vortices or is it more indirectly the reformation of the instanton background? If we examine Fig.~\ref{fig:10SweepsCooling}, we see that after the application of 10 sweeps of cooling the vortex-only propagator has the appropriate qualitative infrared behaviour. Comparing with previous work, in particular Fig.~7 within Ref.~\cite{Trewartha:2015ida} (replicated in Fig.~\ref{fig:InstantonRadius}) which shows the typical distribution of the instanton radius against the topological charge at the centre, we can see that after only 10 sweeps of cooling the vortex-only distribution still deviates significantly from the ideal theoretical instanton relationship. This suggests that it is the smoothed centre vortices that are directly responsible for the infrared structure of the gluon propagator.

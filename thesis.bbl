@@ -1475,17 +1475,6 @@
   (\bibinfo {year} {1998})},\ \Eprint {http://arxiv.org/abs/hep-th/9806007}
   {arXiv:hep-th/9806007 [hep-th]} \BibitemShut {NoStop}%
 %%CITATION = HEP-TH/9806007;%%
-\bibitem [{\citenamefont {Engelhardt}(2000)}]{Engelhardt:2000wc}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Michael}\ \bibnamefont
-  {Engelhardt}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Center
-  vortex model for the infrared sector of Yang-Mills theory: Topological
-  susceptibility}},}\ }\href {\doibase 10.1016/S0550-3213(00)00350-3}
-  {\bibfield  {journal} {\bibinfo  {journal} {Nucl. Phys.}\ }\textbf {\bibinfo
-  {volume} {B585}},\ \bibinfo {pages} {614} (\bibinfo {year} {2000})},\ \Eprint
-  {http://arxiv.org/abs/hep-lat/0004013} {arXiv:hep-lat/0004013 [hep-lat]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/0004013;%%
 \bibitem [{\citenamefont {Bruckmann}\ and\ \citenamefont
   {Engelhardt}(2003)}]{Bruckmann:2003yd}%
   \BibitemOpen
@@ -1499,4 +1488,15 @@
   {http://arxiv.org/abs/hep-th/0307219} {arXiv:hep-th/0307219 [hep-th]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-TH/0307219;%%
+\bibitem [{\citenamefont {Engelhardt}(2000)}]{Engelhardt:2000wc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Michael}\ \bibnamefont
+  {Engelhardt}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Center
+  vortex model for the infrared sector of Yang-Mills theory: Topological
+  susceptibility}},}\ }\href {\doibase 10.1016/S0550-3213(00)00350-3}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nucl. Phys.}\ }\textbf {\bibinfo
+  {volume} {B585}},\ \bibinfo {pages} {614} (\bibinfo {year} {2000})},\ \Eprint
+  {http://arxiv.org/abs/hep-lat/0004013} {arXiv:hep-lat/0004013 [hep-lat]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/0004013;%%
 \end{thebibliography}%

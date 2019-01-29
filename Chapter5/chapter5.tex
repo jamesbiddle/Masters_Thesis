@@ -16,7 +16,7 @@ The purpose of both these methods is similar, however, the algorithms used to im
 
 \section{Smoothing Methods}
 \subsection{Cooling}
-Cooling is the original method devised for smoothing lattice gauge fields, first utilised in an analysis of the topological susceptibility of simplified lattice models~\cite{Berg:1981nw}. It was shown early on that the process of cooling can be used to distinguish between `genuine' topological charge that is representative of classical minima of the action, and background Monte-Carlo topological charge brought about by random fluctuations created during the generation of the lattice configuration. Under cooling, the former is preserved whilst the latter is annihilated. The process of cooling according to the simplest Wilson action is based on the method outlined by Cabibbo and Marinari~\cite{Cabibbo:1982zn,Creutz:1980zw}, and is performed as follows:\\
+Cooling is the original method devised for smoothing lattice gauge fields, first utilised in an analysis of the topological susceptibility of simplified lattice models~\cite{Berg:1981nw}. It was shown early on that the process of cooling can be used to distinguish between `genuine' topological charge that is representative of classical minima of the action, and background Monte-Carlo topological charge brought about by random fluctuations created during the generation of the lattice configuration. Under cooling, the former is preserved whilst the latter is annihilated. The process of cooling according to the simplest Wilson action is based on the method outlined by Cabibbo and Marinari~\cite{Cabibbo:1982zn,Creutz:1980zw}, and is performed as follows.\\
 
 We first define the `staple' associated with a link $U_\mu$. A staple is the product of all the link variables around a chosen loop, except for the link being cooled. For example, the $1\times 1$ plaquette staple associated with $U_\mu$ is
 %
@@ -59,60 +59,29 @@ U^\prime_\mu = a_3\,a_2\,a_1\,U_\mu\, ,
 \label{eq:UPrime}
 \end{equation}
 %
-where the $a_i$ are each in different a $3\times 3$ representation of $SU(2)$. We define the following three functions, $F_i(V)$, such that $F_i : SU(3)\rightarrow SU(2)$:
+where the $a_i$ are each in different a $3\times 3$ representation of $SU(2)$. The optimal choice is
 %
 \begin{align*}
-F_1(V) &=\frac{1}{k_1} \begin{pmatrix}
-\frac{1}{2}\left(V_{11} + V_{22}^*\right) & \frac{1}{2}\left(V_{12} - V_{21}^*\right) & 0\\
-\frac{1}{2}\left(V_{21} - V_{12}^*\right) & \frac{1}{2}\left(V_{11}^* + V_{22}\right) & 0\\
+a_1 &= \frac{1}{k_1}
+\begin{pmatrix}
+\frac{1}{2}\left((U_\mu \, \bar{U})_{11} + (U_\mu \, \bar{U})^*_{22}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})_{12} - (U_\mu \, \bar{U})^*_{21}\right) & 0\\
+\frac{1}{2}\left((U_\mu \, \bar{U})_{21} - (U_\mu \, \bar{U})^*_{12}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})^*_{11} + (U_\mu \, \bar{U})_{22}\right) & 0\\
 0 & 0 & k_1
-\end{pmatrix}\, ,\\
-F_2(V) &=\frac{1}{k_2} \begin{pmatrix}
-\frac{1}{2}\left(V_{22} + V_{33}^*\right) & 0 &\frac{1}{2}\left(V_{23} - V_{32}^*\right)\\
+\end{pmatrix}^\dagger\\
+a_2 &= \frac{1}{k_2}
+\begin{pmatrix}
+\frac{1}{2}\left((U_\mu \, \bar{U})_{22} + (U_\mu \, \bar{U})^*_{33}\right) & 0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{23} - (U_\mu \, \bar{U})^*_{32}\right)\\
 0 & k_2 & 0\\
-\frac{1}{2}\left(V_{32} - V_{23}^*\right) & 0 & \frac{1}{2}\left(V_{22}^* + V_{33}\right)
-\end{pmatrix}\, ,\\
-F_3(V) &=\frac{1}{k_3} \begin{pmatrix}
-k_3 & 0 & 0\\
-0 & \frac{1}{2}\left(V_{11} + V_{33}^*\right) & \frac{1}{2}\left(V_{13} - V_{31}^*\right)\\
-0 & \frac{1}{2}\left(V_{31} - V_{13}^*\right) & \frac{1}{2}\left(V_{11}^* + V_{33}\right)
-\end{pmatrix}\, ,
+\frac{1}{2}\left((U_\mu \, \bar{U})_{32} - (U_\mu \, \bar{U})^*_{23}\right) & 0 & \frac{1}{2}\left((U_\mu \, \bar{U})^*_{22} + (U_\mu \, \bar{U})_{33}\right)
+\end{pmatrix}^\dagger\\
+a_3 &= \frac{1}{k_3}
+\begin{pmatrix}
+0 & 0 & k_3\\
+0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{11} + (U_\mu \, \bar{U})^*_{33}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})_{13} - (U_\mu \, \bar{U})^*_{31}\right)\\
+0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{31} - (U_\mu \, \bar{U})^*_{13}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})^*_{11} + (U_\mu \, \bar{U})_{33}\right)
+\end{pmatrix}^\dagger\, .
 \end{align*}
-%
-where $k_i^2$ is the determinant of the $2\times 2$ $SU(2)$ sub-block. The $\frac{1}{k_i}$ factor therefore fixes the determinant such that $\det(F_i(V))=1$. We now wish to find a suitable $V$ to define our $a_i$'s. Consider the first case, $U^{(1)}_\mu = a_1\,U_\mu$, and let $a_1 = F_1(U_\mu\,\bar{U})^\dagger$. It is worth stating explicitly that it is this step where the fact that a sum of $SU(2)$ matrices is proportional to an $SU(2)$ matrix is utilised. Despite the fact that $U_\mu\,\bar{U} \notin SU(3)$, $U_\mu \, \tilde{U}_\alpha\in SU(3)$, which implies that $F_i(U_\mu\, \tilde{U}_\alpha)\in SU(2)$. Then we have, for example,
-%
-\begin{align}
-F_1(U_\mu \, \bar{U}) &= \frac{1}{k_1}\sum_\alpha
-\begin{pmatrix}
-\frac{1}{2}\left((U_\mu \, \tilde{U}_\alpha)_{11} + (U_\mu \, \tilde{U}_\alpha)^*_{22}\right) & \frac{1}{2}\left((U_\mu \, \tilde{U}_\alpha)_{12} - (U_\mu \, \tilde{U}_\alpha)^*_{21}\right) & 0\\
-\frac{1}{2}\left((U_\mu \, \tilde{U}_\alpha)_{21} - (U_\mu \, \tilde{U}_\alpha)^*_{12}\right) & \frac{1}{2}\left((U_\mu \, \tilde{U}_\alpha)^*_{11} + (U_\mu \, \tilde{U}_\alpha)_{22}\right) & 0\\
-0 & 0 & k_1
-\end{pmatrix}\nonumber\\
-&=\frac{1}{k_1}\sum_\alpha
-\begin{pmatrix}
-k_{1,\,\alpha}\,\left(F_1(U_\mu\,\tilde{U}_\alpha)\right)_{11} & k_{1,\,\alpha}\,\left(F_1(U_\mu\,\tilde{U}_\alpha)\right)_{12} & 0\\
-k_{1,\,\alpha}\,\left(F_1(U_\mu\,\tilde{U}_\alpha)\right)_{21} & k_{1,\,\alpha}\,\left(F_1(U_\mu\,\tilde{U}_\alpha)\right)_{22} & 0\\
-0 & 0 & k_1
-\end{pmatrix}\nonumber\\
-&=\frac{1}{k_1}\sum_\alpha
-\left(\begin{array}{@{}c|c@{}}
-k_{1,\,\alpha} \,F_1(U_\mu\,\tilde{U}_\alpha)_{2\times 2} & 0\\
-  \hline 
-0 & k_1
-\end{array}\right)
-\label{eq:FExpansion}
-\end{align}
-%
-The $2\times 2$ block in Eq.~\ref{eq:FExpansion} is a sum over terms proportional to $SU(2)$ matrices, and hence the result is proportional to an $SU(2)$ matrix. Thus with the appropriate normalisation from the $k_1$ factor, we see that $F_1(U_\mu \, \bar{U})\in SU(2)$. The same results holds true for $F_2$ and $F_3$.\\
-
-With this definition of $a_1$, the functional Eq.~\ref{eq:CoolFunctional} we are seeking to maximise evaluates to
-%
-\begin{equation}
-\Re \Tr (F_1(U_\mu\,\bar{U})^\dagger \, U_\mu \, \bar{U}) = 2k_1 + \Re\left( (U_\mu\, \bar{U})_{33}\right)\, .
-\label{eq:MaximisedCooling}
-\end{equation}
-%
-The proof of this is given in Appendix \ref{app:CoolingMaximise}. By the matrix structure of $F_1(V)$ it is apparent that $\Re(U_\mu\, \bar{U})_{33}$ is invariant under pre-multiplication by $a_1$, so it is clear that Eq.~\ref{eq:MaximisedCooling} represents the maximum attainable value for this form of $U^{(1)}_\mu$. Similarly, we let $a_2=F_2(U_\mu\,\bar{U})^\dagger$ and $a_3=F_3(U_\mu\,\bar{U})^\dagger$ to obtain the final value of $U^\prime_\mu$ according to Eq.~\ref{eq:UPrime}. The above procedure is repeated over all three $SU(2)$ subgroups 12 times per lattice link to effectively minimise the local action. One sweep of cooling then constitutes applying this procedure to every link on the lattice.\\
+The factor of $\frac{1}{k_i}$ fixes the determinant such that $\det(a_i)=1$. The procedure for identifying these $SU(2)$ elements is described in detail in Appendix~\ref{app:Cooling}. With this construction of $U_\mu^\prime$ we locally minimise the Wilson action for each link. This determination of $U_\mu^\prime$ is repeated 12 times per link. One sweep of cooling constitutes updating each link on the lattice according to this procedure.\\
 
 As detailed in Ref.~\cite{Bonnet:2000dc}, this process can be thought of as locally minimising the Wilson action of the three $SU(2)$ subgroups, which collectively minimises the Wilson action of the full $SU(3)$ link. It is then simple to extend this procedure to different actions by expanding the size and shape of the staples considered in the construction of $\bar{U}$. As all of the quantities utilised in the cooling procedure are gauge invariant, cooling can be performed in any gauge to arrive at the same cooled configuration. Cooling also maintains the Boltzmann distribution of the lattice links~\cite{Cabibbo:1982zn}, indicating that the new links can be considered a thermalised distribution. However, cooling is not a gauge transformation, and as such it represents a deviation from the original physical configuration. We therefore need to be careful when selecting the action used for the cooling routine to ensure that we are not removing the physics that we are interested in. To best study instantons and topological charge on a periodic lattice, it has been shown that a $\mathcal{O}(a^4)$ three-loop  improved action is most suitable~\cite{BilsonThompson:2002jk}. This action is dubbed a `three-loop' action as it consists of a linear combination of $1\times 1$, $2\times 2$ and $3\times 3$ Wilson loops. This choice of action combines both computational efficiency with an effective stabilisation of instantons and an accurate preservation of the topological charge under repeated cooling sweeps. As a result, it is this three-loop cooling routine that will be utilised in this research.
 
@@ -144,7 +113,7 @@ U_\mu^\prime = \exp(iQ_\mu)\,U_\mu\, .
 %
 This definition effectively corresponds to a complex sum of neighbouring link combinations, however it has numerically been demonstrated to give similar results to the previous APE smearing technique, provided that the smearing parameter $\rho_\text{sm}$ is selected appropriately~\cite{Morningstar:2003gk}. For this work, we choose $\rho_\text{sm}=0.06$, in accordance with the results of Ref.~\cite{Moran:2008ra}. As in the case of cooling, the choice of staples used to define $\bar{U}$ has significant impact on the behaviour of topological objects under smearing. To this end, work has been done to tune the smearing algorithm so that it preserves instanton-like objects under repeated smearing sweeps, leading to the development of over-improved stoutlink smearing~\cite{Moran:2008ra}.\\
 
-Before introducing over-improved stoutlink smearing, it is important to detail how we quantitatively measure the effect of smearing on topological objects. To do this, we calculate the instanton action in terms of the instanton radius. The error terms in the instanton action then give an indication of how the instanton radius will change as the action decreases under smearing. If the Baker-Campbell-Hausdorff plaquette expansion given in Appendix~\ref{app:TEPlaquette} is instead truncated at $\mathcal{O}(a^4)$ rather than $\mathcal{O}(a^2)$, the Wilson action becomes~\cite{GarciaPerez:1993lic}
+To see the necessity for over-improved stoutlink smearing, it is important to detail how we quantitatively measure the effect of smearing on topological objects. To do this, we calculate the instanton action in terms of the instanton radius. The error terms in the instanton action then give an indication of how the instanton radius will change as the action decreases under smearing. This in turn gives an indication of how well the smearing routine preserves topological objects. If the Baker-Campbell-Hausdorff plaquette expansion given in Appendix~\ref{app:TEPlaquette} is instead truncated at $\mathcal{O}(a^4)$ rather than $\mathcal{O}(a^2)$, the Wilson action becomes~\cite{GarciaPerez:1993lic}
 %
 \begin{equation}
 \mathcal{S}_\text{W} = a^4\sum_x\,\sum_{\mu,\,\nu} \Tr\left[\frac{1}{2}F_{\mu\nu}^2 + \frac{a^2}{24}\left\lbrace \left( D _ { \mu } F _ { \mu \nu } ( x ) \right) ^ { 2 } + \left( D _ { \nu } F _ { \mu \nu } ( x ) \right) ^ { 2 } \right\rbrace + \mathcal{O}(a^4)\right]\, .
@@ -153,13 +122,13 @@ Before introducing over-improved stoutlink smearing, it is important to detail h
 Substituting in the instanton potential (Eq.~\ref{eq:InstantonSolution}) and field strength tensor (Eq.~\ref{eq:InstantonFieldStrength}), we find that the Wilson action goes like
 %
 \begin{equation}
-S_\text{W}^\text{Inst} = \frac{8\pi^2}{g^2}\left\{1-\frac{1}{5}\left(\frac{a}{\rho}\right)^2 + \mathcal{O}\left(\frac{a}{\rho}\right)^4 \right\}\, ,
+S_\text{W}^\text{inst} = \frac{8\pi^2}{g^2}\left\{1-\frac{1}{5}\left(\frac{a}{\rho}\right)^2 + \mathcal{O}\left(\frac{a}{\rho}\right)^4 \right\}\, ,
 \end{equation}
 %
 where $\rho$ is the instanton radius. We note then that as the Wilson action is minimised, the $-\frac{1}{5}\left(\frac{a}{\rho}\right)^2$ term must become increasingly negative, implying that the instanton radius decreases. This is precisely the effect we wish to avoid, as the instanton radius will shrink under smearing to the point where the instanton-like objects `fall through' the lattice as $\rho\rightarrow a$. A similar calculation can be done for the L\"uscher and Weisz action, showing that~\cite{GarciaPerez:1993lic}\\
 %
 \begin{equation}
-S_\text{LW}^\text{Inst} = \frac{8\pi^2}{g^2}\left\{ 1 - \frac { 17 } { 210 } \left(  \frac{a}{\rho} \right) ^ { 4 } + \mathcal { O } \left( \frac{a}{\rho} \right) ^ { 6 } \right\}\, .
+S_\text{LW}^\text{inst} = \frac{8\pi^2}{g^2}\left\{ 1 - \frac { 17 } { 210 } \left(  \frac{a}{\rho} \right) ^ { 4 } + \mathcal { O } \left( \frac{a}{\rho} \right) ^ { 6 } \right\}\, .
 \end{equation}
 %
 
@@ -172,7 +141,7 @@ S ( \epsilon ) =  \beta \sum _ { x } \sum _ { \mu > \nu } \left[ \frac { 5 - 2 \
 We see that $S(1)=S_\text{W}$ and $S(0) = S_\text{LW}$. Expanding $S(\epsilon)$ in terms of the instanton solution, we have
 %
 \begin{equation}
-S^\text{Inst}(\epsilon) = \frac { 8 \pi ^ { 2 } } { g ^ { 2 } } \left[ 1 - \frac { \epsilon } { 5 } \left( \frac { a } { \rho  } \right) ^ { 2 } + \frac { 14 \epsilon - 17 } { 210 } \left( \frac { a } { \rho } \right) ^ { 4 } + \mathcal { O } \left( \frac{a}{\rho} \right) ^ { 6 } \right]\, .
+S^\text{inst}(\epsilon) = \frac { 8 \pi ^ { 2 } } { g ^ { 2 } } \left[ 1 - \frac { \epsilon } { 5 } \left( \frac { a } { \rho  } \right) ^ { 2 } + \frac { 14 \epsilon - 17 } { 210 } \left( \frac { a } { \rho } \right) ^ { 4 } + \mathcal { O } \left( \frac{a}{\rho} \right) ^ { 6 } \right]\, .
 \end{equation}
 %
 The parameter $\epsilon$ can now be tuned so as to preserve instantons under smearing. Performing stoutlink smearing with this choice of action dependent on $\epsilon$ is known as over-improved stoutlink smearing. When using this routine, it is necessary to select appropriate $\rho_{\text{sm}}$ and $\epsilon$ parameters. We keep the previous value of $\rho_{\text{sm}}=0.06$, however there is some subtlety to finding an appropriate $\epsilon$. The natural choice for $\epsilon$ may be to follow Ref.~\cite{GarciaPerez:1993lic} and set $\epsilon=-1$ to ensure that the leading error term is positive. However, one then runs the risk of unphysically growing the instanton size such that it annihilates with anti-instantons present on the lattice. Furthermore, we wish to smear such that the instantons are minimally distorted as they undergo the smearing process. To this end, we follow the results of Ref.~\cite{Moran:2008ra} and choose $\epsilon = -0.25$. We then choose the corresponding staple parameter $\bar{U}$ to be the sum over the $1\times 1$ and $(2\times 1) + (1\times 2)$ loops with $U_\mu$ omitted, with respective weightings $\frac{5-2\epsilon}{3}$ and $-\frac{1-\epsilon}{12}$. We can now utilise this over-improved stoutlink smearing routine to filter out short distance physics, isolating the topological objects of interest.

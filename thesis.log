@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.14)  22 JAN 2019 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.14)  29 JAN 2019 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2167,7 +2167,7 @@ Package microtype Info: Loading generic settings for font family
 \PHD@Title=\box88
 \PHD@crest=\box89
 
-<Figs/UofA-LogoVertical.png, id=208, 996.72375pt x 833.1125pt>
+<Figs/UofA-LogoVertical.png, id=216, 996.72375pt x 833.1125pt>
 File: Figs/UofA-LogoVertical.png Graphic file (type png)
 
 <use Figs/UofA-LogoVertical.png>
@@ -2315,12 +2315,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--112
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
 
  []
 
@@ -2331,27 +2331,27 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ) [11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 274--276
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
+Underfull \hbox (badness 10000) in paragraph at lines 313--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
 
  []
 
 [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 361--365
+Underfull \hbox (badness 10000) in paragraph at lines 368--372
 
  []
 
 
-Overfull \hbox (3.11446pt too wide) detected at line 385
+Overfull \hbox (3.11446pt too wide) detected at line 392
 [][] \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 ga[] [] [] [] \OT1/lmr/m/n/12 + \OMS/lm
 sy/m/n/12 O []  \OML/lmm/m/it/12 :
  []
@@ -2386,7 +2386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
  []
 
 [20] [21]
-<Chapter3/Figs/./centre_vortex.pdf, id=683, 269.00482pt x 118.08978pt>
+<Chapter3/Figs/./centre_vortex.pdf, id=697, 269.00482pt x 118.08978pt>
 File: Chapter3/Figs/./centre_vortex.pdf Graphic file (type pdf)
 
 <use Chapter3/Figs/./centre_vortex.pdf>
@@ -2403,22 +2403,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--136
 
  []
 
-<Chapter3/Figs/./VortexDistribution.png, id=711, 424.9476pt x 316.5426pt>
-File: Chapter3/Figs/./VortexDistribution.png Graphic file (type png)
+<Chapter3/Figs/./VortexDistribution.pdf, id=725, 425.90805pt x 315.83257pt>
+File: Chapter3/Figs/./VortexDistribution.pdf Graphic file (type pdf)
 
-<use Chapter3/Figs/./VortexDistribution.png>
-Package pdftex.def Info: Chapter3/Figs/./VortexDistribution.png used on input l
+<use Chapter3/Figs/./VortexDistribution.pdf>
+Package pdftex.def Info: Chapter3/Figs/./VortexDistribution.pdf used on input l
 ine 140.
-(pdftex.def)             Requested size: 424.94655pt x 316.54182pt.
+(pdftex.def)             Requested size: 425.907pt x 315.83179pt.
  [24]
-<Chapter3/Figs/./LargeVortex.pdf, id=728, 550.55687pt x 256.07669pt>
+<Chapter3/Figs/./LargeVortex.pdf, id=742, 550.55687pt x 256.07669pt>
 File: Chapter3/Figs/./LargeVortex.pdf Graphic file (type pdf)
 
 <use Chapter3/Figs/./LargeVortex.pdf>
 Package pdftex.def Info: Chapter3/Figs/./LargeVortex.pdf used on input line 149
 .
 (pdftex.def)             Requested size: 437.46112pt x 203.47841pt.
- [25 <./Chapter3/Figs/./VortexDistribution.png>] [26 <./Chapter3/Figs/./LargeVo
+ [25 <./Chapter3/Figs/./VortexDistribution.pdf>] [26 <./Chapter3/Figs/./LargeVo
 rtex.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
@@ -2430,17 +2430,17 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-) [29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+) [29]
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
 
  []
 
-
+[30] [31]
 Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-[31]
+
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
@@ -2452,7 +2452,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ) [36]
-Underfull \hbox (badness 10000) in paragraph at lines 380--383
+Underfull \hbox (badness 10000) in paragraph at lines 383--386
 
  []
 
@@ -2476,7 +2476,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--193
  []
 
 
-<Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf, id=1027, 415.93329pt 
+<Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf, id=1092, 415.93329pt 
 x 333.64912pt>
 File: Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf Graphic file (typ
 e pdf)
@@ -2491,7 +2491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--228
  []
 
 
-<Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf, id=1105, 425.51596pt x 333.35114
+<Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf, id=1170, 425.51596pt x 333.35114
 pt>
 File: Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf Graphic file (type pdf)
  <use Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf>
@@ -2518,188 +2518,240 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
  []
 
 [51] (./Chapter5/Figs/staple.tex) [52] [53]
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 124--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--146
+Underfull \hbox (badness 10000) in paragraph at lines 126--130
 
  []
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
-
- []
-
-[57]
-<Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf, id=1256, 415.93329pt x 333.3
+<Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf, id=1309, 415.93329pt x 333.3
 5114pt>
 File: Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf Graphic file (type pdf)
  <use Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf>
 Package pdftex.def Info: Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf used 
-on input line 186.
+on input line 155.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
- [58] [59 <./Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf>]
-<Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf, id=1318, 415.93329pt x 333
+ [57] [58 <./Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf>]
+<Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf, id=1371, 415.93329pt x 333
 .35114pt>
 File: Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf Graphic file (type pdf
 )
  <use Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf>
 Package pdftex.def Info: Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf use
-d on input line 204.
+d on input line 173.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
- [60 <./Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf>]) [61]
+ [59 <./Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf>]) [60]
 \openout2 = `Chapter6/chapter6.aux'.
 
  (./Chapter6/chapter6.tex
-[62
-
-
-
-]
 Chapter 6.
 
-<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf, id=1393, 415.93329pt x 333.351
+<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf, id=1445, 415.93329pt x 333.351
 14pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf Graphic file (type pdf)
  <use Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf used on
- input line 17.
+ input line 19.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
 
-<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf, id=1394, 415.93329pt x 333.35
+<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf, id=1446, 415.93329pt x 333.35
 114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf Graphic file (type pdf)
  <use Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf used o
-n input line 23.
+n input line 25.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--28
+Underfull \hbox (badness 10000) in paragraph at lines 15--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[63] [64 <./Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf>] [65 <./Chapter6/Fi
-gs/./ScalarGluComp_q2_NoCoolSum2.pdf>]
-<Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf, id=1528, 424.33969pt x 333.35
+[61
+
+
+
+] [62 <./Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf>] [63 <./Chapter6/Figs/
+./ScalarGluComp_q2_NoCoolSum2.pdf>]
+<Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf, id=1580, 424.33969pt x 333.35
 114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf Graphic file (type pdf)
  <use Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf used o
-n input line 56.
+n input line 58.
 (pdftex.def)             Requested size: 393.71233pt x 309.30632pt.
- [66]
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+ [64]
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
-[67 <./Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 92--95
+[65 <./Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
 
-<Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf, id=1610, 415.93329pt x 333.3
+<Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf, id=1660, 415.93329pt x 333.3
 5114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf Graphic file (type pdf)
  <use Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf used 
-on input line 148.
+on input line 150.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
- [69]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+ [67]
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-
-<Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf, id=1621, 415.93329pt x 333
+[68 <./Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf>]
+<Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf, id=1727, 415.93329pt x 333
 .35114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf Graphic file (type pdf
 )
  <use Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf use
-d on input line 158.
+d on input line 160.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-[70 <./Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-[71 <./Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf>]
-<Chapter6/Figs/./ActionMatch.pdf, id=1733, 437.95305pt x 333.64912pt>
+[69 <./Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+<Chapter6/Figs/./ActionMatch.pdf, id=1786, 437.95305pt x 333.64912pt>
 File: Chapter6/Figs/./ActionMatch.pdf Graphic file (type pdf)
 
 <use Chapter6/Figs/./ActionMatch.pdf>
-Package pdftex.def Info: Chapter6/Figs/./ActionMatch.pdf used on input line 169
+Package pdftex.def Info: Chapter6/Figs/./ActionMatch.pdf used on input line 171
 .
 (pdftex.def)             Requested size: 437.46112pt x 333.28174pt.
 
-<Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf, id=1734, 415.93329pt x 33
+<Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf, id=1787, 415.93329pt x 33
 3.35114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf Graphic file (type pd
 f)
  <use Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf us
-ed on input line 192.
+ed on input line 194.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
- [72 <./Chapter6/Figs/./ActionMatch.pdf>]
-
-LaTeX Warning: Text page 73 contains only floats.
-
-[73 <./Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+ [70]
+[71 <./Chapter6/Figs/./ActionMatch.pdf>] [72 <./Chapter6/Figs/./ScalarGluComp_q
+2_UVOActionMatch.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-<Chapter6/Figs/./Instanton_Radius.png, id=1848, 775.89874pt x 966.61125pt>
-File: Chapter6/Figs/./Instanton_Radius.png Graphic file (type png)
+<Chapter6/Figs/./UTcool10.pdf, id=1904, 539.31578pt x 421.19826pt>
+File: Chapter6/Figs/./UTcool10.pdf Graphic file (type pdf)
 
-<use Chapter6/Figs/./Instanton_Radius.png>
-Package pdftex.def Info: Chapter6/Figs/./Instanton_Radius.png used on input lin
-e 203.
-(pdftex.def)             Requested size: 437.46112pt x 545.00069pt.
-) [74]
+<use Chapter6/Figs/./UTcool10.pdf>
+Package pdftex.def Info: Chapter6/Figs/./UTcool10.pdf used on input line 206.
+(pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
 
-LaTeX Warning: Text page 75 contains only floats.
+<Chapter6/Figs/./UTcool40.pdf, id=1905, 539.31578pt x 421.19826pt>
+File: Chapter6/Figs/./UTcool40.pdf Graphic file (type pdf)
+
+<use Chapter6/Figs/./UTcool40.pdf>
+Package pdftex.def Info: Chapter6/Figs/./UTcool40.pdf used on input line 210.
+(pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
+
+<Chapter6/Figs/./VOPGcool10.pdf, id=1906, 539.31578pt x 421.19826pt>
+File: Chapter6/Figs/./VOPGcool10.pdf Graphic file (type pdf)
+
+<use Chapter6/Figs/./VOPGcool10.pdf>
+Package pdftex.def Info: Chapter6/Figs/./VOPGcool10.pdf used on input line 214.
+
+(pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
+
+<Chapter6/Figs/./VOPGcool40.pdf, id=1907, 539.31578pt x 421.19826pt>
+File: Chapter6/Figs/./VOPGcool40.pdf Graphic file (type pdf)
+
+<use Chapter6/Figs/./VOPGcool40.pdf>
+Package pdftex.def Info: Chapter6/Figs/./VOPGcool40.pdf used on input line 218.
+
+(pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
+
+<Chapter6/Figs/./VRcool10.pdf, id=1908, 539.31578pt x 421.19826pt>
+File: Chapter6/Figs/./VRcool10.pdf Graphic file (type pdf)
+
+<use Chapter6/Figs/./VRcool10.pdf>
+Package pdftex.def Info: Chapter6/Figs/./VRcool10.pdf used on input line 222.
+(pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
+
+<Chapter6/Figs/./VRcool40.pdf, id=1909, 535.18823pt x 421.19826pt>
+File: Chapter6/Figs/./VRcool40.pdf Graphic file (type pdf)
+
+<use Chapter6/Figs/./VRcool40.pdf>
+Package pdftex.def Info: Chapter6/Figs/./VRcool40.pdf used on input line 226.
+(pdftex.def)             Requested size: 218.73056pt x 172.1461pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 204--228
+[]$[]$ $[]$
+ []
 
 
-Overfull \vbox (7.21555pt too high) has occurred while \output is active []
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 204--228
+[]$ $[]$
+ []
 
 
-[75 <./Chapter6/Figs/./Instanton_Radius.png>]
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 204--228
+[]$ $[]$ 
+ []
+
+) [73
+
+] [74 <./Chapter6/Figs/./UTcool10.pdf> <./Chapter6/Figs/./UTcool40.pdf
+
+pdfTeX warning: pdflatex (file ./Chapter6/Figs/./UTcool40.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./Chapter6/Figs/./VOPGcool10.pdf
+
+pdfTeX warning: pdflatex (file ./Chapter6/Figs/./VOPGcool10.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+> <./Chapter6/Figs/./VOPGcool40.pdf
+
+pdfTeX warning: pdflatex (file ./Chapter6/Figs/./VOPGcool40.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+> <./Chapter6/Figs/./VRcool10.pdf
+
+pdfTeX warning: pdflatex (file ./Chapter6/Figs/./VRcool10.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./Chapter6/Figs/./VRcool40.pdf
+
+pdfTeX warning: pdflatex (file ./Chapter6/Figs/./VRcool40.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>]
 \openout2 = `Chapter7/chapter7.aux'.
 
- (./Chapter7/chapter7.tex [76
-
-
-
-]
+ (./Chapter7/chapter7.tex
 Chapter 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 13.
@@ -2708,7 +2760,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 17.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [77]
+) [75
+
+
+
+]
 (./Chapter7/Figs/SpaceVortices.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2717,7 +2773,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-<Chapter7/Figs/Plaq_CFG95_T01.png, id=1882, 1226.5825pt x 696.6025pt>
+<Chapter7/Figs/Plaq_CFG95_T01.png, id=2028, 1226.5825pt x 696.6025pt>
 File: Chapter7/Figs/Plaq_CFG95_T01.png Graphic file (type png)
 
 <use Chapter7/Figs/Plaq_CFG95_T01.png>
@@ -2725,7 +2781,7 @@ Package pdftex.def Info: Chapter7/Figs/Plaq_CFG95_T01.png used on input line 37
 .
 (pdftex.def)             Requested size: 437.46112pt x 248.43826pt.
 
-<Chapter7/Figs/Plaq_CFG95_T02.png, id=1883, 1234.6125pt x 644.4075pt>
+<Chapter7/Figs/Plaq_CFG95_T02.png, id=2029, 1234.6125pt x 644.4075pt>
 File: Chapter7/Figs/Plaq_CFG95_T02.png Graphic file (type png)
 
 <use Chapter7/Figs/Plaq_CFG95_T02.png>
@@ -2733,7 +2789,7 @@ Package pdftex.def Info: Chapter7/Figs/Plaq_CFG95_T02.png used on input line 42
 .
 (pdftex.def)             Requested size: 437.46112pt x 228.3287pt.
 
-<Chapter7/Figs/./plaqt1_line.png, id=1884, 667.49374pt x 611.28375pt>
+<Chapter7/Figs/./plaqt1_line.png, id=2030, 667.49374pt x 611.28375pt>
 File: Chapter7/Figs/./plaqt1_line.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqt1_line.png>
@@ -2741,7 +2797,7 @@ Package pdftex.def Info: Chapter7/Figs/./plaqt1_line.png used on input line 50.
 
 (pdftex.def)             Requested size: 131.23967pt x 120.18388pt.
 
-<Chapter7/Figs/./plaqt1_loop.png, id=1885, 322.20375pt x 290.08376pt>
+<Chapter7/Figs/./plaqt1_loop.png, id=2031, 322.20375pt x 290.08376pt>
 File: Chapter7/Figs/./plaqt1_loop.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqt1_loop.png>
@@ -2749,7 +2805,7 @@ Package pdftex.def Info: Chapter7/Figs/./plaqt1_loop.png used on input line 53.
 
 (pdftex.def)             Requested size: 131.23967pt x 118.16049pt.
 
-<Chapter7/Figs/./plaqt1_monopole.png, id=1886, 428.60126pt x 365.365pt>
+<Chapter7/Figs/./plaqt1_monopole.png, id=2032, 428.60126pt x 365.365pt>
 File: Chapter7/Figs/./plaqt1_monopole.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqt1_monopole.png>
@@ -2761,22 +2817,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-<Chapter7/Figs/./VortexBranching.pdf, id=1898, 495.62163pt x 187.84178pt>
+<Chapter7/Figs/./VortexBranching.pdf, id=2044, 495.62163pt x 187.84178pt>
 File: Chapter7/Figs/./VortexBranching.pdf Graphic file (type pdf)
 
 <use Chapter7/Figs/./VortexBranching.pdf>
 Package pdftex.def Info: Chapter7/Figs/./VortexBranching.pdf used on input line
  67.
 (pdftex.def)             Requested size: 262.47934pt x 99.484pt.
- [78] [79 <./Chapter7/Figs/Plaq_CFG95_T01.png> <./Chapter7/Figs/Plaq_CFG95_T02.
-png>] [80 <./Chapter7/Figs/./plaqt1_line.png> <./Chapter7/Figs/./plaqt1_loop.pn
+ [76] [77 <./Chapter7/Figs/Plaq_CFG95_T01.png> <./Chapter7/Figs/Plaq_CFG95_T02.
+png>] [78 <./Chapter7/Figs/./plaqt1_line.png> <./Chapter7/Figs/./plaqt1_loop.pn
 g> <./Chapter7/Figs/./plaqt1_monopole.png> <./Chapter7/Figs/./VortexBranching.p
 df>] (./Chapter7/Figs/p1TimeVortex.tex) (./Chapter7/Figs/m1TimeVortex.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 79--94
 
  []
 
-[81] <Chapter7/Figs/PlaqLink_CFG95_T01.png, id=1945, 1228.59pt x 623.32875pt>
+[79] <Chapter7/Figs/PlaqLink_CFG95_T01.png, id=2086, 1228.59pt x 623.32875pt>
 File: Chapter7/Figs/PlaqLink_CFG95_T01.png Graphic file (type png)
 
 <use Chapter7/Figs/PlaqLink_CFG95_T01.png>
@@ -2784,16 +2840,16 @@ Package pdftex.def Info: Chapter7/Figs/PlaqLink_CFG95_T01.png used on input lin
 e 99.
 (pdftex.def)             Requested size: 437.46112pt x 221.94427pt.
 
-<Chapter7/Figs/PlaqLink_CFG95_T02.png, id=1946, 1237.62375pt x 632.3625pt>
+<Chapter7/Figs/PlaqLink_CFG95_T02.png, id=2087, 1237.62375pt x 632.3625pt>
 File: Chapter7/Figs/PlaqLink_CFG95_T02.png Graphic file (type png)
 
 <use Chapter7/Figs/PlaqLink_CFG95_T02.png>
 Package pdftex.def Info: Chapter7/Figs/PlaqLink_CFG95_T02.png used on input lin
 e 105.
 (pdftex.def)             Requested size: 437.46112pt x 223.52052pt.
- [82 <./Chapter7/Figs/PlaqLink_CFG95_T01.png> <./Chapter7/Figs/PlaqLink_CFG95_T
+ [80 <./Chapter7/Figs/PlaqLink_CFG95_T01.png> <./Chapter7/Figs/PlaqLink_CFG95_T
 02.png>]
-<Chapter7/Figs/./plaqlinet1_forwardarrows.png, id=1957, 687.56876pt x 551.05875
+<Chapter7/Figs/./plaqlinet1_forwardarrows.png, id=2098, 687.56876pt x 551.05875
 pt>
 File: Chapter7/Figs/./plaqlinet1_forwardarrows.png Graphic file (type png)
  <use Chapter7/Figs/./plaqlinet1_forwardarrows.png>
@@ -2803,14 +2859,14 @@ nput line 117.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 118.
 
-<Chapter7/Figs/./plaqlinet2_backwardarrows.png, id=1958, 722.7pt x 549.05125pt>
+<Chapter7/Figs/./plaqlinet2_backwardarrows.png, id=2099, 722.7pt x 549.05125pt>
 File: Chapter7/Figs/./plaqlinet2_backwardarrows.png Graphic file (type png)
 <use Chapter7/Figs/./plaqlinet2_backwardarrows.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqlinet2_backwardarrows.png used on 
 input line 123.
 (pdftex.def)             Requested size: 166.83504pt x 126.75508pt.
 
-<Chapter7/Figs/./plaqlinet1_line&monopole.png, id=1959, 362.35374pt x 633.36626
+<Chapter7/Figs/./plaqlinet1_line&monopole.png, id=2100, 362.35374pt x 633.36626
 pt>
 File: Chapter7/Figs/./plaqlinet1_line&monopole.png Graphic file (type png)
  <use Chapter7/Figs/./plaqlinet1_line&monopole.png>
@@ -2818,16 +2874,16 @@ Package pdftex.def Info: Chapter7/Figs/./plaqlinet1_line&monopole.png used on i
 nput line 133.
 (pdftex.def)             Requested size: 108.77884pt x 190.13747pt.
 
-<Chapter7/Figs/./plaqlinet2_line&monopole.png, id=1960, 293.095pt x 658.46pt>
+<Chapter7/Figs/./plaqlinet2_line&monopole.png, id=2101, 293.095pt x 658.46pt>
 File: Chapter7/Figs/./plaqlinet2_line&monopole.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqlinet2_line&monopole.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqlinet2_line&monopole.png used on i
 nput line 139.
 (pdftex.def)             Requested size: 84.6331pt x 190.13747pt.
- [83 <./Chapter7/Figs/./plaqlinet1_forwardarrows.png> <./Chapter7/Figs/./plaqli
+ [81 <./Chapter7/Figs/./plaqlinet1_forwardarrows.png> <./Chapter7/Figs/./plaqli
 net2_backwardarrows.png>]
-<Chapter7/Figs/./plaqlinet1_SW8_line.png, id=1976, 495.8525pt x 514.92375pt>
+<Chapter7/Figs/./plaqlinet1_SW8_line.png, id=2118, 495.8525pt x 514.92375pt>
 File: Chapter7/Figs/./plaqlinet1_SW8_line.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqlinet1_SW8_line.png>
@@ -2835,7 +2891,7 @@ Package pdftex.def Info: Chapter7/Figs/./plaqlinet1_SW8_line.png used on input
 line 152.
 (pdftex.def)             Requested size: 122.05615pt x 126.75508pt.
 
-<Chapter7/Figs/./plaqlinet2_SW8_line.png, id=1977, 406.51875pt x 391.4625pt>
+<Chapter7/Figs/./plaqlinet2_SW8_line.png, id=2119, 406.51875pt x 391.4625pt>
 File: Chapter7/Figs/./plaqlinet2_SW8_line.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqlinet2_SW8_line.png>
@@ -2847,84 +2903,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--162
 
  []
 
-(./Chapter7/Figs/VortexLineDiagram.tex) [84 <./Chapter7/Figs/./plaqlinet1_line&
+(./Chapter7/Figs/VortexLineDiagram.tex) [82 <./Chapter7/Figs/./plaqlinet1_line&
 monopole.png> <./Chapter7/Figs/./plaqlinet2_line&monopole.png> <./Chapter7/Figs
 /./plaqlinet1_SW8_line.png> <./Chapter7/Figs/./plaqlinet2_SW8_line.png>]
-[85] (./Chapter7/Figs/SingularPoint.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+(./Chapter7/Figs/SingularPoint.tex) [83]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-[86]
-<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png, id=2020, 1226.5825pt x 623.32875pt
+[84]
+<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png, id=2157, 1226.5825pt x 623.32875pt
 >
 File: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png Graphic file (type png)
  <use Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png>
 Package pdftex.def Info: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png used on inp
-ut line 200.
+ut line 194.
 (pdftex.def)             Requested size: 437.46112pt x 222.30571pt.
 
-<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png, id=2021, 1252.68pt x 626.34pt>
+<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png, id=2158, 1252.68pt x 626.34pt>
 File: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png Graphic file (type png)
 
 <use Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png>
 Package pdftex.def Info: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png used on inp
-ut line 206.
+ut line 200.
 (pdftex.def)             Requested size: 437.46112pt x 218.7253pt.
- [87 <./Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png> <./Chapter7/Figs/./PlaqLink
+ [85 <./Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png> <./Chapter7/Figs/./PlaqLink
 TopQ_CFG95_T02.png>]
-<Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png, id=2029, 976.64874pt x 705
+<Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png, id=2165, 976.64874pt x 705
 .63625pt>
 File: Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png Graphic file (type png
 )
  <use Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png>
 Package pdftex.def Info: Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png use
-d on input line 216.
+d on input line 210.
 (pdftex.def)             Requested size: 175.43152pt x 126.75508pt.
 
-<Chapter7/Figs/./PlaqLinkt2_SingularCollection.png, id=2030, 809.0225pt x 504.8
+<Chapter7/Figs/./PlaqLinkt2_SingularCollection.png, id=2166, 809.0225pt x 504.8
 8625pt>
 File: Chapter7/Figs/./PlaqLinkt2_SingularCollection.png Graphic file (type png)
 
  <use Chapter7/Figs/./PlaqLinkt2_SingularCollection.png>
 Package pdftex.def Info: Chapter7/Figs/./PlaqLinkt2_SingularCollection.png used
- on input line 221.
+ on input line 215.
 (pdftex.def)             Requested size: 203.1069pt x 126.75508pt.
 
-<Chapter7/Figs/./Correlation.pdf, id=2032, 421.92442pt x 326.01122pt>
+<Chapter7/Figs/./Correlation.pdf, id=2168, 421.92442pt x 326.01122pt>
 File: Chapter7/Figs/./Correlation.pdf Graphic file (type pdf)
 
 <use Chapter7/Figs/./Correlation.pdf>
-Package pdftex.def Info: Chapter7/Figs/./Correlation.pdf used on input line 247
+Package pdftex.def Info: Chapter7/Figs/./Correlation.pdf used on input line 241
 .
 (pdftex.def)             Requested size: 349.97023pt x 270.42009pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--249
+Underfull \hbox (badness 10000) in paragraph at lines 235--243
 
  []
 
 
-<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png, id=2033, 941.5175pt x 483.8075
+<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png, id=2169, 941.5175pt x 483.8075
 pt>
 File: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png Graphic file (type png)
  <use Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png>
 Package pdftex.def Info: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png used on
- input line 253.
+ input line 247.
 (pdftex.def)             Requested size: 437.46112pt x 224.79099pt.
- [88 <./Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png> <./Chapter7/Figs/./
-PlaqLinkt2_SingularCollection.png>] [89 <./Chapter7/Figs/./Correlation.pdf> <./
+ [86 <./Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png> <./Chapter7/Figs/./
+PlaqLinkt2_SingularCollection.png>] [87 <./Chapter7/Figs/./Correlation.pdf> <./
 Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png>]
-<Chapter7/Figs/./Correlation_sw07.pdf, id=2091, 421.92442pt x 326.01122pt>
+<Chapter7/Figs/./Correlation_sw07.pdf, id=2228, 421.92442pt x 326.01122pt>
 File: Chapter7/Figs/./Correlation_sw07.pdf Graphic file (type pdf)
 
 <use Chapter7/Figs/./Correlation_sw07.pdf>
 Package pdftex.def Info: Chapter7/Figs/./Correlation_sw07.pdf used on input lin
-e 263.
+e 257.
 (pdftex.def)             Requested size: 349.97023pt x 270.42009pt.
-) [90 <./Chapter7/Figs/./Correlation_sw07.pdf>] [91]
+) [88 <./Chapter7/Figs/./Correlation_sw07.pdf>] [89]
 \openout2 = `Chapter8/chapter8.aux'.
 
- (./Chapter8/chapter8.tex [92
+ (./Chapter8/chapter8.tex [90
 
 
 
@@ -2945,178 +3001,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-[93]
+[91]
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-) [94]
+) [92]
 
 Package natbib Warning: Citation `apsrev41Control' undefined on input line 156.
 
 
-(./thesis.bbl [95
+(./thesis.bbl [93
 
 
 
-] [96] [97] [98]
+] [94] [95] [96]
 Overfull \hbox (0.96402pt too wide) in paragraph at lines 757--765
 []\T1/lmr/m/n/12 (-20) Michael Creutz, ``Monte Carlo Study of Renormalization i
 n Lattice Gauge Theory,''
  []
 
-[99] [100] [101] [102] [103]) [104]
+[97] [98] [99] [100] [101]) [102]
 \openout2 = `Appendices/appendices.aux'.
 
  (./Appendices/appendices.tex
 Appendix A.
-[105
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 18.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 18.
 
 
-] [106
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 18.
+
+[103
+
 
 ]
-Appendix B.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 16.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 16.
+(hyperref)                removing `math shift' on input line 60.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 16.
+(hyperref)                removing `subscript' on input line 60.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nu' on input line 16.
+(hyperref)                removing `\mu' on input line 60.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 16.
+(hyperref)                removing `\nu' on input line 60.
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 16.
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--46
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 60.
+
+[104]
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
 
  []
 
-[107] [108]
-Appendix C.
-[109
-
-] [110
-
-]
-Appendix D.
-[111]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+[105]
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
-[112]
-Appendix E.
+[106] [107]
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
+ []
 
+[108]
+Underfull \hbox (badness 10000) in paragraph at lines 292--295
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 142.
+ []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathop' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathchardef' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\std@minus' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathcode' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 2.6108pt
-(hyperref)                removed on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathgroup' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symoperators' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dagger' on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 1.95871pt
-(hyperref)                removed on input line 142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 142.
-
-
-Overfull \hbox (27.87123pt too wide) in paragraph at lines 154--154
+[109]
+Overfull \hbox (27.87123pt too wide) in paragraph at lines 303--303
 [] 
  []
 
-[113
-
-]) [114]
+[110]) [111]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3131,14 +3112,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 95B333FAC5D857656C9BC476AC42DA1C;9445.
+(rerunfilecheck)             Checksum: 5ADBD6104A320EDF526ADCC0CE896780;9628.
  ) 
 Here is how much of TeX's memory you used:
- 44894 strings out of 493029
- 874040 string characters out of 6136233
- 1077191 words of memory out of 5000000
+ 44905 strings out of 493029
+ 874378 string characters out of 6136233
+ 1078791 words of memory out of 5000000
  46660 multiletter control sequences out of 15000+600000
- 164628 words of font info for 238 fonts, out of 8000000 for 9000
+ 147054 words of font info for 221 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,18n,92p,10383b,1301s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -3161,10 +3142,10 @@ onts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb>
 1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (130 pages, 4975100 bytes).
+Output written on thesis.pdf (127 pages, 5026193 bytes).
 PDF statistics:
- 2713 PDF objects out of 2984 (max. 8388607)
- 2017 compressed objects within 21 object streams
- 517 named destinations out of 1000 (max. 500000)
- 47194 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 2867 PDF objects out of 2984 (max. 8388607)
+ 2128 compressed objects within 22 object streams
+ 523 named destinations out of 1000 (max. 500000)
+ 43651 words of extra memory for PDF output out of 51595 (max. 10000000)
 
