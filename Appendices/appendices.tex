@@ -1,6 +1,45 @@
 %!TEX root = ../thesis.tex
-\chapter{Supplementary Derivations}
-\section{Gell-Mann matrices}\label{app:GellMann}
+\chapter{Supplementary Material}
+\section{Matrix definitions}\label{app:GellMann}
+The standard form of the $2\times 2$ Pauli matrices is
+%
+\begin{equation*}
+\sigma_1 = \begin{pmatrix}
+0 & 1\\
+1 & 0
+\end{pmatrix},
+\hspace{0.5cm}
+\sigma_2 = \begin{pmatrix}
+0 & -i\\
+i & 0
+\end{pmatrix},
+\hspace{0.5cm}
+\sigma_3 = \begin{pmatrix}
+1 & 0\\
+0 & -1
+\end{pmatrix}\\, .
+\end{equation*}
+%
+The $4\times 4$ gamma matrices in the Pauli representation are therefore given by
+%
+\begin{align*}
+\gamma_i = \begin{pmatrix}
+0 & -i\sigma_i\\
+i\sigma_i & 0
+\end{pmatrix},
+\hspace{0.5cm}
+\gamma_4 = \begin{pmatrix}
+I & 0\\
+0 & -I
+\end{pmatrix}\, .
+\end{align*} 
+%
+The gamma matrices in this representation are evidently Hermitian, and satisfy the anti-commutation relationship,
+%
+\begin{equation*}
+\lbrace \gamma_\mu\, ,\, \gamma_\mu \rbrace = 2\,\delta_{\mu\nu}\, .
+\end{equation*}
+%
 The Gell-Mann matrices $\lambda_a$ are related to the generators of $SU(3)$, $t_a$, by
 %
 \begin{equation}
@@ -16,17 +55,17 @@ The matrices are given by
 \end{align*}
 
 \section{Gauge transformation of $F_{\mu\nu}$}\label{app:GTF}
-Recall from Eq.~\ref{eq:FieldStrengthTensor} that the field strength tensor is defined to be
+Recall from Eq.~\eqref{eq:FieldStrengthTensor} that the field strength tensor is defined to be
 %
 \begin{equation}
-F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu - ig[A_\mu,\,A_\nu]\, .
+F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu + ig[A_\mu,\,A_\nu]\, .
 \label{eq:FieldStrength(app)}
 \end{equation}
 %
 To calculate how $F_{\mu\nu}$ transforms under a gauge transformation, we will also make use of the gauge transformation property for $A_\mu$,
 %
 \begin{equation}
-A_\mu \rightarrow \Omega\,A_\mu\,\Omega^\dag - \frac{i}{g}\,(\partial_\mu\,\Omega)\,\Omega^\dag\, . 
+A_\mu \rightarrow \Omega\,A_\mu\,\Omega^\dag + \frac{i}{g}\,(\partial_\mu\,\Omega)\,\Omega^\dag\, . 
 \label{eq:PotentialGT(app)}
 \end{equation}
 %
@@ -39,72 +78,22 @@ We will also make repeated use of the unitarity of $\Omega$, specifically the fa
 \implies & \left(\partial_\mu\,\Omega\right)\Omega^\dagger = -\Omega\left(\partial_\mu\, \Omega^\dagger\right)\, .
 \end{align*}
 %
-Substituting Eq.~\ref{eq:PotentialGT(app)} into Eq.~\ref{eq:FieldStrength(app)} we obtain
+Substituting Eq.~\eqref{eq:PotentialGT(app)} into Eq.~\eqref{eq:FieldStrength(app)} we obtain
 %
 \begin{align*}
 F_{\mu\nu} \rightarrow &\left(\partial_\mu \, \Omega\right)A_\nu \, \Omega^\dagger + \Omega\left(\partial_\mu\,A_\nu\right)\Omega^\dagger + \Omega \, A_\nu\left(\partial_\mu \, \Omega^\dagger\right)\\
-& - \frac{i}{g}\left(\partial_\nu\,\partial_\mu\, \Omega\right)\Omega^\dagger - \frac{i}{g}\left(\partial_\nu\,\Omega\right)\left(\partial_\mu\,\Omega^\dagger\right)\\
+& + \frac{i}{g}\left(\partial_\nu\,\partial_\mu\, \Omega\right)\Omega^\dagger + \frac{i}{g}\left(\partial_\nu\,\Omega\right)\left(\partial_\mu\,\Omega^\dagger\right)\\
 & - \left(\partial_\nu \, \Omega\right)A_\mu \, \Omega^\dagger - \Omega\left(\partial_\nu\,A_\mu\right)\Omega^\dagger - \Omega \, A_\mu\left(\partial_\nu \, \Omega^\dagger\right)\\
-& + \frac{i}{g}\left(\partial_\nu\,\partial_\mu\, \Omega\right)\Omega^\dagger + \frac{i}{g}\left(\partial_\mu\,\Omega\right)\left(\partial_\nu\,\Omega^\dagger\right)\\
-& -ig \, \Omega \, A_\mu \, A_\nu \, \Omega^\dagger - \left(\partial_\mu \, \Omega\right)A_\nu \, \Omega^\dagger + \Omega\,A_\mu\left(\partial_\nu \, \Omega^\dagger\right) - \frac{i}{g}\left(\partial_\mu\,\Omega\right)\left(\partial_\nu\,\Omega^\dagger\right)\\
-& +ig \, \Omega \, A_\nu \, A_\mu \, \Omega^\dagger + \left(\partial_\nu \, \Omega\right)A_\mu \, \Omega^\dagger - \Omega\,A_\nu\left(\partial_\mu \, \Omega^\dagger\right) + \frac{i}{g}\left(\partial_\nu\,\Omega\right)\left(\partial_\mu\,\Omega^\dagger\right)\, . 
+& - \frac{i}{g}\left(\partial_\nu\,\partial_\mu\, \Omega\right)\Omega^\dagger - \frac{i}{g}\left(\partial_\mu\,\Omega\right)\left(\partial_\nu\,\Omega^\dagger\right)\\
+& +ig \, \Omega \, A_\mu \, A_\nu \, \Omega^\dagger - \left(\partial_\mu \, \Omega\right)A_\nu \, \Omega^\dagger + \Omega\,A_\mu\left(\partial_\nu \, \Omega^\dagger\right) + \frac{i}{g}\left(\partial_\mu\,\Omega\right)\left(\partial_\nu\,\Omega^\dagger\right)\\
+& -ig \, \Omega \, A_\nu \, A_\mu \, \Omega^\dagger + \left(\partial_\nu \, \Omega\right)A_\mu \, \Omega^\dagger - \Omega\,A_\nu\left(\partial_\mu \, \Omega^\dagger\right) - \frac{i}{g}\left(\partial_\nu\,\Omega\right)\left(\partial_\mu\,\Omega^\dagger\right)\, . 
 \end{align*}
 Cancelling off terms reduces the above expression to the desired result,
 %
 \begin{align*}
-F_{\mu\nu} \rightarrow &\, \Omega\left(\partial_\mu\,A_\nu\right)\Omega^\dagger - \Omega\left(\partial_\nu\,A_\mu\right)\Omega^\dagger -ig\,\Omega\left[A_\mu,\,A_\nu\right]\\
+F_{\mu\nu} \rightarrow &\, \Omega\left(\partial_\mu\,A_\nu\right)\Omega^\dagger - \Omega\left(\partial_\nu\,A_\mu\right)\Omega^\dagger +ig\,\Omega\left[A_\mu,\,A_\nu\right]\Omega^\dagger\\
 &= \Omega\,F_{\mu\nu}\,\Omega^\dagger\, .
 \end{align*}
-
-
-\section{Taylor expansion of $P_{\mu\nu}$}\label{app:TEPlaquette}
-First, we recall the definitions of the gauge link in the continuum
-%
-\begin{equation}
-U_\mu(x) = \mathcal{P}\exp\left(ig\int_x^{x+a\hat{\mu}}dx^\prime \, A_\mu(x^\prime)\right)  \, ,
-\label{eq:GaugeLink(app)}
-\end{equation}
-%
-and the plaquette formed from the product of the gauge links around a $1\times 1$ loop
-\begin{equation}
-P_{\mu\nu} = U_\mu(x)\,U_\nu(x+a\hat{\mu})\,U^\dagger_\mu(x+a\hat{\nu})\,U^\dagger_\nu(x)\, .
-\label{eq:Plaquette(app)}
-\end{equation}
-%
-We can approximate the integral in Eq.~\ref{eq:GaugeLink(app)} by Taylor expanding $A_\mu(x^\prime)$ around $x^\prime=x$ and explicitly evaluating the integral. Note that once we have Taylor expanded $A_\mu(x^\prime)$, the term within the integral becomes Abelian for all values of $x^\prime$, allowing us to omit the path ordering from Eq.~\ref{eq:GaugeLink(app)}. Performing the expansion, we find that
-%
-\begin{align}
-U_\mu(x)&=\exp\left(ig\int_x^{x+a\hat{\mu}} dx^\prime A_\mu\left(x\right) + \sum_\sigma \, \left(\partial^\prime_\sigma A_\mu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
-&=\exp\left(iag A_\mu\left(x\right) + \frac{1}{2}ia^2 g\, \partial_\mu A_\mu\left(x\right)\right)\, . \label{eq:UTaylor}
-\end{align}
-%
-Note that whilst the $\sigma$ index is summed over only the $x^\mu$ term survives the integration, as for all $x^\sigma$, $\sigma\neq \mu$, $(x^{\prime\sigma}-x^\sigma)=0$. Similarly, we evaluate
-%
-\begin{align}
-U_\nu(x+a\hat{\mu}) &= \exp\left(ig\int_{x+a\hat{\mu}}^{x+a\hat{\mu}+a\hat{\nu}} dx^\prime A_\nu\left(x\right) + \sum_\sigma\,\left(\partial^\prime_\sigma A_\nu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
-&= \exp\left( iag A_\nu(x) + iag\,\partial_\mu A_\nu (x) + ig\int_{x_\nu}^{x_\nu+a} dx^\prime_\nu \, \partial_\nu A_\nu (x) (x^{\prime\nu} - x^\nu)\right)\nonumber\\
-&= \exp\left(iag A_\nu(x) + ia^2g\,\partial_\mu A_\nu(x) + \frac{1}{2}ia^2 g\,\partial_\nu A_\nu(x)\right)\, . \label{eq:UTaylor2}
-\end{align}
-%
-The $\partial_\mu A_\nu (x)$ term is retained because for $\sigma = \mu$ we have $(x^{\prime\mu} - x^\mu) = (x^\mu + a\hat{\mu} - x^\mu) = a\hat{\mu}$.\\
-
-We will also require the Baker-Campbell-Hausdorff identity for non-Abelian matrix exponentials
-%
-\begin{equation}
-\exp(A)\,\exp(B) = \exp\left(A + B +\frac{1}{2}[A,\,B]\right)\, .
-\end{equation}
-%
-Substituting Eq.~\ref{eq:UTaylor} and Eq.~\ref{eq:UTaylor2} into Eq.~\ref{eq:Plaquette(app)} and retaining only terms up to $\mathcal{O}(a^2)$ we have
-%
-\begin{alignat*}{2}
-P_{\mu\nu} &= &&\exp\left(ig\left(a\,A_\mu(x)+\frac{1}{2}a^2\,\partial_\mu A_\mu(x) \right)\right)\\
-& &&\times\exp\left(ig\left(aA_\nu(x) + \frac{1}{2}a^2\,\partial_\nu A_\nu(x) + a^2\,\partial_\mu A_\nu(x)\right)\right)\\
-& &&\times\exp\left(-ig\left(aA_\mu(x) + \frac{1}{2}a^2\,\partial_\mu A_\mu(x) + a^2\,\partial_\nu A_\mu(x)\right)\right)\\
-& &&\times\exp\left(-ig\left(a\,A_\nu(x)+\frac{1}{2}a^2\,\partial_\nu A_\nu(x) + \right)\right)\\
-&= &&\exp\left(ia^2g\,\partial_\mu A_\nu(x) - ia^2g\,\partial_\nu A_\mu(x) -\frac{a^2g^2}{2}[A_\mu(x),\,A_\nu(x)] + \frac{a^2g^2}{2}[A_\nu(x),\,A_\mu(x)]\right)\\
-&= &&\exp\left(ia^2g F_{\mu\nu}(x)\right)\\
-&\approx &&\, I + ia^2 g F_{\mu\nu} -\frac{a^4 g^2}{2} F_{\mu\nu}^2\, .
-\end{alignat*}
 
 \section{Wilson line gauge transformation}\label{app:WilsonLineGT}
 
@@ -135,7 +124,7 @@ e^{ig\,\Omega(x)\,A_\mu(x)\,\Omega^\dagger(x)} = \Omega(x)\,e^{ig\,A_\mu(x)}\,\O
 \end{equation}
 as can be easily derived from writing the exponential as an infinite sum.\\
 
-Writing Eq.~\ref{eq:WilsonLineGT(app)} in the form of Eq.~\ref{eq:OrderedExponentialLimit} and employing the fact that path-ordering permits us to only retain the first order terms in the Baker-Campbell-Hausdorff identity (see Appendix~\ref{app:TEPlaquette}), we find that
+Writing Eq.~\eqref{eq:WilsonLineGT(app)} in the form of Eq.~\eqref{eq:OrderedExponentialLimit} and employing the fact that path-ordering permits us to only retain the first order terms in the Baker-Campbell-Hausdorff identity (see Eq.~\eqref{eq:BCH}), we find that
 %
 \begin{align}
 U_\mu(x)\rightarrow \lim_{N\rightarrow\infty} &\left( \Omega(x_0)\,e^{ig\,A_\mu(x_0)\,\Delta x}\,\Omega^\dagger(x_0) \exp\left((\partial_\mu\,\Omega(x_0))\,\Omega^\dagger(x_0)\right)\right.\nonumber\\
@@ -150,35 +139,61 @@ where $\Delta x = \frac{a}{N}$, $x_0=x$ and $x_N = x+a\hat{\mu}$. However, in th
 \label{eq:RotationTransport(app)}
 \end{equation}
 %
-Substituting Eq.~\ref{eq:RotationTransport(app)} into Eq.~\ref{eq:WilsonLineExpansion(app)} eliminates all the gauge transformation terms except for the first and last transformations. This then reduces to our desired result,
+Substituting Eq.~\eqref{eq:RotationTransport(app)} into Eq.~\eqref{eq:WilsonLineExpansion(app)} eliminates all the gauge transformation terms except for the first and last transformations. This then reduces to our desired result,
 %
 \begin{equation}
 U_\mu(x)\rightarrow \Omega(x)\,U_\mu(x)\,\Omega^\dagger(x+a\hat{\mu})\, .
 \end{equation} 
-%We wish to show that the Wilson line obeys the gauge transformation property
-%%
-%\begin{equation}
-%U(z,y)\rightarrow \Omega(z)\,U(z,y)\,\Omega^\dagger(y)\, .
-%\label{eq:WilsonLineGT}
-%\end{equation}
-%%
-%to show this, first recall the parallel transport equation
-%%
-%\begin{equation}
-%\frac{dx^\mu}{dt}\left(\partial_\mu +ig\,A_\mu(x)\right)U(x,y)=0
-%\label{eq:ParallelTransport(app)}
-%\end{equation}
-%%
-%If we apply a gauge transformation to $A_\mu(x)$ and our proposed transformation to $U(x,y)$, Eq.~\ref{eq:ParallelTransport(app)} becomes
-%%
-%\begin{alignat*}{2}
-%&\frac{dx^\mu}{dt} && \left(\partial_\mu +ig\,\left[ \Omega(x)A_\mu(x)\Omega^\dagger(x) +\frac{i}{g}(\partial_\mu \, \Omega(x))\,\Omega(x)^\dagger\right]\right)\Omega(x) U(x,y)\Omega(y)^\dagger\\
-%&=&&\frac{dx^\mu}{dt}\left((\partial_\mu\,\Omega(x))U(x,y)\Omega(y)^\dagger + \Omega(x)(\partial_\mu\,U(x,y))\Omega(y)^\dagger + \Omega(x)U(x,y)(\partial_\mu \Omega(y)^\dagger) \right.\\
-%& &&\left.+ig\,\left[ \Omega(x)A_\mu(x)+\frac{i}{g}(\partial_\mu \, \Omega(x))\right]U(x,y)\Omega(y)^\dagger\right)\\
-%&=&& \frac{dx^\mu}{dt}\Omega(x)(\partial_\mu U(x,y) + ig\,A_\mu(x)U(x,y))\Omega(y)^\dagger\\
-%&=&& 0\, .
-%\end{alignat*}
-%We therefore see that $\Omega(x)\,U(x,y)\,\Omega^\dagger(y)$ is a solution to the parallel transport equation under a gauge transformation, and furthermore it satisfies the boundary condition $\Omega(x(0))\,U(x(0),y)\,\Omega^\dagger(y)=I$. Therefore, by the existence and uniqueness theorem, we find that Eq.~\ref{eq:WilsonLineGT} is the gauge transformation for the Wilson Line. 
+
+\section{Taylor expansion of $P_{\mu\nu}$}\label{app:TEPlaquette}
+First, we recall the definitions of the gauge link in the continuum
+%
+\begin{equation}
+U_\mu(x) = \mathcal{P}\exp\left(-ig\int_x^{x+a\hat{\mu}}dx^\prime \, A_\mu(x^\prime)\right)  \, ,
+\label{eq:GaugeLink(app)}
+\end{equation}
+%
+and the plaquette formed from the product of the gauge links around a $1\times 1$ loop
+\begin{equation}
+P_{\mu\nu} = U_\mu(x)\,U_\nu(x+a\hat{\mu})\,U^\dagger_\mu(x+a\hat{\nu})\,U^\dagger_\nu(x)\, .
+\label{eq:Plaquette(app)}
+\end{equation}
+%
+We can approximate the integral in Eq.~\eqref{eq:GaugeLink(app)} by Taylor expanding $A_\mu(x^\prime)$ around $x^\prime=x$ and explicitly evaluating the integral. Note that once we have Taylor expanded $A_\mu(x^\prime)$, the term within the integral becomes Abelian for all values of $x^\prime$, allowing us to omit the path ordering from Eq.~\eqref{eq:GaugeLink(app)}. Performing the expansion, we find that
+%
+\begin{align}
+U_\mu(x)&=\exp\left(-ig\int_x^{x+a\hat{\mu}} dx^\prime A_\mu\left(x\right) + \sum_\sigma \, \left(\partial^\prime_\sigma A_\mu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
+&=\exp\left(-iag A_\mu\left(x\right) - \frac{1}{2}ia^2 g\, \partial_\mu A_\mu\left(x\right)\right)\, . \label{eq:UTaylor}
+\end{align}
+%
+Note that whilst the $\sigma$ index is summed over only the $x^\mu$ term survives the integration, as for all $x^\sigma$, $\sigma\neq \mu$, $(x^{\prime\sigma}-x^\sigma)=0$. Similarly, we evaluate
+%
+\begin{align}
+U_\nu(x+a\hat{\mu}) &= \exp\left(-ig\int_{x+a\hat{\mu}}^{x+a\hat{\mu}+a\hat{\nu}} dx^\prime A_\nu\left(x\right) + \sum_\sigma\,\left(\partial^\prime_\sigma A_\nu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
+&= \exp\left( -iag A_\nu(x) - iag\,\partial_\mu A_\nu (x) - ig\int_{x_\nu}^{x_\nu+a} dx^\prime_\nu \, \partial_\nu A_\nu (x) (x^{\prime\nu} - x^\nu)\right)\nonumber\\
+&= \exp\left(-iag A_\nu(x) - ia^2g\,\partial_\mu A_\nu(x) - \frac{1}{2}ia^2 g\,\partial_\nu A_\nu(x)\right)\, . \label{eq:UTaylor2}
+\end{align}
+%
+The $\partial_\mu A_\nu (x)$ term is retained because for $\sigma = \mu$ we have $(x^{\prime\mu} - x^\mu) = (x^\mu + a\hat{\mu} - x^\mu) = a\hat{\mu}$.\\
+
+We will also require the Baker-Campbell-Hausdorff identity for non-Abelian matrix exponentials
+%
+\begin{equation}
+\exp(A)\,\exp(B) = \exp\left(A + B +\frac{1}{2}[A,\,B]\right)\, .
+\label{eq:BCH}
+\end{equation}
+%
+Substituting Eq.~\eqref{eq:UTaylor} and Eq.~\eqref{eq:UTaylor2} into Eq.~\eqref{eq:Plaquette(app)} and retaining only terms up to $\mathcal{O}(a^2)$ we have
+%
+\begin{alignat*}{2}
+P_{\mu\nu} &= &&\exp\left(-ig\left(a\,A_\mu(x)+\frac{1}{2}a^2\,\partial_\mu A_\mu(x) \right)\right)\\
+& &&\times\exp\left(-ig\left(aA_\nu(x) + \frac{1}{2}a^2\,\partial_\nu A_\nu(x) + a^2\,\partial_\mu A_\nu(x)\right)\right)\\
+& &&\times\exp\left(ig\left(aA_\mu(x) + \frac{1}{2}a^2\,\partial_\mu A_\mu(x) + a^2\,\partial_\nu A_\mu(x)\right)\right)\\
+& &&\times\exp\left(ig\left(a\,A_\nu(x)+\frac{1}{2}a^2\,\partial_\nu A_\nu(x) + \right)\right)\\
+&= &&\exp\left(-ia^2g\,\partial_\mu A_\nu(x) + ia^2g\,\partial_\nu A_\mu(x) +\frac{a^2g^2}{2}[A_\mu(x),\,A_\nu(x)] - \frac{a^2g^2}{2}[A_\nu(x),\,A_\mu(x)]\right)\\
+&= &&\exp\left(-ia^2g F_{\mu\nu}(x)\right)\\
+&\approx &&\, I - ia^2 g F_{\mu\nu} -\frac{a^4 g^2}{2} F_{\mu\nu}^2\, .
+\end{alignat*}
 
 \section{Properties of the adjoint representation}
 \label{app:RepMapProof}
@@ -202,7 +217,7 @@ To do this, we will need to make use of the following Fierz completeness relatio
 \lambda _ { b } ^ { b } \cdot \lambda _ { c } ^ { d } = 2\, \delta _ { c } ^ { a } \delta _ { b } ^ { d } - \frac { 2 } { 3 } \delta _ { b } ^ { a } \delta _ { c } ^ { d }\, .
 \end{equation}
 %
-Substituting Eq.~\ref{eq:FundMap(app)} into Eq.~\ref{eq:MapPreserve(app)} and noting that repeated indicies are summed over, we have
+Substituting Eq.~\eqref{eq:FundMap(app)} into Eq.~\eqref{eq:MapPreserve(app)} and noting that repeated indicies are summed over, we have
 \begin{align*}
 \left[H(U)\right]_{\alpha\beta}\left[H(V)\right]^{\beta\gamma} &= \frac{1}{2} \lambda^\alpha_{ab}\, U_{bc}\,\lambda^\beta_{cd}\, U^\dagger_{da} \times \frac{1}{2} \lambda^\beta_{ef}\, V_{fg}\,\lambda^\gamma_{gh}\, V^\dagger_{he}\\
 &=\frac{1}{2} U_{bc}\,U^\dagger_{da}\,V_{fg}\,V^\dagger_{he}\,\lambda^\alpha_{ab}\, \lambda^\gamma_{gh} \left(\delta_{cf}\,\delta_{de} - \frac{1}{3}\delta_{cd}\delta_{ef}\right)\\
@@ -223,7 +238,7 @@ We also wish to show that for $U^A\in SU(3)^A$ and $U\in SU(3)^F$ that
 \Tr\left(U^A\right) = \left|\Tr(U)\right|^2 -1\, .
 \end{equation}
 %
-Making use of Eq.~\ref{eq:FundMap(app)}, we have
+Making use of Eq.~\eqref{eq:FundMap(app)}, we have
 \begin{align*}
 \Tr\left(U^A\right) &= \sum_{\alpha=1}^8 \frac{1}{2}\Tr\left(\lambda^\alpha \, U_\mu(x) \, \lambda^\alpha \, U_\mu^\dagger(x)\right)\\
 &= \frac{1}{2}U_{bc} \, U^\dagger_{da} \, \lambda_{ab}^\alpha \, \lambda_{cd}^\alpha\\
@@ -291,9 +306,9 @@ k_{1,\,\alpha} \,F_1(U_\mu\,\tilde{U}_\alpha)_{2\times 2} & 0\\
 \label{eq:FExpansion}
 \end{align}
 %
-The $2\times 2$ block in Eq.~\ref{eq:FExpansion} is a sum over terms proportional to $SU(2)$ matrices, and hence the result is proportional to an $SU(2)$ matrix. Thus with the appropriate normalisation from the $k_1$ factor, we see that $F_1(U_\mu \, \bar{U})\in SU(2)$. The same result holds true for $F_2$ and $F_3$.\\
+The $2\times 2$ block in Eq.~\eqref{eq:FExpansion} is a sum over terms proportional to $SU(2)$ matrices, and hence the result is proportional to an $SU(2)$ matrix. Thus with the appropriate normalisation from the $k_1$ factor, we see that $F_1(U_\mu \, \bar{U})\in SU(2)$. The same result holds true for $F_2$ and $F_3$.\\
 
-With the definition $a_1 = F_1(U_\mu\,\bar{U})^\dagger$, the functional in Eq.~\ref{eq:CoolFunctional(app)} we are seeking to maximise can now be directly evaluated. Setting $U = U_\mu\,\bar{U}$, we can write Eq.~\ref{eq:CoolFunctional(app)} as 
+With the definition $a_1 = F_1(U_\mu\,\bar{U})^\dagger$, the functional in Eq.~\eqref{eq:CoolFunctional(app)} we are seeking to maximise can now be directly evaluated. Setting $U = U_\mu\,\bar{U}$, we can write Eq.~\eqref{eq:CoolFunctional(app)} as 
 %
 \begin{align}
 \Re\Tr(F_1(U)^\dagger\, U) &=\Re \left(\frac{1}{k_1}\left[ \frac{1}{2}\,U_{11} \left(U_{22} + U_{11}^*\right) - \frac{1}{2}\,U_{21} \left(U_{12} - U_{21}^*\right)\right.\right.\nonumber\\
@@ -302,7 +317,7 @@ With the definition $a_1 = F_1(U_\mu\,\bar{U})^\dagger$, the functional in Eq.~\
 &= \frac{1}{k_1}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21} + k_1\,U_{33}\right)\, .\label{eq:FunctionalExpanded}
 \end{align}
 %
-Where we have used the fact that by the construction of $F_1(U)$, $k_1$ is real and can therefore be moved to the front of Eq.~\ref{eq:FunctionalExpanded}. We now wish to make use of the known determinant of $F_1(U)$ to simplify this expression.
+Where we have used the fact that by the construction of $F_1(U)$, $k_1$ is real and can therefore be moved to the front of Eq.~\eqref{eq:FunctionalExpanded}. We now wish to make use of the known determinant of $F_1(U)$ to simplify this expression.
 %
 \begin{align*}
 \det(F_1(U)) &= \frac{1}{4\,k_1^2} \left(\left(U_{11}+ U_{22}^*\right)\left(U_{11}^* + U_{22}\right)-\left(U_{12} - U_{21}^*\right)\left( U_{21} - U_{12}^*\right)\right)\\
@@ -312,7 +327,7 @@ Where we have used the fact that by the construction of $F_1(U)$, $k_1$ is real 
 &=1\, .
 \end{align*}
 %
-Substituting this determinant back into Eq.~\ref{eq:FunctionalExpanded}, we find that
+Substituting this determinant back into Eq.~\eqref{eq:FunctionalExpanded}, we find that
 %
 \begin{align*}
 \Re\Tr(F_1(U)^\dagger\, U) &= \Re\left(\frac{1}{k_1}(2k_1^2 + k_1\,U_{33}))\right)\\
@@ -326,33 +341,4 @@ Finally, substituting back $U = U_\mu\,\bar{U}$ brings us to the desired result,
 \label{eq:MaximisedCooling}
 \end{equation}
 %
-By the matrix structure of $F_1(V)$ it is apparent that $\Re(U_\mu\, \bar{U})_{33}$ is invariant under pre-multiplication by $a_1$, so it is clear that Eq.~\ref{eq:MaximisedCooling} represents the maximum attainable value for this form of $U^{(1)}_\mu$. Similarly, we let $a_2=F_2(U_\mu\,\bar{U})^\dagger$ and $a_3=F_3(U_\mu\,\bar{U})^\dagger$ to obtain the final value of $U^\prime_\mu$ according to Eq.~\ref{eq:UPrime(app)}. This construction results in a choice of $U_\mu^\prime \in SU(3)$ that minimises the local Wilson action.
-
-%The above procedure is repeated over all three $SU(2)$ subgroups 12 times per lattice link to effectively minimise the local action. One sweep of cooling then constitutes applying this procedure to every link on the lattice.
-
-%\section{Evaluation of $\operatorname{Re}\Tr(F_1(U)^\dagger \,U)$}\label{app:CoolingMaximise}
-%
-%It is apparent that we can write Eq.~\ref{eq:MaximisedCooling} in the form
-%\begin{equation}
-%\Re\Tr(F_1(U)^\dagger\, U)\, ,
-%\end{equation}
-%where $U = U_\mu\, \bar{U}$. Expanding this, we have
-%\begin{align*}
-%\Re\Tr(F_1(U)^\dagger\, U) &=\Re \left(\frac{1}{k_1}\left[ \frac{1}{2}\,U_{11} \left(U_{22} + U_{11}^*\right) - \frac{1}{2}\,U_{21} \left(U_{12} - U_{21}^*\right)\right.\right.\\
-%&~~~~+ \left. \left.\frac{1}{2}\,U_{22} \left(U_{11} + U_{22}^*\right)
-%- \frac{1}{2}\,U_{12} \left(U_{21} - U_{12}^*\right) +k_1\,U_{33}\right]\right)\\
-%&= \frac{1}{k_1}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21} + k_1\,U_{33}\right)\, .
-%\end{align*}
-%Where we have used the fact that by the construction of $F_1(U)$, $k_1$ is real. We now wish to make use of the known determinant of $F_1(U)$ to simplify this expression.
-%\begin{align*}
-%\det(F_1(U)) &= \frac{1}{4\,k_1^2} \left(\left(U_{11}+ U_{22}^*\right)\left(U_{11}^* + U_{22}\right)-\left(U_{12} - U_{21}^*\right)\left( U_{21} - U_{12}^*\right)\right)\\
-%&=\frac{1}{4\,k_1^2}\left( |U_{11}|^2 + |U_{22}|^2 + |U_{12}|^2 + |U_{21}|^2\right.\\
-%&~~~~+ U_{11}\,U_{22} + U_{11}^*\,U_{22}^* + U_{12}\,U_{21} + U_{12}^*\,U_{21}^*\big)\\
-%&= \frac{1}{2\,k_1^2}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21}\right)\\
-%&=1\, .
-%\end{align*}
-%This gives the desired result,
-%\begin{align*}
-%\Re\Tr(F_1(U)^\dagger\, U) &= \Re\left(\frac{1}{k_1}(2k_1^2 + k_1\,U_{33}))\right)\\
-%&=2\,k_1 + \Re\left(U_{33}\right)
-%\end{align*}
+By the matrix structure of $F_1(V)$ it is apparent that $\Re(U_\mu\, \bar{U})_{33}$ is invariant under pre-multiplication by $a_1$, so it is clear that Eq.~\eqref{eq:MaximisedCooling} represents the maximum attainable value for this form of $U^{(1)}_\mu$. Similarly, we let $a_2=F_2(U_\mu\,\bar{U})^\dagger$ and $a_3=F_3(U_\mu\,\bar{U})^\dagger$ to obtain the final value of $U^\prime_\mu$ according to Eq.~\eqref{eq:UPrime(app)}. This construction results in a choice of $U_\mu^\prime \in SU(3)$ that minimises the local Wilson action.

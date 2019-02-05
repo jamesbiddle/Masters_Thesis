@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{112}%
+\begin{thebibliography}{113}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -59,6 +59,169 @@
   {volume} {D10}},\ \bibinfo {pages} {2445--2459} (\bibinfo {year}
   {1974})}\BibitemShut {NoStop}%
 %%CITATION = PHRVA,D10,2445;%%
+\bibitem [{\citenamefont {Nielsen}\ and\ \citenamefont
+  {Olesen}(1979)}]{Nielsen:1979xu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Holger~Bech}\
+  \bibnamefont {Nielsen}}\ and\ \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Olesen}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{A Quantum Liquid Model for the QCD Vacuum: Gauge and Rotational Invariance
+  of Domained and Quantized Homogeneous Color Fields}},}\ }\href {\doibase
+  10.1016/0550-3213(79)90065-8} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nucl. Phys.}\ }\textbf {\bibinfo {volume} {B160}},\ \bibinfo {pages}
+  {380--396} (\bibinfo {year} {1979})}\BibitemShut {NoStop}%
+%%CITATION = NUPHA,B160,380;%%
+\bibitem [{\citenamefont {Del~Debbio}\ \emph {et~al.}(1997)\citenamefont
+  {Del~Debbio}, \citenamefont {Faber}, \citenamefont {Greensite},\ and\
+  \citenamefont {Olejnik}}]{DelDebbio:1996lih}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Del~Debbio}}, \bibinfo {author} {\bibfnamefont {Manfried}\ \bibnamefont
+  {Faber}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Greensite}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Olejnik}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Center dominance and Z(2)
+  vortices in SU(2) lattice gauge theory}},}\ }\href {\doibase
+  10.1103/PhysRevD.55.2298} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev.}\ }\textbf {\bibinfo {volume} {D55}},\ \bibinfo {pages} {2298--2306}
+  (\bibinfo {year} {1997})},\ \Eprint {http://arxiv.org/abs/hep-lat/9610005}
+  {arXiv:hep-lat/9610005 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/9610005;%%
+\bibitem [{\citenamefont {'t~Hooft}(1978)}]{'tHooft:1977hy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Gerard}\ \bibnamefont
+  {'t~Hooft}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{On the Phase
+  Transition Towards Permanent Quark Confinement}},}\ }\href {\doibase
+  10.1016/0550-3213(78)90153-0} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nucl.Phys.}\ }\textbf {\bibinfo {volume} {B138}},\ \bibinfo {pages} {1}
+  (\bibinfo {year} {1978})}\BibitemShut {NoStop}%
+%%CITATION = NUPHA,B138,1;%%
+\bibitem [{\citenamefont {Biddle}\ \emph {et~al.}(2018)\citenamefont {Biddle},
+  \citenamefont {Kamleh},\ and\ \citenamefont {Leinweber}}]{Biddle:2018dtc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {James~C.}\
+  \bibnamefont {Biddle}}, \bibinfo {author} {\bibfnamefont {Waseem}\
+  \bibnamefont {Kamleh}}, \ and\ \bibinfo {author} {\bibfnamefont {Derek~B.}\
+  \bibnamefont {Leinweber}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{Gluon propagator on a center-vortex background}},}\ }\href {\doibase
+  10.1103/PhysRevD.98.094504} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev.}\ }\textbf {\bibinfo {volume} {D98}},\ \bibinfo {pages} {094504}
+  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1806.04305}
+  {arXiv:1806.04305 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1806.04305;%%
+\bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2008)\citenamefont {Bowman},
+  \citenamefont {Langfeld}, \citenamefont {Leinweber}, \citenamefont {O'~Cais},
+  \citenamefont {Sternbeck}, \citenamefont {von Smekal},\ and\ \citenamefont
+  {Williams}}]{Bowman:2008qd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Patrick~O.}\
+  \bibnamefont {Bowman}}, \bibinfo {author} {\bibfnamefont {Kurt}\ \bibnamefont
+  {Langfeld}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\ \bibnamefont
+  {Leinweber}}, \bibinfo {author} {\bibfnamefont {Alan}\ \bibnamefont
+  {O'~Cais}}, \bibinfo {author} {\bibfnamefont {Andre}\ \bibnamefont
+  {Sternbeck}}, \bibinfo {author} {\bibfnamefont {Lorenz}\ \bibnamefont {von
+  Smekal}}, \ and\ \bibinfo {author} {\bibfnamefont {Anthony~G.}\ \bibnamefont
+  {Williams}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Center
+  vortices and the quark propagator in SU(2) gauge theory}},}\ }\href {\doibase
+  10.1103/PhysRevD.78.054509} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev.}\ }\textbf {\bibinfo {volume} {D78}},\ \bibinfo {pages} {054509}
+  (\bibinfo {year} {2008})},\ \Eprint {http://arxiv.org/abs/0806.4219}
+  {arXiv:0806.4219 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:0806.4219;%%
+\bibitem [{\citenamefont {Trewartha}\ \emph
+  {et~al.}(2015{\natexlab{a}})\citenamefont {Trewartha}, \citenamefont
+  {Kamleh},\ and\ \citenamefont {Leinweber}}]{Trewartha:2015ida}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Daniel}\ \bibnamefont
+  {Trewartha}}, \bibinfo {author} {\bibfnamefont {Waseem}\ \bibnamefont
+  {Kamleh}}, \ and\ \bibinfo {author} {\bibfnamefont {Derek}\ \bibnamefont
+  {Leinweber}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Connection
+  between center vortices and instantons through gauge-field smoothing}},}\
+  }\href {\doibase 10.1103/PhysRevD.92.074507} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D92}},\ \bibinfo {pages}
+  {074507} (\bibinfo {year} {2015}{\natexlab{a}})},\ \Eprint
+  {http://arxiv.org/abs/1509.05518} {arXiv:1509.05518 [hep-lat]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1509.05518;%%
+\bibitem [{\citenamefont {Trewartha}\ \emph
+  {et~al.}(2015{\natexlab{b}})\citenamefont {Trewartha}, \citenamefont
+  {Kamleh},\ and\ \citenamefont {Leinweber}}]{Trewartha:2015nna}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Daniel}\ \bibnamefont
+  {Trewartha}}, \bibinfo {author} {\bibfnamefont {Waseem}\ \bibnamefont
+  {Kamleh}}, \ and\ \bibinfo {author} {\bibfnamefont {Derek}\ \bibnamefont
+  {Leinweber}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Evidence
+  that centre vortices underpin dynamical chiral symmetry breaking in SU(3)
+  gauge theory}},}\ }\href {\doibase 10.1016/j.physletb.2015.06.025} {\bibfield
+   {journal} {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo {volume}
+  {B747}},\ \bibinfo {pages} {373--377} (\bibinfo {year}
+  {2015}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1502.06753}
+  {arXiv:1502.06753 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1502.06753;%%
+\bibitem [{\citenamefont {Trewartha}\ \emph {et~al.}(2017)\citenamefont
+  {Trewartha}, \citenamefont {Kamleh},\ and\ \citenamefont
+  {Leinweber}}]{Trewartha:2017ive}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Daniel}\ \bibnamefont
+  {Trewartha}}, \bibinfo {author} {\bibfnamefont {Waseem}\ \bibnamefont
+  {Kamleh}}, \ and\ \bibinfo {author} {\bibfnamefont {Derek}\ \bibnamefont
+  {Leinweber}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Centre
+  vortex removal restores chiral symmetry}},}\ }\href {\doibase
+  10.1088/1361-6471/aa9443} {\bibfield  {journal} {\bibinfo  {journal} {J.
+  Phys.}\ }\textbf {\bibinfo {volume} {G44}},\ \bibinfo {pages} {125002}
+  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1708.06789}
+  {arXiv:1708.06789 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1708.06789;%%
+\bibitem [{\citenamefont {Greensite}(2003)}]{Greensite:2003bk}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Greensite}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{The
+  Confinement problem in lattice gauge theory}},}\ }\href {\doibase
+  10.1016/S0146-6410(03)90012-3} {\bibfield  {journal} {\bibinfo  {journal}
+  {Prog. Part. Nucl. Phys.}\ }\textbf {\bibinfo {volume} {51}},\ \bibinfo
+  {pages} {1} (\bibinfo {year} {2003})},\ \Eprint
+  {http://arxiv.org/abs/hep-lat/0301023} {arXiv:hep-lat/0301023 [hep-lat]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/0301023;%%
+\bibitem [{\citenamefont {O'Malley}\ \emph {et~al.}(2012)\citenamefont
+  {O'Malley}, \citenamefont {Kamleh}, \citenamefont {Leinweber},\ and\
+  \citenamefont {Moran}}]{OMalley:2011aa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Elyse-Ann}\
+  \bibnamefont {O'Malley}}, \bibinfo {author} {\bibfnamefont {Waseem}\
+  \bibnamefont {Kamleh}}, \bibinfo {author} {\bibfnamefont {Derek}\
+  \bibnamefont {Leinweber}}, \ and\ \bibinfo {author} {\bibfnamefont {Peter}\
+  \bibnamefont {Moran}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{SU(3) centre vortices underpin confinement and dynamical chiral symmetry
+  breaking}},}\ }\href {\doibase 10.1103/PhysRevD.86.054503} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
+  {D86}},\ \bibinfo {pages} {054503} (\bibinfo {year} {2012})},\ \Eprint
+  {http://arxiv.org/abs/1112.2490} {arXiv:1112.2490 [hep-lat]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1112.2490;%%
+\bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2011)\citenamefont {Bowman},
+  \citenamefont {Langfeld}, \citenamefont {Leinweber}, \citenamefont
+  {Sternbeck}, \citenamefont {von Smekal},\ and\ \citenamefont
+  {Williams}}]{Bowman:2010zr}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Patrick~O.}\
+  \bibnamefont {Bowman}}, \bibinfo {author} {\bibfnamefont {Kurt}\ \bibnamefont
+  {Langfeld}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\ \bibnamefont
+  {Leinweber}}, \bibinfo {author} {\bibfnamefont {Andre}\ \bibnamefont
+  {Sternbeck}}, \bibinfo {author} {\bibfnamefont {Lorenz}\ \bibnamefont {von
+  Smekal}}, \ and\ \bibinfo {author} {\bibfnamefont {Anthony~G.}\ \bibnamefont
+  {Williams}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Role of
+  center vortices in chiral symmetry breaking in SU(3) gauge theory}},}\ }\href
+  {\doibase 10.1103/PhysRevD.84.034501} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D84}},\ \bibinfo {pages}
+  {034501} (\bibinfo {year} {2011})},\ \Eprint {http://arxiv.org/abs/1010.4624}
+  {arXiv:1010.4624 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1010.4624;%%
+\bibitem [{\citenamefont {Sakurai}(1982)}]{sakurai1982}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont
+  {Sakurai}},\ }\href@noop {} {\emph {\bibinfo {title} {Advanced Quantum
+  Mechanics}}}\ (\bibinfo  {publisher} {Addison-Wesley},\ \bibinfo {year}
+  {1982})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Peskin}(2018)}]{peskin2018introduction}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Michael~E}\
@@ -389,15 +552,6 @@
   {B146}},\ \bibinfo {pages} {256--272} (\bibinfo {year} {1978})}\BibitemShut
   {NoStop}%
 %%CITATION = NUPHA,B146,256;%%
-\bibitem [{\citenamefont {'t~Hooft}(1978)}]{'tHooft:1977hy}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Gerard}\ \bibnamefont
-  {'t~Hooft}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{On the Phase
-  Transition Towards Permanent Quark Confinement}},}\ }\href {\doibase
-  10.1016/0550-3213(78)90153-0} {\bibfield  {journal} {\bibinfo  {journal}
-  {Nucl.Phys.}\ }\textbf {\bibinfo {volume} {B138}},\ \bibinfo {pages} {1}
-  (\bibinfo {year} {1978})}\BibitemShut {NoStop}%
-%%CITATION = NUPHA,B138,1;%%
 \bibitem [{\citenamefont {'t~Hooft}(1979)}]{'tHooft:1979uj}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Gerard}\ \bibnamefont
@@ -425,18 +579,6 @@
   {Nucl. Phys.}\ }\textbf {\bibinfo {volume} {B157}},\ \bibinfo {pages}
   {392--412} (\bibinfo {year} {1979})}\BibitemShut {NoStop}%
 %%CITATION = NUPHA,B157,392;%%
-\bibitem [{\citenamefont {Nielsen}\ and\ \citenamefont
-  {Olesen}(1979)}]{Nielsen:1979xu}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Holger~Bech}\
-  \bibnamefont {Nielsen}}\ and\ \bibinfo {author} {\bibfnamefont
-  {P.}~\bibnamefont {Olesen}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
-  {{A Quantum Liquid Model for the QCD Vacuum: Gauge and Rotational Invariance
-  of Domained and Quantized Homogeneous Color Fields}},}\ }\href {\doibase
-  10.1016/0550-3213(79)90065-8} {\bibfield  {journal} {\bibinfo  {journal}
-  {Nucl. Phys.}\ }\textbf {\bibinfo {volume} {B160}},\ \bibinfo {pages}
-  {380--396} (\bibinfo {year} {1979})}\BibitemShut {NoStop}%
-%%CITATION = NUPHA,B160,380;%%
 \bibitem [{\citenamefont {Mack}\ and\ \citenamefont
   {Petkova}(1979)}]{Mack:1978rq}%
   \BibitemOpen
@@ -448,19 +590,6 @@
   {Annals Phys.}\ }\textbf {\bibinfo {volume} {123}},\ \bibinfo {pages} {442}
   (\bibinfo {year} {1979})}\BibitemShut {NoStop}%
 %%CITATION = APNYA,123,442;%%
-\bibitem [{\citenamefont {Biddle}\ \emph {et~al.}(2018)\citenamefont {Biddle},
-  \citenamefont {Kamleh},\ and\ \citenamefont {Leinweber}}]{Biddle:2018dtc}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {James~C.}\
-  \bibnamefont {Biddle}}, \bibinfo {author} {\bibfnamefont {Waseem}\
-  \bibnamefont {Kamleh}}, \ and\ \bibinfo {author} {\bibfnamefont {Derek~B.}\
-  \bibnamefont {Leinweber}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
-  {{Gluon propagator on a center-vortex background}},}\ }\href {\doibase
-  10.1103/PhysRevD.98.094504} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
-  Rev.}\ }\textbf {\bibinfo {volume} {D98}},\ \bibinfo {pages} {094504}
-  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1806.04305}
-  {arXiv:1806.04305 [hep-lat]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1806.04305;%%
 \bibitem [{\citenamefont {Faber}\ \emph {et~al.}(1998)\citenamefont {Faber},
   \citenamefont {Greensite},\ and\ \citenamefont {Olejnik}}]{Faber:1997rp}%
   \BibitemOpen
@@ -490,95 +619,6 @@
   {http://arxiv.org/abs/hep-lat/9805002} {arXiv:hep-lat/9805002 [hep-lat]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/9805002;%%
-\bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2008)\citenamefont {Bowman},
-  \citenamefont {Langfeld}, \citenamefont {Leinweber}, \citenamefont {O'~Cais},
-  \citenamefont {Sternbeck}, \citenamefont {von Smekal},\ and\ \citenamefont
-  {Williams}}]{Bowman:2008qd}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Patrick~O.}\
-  \bibnamefont {Bowman}}, \bibinfo {author} {\bibfnamefont {Kurt}\ \bibnamefont
-  {Langfeld}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\ \bibnamefont
-  {Leinweber}}, \bibinfo {author} {\bibfnamefont {Alan}\ \bibnamefont
-  {O'~Cais}}, \bibinfo {author} {\bibfnamefont {Andre}\ \bibnamefont
-  {Sternbeck}}, \bibinfo {author} {\bibfnamefont {Lorenz}\ \bibnamefont {von
-  Smekal}}, \ and\ \bibinfo {author} {\bibfnamefont {Anthony~G.}\ \bibnamefont
-  {Williams}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Center
-  vortices and the quark propagator in SU(2) gauge theory}},}\ }\href {\doibase
-  10.1103/PhysRevD.78.054509} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
-  Rev.}\ }\textbf {\bibinfo {volume} {D78}},\ \bibinfo {pages} {054509}
-  (\bibinfo {year} {2008})},\ \Eprint {http://arxiv.org/abs/0806.4219}
-  {arXiv:0806.4219 [hep-lat]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:0806.4219;%%
-\bibitem [{\citenamefont {Trewartha}\ \emph
-  {et~al.}(2015{\natexlab{a}})\citenamefont {Trewartha}, \citenamefont
-  {Kamleh},\ and\ \citenamefont {Leinweber}}]{Trewartha:2015ida}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Daniel}\ \bibnamefont
-  {Trewartha}}, \bibinfo {author} {\bibfnamefont {Waseem}\ \bibnamefont
-  {Kamleh}}, \ and\ \bibinfo {author} {\bibfnamefont {Derek}\ \bibnamefont
-  {Leinweber}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Connection
-  between center vortices and instantons through gauge-field smoothing}},}\
-  }\href {\doibase 10.1103/PhysRevD.92.074507} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D92}},\ \bibinfo {pages}
-  {074507} (\bibinfo {year} {2015}{\natexlab{a}})},\ \Eprint
-  {http://arxiv.org/abs/1509.05518} {arXiv:1509.05518 [hep-lat]} \BibitemShut
-  {NoStop}%
-%%CITATION = ARXIV:1509.05518;%%
-\bibitem [{\citenamefont {Trewartha}\ \emph
-  {et~al.}(2015{\natexlab{b}})\citenamefont {Trewartha}, \citenamefont
-  {Kamleh},\ and\ \citenamefont {Leinweber}}]{Trewartha:2015nna}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Daniel}\ \bibnamefont
-  {Trewartha}}, \bibinfo {author} {\bibfnamefont {Waseem}\ \bibnamefont
-  {Kamleh}}, \ and\ \bibinfo {author} {\bibfnamefont {Derek}\ \bibnamefont
-  {Leinweber}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Evidence
-  that centre vortices underpin dynamical chiral symmetry breaking in SU(3)
-  gauge theory}},}\ }\href {\doibase 10.1016/j.physletb.2015.06.025} {\bibfield
-   {journal} {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo {volume}
-  {B747}},\ \bibinfo {pages} {373--377} (\bibinfo {year}
-  {2015}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1502.06753}
-  {arXiv:1502.06753 [hep-lat]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1502.06753;%%
-\bibitem [{\citenamefont {Trewartha}\ \emph {et~al.}(2017)\citenamefont
-  {Trewartha}, \citenamefont {Kamleh},\ and\ \citenamefont
-  {Leinweber}}]{Trewartha:2017ive}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Daniel}\ \bibnamefont
-  {Trewartha}}, \bibinfo {author} {\bibfnamefont {Waseem}\ \bibnamefont
-  {Kamleh}}, \ and\ \bibinfo {author} {\bibfnamefont {Derek}\ \bibnamefont
-  {Leinweber}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Centre
-  vortex removal restores chiral symmetry}},}\ }\href {\doibase
-  10.1088/1361-6471/aa9443} {\bibfield  {journal} {\bibinfo  {journal} {J.
-  Phys.}\ }\textbf {\bibinfo {volume} {G44}},\ \bibinfo {pages} {125002}
-  (\bibinfo {year} {2017})},\ \Eprint {http://arxiv.org/abs/1708.06789}
-  {arXiv:1708.06789 [hep-lat]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1708.06789;%%
-\bibitem [{\citenamefont {Del~Debbio}\ \emph {et~al.}(1997)\citenamefont
-  {Del~Debbio}, \citenamefont {Faber}, \citenamefont {Greensite},\ and\
-  \citenamefont {Olejnik}}]{DelDebbio:1996lih}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Del~Debbio}}, \bibinfo {author} {\bibfnamefont {Manfried}\ \bibnamefont
-  {Faber}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Greensite}}, \
-  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Olejnik}},\
-  }\bibfield  {title} {\enquote {\bibinfo {title} {{Center dominance and Z(2)
-  vortices in SU(2) lattice gauge theory}},}\ }\href {\doibase
-  10.1103/PhysRevD.55.2298} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
-  Rev.}\ }\textbf {\bibinfo {volume} {D55}},\ \bibinfo {pages} {2298--2306}
-  (\bibinfo {year} {1997})},\ \Eprint {http://arxiv.org/abs/hep-lat/9610005}
-  {arXiv:hep-lat/9610005 [hep-lat]} \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/9610005;%%
-\bibitem [{\citenamefont {Greensite}(2003)}]{Greensite:2003bk}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Greensite}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{The
-  Confinement problem in lattice gauge theory}},}\ }\href {\doibase
-  10.1016/S0146-6410(03)90012-3} {\bibfield  {journal} {\bibinfo  {journal}
-  {Prog. Part. Nucl. Phys.}\ }\textbf {\bibinfo {volume} {51}},\ \bibinfo
-  {pages} {1} (\bibinfo {year} {2003})},\ \Eprint
-  {http://arxiv.org/abs/hep-lat/0301023} {arXiv:hep-lat/0301023 [hep-lat]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/0301023;%%
 \bibitem [{\citenamefont {Del~Debbio}\ \emph {et~al.}(1998)\citenamefont
   {Del~Debbio}, \citenamefont {Faber}, \citenamefont {Giedt}, \citenamefont
   {Greensite},\ and\ \citenamefont {Olejnik}}]{DelDebbio:1998luz}%
@@ -595,22 +635,6 @@
   \Eprint {http://arxiv.org/abs/hep-lat/9801027} {arXiv:hep-lat/9801027
   [hep-lat]} \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/9801027;%%
-\bibitem [{\citenamefont {O'Malley}\ \emph {et~al.}(2012)\citenamefont
-  {O'Malley}, \citenamefont {Kamleh}, \citenamefont {Leinweber},\ and\
-  \citenamefont {Moran}}]{OMalley:2011aa}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Elyse-Ann}\
-  \bibnamefont {O'Malley}}, \bibinfo {author} {\bibfnamefont {Waseem}\
-  \bibnamefont {Kamleh}}, \bibinfo {author} {\bibfnamefont {Derek}\
-  \bibnamefont {Leinweber}}, \ and\ \bibinfo {author} {\bibfnamefont {Peter}\
-  \bibnamefont {Moran}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
-  {{SU(3) centre vortices underpin confinement and dynamical chiral symmetry
-  breaking}},}\ }\href {\doibase 10.1103/PhysRevD.86.054503} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
-  {D86}},\ \bibinfo {pages} {054503} (\bibinfo {year} {2012})},\ \Eprint
-  {http://arxiv.org/abs/1112.2490} {arXiv:1112.2490 [hep-lat]} \BibitemShut
-  {NoStop}%
-%%CITATION = ARXIV:1112.2490;%%
 \bibitem [{\citenamefont {Langfeld}(2004)}]{Langfeld:2003ev}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Kurt}\ \bibnamefont
@@ -621,24 +645,6 @@
   (\bibinfo {year} {2004})},\ \Eprint {http://arxiv.org/abs/hep-lat/0307030}
   {arXiv:hep-lat/0307030 [hep-lat]} \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/0307030;%%
-\bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2011)\citenamefont {Bowman},
-  \citenamefont {Langfeld}, \citenamefont {Leinweber}, \citenamefont
-  {Sternbeck}, \citenamefont {von Smekal},\ and\ \citenamefont
-  {Williams}}]{Bowman:2010zr}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Patrick~O.}\
-  \bibnamefont {Bowman}}, \bibinfo {author} {\bibfnamefont {Kurt}\ \bibnamefont
-  {Langfeld}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\ \bibnamefont
-  {Leinweber}}, \bibinfo {author} {\bibfnamefont {Andre}\ \bibnamefont
-  {Sternbeck}}, \bibinfo {author} {\bibfnamefont {Lorenz}\ \bibnamefont {von
-  Smekal}}, \ and\ \bibinfo {author} {\bibfnamefont {Anthony~G.}\ \bibnamefont
-  {Williams}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Role of
-  center vortices in chiral symmetry breaking in SU(3) gauge theory}},}\ }\href
-  {\doibase 10.1103/PhysRevD.84.034501} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D84}},\ \bibinfo {pages}
-  {034501} (\bibinfo {year} {2011})},\ \Eprint {http://arxiv.org/abs/1010.4624}
-  {arXiv:1010.4624 [hep-lat]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1010.4624;%%
 \bibitem [{\citenamefont {Gell-Mann}(1964)}]{GellMann:1964nj}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Murray}\ \bibnamefont

@@ -12,7 +12,7 @@
 
 Lattice definitions of topological objects are plagued by random fluctuations originating from the Monte-Carlo generation of lattice configurations and as a result identification of topological objects can give inaccurate or even nonsensical results. Hence, when considering the behaviour of topological objects on the lattice, it has been proven to be necessary to remove the high frequency fluctuations in the gauge fields~\cite{Bonnet:2000dc}. Furthermore, when investigating the long range behaviour of the lattice it is also beneficial to filter off the short distance fluctuations to better reveal the physics in the domain of interest~\cite{Moran:2008ra}. This filtering process is known as smoothing, and it forms an important step in any study of lattice topological objects and long range behaviour. For example, it has previously been shown that smoothing is necessary to obtain agreement between the untouched and vortex only string tension, mass function and instanton content~\cite{Trewartha:2015ida,Trewartha:2015nna,Trewartha:2017ive}. The process of smoothing in turn falls into two sub-categories: cooling and smearing.\\
 
-The purpose of both these methods is similar, however, the algorithms used to implement them differ. Cooling assesses each link in turn, replacing the existing link with one that locally minimises some choice of action (see e.g. the Wilson action, Eq.~\ref{eq:WilsonAction}). Rather than explicitly minimising a given action, smearing  instead replaces each link with a weighted average of its nearest neighbours. Once every link in the lattice has been updated according to one of these methods, the configuration is said to have had one sweep of smoothing applied. The process can then be repeated to an arbitrary number of sweeps to achieve the desired degree of smoothness.  Due to the differences in the routines, it is important to compare the results from both to observe how they each perform and quantify how they alter the result.
+The purpose of both these methods is similar, however, the algorithms used to implement them differ. Cooling assesses each link in turn, replacing the existing link with one that locally minimises some choice of action (see e.g. the Wilson action, Eq.~\eqref{eq:WilsonAction}). Rather than explicitly minimising a given action, smearing  instead replaces each link with a weighted average of its nearest neighbours. Once every link in the lattice has been updated according to one of these methods, the configuration is said to have had one sweep of smoothing applied. The process can then be repeated to an arbitrary number of sweeps to achieve the desired degree of smoothness.  Due to the differences in the routines, it is important to compare the results from both to observe how they each perform and quantify how they alter the result.
 
 \section{Smoothing Methods}
 \subsection{Cooling}
@@ -37,7 +37,7 @@ S(U_\mu) = 3 - \operatorname{Re}\Tr (U_\mu \bar{U})\, ,
 \label{eq:WilsonActionCool}
 \end{equation}
 %
-which is a different, but completely equivalent, form of Eq.~\ref{eq:WilsonAction}.\\ % 
+which is a different, but completely equivalent, form of Eq.~\eqref{eq:WilsonAction}.\\ % 
 \begin{figure}[ht!]
 \centering
 \input{Chapter5/Figs/staple.tex}
@@ -45,7 +45,7 @@ which is a different, but completely equivalent, form of Eq.~\ref{eq:WilsonActio
 \end{figure}
 %
 
-The objective of cooling is to select a new $SU(3)$ matrix, $U_\mu^\prime$, to replace $U_\mu$ with such that $U_\mu^\prime$ minimises Eq.~\ref{eq:WilsonActionCool}. This is equivalent to maximising
+The objective of cooling is to select a new $SU(3)$ matrix, $U_\mu^\prime$, to replace $U_\mu$ with such that $U_\mu^\prime$ minimises Eq.~\eqref{eq:WilsonActionCool}. This is equivalent to maximising
 %
 \begin{equation}
 R = \operatorname{Re} \Tr (U_\mu^\prime \, \bar{U})\, .
@@ -92,7 +92,7 @@ Despite the accurate results obtained from cooled lattice configurations, coolin
 U^\prime = (1-\alpha)\,U_\mu + \frac{\alpha}{6}\,\bar{U}^\dagger\, ,
 \end{equation}
 %
-where $\bar{U}$ is the sum of the staples given in Eq.~\ref{eq:Staples} and $\alpha$ is some weighting parameter. However, as stated in the previous section, a linear combination of $SU(3)$ matrices is not necessarily in $SU(3)$, so APE smearing is dependent on a choice of projection into the $SU(3)$ group. To remove the need for this projection step, the method of stout-link smearing was developed~\cite{Morningstar:2003gk}.\\
+where $\bar{U}$ is the sum of the staples given in Eq.~\eqref{eq:Staples} and $\alpha$ is some weighting parameter. However, as stated in the previous section, a linear combination of $SU(3)$ matrices is not necessarily in $SU(3)$, so APE smearing is dependent on a choice of projection into the $SU(3)$ group. To remove the need for this projection step, the method of stout-link smearing was developed~\cite{Morningstar:2003gk}.\\
 
 We will first outline the stout-link smearing algorithm, then extend this to the over-improved stout-link smearing employed in this research. To begin, we define
 %
@@ -119,7 +119,7 @@ To see the necessity for over-improved stoutlink smearing, it is important to de
 \mathcal{S}_\text{W} = a^4\sum_x\,\sum_{\mu,\,\nu} \Tr\left[\frac{1}{2}F_{\mu\nu}^2 + \frac{a^2}{24}\left\lbrace \left( D _ { \mu } F _ { \mu \nu } ( x ) \right) ^ { 2 } + \left( D _ { \nu } F _ { \mu \nu } ( x ) \right) ^ { 2 } \right\rbrace + \mathcal{O}(a^4)\right]\, .
 \end{equation}
 %
-Substituting in the instanton potential (Eq.~\ref{eq:InstantonSolution}) and field strength tensor (Eq.~\ref{eq:InstantonFieldStrength}), we find that the Wilson action goes like
+Substituting in the instanton potential (Eq.~\eqref{eq:InstantonSolution}) and field strength tensor (Eq.~\eqref{eq:InstantonFieldStrength}), we find that the Wilson action goes like
 %
 \begin{equation}
 S_\text{W}^\text{inst} = \frac{8\pi^2}{g^2}\left\{1-\frac{1}{5}\left(\frac{a}{\rho}\right)^2 + \mathcal{O}\left(\frac{a}{\rho}\right)^4 \right\}\, ,

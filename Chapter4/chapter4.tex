@@ -61,19 +61,19 @@ D(p^2) = \frac{1}{3(n_c^2-1)}\,D^{aa}_{\mu\mu}(p) \, ,
 %
 where $n_c = 3$ is the number of colours.
 
-As the lattice gauge links $U_\mu(x)$ naturally reside in the $3\times 3$ fundamental representation of $SU(3),$ we now wish to work in the matrix representation of $A_\mu(x)$, as introduced in Eq.~\ref{eq:CovariantDerivative}. Using the orthogonality relation $\Tr(\lambda_a\lambda_b) = 2\delta_{ab}$ for the Gell-Mann matrices, it is straightforward to see that
+As the lattice gauge links $U_\mu(x)$ naturally reside in the $3\times 3$ fundamental representation of $SU(3),$ we now wish to work in the matrix representation of $A_\mu(x)$, as introduced in Eq.~\eqref{eq:CovariantDerivative}. Using the orthogonality relation $\Tr(\lambda_a\lambda_b) = 2\delta_{ab}$ for the Gell-Mann matrices, it is straightforward to see that
 %
 \begin{equation}
 2\Tr(A_\mu\,A_\mu) = A^a_\mu A^a_\mu\, ,
 \end{equation}
 %
-which can be substituted into equation~\ref{eq:scalarProp} to obtain the final expression for the lattice scalar gluon propagator,
+which can be substituted into Eq.~\eqref{eq:scalarProp} to obtain the final expression for the lattice scalar gluon propagator,
 %
 \begin{equation}
 D(p^2) = \frac{2}{3\,(n_c^2-1)\,V}\big\langle {\rm Tr}\, A_\mu(p)\,A_\mu(-p) \big\rangle \,. \label{eq:scalarProp2}
 \end{equation}
 
-To calculate Eq.~\ref{eq:scalarProp2} on the lattice, we need to define $A_\mu(p)$. As defined in Eq.~\ref{eq:GaugePotentialLat}, we make use of the midpoint definition of the coordinate-space gauge potential in terms of the lattice link variables. Once the link variables are fixed to Landau gauge following the procedure described in Sec.~\ref{sec:LandauGauge}, we can obtain the momentum-space gauge potential by performing a Fourier transform,
+To calculate Eq.~\eqref{eq:scalarProp2} on the lattice, we need to define $A_\mu(p)$. As defined in Eq.~\eqref{eq:GaugePotentialLat}, we make use of the midpoint definition of the coordinate-space gauge potential in terms of the lattice link variables. Once the link variables are fixed to Landau gauge following the procedure described in Sec.~\ref{sec:LandauGauge}, we can obtain the momentum-space gauge potential by performing a Fourier transform,
 %
 \begin{equation}
 A_\mu(p) = \sum_x e^{-ip\cdot(x+\hat{\mu}/2)}\, A_\mu(x+\hat{\mu}/2)\, .
@@ -94,7 +94,7 @@ However, lattice discretisation errors cause a deviation from this idealised beh
 F_{\mu\nu} = \partial_\mu \,A_\nu - \partial_\nu\,A_\mu
 \end{equation}
 %
-We consider this Abelian field to be on a lattice generated using the Wilson action (see Eq.~\ref{eq:WilsonAction}). From Eq.~\ref{eq:FieldStrengthPlaquette} we know that the Wilson action can be written as $\mathcal{S}_\text{W} = a^4\frac{1}{2}\sum_x F_{\mu\nu}F^{\mu\nu} + \mathcal{O}(a^4)$. As we are interested in the momentum-space propagator, we write the field strength tensor at the plaquette midpoint $\tilde{x}$ as
+We consider this Abelian field to be on a lattice generated using the Wilson action (see Eq.~\eqref{eq:WilsonAction}). From Eq.~\eqref{eq:FieldStrengthPlaquette} we know that the Wilson action can be written as $\mathcal{S}_\text{W} = a^4\frac{1}{2}\sum_x F_{\mu\nu}F^{\mu\nu} + \mathcal{O}(a^4)$. As we are interested in the momentum-space propagator, we write the field strength tensor at the plaquette midpoint $\tilde{x}$ as
 %
 \begin{align*}
 F_{\mu\nu}(\tilde{x}) &= \sum_p e^{ip\cdot\tilde{x}} \left(\frac{A_\nu\left(\tilde{x}+a\frac{\hat{\mu}}{2}\right) - A_\nu\left(\tilde{x}-a\frac{\hat{\mu}}{2} \right)}{a} - \frac{A_\mu\left(\tilde{x}+a\frac{\hat{\nu}}{2}\right) - A_\mu\left(\tilde{x}-a\frac{\hat{\nu}}{2} \right)}{a}\right)\\
@@ -138,13 +138,13 @@ M_{\mu\nu} = (p^2\delta_{\mu\nu} - p_\mu\,p_\nu)\, .
 \label{eq:ContEquationsOfMotion}
 \end{equation}
 %
-However, it is understood that in the continuum the equations of motion are not invertible unless an additional gauge fixing term is added, with a gauge fixing parameter $\alpha$. Hence, the equations of motion for the photon field in momentum space are given by Eq.~\ref{eq:ContEquationsOfMotion} with an additional gauge fixing term~\cite{ryder1996quantum}
+However, it is understood that in the continuum the equations of motion are not invertible unless an additional gauge fixing term is added, with a gauge fixing parameter $\alpha$. Hence, the equations of motion for the photon field in momentum space are given by Eq.~\eqref{eq:ContEquationsOfMotion} with an additional gauge fixing term~\cite{ryder1996quantum}
 %
 \begin{equation}
 M_{\mu\nu} = p^2\delta_{\mu\nu} - \left(1-\frac{1}{\alpha}\right)p_\mu p_\nu\, .
 \end{equation}
 %
-By inspection, we see that Eq.~\ref{eq:WilsonMomentum} will have the same equations of motion, with the substitution $p_\mu\rightarrow \hat{k}_\mu$. In turn, this gives the propagator
+By inspection, we see that Eq.~\eqref{eq:WilsonMomentum} will have the same equations of motion, with the substitution $p_\mu\rightarrow \hat{k}_\mu$. In turn, this gives the propagator
 %
 \begin{equation}
 D_{\mu\nu}(p) = \frac{1}{\hat{k}^2}\left[\delta_{\mu\nu} + (\alpha-1)\frac{\hat{k}_\mu \hat{k}_\nu}{\hat{k}^2}\right]\, .
@@ -155,7 +155,7 @@ Landau gauge corresponds to setting $\alpha=0$, so we find that
 D_{\mu\mu}(p) = \frac{3}{\hat{k}^2}\, ,
 \end{equation}
 %
-and therefore by comparison with Eq.~\ref{eq:scalarProp} we see that
+and therefore by comparison with Eq.~\eqref{eq:scalarProp} we see that
 %
 \begin{equation}
 D(p^2) = \frac{1}{\hat{k}^2}\, .
@@ -163,7 +163,7 @@ D(p^2) = \frac{1}{\hat{k}^2}\, .
 %
 This suggests that for the Wilson action we should make the substitution $p_\mu\rightarrow \hat{k}_\mu = \frac{2}{a}\sin\left(\frac{a p_\mu}{2}\right)$ so that at tree-level we observe the expected behaviour of the gluon propagator.\\
 
-A similar analysis can be performed for the L\"uscher-Weisz action used in this work, taking into account the contributions from the rectangle terms. The L\"uscher-Weisz action written in the same form as Eq.~\ref{eq:WilsonMomentum} is~\cite{Weisz:1982zw}
+A similar analysis can be performed for the L\"uscher-Weisz action used in this work, taking into account the contributions from the rectangle terms. The L\"uscher-Weisz action written in the same form as Eq.~\eqref{eq:WilsonMomentum} is~\cite{Weisz:1982zw}
 %
 \begin{equation}
 \mathcal{L}_\text{LW} = a^4\frac{1}{2}\sum_p \left(1+\frac{1}{12}a^2\hat{k}^2\right) \tilde{f}_{\mu\nu}(p) \, \tilde{f}^{\mu\nu}(-p) + \mathcal{O}(a^6)\, .
@@ -191,12 +191,12 @@ D(p^2) = \frac{a^2}{4 \sin ^ { 2 } \left( \frac { p _ { \mu } a } { 2 } \right) 
 \label{eq:LWCorrection}
 \end{equation}\\
 
-Given Eq.~\ref{eq:LWCorrection}, in this work we make the variable substitution $p_\mu\rightarrow q_\mu$ to ensure that at high momentum where we expect the gluon propagator to tend towards tree level we observe that $q^2 D(q^2) = 1$. The momentum variables chosen for both the Wilson and L\"uscher-Weisz action have been numerically verified to provide better tree level agreement in Refs.~\cite{Marenzoni:1994ap, Bonnet:2001uh}, and we present a comparison of the L\"uscher-Weisz and uncorrected variables in Fig.~\ref{fig:MomentumComparison}. We plot $k^2\,D(k^2)$ (where $k_\mu=p_\mu,\,q_\mu$ is the momentum variable for the given case under consideration) such that the tree-level propagator appears as $k^2\,D(k^2)=1$, shown as the black dashed line. We can clearly see that at high momenta the corrected gluon propagator tends towards the expected tree-level behaviour, whereas the uncorrected propagator fans out considerably. This fanning is the result of asymmetry between the spacial and temporal components of the propagator, which is accounted for in the tree-level correction~\cite{Marenzoni:1994ap}. The results presented in Fig.~\ref{fig:MomentumComparison} clearly motivate the need for tree-level correction when calculating the gluon propagator on the lattice.\\
+Given Eq.~\eqref{eq:LWCorrection}, in this work we make the variable substitution $p_\mu\rightarrow q_\mu$ to ensure that at high momentum where we expect the gluon propagator to tend towards tree level we observe that $q^2 D(q^2) = 1$. The momentum variables chosen for both the Wilson and L\"uscher-Weisz action have been numerically verified to provide better tree level agreement in Refs.~\cite{Marenzoni:1994ap, Bonnet:2001uh}, and we present a comparison of the L\"uscher-Weisz and uncorrected variables in Fig.~\ref{fig:MomentumComparison}. We plot $k^2\,D(k^2)$ (where $k_\mu=p_\mu,\,q_\mu$ is the momentum variable for the given case under consideration) such that the tree-level propagator appears as $k^2\,D(k^2)=1$, shown as the black dashed line. We can clearly see that at high momenta the corrected gluon propagator tends towards the expected tree-level behaviour, whereas the uncorrected propagator fans out considerably. This fanning is the result of asymmetry between the spacial and temporal components of the propagator, which is accounted for in the tree-level correction~\cite{Marenzoni:1994ap}. The results presented in Fig.~\ref{fig:MomentumComparison} clearly motivate the need for tree-level correction when calculating the gluon propagator on the lattice.\\
 %
 \begin{figure}[htb!]
 \centering
 \includegraphics[width=\linewidth]{./ScalarGluComp_q2_MomentumComparison.pdf}
-\caption[The scalar gluon propagator is plotted with no tree-level momentum correction and the L\"uscher and Weisz correction.]{\label{fig:MomentumComparison} The scalar gluon propagator is plotted with no tree-level momentum correction (blue crosses) and the L\"uscher and Weisz correction (red dots) presented in Eq.~\ref{eq:LWCorrection}. It is clear that the corrected momentum has improved tree-level behaviour, free from the fanning effect present in the uncorrected case.}
+\caption[The scalar gluon propagator is plotted with no tree-level momentum correction and the L\"uscher and Weisz correction.]{\label{fig:MomentumComparison} The scalar gluon propagator is plotted with no tree-level momentum correction (blue crosses) and the L\"uscher and Weisz correction (red dots) presented in Eq.~\eqref{eq:LWCorrection}. It is clear that the corrected momentum has improved tree-level behaviour, free from the fanning effect present in the uncorrected case.}
 \end{figure}
 %
 \section{Lattice Parameters and Data Cuts} \label{sec:LatticeParameters}

@@ -1,6 +1,11 @@
 import numpy as np
 import matplotlib as mplt
 import matplotlib.pyplot as pypl
+import os
+
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
 mplt.rcParams['font.family']='serif'
 mplt.rcParams['mathtext.fontset']='cm'

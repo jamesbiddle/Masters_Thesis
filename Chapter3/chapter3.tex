@@ -79,7 +79,7 @@ As $T\rightarrow \infty$, the only surviving contribution will be the lowest ene
 The quantity $E_0(R)$ is the static quark potential, and if it is linear than its slope is referred to as the `string tension', $\sigma$.
 \\
 
-With Eq.~\ref{eq:WilsonEnergy} in mind, we return to the aforementioned $SU(3)$ confinement model. Consider a two-dimensional plane of area $L^2$, with $2N$ vortices piercing the plane. Assuming an even distribution of vortices, the total vortex density is $\rho = \frac{2N}{L^2}$. As there are two $SU(3)$ vortex types, corresponding to the two non-trivial phases, $z=\exp\left(\frac{\pm 2\pi i}{3}\right)$, we assume that there is an equal distribution of vortex phases, i.e. there are $N$ vortices of each type. The probability of finding $n$ vortices of a given phase in some region of the plane $A\subset L^2$ is equal to the probability that exactly $n$ vortices are in $A$, multiplied by the probability that exactly $N-n$ vortices are outside of $A$, multiplied by a combinatoric factor. Expressed mathematically, this is
+With Eq.~\eqref{eq:WilsonEnergy} in mind, we return to the aforementioned $SU(3)$ confinement model. Consider a two-dimensional plane of area $L^2$, with $2N$ vortices piercing the plane. Assuming an even distribution of vortices, the total vortex density is $\rho = \frac{2N}{L^2}$. As there are two $SU(3)$ vortex types, corresponding to the two non-trivial phases, $z=\exp\left(\frac{\pm 2\pi i}{3}\right)$, we assume that there is an equal distribution of vortex phases, i.e. there are $N$ vortices of each type. The probability of finding $n$ vortices of a given phase in some region of the plane $A\subset L^2$ is equal to the probability that exactly $n$ vortices are in $A$, multiplied by the probability that exactly $N-n$ vortices are outside of $A$, multiplied by a combinatoric factor. Expressed mathematically, this is
 %
 \begin{equation}
 P_N(n) = \binom{N}{n} \left(\frac{A}{L^2}\right)^n \left(1-\frac{A}{L^2}\right)^{N-n}\, .
@@ -104,7 +104,7 @@ to write
 \label{eq:WilsonExpectation}
 \end{equation}
 %
-We consider just the first sum in Eq.~\ref{eq:WilsonExpectation} and calculate
+We consider just the first sum in Eq.~\eqref{eq:WilsonExpectation} and calculate
 %
 \begin{align*}
 \sum_{n=0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^n P_N(n) & = \left(1-\frac{A}{L^2}\right)^{N}\sum_{n=0}^{N} \binom{N}{n} \left(\exp\left(\frac{2\pi i}{3}\right)\,\frac{A}{L^2}\left(1-\frac{A}{L^2}\right)^{-1}\right)^n\\
@@ -119,7 +119,7 @@ where we have made use of the binomial series to evaluate the sum. Hence the tot
 &= \left(\left(\frac{A}{L^2}\right)^3+\left(1-\frac{A}{L^2}\right)^3\right)^N\, .\label{eq:WilsonExpectationSimple}
 \end{align}
 %
-Rewriting Eq.~\ref{eq:WilsonExpectationSimple} in terms of the vortex density $\rho$, we have
+Rewriting Eq.~\eqref{eq:WilsonExpectationSimple} in terms of the vortex density $\rho$, we have
 %
 \begin{equation}
 \langle W(\partial A)\rangle = \left(\left(\frac{A\rho}{2N}\right)^3+\left(1-\frac{A\rho}{2N}\right)^3\right)^N\, .
@@ -132,7 +132,7 @@ Now we take the limit as $N,L^2\rightarrow\infty$, keeping $\rho$ constant. Taki
 \label{eq:WilsonAreaLaw}
 \end{equation}
 %
-Letting $A=R\times T$ as in Eq.~\ref{eq:WilsonEnergy}, we see that $E_0(R) = \frac{3}{2}\rho R$, so the static quark potential rises linearly with string tension $\sigma = \frac{3}{2}\rho$, exactly as it should in a confining theory. Eq.~\ref{eq:WilsonAreaLaw} demonstrates an {\it area law} behaviour of the Wilson loop; this is often taken as a requirement for confinement~\cite{DelDebbio:1998luz,Dosch:1988ha}. We see then that we have, from a set of simple assumptions, constructed a model that exhibits confinement.\\
+Letting $A=R\times T$ as in Eq.~\eqref{eq:WilsonEnergy}, we see that $E_0(R) = \frac{3}{2}\rho R$, so the static quark potential rises linearly with string tension $\sigma = \frac{3}{2}\rho$, exactly as it should in a confining theory. Eq.~\eqref{eq:WilsonAreaLaw} demonstrates an {\it area law} behaviour of the Wilson loop; this is often taken as a requirement for confinement~\cite{DelDebbio:1998luz,Dosch:1988ha}. We see then that we have, from a set of simple assumptions, constructed a model that exhibits confinement.\\
 
 It is important to highlight the assumptions and simplifications made in the above argument. Most easily addressed is the assumption that there is an equal number of $+1$ and $-1$ vortices. This is an expected result, as vortices are tubes of chromo-magnetic flux, and thus must satisfy the Bianchi identity. In the absence of spontaneous symmetry breaking, this requirement is analogous to the electrodynamics condition $\nabla \cdot B = 0$, so we see that the flux line cannot terminate, and thus the tubes must be closed. Hence, over all space, we would expect that every $+1$ vortex is accompanied by a $-1$ vortex arising from the tube piercing the same plane in the opposite direction. By identifying vortices in Monte-Carlo generated lattice configurations and plotting the distribution of phases in Fig.~\ref{fig:VortexDistribution}, we confirm that there is indeed little deviation from an even distribution, especially in the ensemble average. We observe a slight deviation from this idealised condition due to vortices being closed by lattice periodicity, but it is apparent that on average there is no preferred phase.\\
 %
@@ -156,7 +156,7 @@ The final assumption is that the vortex locations are random and uncorrelated fr
 P_N(n) = \binom{N}{n} \left(\frac{P(\partial A)\, d}{L^2}\right)^n \left(1-\frac{P(\partial A)\, d}{L^2}\right)^{N-n}\, .
 \end{equation}
 %
-By following the same steps used to arrive at Eq.~\ref{eq:WilsonAreaLaw}, we find
+By following the same steps used to arrive at Eq.~\eqref{eq:WilsonAreaLaw}, we find
 %
 \begin{equation}
 \langle W(\partial A)\rangle = e^{-\frac{3}{2}\rho\, d\, P(\partial A)}\, .
@@ -189,7 +189,7 @@ where
 \begin{equation}
 \mathcal{Q} = \frac{1}{2}\lambda_3 +\frac{1}{2\sqrt{3}}\lambda_8 = \frac{1}{3}\diag\left(2,-1,-1\right)\label{eq:Q}
 \end{equation}
-As $\Omega(0) \neq \Omega(2\pi)$, the transformation is singular. According to Eq.~\ref{eq:LinkTransformation} the gauge link around the path, $U(x(\theta),\theta=0)$, then becomes
+As $\Omega(0) \neq \Omega(2\pi)$, the transformation is singular. According to Eq.~\eqref{eq:LinkTransformation} the gauge link around the path, $U(x(\theta),\theta=0)$, then becomes
 %
 \begin{equation}
 U(x(\theta),\theta=0) \rightarrow \Omega(2\pi)\,U(x(\theta),\theta=0)\,\Omega(0)\, ,
@@ -202,7 +202,7 @@ W_0(C(\theta)) &\rightarrow \Tr\left( \Omega(2\pi)\,U(x(\theta),\theta=0)\,\Omeg
 &=\Tr\left(\exp\left(\frac{2\pi i}{3}\right)U(x(\theta),\theta=0)\right)\\
 &=\exp\left(\frac{2\pi i}{3}\right)\,W_0(C(\theta))\, .
 \end{align}
-We see that through the use of a singular centre transformation we have introduced a  centre vortex to the configuration. Note that the transformation in Eq.~\ref{eq:SingularGT} is not unique, and if written in Cartesian coordinates the singular nature is replaced by a pole at the centre of the circle. The literature makes use of both these definitions of the vortex gauge transformation~\cite{'tHooft:1977hy,Faber:1999gu}. As our vortex depends only on the angular coordinate, this vortex is infinitely thin, as any size Wilson loop will acquire the vortex flux. Transformations creating thick vortices by adding a radial profile to the singular gauge transformation have been explored in Ref.~\cite{Faber:1997rp}. On the lattice, the singular gauge transformation given in Eq.~\ref{eq:SingularGT} corresponds to multiplying a single link $U_\mu(x)$ by the centre phase $\exp\left(\frac{2\pi i}{3}\right)$, such that the plaquettes associated with this link are multiplied by the same centre phase, creating in 3D a $1\times 1$ vortex, as seen in Fig.~\ref{fig:CreatedVortex}. Larger vortices are created by multiplying more links by the same centre phase. This suggests that we can consider our gauge links to be of the form
+We see that through the use of a singular centre transformation we have introduced a  centre vortex to the configuration. Note that the transformation in Eq.~\eqref{eq:SingularGT} is not unique, and if written in Cartesian coordinates the singular nature is replaced by a pole at the centre of the circle. The literature makes use of both these definitions of the vortex gauge transformation~\cite{'tHooft:1977hy,Faber:1999gu}. As our vortex depends only on the angular coordinate, this vortex is infinitely thin, as any size Wilson loop will acquire the vortex flux. Transformations creating thick vortices by adding a radial profile to the singular gauge transformation have been explored in Ref.~\cite{Faber:1997rp}. On the lattice, the singular gauge transformation given in Eq.~\eqref{eq:SingularGT} corresponds to multiplying a single link $U_\mu(x)$ by the centre phase $\exp\left(\frac{2\pi i}{3}\right)$, such that the plaquettes associated with this link are multiplied by the same centre phase, creating in 3D a $1\times 1$ vortex, as seen in Fig.~\ref{fig:CreatedVortex}. Larger vortices are created by multiplying more links by the same centre phase. This suggests that we can consider our gauge links to be of the form
 %
 \begin{equation}
 U_\mu(x) = Z_\mu(x)\,R_\mu(x)\, ,
@@ -240,7 +240,7 @@ Consider the mapping
 \label{eq:AdjointRep}
 \end{equation}
 %
-This mapping satisfies Eq.~\ref{eq:RepMap} (see Appendix \ref{app:RepMapProof}), and it is easy to see that if $U_\mu(x)\rightarrow Z_\mu(x)\, U_\mu(x)$ for $Z_\mu\in Z_3$ then $U^A_\mu(x)$ is unchanged. This means that the adjoint representation is invariant under singular centre transformations (or, more generally, any centre transformation) and is therefore insensitive to the presence of vortices in a given configuration. Considering the decomposition of $U_\mu(x)$ into vortex-only and vortex-removed components presented in Eq.~\ref{eq:VortexDecomposition}, we see that in the adjoint representation, 
+This mapping satisfies Eq.~\eqref{eq:RepMap} (see Appendix~\ref{app:RepMapProof}), and it is easy to see that if $U_\mu(x)\rightarrow Z_\mu(x)\, U_\mu(x)$ for $Z_\mu\in Z_3$ then $U^A_\mu(x)$ is unchanged. This means that the adjoint representation is invariant under singular centre transformations (or, more generally, any centre transformation) and is therefore insensitive to the presence of vortices in a given configuration. Considering the decomposition of $U_\mu(x)$ into vortex-only and vortex-removed components presented in Eq.~\eqref{eq:VortexDecomposition}, we see that in the adjoint representation, 
 %
 \begin{equation}
 U_\mu^A = R_\mu^A\, .
@@ -264,13 +264,13 @@ R = \frac { 1 } { V N _ { \operatorname { dim } } n _ { c } ^ { 2 } } \sum _ { x
 \label{eq:MCGFunctional}
 \end{equation} 
 %
-where $VN _ { \operatorname { dim } }$ is the number of links on the lattice, and $n_c=3$ is the number of colours. At first glance it is unclear why this gauge would assist in isolating vortices. To elucidate the connection, we consider the trace of the adjoint gauge link $U^A_\mu(x)$ obtained from Eq.~\ref{eq:AdjointRep},
+where $VN _ { \operatorname { dim } }$ is the number of links on the lattice, and $n_c=3$ is the number of colours. At first glance it is unclear why this gauge would assist in isolating vortices. To elucidate the connection, we consider the trace of the adjoint gauge link $U^A_\mu(x)$ obtained from Eq.~\eqref{eq:AdjointRep},
 %
 \begin{equation}
 \Tr\left(U^A_\mu(x)\right) = \left|\Tr\left(U_\mu(x)\right)\right|^2 - 1\, .
 \end{equation}
 %
-The details of the above expression are given in Appendix \ref{app:RepMapProof}. We see therefore that maximising Eq.~\ref{eq:MCGFunctional} is equivalent to maximising
+The details of the above expression are given in Appendix \ref{app:RepMapProof}. We see therefore that maximising Eq.~\eqref{eq:MCGFunctional} is equivalent to maximising
 %
 \begin{equation}
 R^A = \frac { 1 } { V N _ { \operatorname { dim } } n _ { c } ^ { 2 } } \sum _ { x , \mu } \left( \operatorname { Tr } U _ { \mu } ^ { A,\,G } ( x ) \right)\, .
@@ -318,7 +318,7 @@ Casimir scaling refers to the behaviour of the $SU(N)$ string tension in differe
 G(x) = \Omega\,\exp\left(i \alpha_C(x)\,\mathcal{Q}\right)\, \Omega^\dagger\,
 \end{equation}
 %
-where $\Omega\in SU(3)$, $\mathcal{Q}$ is as defined in Eq.~\ref{eq:Q} and $\alpha_C\in [0,2\pi]$ is a function satisfying
+where $\Omega\in SU(3)$, $\mathcal{Q}$ is as defined in Eq.~\eqref{eq:Q} and $\alpha_C\in [0,2\pi]$ is a function satisfying
 %
 \begin{equation}
 \alpha_C(x)=
@@ -343,13 +343,13 @@ The total topological charge is the `degree' of a particular field configuration
 Q = \int d^4x \frac { 1 } { 16 \pi ^ { 2 } } \epsilon _ { \mu \nu \rho \sigma } \operatorname { Tr } \left( F _ { \mu \nu } F _ { \rho \sigma } \right)\, \in\, \mathbb{Z} \, .
 \label{eq:TopologicalCharge}
 \end{equation} 
-The integrand of Eq.~\ref{eq:TopologicalCharge} is known as the topological charge density, and is denoted
+The integrand of Eq.~\eqref{eq:TopologicalCharge} is known as the topological charge density, and is denoted
 %
 \begin{equation}
 q(x) = \frac { 1 } { 16 \pi ^ { 2 } } \epsilon _ { \mu \nu \rho \sigma } \operatorname { Tr } \left( F _ { \mu \nu } F _ { \rho \sigma } \right)\, .
 \end{equation}
 %
-From Eq.~\ref{eq:PlaquetteExpansion} it is clear we could evaluate $F_{\mu\nu}$ on the lattice by taking the imaginary part of $P_{\mu\nu}$. However, it is common to instead make use of the clover leaf definition,
+From Eq.~\eqref{eq:PlaquetteExpansion} it is clear we could evaluate $F_{\mu\nu}$ on the lattice by taking the imaginary part of $P_{\mu\nu}$. However, it is common to instead make use of the clover leaf definition,
 %
 \begin{equation}
 q_\text{clov}(x) = \frac{1}{16\pi^2} \epsilon _ { \mu \nu \rho \sigma } \Tr\left(C_{\mu\nu} \, C_{\rho\sigma}\right),
@@ -370,13 +370,13 @@ The clover-leaf loop combination is shown in Fig.~\ref{fig:Clover}. Much like th
 %
 
 \subsection{Instantons}\label{sec:Instantons}
-The QCD vacuum is a non-trivial state, existing as a superposition of an infinite number of degenerate solutions enumerated by a topological quantum number. These solutions can be expressed as a gauge rotation from the trivial $A_\mu=0$ solution according to Eq.~\ref{eq:GaugePotentialTrans}, such that
+The QCD vacuum is a non-trivial state, existing as a superposition of an infinite number of degenerate solutions enumerated by a topological quantum number. These solutions can be expressed as a gauge rotation from the trivial $A_\mu=0$ solution according to Eq.~\eqref{eq:GaugePotentialTrans}, such that
 %
 \begin{equation}
 A_\mu = i(\partial_\mu \Omega)\,\Omega^\dagger\, .
 \end{equation}
 %
-These are the so-called `pure gauge' configurations. For these vacuum configurations, the topological charge defined in Eq.~\ref{eq:TopologicalCharge} has a slightly modified interpretation; it now counts how many times the gauge transformation $\Omega(x)$ covers the group $SU(3)$. If we further require that as $|x|\rightarrow \infty$, $A_\mu\rightarrow 0$, then  Eq.~\ref{eq:TopologicalCharge} becomes an integral of a total divergence and reduces to the `Pontryagin number' via Stokes' theorem. The topological charge can now be calculated as an integral over the boundary of Euclidean space $S^3$~\cite{ryder1996quantum}
+These are the so-called `pure gauge' configurations. For these vacuum configurations, the topological charge defined in Eq.~\eqref{eq:TopologicalCharge} has a slightly modified interpretation; it now counts how many times the gauge transformation $\Omega(x)$ covers the group $SU(3)$. If we further require that as $|x|\rightarrow \infty$, $A_\mu\rightarrow 0$, then  Eq.~\eqref{eq:TopologicalCharge} becomes an integral of a total divergence and reduces to the `Pontryagin number' via Stokes' theorem. The topological charge can now be calculated as an integral over the boundary of Euclidean space $S^3$~\cite{ryder1996quantum}
 %
 \begin{equation}
 Q = \frac{1}{24\pi^2}\oint_{S^3} \epsilon_{\mu\nu\rho\sigma} \, \hat{\mu}\Tr\left(\left(\Omega^\dagger \,\partial_\nu \Omega\right)\,\left(\Omega^\dagger \,\partial_\rho \Omega\right)\,\left(\Omega^\dagger \,\partial_\sigma \Omega\right)\right)
@@ -409,7 +409,7 @@ where
 \label{eq:EtaSymbol}
 \end{equation}
 %
-$\sigma^a$ are the Pauli matrices and $\rho$ is an arbitrary parameter known as the instanton radius. An anti-instanton solution corresponding to $\Delta Q=-1$ can be obtained by substituting $\eta$ with $\bar{\eta}$, where $\bar{\eta}$ is the same as Eq.~\ref{eq:EtaSymbol} but with a factor of $-1$ in the last two cases. The action associated with this configuration is 
+$\sigma^a$ are the Pauli matrices and $\rho$ is an arbitrary parameter known as the instanton radius. An anti-instanton solution corresponding to $\Delta Q=-1$ can be obtained by substituting $\eta$ with $\bar{\eta}$, where $\bar{\eta}$ is the same as Eq.~\eqref{eq:EtaSymbol} but with a factor of $-1$ in the last two cases. The action associated with this configuration is 
 %
 \begin{equation}
 S_0 = \frac{8\pi^2}{g^2}\, ,
