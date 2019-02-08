@@ -17,47 +17,49 @@
 %\end{enumerate}
 As discussed in Chapter~\ref{chapter:Introduction}, QCD is distinguished from other forces of nature by the properties of confinement and dynamical chiral symmetry breaking. These properties have been observed experimentally, however the question of how they arise from the gauge theory of QCD outlined in the preceding chapter is still the subject of intense investigation. It is believed that both these properties are connected by some underlying topological structure of the QCD vacuum. Proposed candidates include Abelian monopoles~\cite{tHooft:1981bkw,Smit:1989vg,Matsubara:1993nq,Suzuki:1989gp,Mandelstam:1974pi,Kronfeld:1987ri,Ivanenko:1990xu, Chernodub:1995tt}, instantons~\cite{Belavin:1975fg,Witten:1978bc,Callan:1977gz,Schafer:1996wv,Trewartha:2013qga,Aharonov:1978jd} and centre vortices~\cite{'tHooft:1977hy,'tHooft:1979uj,Feynman:1981ss,Aharonov:1978jd,Cornwall:1979hz,Nielsen:1979xu,Mack:1978rq}. With the advent of lattice simulations, the most promising of these appears to be the centre vortex model. Numerical evidence from the lattice has been amassed that indicates that topological objects known as centre vortices are tied to both confinement and dynamical chiral symmetry breaking~\cite{Biddle:2018dtc,Faber:1997rp,Langfeld:1998cz,Bowman:2008qd,Trewartha:2015ida,Trewartha:2015nna,Trewartha:2017ive,DelDebbio:1996lih,Greensite:2003bk,DelDebbio:1998luz,OMalley:2011aa,Langfeld:2003ev,Bowman:2010zr}. It is therefore the subject of this research to further extend the investigation into the properties of centre vortices, specifically in the gluonic sector of QCD.\\
 
-As dynamical chiral symmetry breaking is primarily concerned with quarks, we will omit a detailed discussion of this property and instead begin this chapter outlining the confinement property exhibited by the strong force. We will then introduce centre vortices and motivate how they provide a potential explanation for confinement in QCD. From here we will describe how it is that we can identify centre vortices on the lattice, and survey the lattice results found in current literature pertaining to centre vortices. Finally we will briefly describe instantons and topological charge, in preparation for later chapters that draw on these concepts.  
+As dynamical chiral symmetry breaking is primarily concerned with quarks, we will omit a detailed discussion of this property and instead begin this chapter outlining the confinement property exhibited by the strong force. We will then introduce centre vortices and motivate how they provide a potential explanation for confinement in QCD. From here we will describe how it is that we can identify centre vortices on the lattice, and survey the lattice results found in current literature pertaining to centre vortices. Finally, we will briefly describe instantons and topological charge, in preparation for later chapters that draw on these concepts.  
 
 \section{Confinement}\label{sec:Confinement}
-The confinement property of QCD, and the accompanying notion of asymptotic freedom, is one of the defining low-energy features of the theory of the strong interaction. After Gell-Mann and Zweig's concurrent proposal of quarks as the elementary constituents of baryons and mesons~\cite{GellMann:1964nj,Zweig:1964jf}, it was natural to then attempt to observe these new particles in isolation. However, efforts to observe quarks proved impossible. Early experiments testing the behaviour of electron-proton collisions demonstrated that protons scatter elastically, behaving as though they are finite-sized particles recoiling electromagnetically from the incident electron~\cite{Hofstadter:1956qs}. These experiments indicated no further substructure to the proton, inconsistent with the quark model. As accelerator energies improved, later experiments~\cite{Bloom:1969kc, Breidenbach:1969kd} using electron energies of $7$ and $10~\si{GeV}$ found that inelastic scattering effects became dominant, with electrons behaving as though they were scattering off of loosely bound constituent particles. To explain this behaviour, Feynman proposed what is known as the `parton' model~\cite{Feynman:1969ej}, treating the proton as being comprised of non-interacting electrically charged particles in the limit that the incident electron energy tends towards infinity. This is precisely the notion of asymptotic freedom; at large distance scales the partons are tightly bound, whereas at short distances they behave as free particles. It did not take long for the separate theories of quarks and partons to recognised as complementary, and by the early 70's the quark-parton model of hadrons accurately explained the the experimental results observed in particle colliders.\\
+The confinement property of QCD is one of the defining low-energy features of the theory of the strong interaction. After Gell-Mann and Zweig's concurrent proposal of quarks as the elementary constituents of baryons and mesons~\cite{GellMann:1964nj,Zweig:1964jf}, it was natural to then attempt to observe these new particles in isolation. However, prior efforts to observe any substructure of the proton were inconsistent with this new quark model. These experiments tested the behaviour of electron-proton collisions, and demonstrated that protons scatter elastically, behaving as though they are finite-sized particles recoiling electromagnetically from the incident electron~\cite{Hofstadter:1956qs}. However, as accelerator energies improved, later experiments~\cite{Bloom:1969kc, Breidenbach:1969kd} using electron energies of $7$ and $10~\si{GeV}$ found that inelastic scattering effects became dominant, with electrons behaving as though they were scattering off of loosely bound constituent particles. To explain this behaviour, Feynman proposed what is known as the `parton' model~\cite{Feynman:1969ej}, treating the proton as being comprised of non-interacting electrically charged particles in the limit that the incident electron energy tends towards infinity. This is precisely the notion of confinement; at large distance scales the partons are tightly bound, whereas at short distances they behave as free particles. It did not take long for the separate theories of quarks and partons to recognised as complementary, and by the early 70's the quark-parton model of hadrons accurately explained the the experimental results observed in particle colliders.\\
 
-These experimental and theoretical results led in part to the development of the non-Abelian gauge field theory of QCD, as introduced in Chapter~\ref{chapter:LatticeQCD}. The proof that non-Abelian gauge theories are asymptotically free was discovered in 1973~\cite{Gross:1973id}, and experimental evidence of the existence of 3 quark colours through study of the cross section of $e^+ e^-$ collisions supports the initial $SU(3)$ colour symmetry anticipated by Gell-Mann and Zweig. At high energies, QCD has consistently explained the behaviour of hadronic matter, and has become the accepted theory of the strong nuclear interaction. However, the question of whether QCD is indeed a confining theory still remains. As confinement is a low-momentum property of QCD, it is apparent that any analytic proof of confinement must take place far from the asymptotic limit. To date, no such analytic proof has been found.\\
+These experimental and theoretical results led in part to the development of the non-Abelian gauge field theory of QCD, as introduced in Chapter~\ref{chapter:LatticeQCD}. The proof that non-Abelian gauge theories behave as a free theory at high energy was discovered in 1973~\cite{Gross:1973id}, and experimental evidence of the existence of 3 quark colours through study of the cross section of $e^+ e^-$ collisions supports the initial $SU(3)$ colour symmetry anticipated by Gell-Mann and Zweig. At high energies, QCD has consistently explained the behaviour of hadronic matter, and has become the accepted theory of the strong interaction. However, the mathematical proof that QCD is indeed a confining theory still remains to be formulated. As confinement is a low-momentum property of QCD, it is apparent that any analytic proof of confinement must take place far from the asymptotic limit. To date, no such analytic proof has been found.\\
 
-Lattice calculations are currently the only method by which it is possible to investigate low-energy QCD phenomena from first-principles. Calculations of the static potential between two massive quarks, both recent and old~\cite{Born:1993cq, Bonnet:1999gt, Creutz:1980hb, DiGiacomo:1990hc}, have shown that the potential rises linearly at sufficiently large separation distances. This behaviour is precisely what is expected of a colour confining theory. Other confinement mechanisms have also been proposed on the lattice, including mechanisms based on the behaviour of the gluon propagator at $q=0$~\cite{Zwanziger:1991gz} and the behaviour of the pion mass and Polyakov loop at light quark masses~\cite{Iwasaki:1991mr}. All lattice results so far have indicated that QCD is in fact a confining theory at low energy.\\
+Lattice calculations are currently the only method by which it is possible to investigate low-energy QCD phenomena from first-principles. Calculations of the static potential between two massive quarks, both recent and old~\cite{Born:1993cq, Bonnet:1999gt, Creutz:1980hb, DiGiacomo:1990hc}, have shown that the potential rises linearly at sufficiently large separation distances. This behaviour is precisely what is expected of a colour confining theory. In dynamical QCD the potential is screened and $\bar{q}\,q$ creation admits meson production, but once again there are no isolated quarks. Other confinement mechanisms have also been proposed on the lattice, including mechanisms based on the behaviour of the gluon propagator at $q=0$~\cite{Zwanziger:1991gz} and the behaviour of the pion mass and Polyakov loop at light quark masses~\cite{Iwasaki:1991mr}. All lattice results so far have indicated that QCD is in fact a confining theory at low energy.\\
 
-There is good evidence that confinement has its roots in the topological properties of the QCD vacuum. It is well understood that the QCD vacuum, unlike the QED vacuum, admits non-trivial instanton solutions: solutions of the vacuum field configurations that are all minima of the classical action, yet are distinguished from one another by a topological quantum number~\cite{Belavin:1975fg}. The presence of instanton solutions was significant in resolving the $U(1)$ anomaly~\cite{tHooft:1986ooh}, and provides an excellent method of calculating the ground state hadron spectrum~\cite{Schafer:1996wv}. The non-trivial topology of the QCD vacuum, and the success of topological features in resolving QCD anomalies, motivates the search for a topological explanation of confinement. 
+There is good evidence that confinement has its roots in the topological properties of the QCD vacuum. It is well understood that the QCD vacuum, unlike the QED vacuum, admits non-trivial instanton solutions: solutions of the vacuum field configurations that are a minima of the classical action, yet are distinguished from one another by a topological quantum number~\cite{Belavin:1975fg}. The presence of instanton solutions was significant in resolving the $U(1)$ anomaly~\cite{tHooft:1986ooh}, and provides an interesting model for calculating the ground state hadron spectrum~\cite{Schafer:1996wv}. The non-trivial topology of the QCD vacuum, and the success of topological features in resolving QCD anomalies, motivates the search for a topological explanation of confinement. 
 
 \section{Centre Vortices}
 \subsection{Motivation for the Model}\label{sec:Motivation}
-Originally proposed by 't Hooft in 1978~\cite{'tHooft:1977hy,'tHooft:1979uj}, centre vortices are closed two-dimensional surfaces present in four-dimensional Euclidean space that carry colour-magnetic flux. The key property of a centre vortex is that in three dimensions, where the vortices appear as closed tubes, any Wilson loop (see Sec.~\ref{sec:LatticeDiscretisation}) that encloses a vortex will acquire a centre phase, such that
+Originally proposed by 't Hooft in 1978~\cite{'tHooft:1977hy,'tHooft:1979uj}, centre vortices are closed two-dimensional surfaces present in four-dimensional Euclidean space-time that carry `centre charge'. The key property of a centre vortex is that in three dimensions, where the vortices appear as closed tubes, any Wilson loop calculated on a path $C$ (see Sec.~\ref{sec:LatticeDiscretisation}) that encloses a vortex will acquire a centre phase, such that
 %
 \begin{equation}
 W(C)\rightarrow z \,W(C)\, ,
 \end{equation}
 %
-where $z$ is a non-trivial element of $Z(3)$, the centre of $SU(3)$. The centre of a group is the subgroup that contains all the elements of the group that commute with all other elements. In the case of $SU(3)$ this corresponds to
+where $z$ is a non-trivial centre element of $Z(3)$. The centre of a group is the subgroup that contains all the elements of the group that commute with all other elements. In the case of $SU(3)$ this corresponds to
 %
 \begin{equation}
 Z(3) = \big\lbrace \exp\left(\frac{m 2\pi i}{3} \right)I ~ | ~ m = 0,\pm 1\big\rbrace\, . 
 \end{equation}
 %
-Thus, the non-trivial elements of $Z_3$ are $z = \exp\left(\frac{\pm 2\pi i}{3}\right)I$. In the centre vortex model, it is therefore natural to refer to a vortex as being a `$+1$' or `$-1$' vortex, corresponding to the sign of the centre phase. When considering the value of any given Wilson loop, the centre vortex model suggests that
+Thus, the non-trivial elements of $Z(3)$ are $z = \exp\left(\pm 2\pi i/3\right)I$. In the centre vortex model, it is therefore natural to refer to a vortex as being a `$+1$' or `$-1$' vortex, corresponding to the sign of the centre phase. When considering the value of any given Wilson loop, the centre vortex model suggests that
 %
 \begin{equation}
 W(C) = \prod_i z_i\times W_0(C)\, ,
 \end{equation}
 %
-where the $z_i$ correspond to the phases of the centre vortices intersecting the loop $C$, and $W_0(C)$ encapsulates the short-distance physics. A simple visualisation of this idea is shown in Fig.~\ref{fig:CentreVortex}. It is not immediately apparent why this form of the Wilson loop is related to confinement, however a simple $SU(3)$ calculation motivates the relevance of this model~\cite{Greensite:2016pfc}. To understand the significance of this calculation it is worth first deviating slightly to detail the relationship between the Wilson loop and the potential energy between two massive (static) quarks.\\
+where the $z_i$ correspond to the phases of the centre vortices intersecting the loop $C$, and $W_0(C)$ encapsulates the short-distance physics. A simple visualisation of this idea is shown in Fig.~\ref{fig:CentreVortex}.\\
 % 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{./centre_vortex.pdf}
-\caption[A single centre vortex intersecting a Wilson loop in 3 dimensions.]{\label{fig:CentreVortex} A single centre vortex (dashed line) intersecting a Wilson loop (solid line) in 3 dimensions. The Wilson loop will acquire a centre phase corresponding to the phase of the vortex.}
+\includegraphics[width=0.9\linewidth]{./centre_vortex.pdf}
+\caption[A single centre vortex intersecting a Wilson loop in 3 dimensions.]{\label{fig:CentreVortex} A single thin centre vortex (dashed line) intersecting a Wilson loop (solid line) in 3 dimensions. The Wilson loop will acquire a centre phase corresponding to the phase of the vortex.}
 \end{figure}
 %
 
-Follwing the argument presented in Ref.~\cite{Makeenko:2009dw}, consider a Wilson loop calculated around a rectangle in the $x-t$ plane with dimensions $R\times T$. As the Wilson loop is gauge invariant, we are free to select a convenient gauge in which to perform the calculation. To this end, we choose the fields to be in axial gauge, such that $A_0(x)=0\implies U_0(x) = 1\,\forall\,x$. So the Wilson loop becomes
+An important distinction to make is the difference between thin and thick vortices. Physical vortices are thick, meaning that they require some finite-sized Wilson loop encircling them to capture the centre phase~\cite{Faber:1997rp}. In 3D these can be pictured as closed tubes with some finite radius. For the purposes of this work we will more frequently think of thin vortices, otherwise known as projected or P-vortices for reasons that will be made clear in Sec.~\ref{sec:LocatingVortices}. These vortices are infinitely thin, and can instead be thought of as closed lines in 3D. Hence, any size Wilson loop can acquire the centre phase, so long as it encircles the line. Thin vortices are a representation of the thick vortices, and for the majority of this work we will focus on P-vortices. It is these vortices that we identify on the lattice and that are responsible for the long range effects that we are interested in.\\
+
+It is not immediately apparent why the centre vortex picture is related to confinement, however a simple $SU(3)$ calculation motivates the relevance of this model~\cite{Greensite:2016pfc}. To understand the significance of this calculation it is worth first deviating slightly to detail the relationship between the Wilson loop and the potential energy between two massive (static) quarks. Following the argument presented in Ref.~\cite{Makeenko:2009dw}, consider a Wilson loop calculated around a rectangle in the $x-t$ plane with dimensions $R\times T$. As the Wilson loop is gauge invariant, we are free to select a convenient gauge in which to perform the calculation. To this end, we choose the fields to be in axial gauge, such that $A_0(x)=0\implies U_0(x) = 1\,\forall\,x$. So the Wilson loop becomes
 %
 \begin{equation}
 W(R\times T) = \Tr \left(U_1(0)\,U_1^\dagger(T)\right)\, .
@@ -79,7 +81,7 @@ As $T\rightarrow \infty$, the only surviving contribution will be the lowest ene
 The quantity $E_0(R)$ is the static quark potential, and if it is linear than its slope is referred to as the `string tension', $\sigma$.
 \\
 
-With Eq.~\eqref{eq:WilsonEnergy} in mind, we return to the aforementioned $SU(3)$ confinement model. Consider a two-dimensional plane of area $L^2$, with $2N$ vortices piercing the plane. Assuming an even distribution of vortices, the total vortex density is $\rho = \frac{2N}{L^2}$. As there are two $SU(3)$ vortex types, corresponding to the two non-trivial phases, $z=\exp\left(\frac{\pm 2\pi i}{3}\right)$, we assume that there is an equal distribution of vortex phases, i.e. there are $N$ vortices of each type. The probability of finding $n$ vortices of a given phase in some region of the plane $A\subset L^2$ is equal to the probability that exactly $n$ vortices are in $A$, multiplied by the probability that exactly $N-n$ vortices are outside of $A$, multiplied by a combinatoric factor. Expressed mathematically, this is
+With Eq.~\eqref{eq:WilsonEnergy} in mind, we return to the aforementioned $SU(3)$ confinement model. Consider a two-dimensional plane of area $L^2$, with $2N$ vortices piercing the plane. Assuming an even distribution of vortices, the total vortex density is $\rho = 2N/L^2$. As there are two $SU(3)$ vortex types, corresponding to the two non-trivial phases, $z=\exp\left(\pm 2\pi i/3\right)$, we assume that there is an equal distribution of vortex phases, i.e. there are $N$ vortices of each type. The probability of finding $n$ vortices of a given phase in some region of the plane $A\subset L^2$ is equal to the probability that exactly $n$ vortices are in $A$, multiplied by the probability that exactly $N-n$ vortices are outside of $A$, multiplied by a combinatoric factor. Expressed mathematically, this is
 %
 \begin{equation}
 P_N(n) = \binom{N}{n} \left(\frac{A}{L^2}\right)^n \left(1-\frac{A}{L^2}\right)^{N-n}\, .
@@ -104,7 +106,7 @@ to write
 \label{eq:WilsonExpectation}
 \end{equation}
 %
-We consider just the first sum in Eq.~\eqref{eq:WilsonExpectation} and calculate
+Consider the first sum in Eq.~\eqref{eq:WilsonExpectation},
 %
 \begin{align*}
 \sum_{n=0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^n P_N(n) & = \left(1-\frac{A}{L^2}\right)^{N}\sum_{n=0}^{N} \binom{N}{n} \left(\exp\left(\frac{2\pi i}{3}\right)\,\frac{A}{L^2}\left(1-\frac{A}{L^2}\right)^{-1}\right)^n\\
@@ -119,7 +121,7 @@ where we have made use of the binomial series to evaluate the sum. Hence the tot
 &= \left(\left(\frac{A}{L^2}\right)^3+\left(1-\frac{A}{L^2}\right)^3\right)^N\, .\label{eq:WilsonExpectationSimple}
 \end{align}
 %
-Rewriting Eq.~\eqref{eq:WilsonExpectationSimple} in terms of the vortex density $\rho$, we have
+Rewriting Eq.~\eqref{eq:WilsonExpectationSimple} in terms of the vortex density $\rho = 2N/L^2$, we have
 %
 \begin{equation}
 \langle W(\partial A)\rangle = \left(\left(\frac{A\rho}{2N}\right)^3+\left(1-\frac{A\rho}{2N}\right)^3\right)^N\, .
@@ -134,23 +136,15 @@ Now we take the limit as $N,L^2\rightarrow\infty$, keeping $\rho$ constant. Taki
 %
 Letting $A=R\times T$ as in Eq.~\eqref{eq:WilsonEnergy}, we see that $E_0(R) = \frac{3}{2}\rho R$, so the static quark potential rises linearly with string tension $\sigma = \frac{3}{2}\rho$, exactly as it should in a confining theory. Eq.~\eqref{eq:WilsonAreaLaw} demonstrates an {\it area law} behaviour of the Wilson loop; this is often taken as a requirement for confinement~\cite{DelDebbio:1998luz,Dosch:1988ha}. We see then that we have, from a set of simple assumptions, constructed a model that exhibits confinement.\\
 
-It is important to highlight the assumptions and simplifications made in the above argument. Most easily addressed is the assumption that there is an equal number of $+1$ and $-1$ vortices. This is an expected result, as vortices are tubes of chromo-magnetic flux, and thus must satisfy the Bianchi identity. In the absence of spontaneous symmetry breaking, this requirement is analogous to the electrodynamics condition $\nabla \cdot B = 0$, so we see that the flux line cannot terminate, and thus the tubes must be closed. Hence, over all space, we would expect that every $+1$ vortex is accompanied by a $-1$ vortex arising from the tube piercing the same plane in the opposite direction. By identifying vortices in Monte-Carlo generated lattice configurations and plotting the distribution of phases in Fig.~\ref{fig:VortexDistribution}, we confirm that there is indeed little deviation from an even distribution, especially in the ensemble average. We observe a slight deviation from this idealised condition due to vortices being closed by lattice periodicity, but it is apparent that on average there is no preferred phase.\\
+It is important to highlight some of the subtleties of the above argument. Most easily addressed is the assumption that there is an equal number of $+1$ and $-1$ vortices. This is an expected result, as vortices are tubes of chromo-magnetic flux, and thus must satisfy the Bianchi identity~\cite{Engelhardt:2003wm}. This requirement is analogous to the electrodynamics condition $\nabla \cdot B = 0$, so we see that the flux line cannot terminate, and thus the tubes must be closed. Hence, over all space, we would expect that every $+1$ vortex is accompanied by a $-1$ vortex arising from the tube piercing the same plane in the opposite direction. By identifying vortices in Monte-Carlo generated lattice configurations and plotting the distribution of phases in Fig.~\ref{fig:VortexDistribution}, we confirm that there is indeed little deviation from an even distribution, especially in the ensemble average. We observe a slight deviation from this idealised condition due to vortices being closed by lattice periodicity, but it is apparent that on average there is no preferred phase.\\
 %
 \begin{figure}[htb!]
-\includegraphics{./VortexDistribution.pdf}
-\caption[A plot of the vortex phase distribution of 100 Monte-Carlo generated configurations.]{\label{fig:VortexDistribution}A plot of the vortex phase distribution of 100 Monte-Carlo generated configurations, as a percentage of the total number of vortices. The method by which vortices are identified will be detailed in Sec.~\ref{sec:LocatingVortices}.}
+\includegraphics[width=0.9\linewidth]{./VortexDistribution.pdf}
+\caption[A plot of the vortex phase distribution of 100 Monte-Carlo generated configurations.]{\label{fig:VortexDistribution}A plot of the vortex phase distribution of 100 Monte-Carlo generated configurations, as a percentage of the total number of vortices. The dashed line indicates $33.\dot{3}\%$, which corresponds to an equal distribution. The method by which vortices are identified will be detailed in Sec.~\ref{sec:LocatingVortices}.}
 \end{figure}
 %
 
-The assumption that the vortex density is constant is, however, less well motivated. So far we have treated vortices as infinitesimally thin sheets in 4D. However, an infinitely thin vortex introduces a singularity in the action, as the vortex flux must be constrained to an infinitely thin cross-section. Rather, physical vortices are `thick'; they have a finite cross-section in the direction perpendicular to the vortex sheet. If the vortex is contained entirely within the area $A$ it contributes the centre phase as described above. However, as $A$ approaches the size of the vortex cross section, one must account for vortices that are only partially inside $A$, and thus not necessarily contributing a pure centre phase. Although this consideration spoils the elegance of the above confinement mechanism for small Wilson loops, it does potentially save the model from a pitfall related to the Casimir scaling of the Wilson loop expectation value~\cite{Greensite:1982be,Faber:1997rp}, as will be described in more detail in Sec.~\ref{sec:CurrentEvidence}. Finally, it is worth noting that this issue is only relevant to Wilson loops of similar size to the vortex cross-section. As the Wilson loop increases in size, the majority of the vortices will be contained entirely within the loop, with a diminishing number of thick vortices overlapping the perimeter of the loop, as shown in Fig.~\ref{fig:VortexSizes}.\\
-%
-\begin{figure}[htb!]
-\centering
-\includegraphics[width=\linewidth]{./LargeVortex.pdf}
-\caption[An example of two Wilson loops lying in a plane, pierced by vortices of finite cross-section.]{\label{fig:VortexSizes}An example of two Wilson loops (dashed lines) lying in a plane, pierced by vortices of finite cross-section (solid lines). \textbf{Left:} The majority of vortices contributing to the phase are fully contained within the large loop, with only a few overlapping at the perimeter. \textbf{Right:} For a small loop, the contribution from overlapping vortices is significant as there are few vortices fully inside the loop.}
-\end{figure}
-
-The final assumption is that the vortex locations are random and uncorrelated from one another. This is perhaps the most significant assumption made in the above picture, as can be seen from the following calculation~\cite{Engelhardt:1999fd}. As vortices must form closed lines in 3D, let us suppose that instead of being randomly distributed, the vortices come in pairs separated by a maximum distance $d$. This corresponds to requiring that vortex lines form a closed loop of some maximum diameter $d$. If this vortex line pierces the Wilson loop in both directions, then the product of the phases, $\exp\left(\frac{2\pi i}{3}\right)\times \exp\left(\frac{-2\pi i}{3}\right) = 1$, results in no contribution to the Wilson loop. Hence, the only vortices capable of contributing a non-trivial phase to the Wilson loop are those contained within a strip of width $d$ about the perimeter of the loop. Note that not every vortex within this strip will contribute a non-trivial phase, as the vortex may be smaller than $d$ or oriented such that the vortex flows in direction of $\partial A$ and thus still pierces twice. We will take the most generous case, however, and assume that every vortex piercing this strip contributes a non-trivial phase. To first order, the area of relevance to to the expectation value of the Wilson loop is now $A_\text{strip}=P(\partial A)\, d$, where $P(\partial A)$ is the length of the perimeter of $A$. The probability to find $N$ vortices lying within this strip is 
+The condition that the vortex locations are uncorrelated has interesting implications~\cite{Engelhardt:1999fd}. As vortices must form closed lines in 3D, let us suppose that instead of being randomly distributed, the vortices come in pairs separated by a maximum distance $d$. This corresponds to requiring that vortex lines form a closed loop of some maximum diameter $d$. If this vortex line pierces the Wilson loop in both directions, then the product of the phases, $\exp\left(\frac{2\pi i}{3}\right)\times \exp\left(\frac{-2\pi i}{3}\right) = 1$, results in no contribution to the Wilson loop. Hence, the only vortices capable of contributing a non-trivial phase to the Wilson loop are those contained within a strip of width $d$ about the perimeter of the loop. Note that not every vortex within this strip will contribute a non-trivial phase, as the vortex may be smaller than $d$ or oriented such that the vortex flows in direction of $\partial A$ and thus still pierces twice. We will take the most generous case, however, and assume that every vortex piercing this strip contributes a non-trivial phase. To first order, the area of relevance to to the expectation value of the Wilson loop is now $A_\text{strip}=P(\partial A)\, d$, where $P(\partial A)$ is the length of the perimeter of $A$. The probability to find $N$ vortices lying within this strip is 
 %
 \begin{equation}
 P_N(n) = \binom{N}{n} \left(\frac{P(\partial A)\, d}{L^2}\right)^n \left(1-\frac{P(\partial A)\, d}{L^2}\right)^{N-n}\, .
@@ -169,15 +163,15 @@ So we see that instead of an area law, we now have a perimeter law for the Wilso
 \end{enumerate}
 
 \subsection{Locating Centre Vortices}\label{sec:LocatingVortices}
-Now that we have motivated the case for the centre vortex model, we wish to consider how it is that we identify vortices on a lattice configuration. The guiding principle behind the method we employ is that we wish to find some way to distinguish between a configuration containing vortices, and the same configuration with the vortices removed. Note that the vortex-free configuration is not necessarily trivial; it will still contain all the short distance physics we wish to ignore. We should therefore discuss how it is that a vortex can be inserted into a configuration to first build up a picture of what it is that separates a configuration containing vortices from one that does not.\\
+Now that we have motivated the case for the centre vortex model, we wish to consider how it is that we identify vortices on a lattice configuration. The guiding principle behind the method we employ is that we wish to find some way to distinguish between a configuration containing vortices, and the same configuration with the vortices removed. Note that the vortex-free configuration is not necessarily trivial; it will still contain short distance physics for example. We should therefore discuss how it is that a vortex can be inserted into a configuration to first build up a picture of what it is that separates a configuration containing vortices from one that does not.\\
 
-We know from the previous section that our vortex insertion must result in a transformation of the Wilson loop containing the vortex such that
+We know from the previous section that our thin vortex insertion must result in a transformation of the Wilson loop containing the vortex such that
 %
 \begin{equation}
-W(C)\rightarrow z W(C),~z = \exp\left(\frac{\pm2\pi i}{3}\right)\, .
+W(C)\rightarrow z W(C),\quad z = \exp\left(\frac{\pm2\pi i}{3}\right)\, .
 \end{equation} 
 %
-It should be apparent that this behaviour is not possible from an ordinary gauge transformation, as the Wilson loop is a gauge invariant quantity. There is an infinite class of gauge transformations that can result in this behaviour, but the key property connecting them is that they are \textit{singular}~\cite{'tHooft:1977hy}. This means that the transformations associate the same point in space with two different values. For example, consider a gauge potential $A_\mu$ undergoing a gauge transformation $\Omega$ around a closed circle $C$. Let $\theta$ be the angular coordinate, and define the gauge transformation
+It should be apparent that this behaviour is not possible from an ordinary gauge transformation, as the Wilson loop is a gauge invariant quantity. In the continuum, there is an infinite class of gauge transformations that can result in this behaviour, but the key property connecting them is that they are \textit{singular}~\cite{'tHooft:1977hy}. This means that the transformations associate the same point in space with two different values. For example, consider a gauge potential $A_\mu$ undergoing a gauge transformation $\Omega$ around a closed circle $C$. Let $x(\theta)$ be the parametrised path around the circle $C$, and define the gauge transformation
 %
 \begin{equation}
 \Omega(\theta) = \exp\left(-i\theta \mathcal{Q}\right),~\theta\in [0,2\pi]\, ,
@@ -187,22 +181,25 @@ It should be apparent that this behaviour is not possible from an ordinary gauge
 where
 %
 \begin{equation}
-\mathcal{Q} = \frac{1}{2}\lambda_3 +\frac{1}{2\sqrt{3}}\lambda_8 = \frac{1}{3}\diag\left(2,-1,-1\right)\label{eq:Q}
+\mathcal{Q} = \frac{1}{2}\lambda_3 +\frac{1}{2\sqrt{3}}\lambda_8 = \frac{1}{3}\diag\left(2,-1,-1\right)\, .\label{eq:Q}
 \end{equation}
-As $\Omega(0) \neq \Omega(2\pi)$, the transformation is singular. According to Eq.~\eqref{eq:LinkTransformation} the gauge link around the path, $U(x(\theta),\theta=0)$, then becomes
+As $\Omega(0) \neq \Omega(2\pi)$, the transformation is singular. According to Eq.~\eqref{eq:LinkTransformation} the Wilson line around the path, $U(x(\theta))$, then becomes
 %
 \begin{equation}
-U(x(\theta),\theta=0) \rightarrow \Omega(2\pi)\,U(x(\theta),\theta=0)\,\Omega(0)\, ,
+U(x(\theta)) \rightarrow \Omega(2\pi)\,U(x(\theta))\,\Omega(0)\, ,
 \end{equation}
 %
 with the corresponding Wilson loop
 %
 \begin{align}
-W_0(C(\theta)) &\rightarrow \Tr\left( \Omega(2\pi)\,U(x(\theta),\theta=0)\,\Omega(0)\right)\\
-&=\Tr\left(\exp\left(\frac{2\pi i}{3}\right)U(x(\theta),\theta=0)\right)\\
+W_0(C(\theta)) &\rightarrow \Tr\left( \Omega(2\pi)\,U(x(\theta))\,\Omega(0)\right)\\
+&=\Tr\left(\exp\left(\frac{2\pi i}{3}\right)U(x(\theta))\right)\\
 &=\exp\left(\frac{2\pi i}{3}\right)\,W_0(C(\theta))\, .
 \end{align}
-We see that through the use of a singular centre transformation we have introduced a  centre vortex to the configuration. Note that the transformation in Eq.~\eqref{eq:SingularGT} is not unique, and if written in Cartesian coordinates the singular nature is replaced by a pole at the centre of the circle. The literature makes use of both these definitions of the vortex gauge transformation~\cite{'tHooft:1977hy,Faber:1999gu}. As our vortex depends only on the angular coordinate, this vortex is infinitely thin, as any size Wilson loop will acquire the vortex flux. Transformations creating thick vortices by adding a radial profile to the singular gauge transformation have been explored in Ref.~\cite{Faber:1997rp}. On the lattice, the singular gauge transformation given in Eq.~\eqref{eq:SingularGT} corresponds to multiplying a single link $U_\mu(x)$ by the centre phase $\exp\left(\frac{2\pi i}{3}\right)$, such that the plaquettes associated with this link are multiplied by the same centre phase, creating in 3D a $1\times 1$ vortex, as seen in Fig.~\ref{fig:CreatedVortex}. Larger vortices are created by multiplying more links by the same centre phase. This suggests that we can consider our gauge links to be of the form
+%
+We see that through the use of a singular centre transformation we have introduced a  centre vortex to the configuration. Note that the transformation in Eq.~\eqref{eq:SingularGT} is not unique. As our vortex depends only on the angular coordinate, what we have inserted here is a thin vortex, as any size Wilson loop will acquire the vortex flux. Transformations creating thick vortices by adding a radial profile to the singular gauge transformation have been explored in Ref.~\cite{Faber:1997rp}.\\
+
+On the lattice, the singular gauge transformation given in Eq.~\eqref{eq:SingularGT} corresponds to multiplying a single link $U_\mu(x)$ by the centre phase $\exp\left(2\pi i/3\right)$, such that the plaquettes associated with this link are multiplied by the same centre phase, creating in 3D a $1\times 1$ vortex, as seen in Fig.~\ref{fig:CreatedVortex}. Larger vortices are created by multiplying more links by the same centre phase. This suggests that we can consider our gauge links to be of the form
 %
 \begin{equation}
 U_\mu(x) = Z_\mu(x)\,R_\mu(x)\, ,
@@ -211,16 +208,16 @@ U_\mu(x) = Z_\mu(x)\,R_\mu(x)\, ,
 %
 where $Z_\mu(x)$ is the `vortex-only' field consisting of centre elements, and $R_\mu(x)$ is the background `vortex-removed' field.\\
 %
-\begin{figure}[htb!]
+\begin{figure}[H]
 \centering
 %\includegraphics[width=0.7\linewidth]{./CreatedVortex.pdf}
 \input{Chapter3/Figs/CreatedVortex.tex}
 \end{tikzpicture}
-\caption[A $+1$ $1\times 1$ vortex created by multiplying the centre link by the centre phase $\exp\left(\frac{2\pi i}{3}\right)$.]{\label{fig:CreatedVortex} A $+1$ $1\times 1$ vortex (blue) piercing the four shaded plaquettes, created by multiplying the centre link (dashed) by the centre phase $\exp\left(\frac{2\pi i}{3}\right)$. Note that there are two more plaquttes in the time direction that have been suppressed, which serve to make the vortex a cube in 4D.}
+\caption[A $+1$ $1\times 1$ vortex created by multiplying the centre link by the centre phase $\exp\left(\frac{2\pi i}{3}\right)$.]{\label{fig:CreatedVortex} A $+1$ $1\times 1$ vortex (blue) piercing the four shaded plaquettes, created by multiplying the centre link (dashed) by the centre phase $\exp\left(\frac{2\pi i}{3}\right)$. Note that there are two more plaquttes in the time direction that have been suppressed, which serve to make the vortex the surface of a cube in 4D space-time.}
 \end{figure}
 %
 
-With the understanding that a configuration containing vortices differs from one that doesn't by a singular gauge transformation, we should consider the \textit{adjoint representation} of $SU(3)$, as it has the property of being invariant under centre transformations. The adjoint representation is defined such that any $SU(3)$ element in this representation can be written in the form $U^A_\mu(x) = \exp\left(i \omega_k(x) f^k\right)$, where $f^k$ are the $8\times 8$ $SU(3)$ structure constants. These constants are given by the Lie algebra relationship
+With the understanding that a configuration containing vortices differs from one that doesn't by a singular gauge transformation, we should consider the \textit{adjoint representation} of $SU(3)$, as it has the property of being invariant under centre transformations~\cite{Faber:1999gu}. The adjoint representation is defined such that any $SU(3)$ element in this representation can be written in the form $U^A_\mu(x) = \exp\left(i \omega_k(x) f^k\right)$, where $f^k$ are the $8\times 8$ $SU(3)$ structure constants. These constants are given by the Lie algebra relationship
 %
 \begin{equation}
 \left[\frac{\lambda_i}{2},\,\frac{\lambda_j}{2}\right] = i\sum_k f_{ij}^{k}\frac{\lambda_k}{2}\, .
@@ -257,7 +254,7 @@ Maximal centre gauge (MCG) is the choice of gauge used to identify vortices in t
 \left\| U _ { \mu } ^ { \Omega } ( x ) - Z _ { \mu } ( x ) \right\|\, ,
 \end{equation}
 %
-is minimised. There are numerous implementations of this gauge~\cite{Montero:1999by,Faber:1999sq}, however we choose to implement it by maximising the ``mesonic'' functional~\cite{Langfeld:2003ev}
+is minimised. There are numerous implementations of this gauge~\cite{Montero:1999by,Faber:1999sq}. We utilise the most common choice in the literature and implement it by maximising the ``mesonic'' functional~\cite{Langfeld:2003ev}
 %
 \begin{equation}
 R = \frac { 1 } { V N _ { \operatorname { dim } } n _ { c } ^ { 2 } } \sum _ { x , \mu } \left| \operatorname { Tr } U _ { \mu } ^ { G } ( x ) \right| ^ { 2 }\, ,
@@ -276,19 +273,13 @@ The details of the above expression are given in Appendix \ref{app:RepMapProof}.
 R^A = \frac { 1 } { V N _ { \operatorname { dim } } n _ { c } ^ { 2 } } \sum _ { x , \mu } \left( \operatorname { Tr } U _ { \mu } ^ { A,\,G } ( x ) \right)\, .
 \end{equation}
 %
-$R^A$ is clearly maximised when $U_\mu^A(x)=I$, which requires that $U_\mu(x) \in Z_3$. Thus, maximising $R^A$ is equivalent to bringing the vortex-removed field $R_\mu(x)$ as close as possible to the identity, which in the idealised case would take $U_\mu(x)\rightarrow Z_\mu(x)$. Of course, it is in general not possible to fully gauge-away the $R_\mu(x)$ field, but we assume that once $R$ is maximised the trace is sufficiently close to the centre phase $Z_\mu(x)$ that it identifies the centre element associated with this link. To then construct the vortex-only field, we simply project onto this nearest centre element. This projection step is not a gauge rotation, and naturally removes all the short-range physics, as we have essentially enforced a trivial background configuration. This projection gives us our three sets of configurations:
-\begin{enumerate}
-\item Original `untouched' fields, $U_{\mu}(x),$
+$R^A$ is clearly maximised when $U_\mu^A(x)=I$, which requires that $U_\mu(x) \in Z_3$. Thus, maximising $R^A$ is equivalent to bringing the vortex-removed field $R_\mu(x)$ as close as possible to the identity, which in the idealised case would take $U_\mu(x)\rightarrow Z_\mu(x)$. Of course, it is in general not possible to fully gauge-away the $R_\mu(x)$ field, but we assume that once $R$ is maximised the trace is sufficiently close to the centre phase $Z_\mu(x)$ that it identifies the centre element associated with this link. To then construct the vortex-only field, we simply project onto this nearest centre element. This gives us a vastly simpler configuration where every gauge link is now one of only three possible elements. Once we have performed this projection, we identify vortices by calculating the value of each plaquette on the lattice, such that
+\begin{align*}
+P_{\mu\nu} &= \exp\left(\frac{2\pi i}{3}\right)\implies +1 \text{ vortex}\\
+P_{\mu\nu} &= \exp\left(-\frac{2\pi i}{3}\right)\implies -1 \text{ vortex.}
+\end{align*}\\
 
-\item Projected vortex-only fields, $Z_{\mu}(x),$
-
-\item Vortex-removed fields, $R_\mu(x) = Z^{\dagger}_{\mu}(x)\,U_{\mu}(x).$
-\end{enumerate}
-These three sets will be collectively referred to as our vortex-modified configurations for the remainder of this research.\\
-
-There are two primary assumptions related to this vortex identification method~\cite{Faber:1999gu}. The first is due to the degeneracy in the maxima of $R$, the so-called Gribov copy issue. This degeneracy results in it being unclear whether a given maxima is the global maxima, or merely local. If it is local, and far from the global maxima, then it is entirely possible that vortices will be misidentified. This is because the background vortex-removed field contribution could be far from the identity, resulting in an incorrect centre phase being obtained when the configuration is projected onto $Z_3$.\\
-
-The second assumption is that the partitioning of $U_\mu(x)$ into $Z_\mu(x)$ and $R_\mu(x)$ is valid. In other words, we assume that the physical thick vortices are sufficiently small such that they can be defined by a series of single-link centre transformations on the lattice, like that shown in Fig.~\ref{fig:CreatedVortex}, rather than by a larger multiple-link transformation, as shown in Fig.~\ref{fig:MultipleLink}. This is equivalent to the discontinuity related to the vortex being larger than a single plaquette. If the vortices are too large, the MCG procedure becomes unable to contract their thickness such that they are identified by a single link.\\
+There are two further points worth making about the MCG method~\cite{Faber:1999gu}. The first is whether the partitioning of $U_\mu(x)$ into $Z_\mu(x)$ and $R_\mu(x)$ is valid. In other words, we assume that the physical thick vortices are sufficiently small such that they can be defined by a series of single-link centre transformations on the lattice, like that shown in Fig.~\ref{fig:CreatedVortex}, rather than by a larger multiple-link transformation, as shown in Fig.~\ref{fig:MultipleLink}. This is equivalent to the discontinuity related to the vortex gauge field being significantly larger than a single plaquette. If the vortices are too thick, the MCG procedure becomes unable to contract their thickness to the point that they are able to be identified by a single link transformation~\cite{Cais:2008za,Kovacs:1999st}.\\
 %
 \begin{figure}[htb!]
 \centering
@@ -297,13 +288,23 @@ The second assumption is that the partitioning of $U_\mu(x)$ into $Z_\mu(x)$ and
 \end{figure}
 %
 
-Although these assumptions are potentially strict, numerical evidence has shown that if a vortex is inserted into a configuration by hand, then the above MCG procedure is capable of consistently identifying its location~\cite{Faber:1999gu,Montero:1999by}. This suggests that the required assumptions are valid to a fair degree, and thus we are motivated to continue to employ this vortex identification method. Furthermore, efforts to improve the obtained value of $R$ through use of simulated annealing~\cite{Bogolubsky:2009dc} or preconditioning~\cite{Cais:2008za} have found that the amount of identified vortices actually decreases as $R$ is increased, and the resulting phenomenology is worse overall. The proposed reasoning for this is that these improvement techniques have the property of increasing the size of vortices, resulting in an amplification of the issue raised above, in which the MCG procedure fails to identify large vortices. Hence, based on these prior findings, we do not attempt to escape the first Gribov region the MCG procedure finds itself in, as in the study of centre vortices it is appropriate to remain near this local maxima.
+The second point is due to the degeneracy in the maxima of $R$, the so-called Gribov copy issue. This degeneracy results in it being unclear whether a given maxima of $R$ is the global maxima, or instead local. The impact of this Gribov issue on centre vortices in $SU(3)$ will form the subject of future work. However, we are confident that the MCG procedure does accurately identify centre vortices. Numerical evidence has shown that if a vortex is inserted into a configuration by hand, then the above MCG procedure is capable of consistently identifying its location~\cite{Faber:1999gu,Montero:1999by}. Furthermore, efforts to improve the obtained value of $R$ through use of simulated annealing~\cite{Bogolubsky:2009dc} or preconditioning~\cite{Cais:2008za} have found that the amount of identified vortices actually decreases as $R$ is increased, and the resulting phenomenology is worse overall. The proposed reasoning for this is that these improvement techniques have the property of increasing the size of vortices, resulting in an amplification of the issue raised above, in which the MCG procedure fails to identify large vortices. Hence, based on these prior findings, we do not attempt to increase $R$ beyond this first local maxima, as in the study of centre vortices it is appropriate to remain near this local maxima.\\  
+
+With the procedure described in this section, we can now construct our vortex-modified ensembles via the following procedure. The untouched configurations are generated in a random gauge, then fixed to maximal centre gauge. From here we define our vortex-only configurations by projecting these MCG configurations onto $Z(3)$. We then define the vortex removed configurations as $R_\mu = Z^{\dagger}_{\mu}(x)\,U_{\mu}(x)$. The vortex-modified configurations are set to a random gauge, then all the ensembles are independently fixed to Landau gauge via the method outlined in Sec.~\ref{sec:LandauGauge}. Hence, the three ensembles utilised for this work are the
+\begin{enumerate}
+\item Original `untouched' fields, $U_{\mu}(x),$
+
+\item Projected vortex-only fields, $Z_{\mu}(x),$
+
+\item Vortex-removed fields, $R_\mu(x).$
+\end{enumerate}
+These three sets will be collectively referred to as our vortex-modified ensembles for the remainder of this research.\\
 
 \subsection{Current Evidence for Centre Vortices}\label{sec:CurrentEvidence}
 Now that we have developed an understanding of centre vortices and how they are located, we can summarise briefly the current lattice evidence surrounding vortices and their relationship to various calculable quantities.
  
 \subsubsection{String Tension}
-As discussed previously in Sec.~\ref{sec:Motivation}, the string tension is the slope of the linear potential observed between two massive, static quarks. In $SU(2)$ studies, it has been shown that vortex removal results in a complete loss of the string tension, and on vortex only configurations it is possible to fully replicate it~\cite{Cais:2008za}. In $SU(3)$ the picture is less clear. Without smoothing (see Chapter~\ref{chapter:Smoothing}), it is only possible to regain $\sim 62\%$ of the original string tension on the vortex only configurations~\cite{Langfeld:2003ev}; however, under vortex removal the string tension vanishes just as in the $SU(2)$ case. It is possible to achieve $\sim 97\%$ agreement between the smoothed untouched and vortex only configurations, however the overall string tension on both configurations is reduced to approximately $37\%$ of the original un-smoothed string tension~\cite{Trewartha:2015ida}.  
+As discussed previously in Sec.~\ref{sec:Motivation}, the string tension is the slope of the linear potential observed between two static quarks. In $SU(2)$ studies, it has been shown that vortex removal results in a complete loss of the string tension, and on vortex only configurations it is possible to fully replicate it~\cite{Cais:2008za}. In $SU(3)$ the picture is less clear. Without smoothing (see Chapter~\ref{chapter:Smoothing}), it is only possible to regain $\sim 62\%$ of the original string tension on the vortex only configurations~\cite{Langfeld:2003ev}; however, under vortex removal the string tension vanishes just as in the $SU(2)$ case. It is possible to achieve $\sim 97\%$ agreement between the smoothed untouched and vortex only configurations, however the overall string tension on both configurations is reduced to approximately $37\%$ of the original un-smoothed string tension~\cite{Trewartha:2015ida}.  
 
 \subsubsection{Hadron Spectrum}
 The low-lying hadron spectrum provides an excellent probe of the presence of dynamical chiral symmetry breaking. By comparing the masses of hadrons that would have degenerate mass if chiral symmetry is restored, we can observe whether dynamical mass generation effects are present. Through use of the overlap fermion action, it has been possible to show in $SU(3)$ that the vortex-only spectrum under a small amount of cooling closely follows the trends of the untouched hadron spectrum~\cite{Trewartha:2017ive}. The slight discrepancy can be attributed to the necessity of cooling when considering the vortex only configurations. On the vortex removed configurations, dynamical mass generation vanishes and hadrons with the same quark content once again become degenerate~\cite{Trewartha:2017ive}. This is a clear signal of the restoration of chiral symmetry. 
@@ -334,7 +335,7 @@ Clearly for $\alpha_C(x) = 0,\,2\pi$ we recover the thin vortex behaviour, howev
 The low momentum behaviour of the gluon propagator, $D(p^2)$ (see Chapter~\ref{chapter:GluonPropagator}), serves as an indicator of confinement. Similar to the mass function, low-momentum enhancement indicates non-perturbative behaviour. In both $SU(2)$ and $SU(3)$ it has been shown that vortex removal indicates a loss of this enhancement, suggesting a loss of confinement~\cite{Bowman:2010zr,Langfeld:2001cz,Quandt:2010yq}. However, vortex only results have not been previously calculated; these results are one of the main accomplishments of this research, and are presented in Chapter~\ref{chapter:GluonPropagatorResults}.
 
 \section{Further Topological Quantities}
-Although not the primary focus of this work, it is informative to  provide a definition for topological charge and introduce the notion of an instanton. Both these quantities provide a useful measure of the topological structure of the lattice, especially when we come to consider smoothing routines in Chapter~\ref{chapter:Smoothing}. Topological charge provides a simple numerical measure of the contribution of all topological objects. Furthermore, there is a connection between the location of topological charge and the geometry of centre vortices, specifically the intersection, touching and writhing points of centre vortices~\cite{Spengler:2018dxt,Reinhardt:2001kf}. Instantons are often used as the reference topological object in the literature~\cite{Moran:2008ra,Trewartha:2015ida}, with preservation of the instanton content of the lattice equated to a preserved topological structure.
+While discussing topological quantities on the lattice, it is informative to provide a definition for topological charge and introduce the notion of an instanton. Both these quantities provide a useful measure of the topological structure of the lattice, especially when we come to consider smoothing routines in Chapter~\ref{chapter:Smoothing}. Topological charge provides a simple numerical measure of the contribution of all topological objects. Furthermore, there is a connection between the location of topological charge density and the geometry of centre vortices, specifically the intersection, touching and writhing points of centre vortices~\cite{Spengler:2018dxt,Reinhardt:2001kf}. Instantons are often used as the reference topological object in the literature~\cite{Moran:2008ra,Trewartha:2015ida}, with preservation of the instanton content of the lattice equated to a preserved topological structure.
 
 \subsection{Topological Charge}\label{sec:TopQ}
 The total topological charge is the `degree' of a particular field configuration, counting how many times $A_\mu$ covers the Lie algebra $\mathfrak{su}(3)$. Given this counting definition, it is clear that the topological charge must be an integer. Numerically, it is given by~\cite{Alexandrou:2017hqw}
@@ -360,7 +361,7 @@ where
 C_{\mu\nu}(x) = \frac{1}{4} \operatorname{Im}\left(P_{\mu\nu}(x) \, P_{\mu\nu}(x-\hat{\mu}) \, P_{\mu\nu}(x - \hat{\nu}) \, P_{\mu\nu}(x - \hat{\mu} - \hat{\nu})\right)\, .
 \end{equation}
 %
-The clover-leaf loop combination is shown in Fig.~\ref{fig:Clover}. Much like the L\"uscher-Weisz gluon action, we can expand this clover definition with larger combinations of loops to remove higher order errors. In our calculation of topological charge in Sec.~\ref{sec:TopChargeVis}, we employ a 5-loop improved topological charge, taking into account a linear combination of $1\times 1$, $2\times 1$, $2\times 2$, $2\times 3$ and $3\times 3$ clover loops~\cite{BilsonThompson:2001ca}. This definition can then be employed to calculate the lattice topological charge density, allowing us to assess the distribution of topological objects in a quantitative manner, as done in Sec.~\ref{sec:TopChargeVis}.
+The clover-leaf loop combination is shown in Fig.~\ref{fig:Clover}. Much like the L\"uscher-Weisz gluon action, we can expand this clover definition with larger combinations of loops to remove higher order errors. In our calculation of topological charge in Sec.~\ref{sec:TopChargeVis}, we employ a 5-loop improved topological charge, taking into account a linear combination of $1\times 1$, $2\times 1$, $2\times 2$, $2\times 3$ and $3\times 3$ clover loops~\cite{BilsonThompson:2001ca}. Although this operator is very large, it should be noted that the algorithm is designed such that 96\% of the topological charge contribution arises from the $1\times 1$ and $2\times 1$ terms, and hence can still be considered a local measure of topological charge density~\cite{BilsonThompson:2002jk}. This definition can then be employed to calculate the lattice topological charge density, allowing us to assess the distribution of topological objects in a quantitative manner, as done in Sec.~\ref{sec:TopChargeVis}.
 %
 \begin{figure}[H]
 \centering
@@ -370,27 +371,9 @@ The clover-leaf loop combination is shown in Fig.~\ref{fig:Clover}. Much like th
 %
 
 \subsection{Instantons}\label{sec:Instantons}
-The QCD vacuum is a non-trivial state, existing as a superposition of an infinite number of degenerate solutions enumerated by a topological quantum number. These solutions can be expressed as a gauge rotation from the trivial $A_\mu=0$ solution according to Eq.~\eqref{eq:GaugePotentialTrans}, such that
-%
-\begin{equation}
-A_\mu = i(\partial_\mu \Omega)\,\Omega^\dagger\, .
-\end{equation}
-%
-These are the so-called `pure gauge' configurations. For these vacuum configurations, the topological charge defined in Eq.~\eqref{eq:TopologicalCharge} has a slightly modified interpretation; it now counts how many times the gauge transformation $\Omega(x)$ covers the group $SU(3)$. If we further require that as $|x|\rightarrow \infty$, $A_\mu\rightarrow 0$, then  Eq.~\eqref{eq:TopologicalCharge} becomes an integral of a total divergence and reduces to the `Pontryagin number' via Stokes' theorem. The topological charge can now be calculated as an integral over the boundary of Euclidean space $S^3$~\cite{ryder1996quantum}
-%
-\begin{equation}
-Q = \frac{1}{24\pi^2}\oint_{S^3} \epsilon_{\mu\nu\rho\sigma} \, \hat{\mu}\Tr\left(\left(\Omega^\dagger \,\partial_\nu \Omega\right)\,\left(\Omega^\dagger \,\partial_\rho \Omega\right)\,\left(\Omega^\dagger \,\partial_\sigma \Omega\right)\right)
-\end{equation}
-%
-This redefined topological charge serves to enumerate the possible vacuum configurations of QCD. To get from one vacuum to another, it is necessary to tunnel through an energetically unfavourable region. An instanton is precisely a configuration that inhabits one vacuum with topological charge $Q_1$ at $t=-\infty$, then tunnels to another vacuum with topological charge $Q_2\neq Q_1$ at $t=\infty$~\cite{Schafer:1996wv}.\\
+Instantons on the lattice are the lowest-action, and therefore classical, vacuum configurations that possess non-trivial topological charge. They are of interest in QCD as it is understood that they are a generator of dynamical quark mass~\cite{Trewartha:2013qga}. Furthermore, the stability of instanton-like objects serves as a useful measure of whether topological objects are being preserved or destroyed by smoothing algorithms, as shall be discussed in more detail in Chapter~\ref{chapter:Smoothing}.\\
 
-To construct the instanton solution of interest to this research, we wish to consider the potential tunnelling between different vacuum states with a difference in topological charge $\Delta Q = Q_2-Q_1 =1$. To find the instanton solution, we impose the condition
-%
-\begin{equation}
-\int d^3x \,\left(q(t=\infty)-q(t=-\infty)\right)=1\, ,
-\end{equation}
-%
-such that the gauge potential is required to inhabit one vacuum at $t=\infty$, and another vacuum at $t=-\infty$. Unfortunately, there is no known analytic solution for an instanton in $SU(3)$. However, there is a known $\Delta Q=1$ instanton in $SU(2)$, known as the Belavin-Polyakov-Schwartz-Tyupkin (BPST) instanton solution~\cite{Belavin:1975fg}. It has the form
+There is a known $Q=1$ instanton solution in $SU(2)$, known as the Belavin-Polyakov-Schwartz-Tyupkin (BPST) instanton solution~\cite{Belavin:1975fg}, which can then be embedded in $SU(3)$. It has the form
 %
 \begin{equation}
 A_\mu(x) = \frac{2\eta_{a\mu\nu}\,x_\nu}{x^2+\rho^2}\,\frac{\sigma^a}{2}\, ,
@@ -409,7 +392,7 @@ where
 \label{eq:EtaSymbol}
 \end{equation}
 %
-$\sigma^a$ are the Pauli matrices and $\rho$ is an arbitrary parameter known as the instanton radius. An anti-instanton solution corresponding to $\Delta Q=-1$ can be obtained by substituting $\eta$ with $\bar{\eta}$, where $\bar{\eta}$ is the same as Eq.~\eqref{eq:EtaSymbol} but with a factor of $-1$ in the last two cases. The action associated with this configuration is 
+$\sigma^a$ are the Pauli matrices (see Appendix~\ref{app:GellMann}) and $\rho$ is an arbitrary parameter known as the instanton radius. An anti-instanton solution corresponding to $Q=-1$ can be obtained by substituting $\eta$ with $\bar{\eta}$, where $\bar{\eta}$ is the same as Eq.~\eqref{eq:EtaSymbol} but with a factor of $-1$ in the last two cases. The action associated with this configuration is 
 %
 \begin{equation}
 S_0 = \frac{8\pi^2}{g^2}\, ,
@@ -422,16 +405,24 @@ and the field strength tensor is given by~\cite{Schafer:1996wv}
 \label{eq:InstantonFieldStrength}
 \end{equation}
 %
-Despite not being an $SU(3)$ instanton, the BPST solution can be embedded in $SU(3)$. This allows for the identification of instanton-like objects on the lattice, as performed in Refs.~\cite{Trewartha:2015ida,Moran:2008qd}. These instanton-like objects can be used to measure how topological objects change under various procedures performed on the lattice. For the purposes of this research we will use the preservation of instantons as a measure of the performance of our smoothing algorithms, described in Chapter~\ref{chapter:Smoothing}. Instanton solutions are also of great interest in their own right; for a review of instantons in QCD see Ref.~\cite{Schafer:1996wv}. 
+The topological charge at the centre of an instanton $x_0$ is given as a function of $\rho$ by~\cite{Trewartha:2013qga}
+%
+\begin{equation}
+q(x_0) = Q\frac{6}{\pi^2\,\rho^4}\, ,\label{eq:InstProfile}
+\end{equation}
+%
+where $Q=\mp 1$ for the (anti-) instanton.\\
+
+Once the BPST solution is embedded in $SU(3)$ it is possible to identify instanton-like objects on the lattice, as performed in Refs.~\cite{Trewartha:2015ida,Moran:2008qd}. These instanton-like objects can be used to measure how topological objects change under various procedures performed on the lattice. For the purposes of this research we will use the preservation of instantons as a measure of the performance of our smoothing algorithms, described in Chapter~\ref{chapter:Smoothing}.
 
 \section{Summary}
 In this chapter we have introduced the important QCD property of confinement and shown that it can be explained by Wilson loops exhibiting an area-law behaviour; that is to say that a Wilson loop of area $A$ is confining if it has expectation value
 %
 \begin{equation}
-\langle W(\partial A)\rangle \approx e^{-\sigma A}\, .
+\langle W(\partial A)\rangle \approx e^{-\sigma A}\, ,
 \end{equation}
 %
-We then demonstrated that the centre vortex model naturally gives rise to precisely this area law behaviour in the case of a sufficiently large loop, and hence suggests that centre vortices are a viable explanation for confinement. From here we showed that we can identify centre vortices on the lattice by fixing our lattice configurations to maximal centre gauge, then projecting onto the nearest centre element. This allows us to define our untouched, vortex removed and vortex only gauge field configurations, collectively referred to as our vortex-modified configurations. We then presented a brief summary of the current evidence for centre vortices, showing that numerical evidence supports the proposal that centre vortices can give rise to all the salient features of QCD. Finally we introduced the notion of topological charge and saw how it can be used to classify the different QCD vacua, with instantons serving as an explanation of tunnelling between these topologically distinct regions. With this background theory sufficiently developed, we are now in a position to consider the specific calculations performed in this research that allow us to investigate the effect of centre vortices on the gluon propagator.
+for large $A$. We then demonstrated that the centre vortex model naturally gives rise to precisely this area law behaviour in the case of a sufficiently large loop, and hence suggests that centre vortices are a viable explanation for confinement. From here we showed that we can identify centre vortices on the lattice by fixing our lattice configurations to maximal centre gauge, then projecting onto the nearest centre element. This allows us to define our untouched, vortex removed and vortex only gauge field configurations, collectively referred to as our vortex-modified configurations. We then presented a brief summary of the current evidence for centre vortices, showing that numerical evidence supports the proposal that centre vortices can give rise to all the salient features of QCD. Finally we introduced the notion of topological charge and saw how it can be used to classify the different QCD vacua, with instantons as an example of a topologically non-trivial field configuration. With this background theory sufficiently developed, we are now in a position to consider the specific calculations performed in this research that allow us to investigate the effect of centre vortices on the gluon propagator.
 
 %A frequently seen mistake is to use `\textbackslash begin\{center\}' \dots `\textbackslash end\{center\}' inside a figure or table environment. This center environment can cause additional vertical space. If you want to avoid that just use `\textbackslash centering'
 %

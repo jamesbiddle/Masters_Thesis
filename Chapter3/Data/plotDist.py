@@ -29,19 +29,22 @@ X2 = [-1,0,1]
 
 f = pypl.figure()
 ax1 = f.add_subplot(111)
-ax1.scatter(X,dataFlat,marker='.',c='#088da5',label='Individual Phases')
-ax1.scatter(X2,avg,c='#cc0000',label='Average Phase', edgecolor='k')
+
+pypl.hlines(33.33, -1.5, 1.5, linestyles='dashed', zorder=1)
+ax1.scatter(X,dataFlat,marker='.',c='#088da5',label='Individual Phases', zorder=2)
+ax1.scatter(X2,avg,c='#cc0000',label='Average Phase', edgecolor='k', zorder=3)
 xi = [-1,0,1]
 def fmt(x,pos):
     if x>0:
         return u"$+1$".format(x)
     else:
         return "${:.0f}$".format(x)
-
+    
 formatter = mplt.ticker.FuncFormatter(fmt)
 ax1.xaxis.set_major_formatter(formatter)
 
 pypl.xticks(xi)
+pypl.xlim(-1.2, 1.2)
 pypl.xlabel('Vortex Phase')
 pypl.ylabel('% of Total Vortices')
 pypl.ylim(33.1,33.5)

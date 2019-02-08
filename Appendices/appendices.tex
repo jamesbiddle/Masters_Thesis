@@ -20,12 +20,12 @@ i & 0
 \end{pmatrix}\\, .
 \end{equation*}
 %
-The $4\times 4$ gamma matrices in the Pauli representation are therefore given by
+The $4\times 4$ gamma matrices in the Dirac representation are therefore given by
 %
 \begin{align*}
 \gamma_i = \begin{pmatrix}
-0 & -i\sigma_i\\
-i\sigma_i & 0
+0 & \sigma_i\\
+-\sigma_i & 0
 \end{pmatrix},
 \hspace{0.5cm}
 \gamma_4 = \begin{pmatrix}
@@ -40,7 +40,7 @@ The gamma matrices in this representation are evidently Hermitian, and satisfy t
 \lbrace \gamma_\mu\, ,\, \gamma_\mu \rbrace = 2\,\delta_{\mu\nu}\, .
 \end{equation*}
 %
-The Gell-Mann matrices $\lambda_a$ are related to the generators of $SU(3)$, $t_a$, by
+The Gell-Mann matrices $\lambda_a$ are related to the generators of $SU(3)$, $t_a$, by~\cite{peskin2018introduction}
 %
 \begin{equation}
 t_a = \frac{\lambda_a}{2}\, .
@@ -106,11 +106,11 @@ U_\mu(x) \rightarrow \Omega(x)\,U_\mu(x)\,\Omega^\dagger(x)
 We can apply a gauge transformation to $A_\mu$ to obtain
 %
 \begin{equation}
-U_\mu(x)\rightarrow\mathcal{P}\exp\left(-ig\int_{x}^{x+a\hat{\mu}}\,dx^\prime\, \Omega(x^\prime)\,A_\mu(x^\prime)\,\Omega^\dagger(x^\prime) + \frac{i}{g}\,(\partial_\mu\,\Omega(x^\prime))\,\Omega^\dagger(x^\prime)\right)\, .
+U_\mu(x)\rightarrow\mathcal{P}\exp\left(-iag\int_0^1\,dt\, \Omega(x(t))\,A_\mu(x(t))\,\Omega^\dagger(x(t)) + \frac{i}{g}\,(\partial_\mu\,\Omega(x(t)))\,\Omega^\dagger(x(t))\right)\, ,
 \label{eq:WilsonLineGT(app)}
 \end{equation}
 %
-To simplify this expression, we need to make use of an equivalent expression for the path-ordered exponential. For a generic path-ordered exponential of a function $a(t)$ we can write
+where $x(t)=x+at\hat{\mu}$. To simplify this expression, we need to make use of an equivalent expression for the path-ordered exponential. For a generic path-ordered exponential of a function $a(t)$ we can write
 %
 \begin{align}
 &\mathcal{P}\left(\int_0^t dt^\prime\, a(t^\prime)\right) = \lim_{N\rightarrow\infty} \left( e^{a(t_N)\Delta t}\,e^{a(t_{N-1})\Delta t}\,\cdots\,e^{a(t_0)\Delta t}\right)\nonumber\\
@@ -149,7 +149,7 @@ U_\mu(x)\rightarrow \Omega(x)\,U_\mu(x)\,\Omega^\dagger(x+a\hat{\mu})\, .
 First, we recall the definitions of the gauge link in the continuum
 %
 \begin{equation}
-U_\mu(x) = \mathcal{P}\exp\left(-ig\int_x^{x+a\hat{\mu}}dx^\prime \, A_\mu(x^\prime)\right)  \, ,
+U_\mu(x) = \mathcal{P}\exp\left(-iag\int_0^1 \,dt \,A_\mu(x + at\hat{\mu})\right)  \, ,
 \label{eq:GaugeLink(app)}
 \end{equation}
 %
@@ -159,23 +159,20 @@ P_{\mu\nu} = U_\mu(x)\,U_\nu(x+a\hat{\mu})\,U^\dagger_\mu(x+a\hat{\nu})\,U^\dagg
 \label{eq:Plaquette(app)}
 \end{equation}
 %
-We can approximate the integral in Eq.~\eqref{eq:GaugeLink(app)} by Taylor expanding $A_\mu(x^\prime)$ around $x^\prime=x$ and explicitly evaluating the integral. Note that once we have Taylor expanded $A_\mu(x^\prime)$, the term within the integral becomes Abelian for all values of $x^\prime$, allowing us to omit the path ordering from Eq.~\eqref{eq:GaugeLink(app)}. Performing the expansion, we find that
+We can approximate the integral in Eq.~\eqref{eq:GaugeLink(app)} by Taylor expanding $A_\mu$ around $a=0$ and explicitly evaluating the integral. Note that once we have Taylor expanded $A_\mu$, the term within the integral commutes with itself for all values of $t$, allowing us to omit the path ordering from Eq.~\eqref{eq:GaugeLink(app)}. Performing the expansion, we find that
 %
 \begin{align}
-U_\mu(x)&=\exp\left(-ig\int_x^{x+a\hat{\mu}} dx^\prime A_\mu\left(x\right) + \sum_\sigma \, \left(\partial^\prime_\sigma A_\mu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
+U_\mu(x)&=\exp\left(-iag\int_0^1 dt A_\mu\left(x\right) + at\partial_\mu A_\mu(x) + \mathcal{O}(a^3)\right)\nonumber\\
 &=\exp\left(-iag A_\mu\left(x\right) - \frac{1}{2}ia^2 g\, \partial_\mu A_\mu\left(x\right)\right)\, . \label{eq:UTaylor}
 \end{align}
 %
-Note that whilst the $\sigma$ index is summed over only the $x^\mu$ term survives the integration, as for all $x^\sigma$, $\sigma\neq \mu$, $(x^{\prime\sigma}-x^\sigma)=0$. Similarly, we evaluate
+Similarly, we evaluate
 %
 \begin{align}
-U_\nu(x+a\hat{\mu}) &= \exp\left(-ig\int_{x+a\hat{\mu}}^{x+a\hat{\mu}+a\hat{\nu}} dx^\prime A_\nu\left(x\right) + \sum_\sigma\,\left(\partial^\prime_\sigma A_\nu(x^\prime)\right)\big|_{x^\prime = x}\,(x^{\prime\sigma} - x^\sigma) + \mathcal{O}(a^3)\right)\nonumber\\
-&= \exp\left( -iag A_\nu(x) - iag\,\partial_\mu A_\nu (x) - ig\int_{x_\nu}^{x_\nu+a} dx^\prime_\nu \, \partial_\nu A_\nu (x) (x^{\prime\nu} - x^\nu)\right)\nonumber\\
+U_\nu(x+a\hat{\mu}) &= \exp\left(-iag\int_0^1 dt A_\nu(x) + a\partial_\mu A_\nu + at\partial_\nu A_\nu + \mathcal{O}(a^3)\right)\nonumber\\
 &= \exp\left(-iag A_\nu(x) - ia^2g\,\partial_\mu A_\nu(x) - \frac{1}{2}ia^2 g\,\partial_\nu A_\nu(x)\right)\, . \label{eq:UTaylor2}
 \end{align}
 %
-The $\partial_\mu A_\nu (x)$ term is retained because for $\sigma = \mu$ we have $(x^{\prime\mu} - x^\mu) = (x^\mu + a\hat{\mu} - x^\mu) = a\hat{\mu}$.\\
-
 We will also require the Baker-Campbell-Hausdorff identity for non-Abelian matrix exponentials
 %
 \begin{equation}
@@ -197,7 +194,7 @@ P_{\mu\nu} &= &&\exp\left(-ig\left(a\,A_\mu(x)+\frac{1}{2}a^2\,\partial_\mu A_\m
 
 \section{Properties of the adjoint representation}
 \label{app:RepMapProof}
-Consider the mapping $H:SU(3)^F\rightarrow SU(3)^A$ defined by
+Consider the mapping $H:SU(3)^\text{fundamental}\rightarrow SU(3)^\text{adjoint}$ defined by
 %
 \begin{equation}
 \left[H(U)\right]_{ij} = \frac{1}{2}\Tr\left(\lambda_i \, U \, \lambda_j\, U^\dagger\right)\, .

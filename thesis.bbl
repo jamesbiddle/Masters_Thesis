@@ -6,7 +6,7 @@
 %Control: page (1) range
 %Control: year (0) verbatim
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{113}%
+\begin{thebibliography}{112}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -95,8 +95,9 @@
   {Nucl.Phys.}\ }\textbf {\bibinfo {volume} {B138}},\ \bibinfo {pages} {1}
   (\bibinfo {year} {1978})}\BibitemShut {NoStop}%
 %%CITATION = NUPHA,B138,1;%%
-\bibitem [{\citenamefont {Biddle}\ \emph {et~al.}(2018)\citenamefont {Biddle},
-  \citenamefont {Kamleh},\ and\ \citenamefont {Leinweber}}]{Biddle:2018dtc}%
+\bibitem [{\citenamefont {Biddle}\ \emph
+  {et~al.}(2018{\natexlab{a}})\citenamefont {Biddle}, \citenamefont {Kamleh},\
+  and\ \citenamefont {Leinweber}}]{Biddle:2018dtc}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {James~C.}\
   \bibnamefont {Biddle}}, \bibinfo {author} {\bibfnamefont {Waseem}\
@@ -105,8 +106,9 @@
   {{Gluon propagator on a center-vortex background}},}\ }\href {\doibase
   10.1103/PhysRevD.98.094504} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
   Rev.}\ }\textbf {\bibinfo {volume} {D98}},\ \bibinfo {pages} {094504}
-  (\bibinfo {year} {2018})},\ \Eprint {http://arxiv.org/abs/1806.04305}
-  {arXiv:1806.04305 [hep-lat]} \BibitemShut {NoStop}%
+  (\bibinfo {year} {2018}{\natexlab{a}})},\ \Eprint
+  {http://arxiv.org/abs/1806.04305} {arXiv:1806.04305 [hep-lat]} \BibitemShut
+  {NoStop}%
 %%CITATION = ARXIV:1806.04305;%%
 \bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2008)\citenamefont {Bowman},
   \citenamefont {Langfeld}, \citenamefont {Leinweber}, \citenamefont {O'~Cais},
@@ -216,12 +218,6 @@
   {034501} (\bibinfo {year} {2011})},\ \Eprint {http://arxiv.org/abs/1010.4624}
   {arXiv:1010.4624 [hep-lat]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1010.4624;%%
-\bibitem [{\citenamefont {Sakurai}(1982)}]{sakurai1982}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont
-  {Sakurai}},\ }\href@noop {} {\emph {\bibinfo {title} {Advanced Quantum
-  Mechanics}}}\ (\bibinfo  {publisher} {Addison-Wesley},\ \bibinfo {year}
-  {1982})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Peskin}(2018)}]{peskin2018introduction}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Michael~E}\
@@ -258,15 +254,6 @@
   {1985}{\natexlab{a}})},\ \bibinfo {note} {[Erratum: Commun. Math.
   Phys.98,433(1985)]}\BibitemShut {NoStop}%
 %%CITATION = CMPHA,97,59;%%
-\bibitem [{\citenamefont {Bing}\ and\ \citenamefont {He}(1999)}]{Bing:1999ee}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Hurl}\ \bibnamefont
-  {Bing}}\ and\ \bibinfo {author} {\bibfnamefont {Lin}\ \bibnamefont {He}},\
-  }\bibfield  {title} {\enquote {\bibinfo {title} {{Gauge symmetry from
-  integral viewpoint}},}\ }\href@noop {} {\  (\bibinfo {year} {1999})},\
-  \Eprint {http://arxiv.org/abs/hep-th/9912189} {arXiv:hep-th/9912189 [hep-th]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-TH/9912189;%%
 \bibitem [{\citenamefont {Lepage}(1998)}]{Lepage:1998dt}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~P.}\ \bibnamefont
@@ -848,17 +835,21 @@
   {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B205}},\
   \bibinfo {pages} {339--344} (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
 %%CITATION = PHLTA,B205,339;%%
-\bibitem [{\citenamefont {Greensite}\ and\ \citenamefont
-  {Halpern}(1983)}]{Greensite:1982be}%
+\bibitem [{\citenamefont {Engelhardt}\ \emph {et~al.}(2004)\citenamefont
+  {Engelhardt}, \citenamefont {Quandt},\ and\ \citenamefont
+  {Reinhardt}}]{Engelhardt:2003wm}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Greensite}}\ and\ \bibinfo {author} {\bibfnamefont {M.~B.}\ \bibnamefont
-  {Halpern}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Suppression of
-  Color Screening at Large $N$}},}\ }\href {\doibase 10.1103/PhysRevD.27.2545}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo
-  {volume} {D27}},\ \bibinfo {pages} {2545} (\bibinfo {year}
-  {1983})}\BibitemShut {NoStop}%
-%%CITATION = PHRVA,D27,2545;%%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Engelhardt}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Quandt}},
+  \ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Reinhardt}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Center vortex model for the
+  infrared sector of SU(3) Yang-Mills theory: Confinement and
+  deconfinement}},}\ }\href {\doibase 10.1016/j.nuclphysb.2004.02.036}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nucl. Phys.}\ }\textbf {\bibinfo
+  {volume} {B685}},\ \bibinfo {pages} {227--248} (\bibinfo {year} {2004})},\
+  \Eprint {http://arxiv.org/abs/hep-lat/0311029} {arXiv:hep-lat/0311029
+  [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/0311029;%%
 \bibitem [{\citenamefont {Engelhardt}\ \emph {et~al.}(2000)\citenamefont
   {Engelhardt}, \citenamefont {Langfeld}, \citenamefont {Reinhardt},\ and\
   \citenamefont {Tennert}}]{Engelhardt:1999fd}%
@@ -915,22 +906,6 @@
   {http://arxiv.org/abs/hep-lat/9911006} {arXiv:hep-lat/9911006 [hep-lat]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/9911006;%%
-\bibitem [{\citenamefont {Bogolubsky}\ \emph {et~al.}(2009)\citenamefont
-  {Bogolubsky}, \citenamefont {Ilgenfritz}, \citenamefont {Muller-Preussker},\
-  and\ \citenamefont {Sternbeck}}]{Bogolubsky:2009dc}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~L.}\ \bibnamefont
-  {Bogolubsky}}, \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
-  {Ilgenfritz}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Muller-Preussker}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {A.}~\bibnamefont {Sternbeck}},\ }\bibfield  {title} {\enquote {\bibinfo
-  {title} {{Lattice gluodynamics computation of Landau gauge Green's functions
-  in the deep infrared}},}\ }\href {\doibase 10.1016/j.physletb.2009.04.076}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo
-  {volume} {B676}},\ \bibinfo {pages} {69--73} (\bibinfo {year} {2009})},\
-  \Eprint {http://arxiv.org/abs/0901.0736} {arXiv:0901.0736 [hep-lat]}
-  \BibitemShut {NoStop}%
-%%CITATION = ARXIV:0901.0736;%%
 \bibitem [{\citenamefont {O'Cais}\ \emph {et~al.}(2010)\citenamefont {O'Cais},
   \citenamefont {Kamleh}, \citenamefont {Langfeld}, \citenamefont {Lasscock},
   \citenamefont {Leinweber}, \citenamefont {Moran}, \citenamefont {Sternbeck},\
@@ -951,6 +926,46 @@
   \Eprint {http://arxiv.org/abs/0807.0264} {arXiv:0807.0264 [hep-lat]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:0807.0264;%%
+\bibitem [{\citenamefont {Kovacs}\ and\ \citenamefont
+  {Tomboulis}(1999)}]{Kovacs:1999st}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Tamas~G.}\
+  \bibnamefont {Kovacs}}\ and\ \bibinfo {author} {\bibfnamefont {E.~T.}\
+  \bibnamefont {Tomboulis}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{On P vortices and the Gribov problem}},}\ }\href {\doibase
+  10.1016/S0370-2693(99)00944-2} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B463}},\ \bibinfo {pages}
+  {104--108} (\bibinfo {year} {1999})},\ \Eprint
+  {http://arxiv.org/abs/hep-lat/9905029} {arXiv:hep-lat/9905029 [hep-lat]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/9905029;%%
+\bibitem [{\citenamefont {Bogolubsky}\ \emph {et~al.}(2009)\citenamefont
+  {Bogolubsky}, \citenamefont {Ilgenfritz}, \citenamefont {Muller-Preussker},\
+  and\ \citenamefont {Sternbeck}}]{Bogolubsky:2009dc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~L.}\ \bibnamefont
+  {Bogolubsky}}, \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
+  {Ilgenfritz}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Muller-Preussker}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Sternbeck}},\ }\bibfield  {title} {\enquote {\bibinfo
+  {title} {{Lattice gluodynamics computation of Landau gauge Green's functions
+  in the deep infrared}},}\ }\href {\doibase 10.1016/j.physletb.2009.04.076}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo
+  {volume} {B676}},\ \bibinfo {pages} {69--73} (\bibinfo {year} {2009})},\
+  \Eprint {http://arxiv.org/abs/0901.0736} {arXiv:0901.0736 [hep-lat]}
+  \BibitemShut {NoStop}%
+%%CITATION = ARXIV:0901.0736;%%
+\bibitem [{\citenamefont {Greensite}\ and\ \citenamefont
+  {Halpern}(1983)}]{Greensite:1982be}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Greensite}}\ and\ \bibinfo {author} {\bibfnamefont {M.~B.}\ \bibnamefont
+  {Halpern}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Suppression of
+  Color Screening at Large $N$}},}\ }\href {\doibase 10.1103/PhysRevD.27.2545}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo
+  {volume} {D27}},\ \bibinfo {pages} {2545} (\bibinfo {year}
+  {1983})}\BibitemShut {NoStop}%
+%%CITATION = PHRVA,D27,2545;%%
 \bibitem [{\citenamefont {Ambjorn}\ \emph
   {et~al.}(1984{\natexlab{a}})\citenamefont {Ambjorn}, \citenamefont {Olesen},\
   and\ \citenamefont {Peterson}}]{Ambjorn:1984mb}%
@@ -1094,6 +1109,21 @@
   {http://arxiv.org/abs/hep-lat/0112034} {arXiv:hep-lat/0112034 [hep-lat]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/0112034;%%
+\bibitem [{\citenamefont {Bilson-Thompson}\ \emph {et~al.}(2003)\citenamefont
+  {Bilson-Thompson}, \citenamefont {Leinweber},\ and\ \citenamefont
+  {Williams}}]{BilsonThompson:2002jk}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Sundance~O.}\
+  \bibnamefont {Bilson-Thompson}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\
+  \bibnamefont {Leinweber}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {Anthony~G.}\ \bibnamefont {Williams}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Highly improved lattice field strength tensor}},}\ }\href
+  {\doibase 10.1016/S0003-4916(03)00009-5} {\bibfield  {journal} {\bibinfo
+  {journal} {Annals Phys.}\ }\textbf {\bibinfo {volume} {304}},\ \bibinfo
+  {pages} {1--21} (\bibinfo {year} {2003})},\ \Eprint
+  {http://arxiv.org/abs/hep-lat/0203008} {arXiv:hep-lat/0203008 [hep-lat]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/0203008;%%
 \bibitem [{\citenamefont {Moran}\ and\ \citenamefont
   {Leinweber}(2008{\natexlab{b}})}]{Moran:2008qd}%
   \BibitemOpen
@@ -1168,6 +1198,76 @@
   \bibinfo {pages} {250--254} (\bibinfo {year}
   {1985}{\natexlab{b}})}\BibitemShut {NoStop}%
 %%CITATION = PHLTA,158B,250;%%
+\bibitem [{\citenamefont {van Ritbergen}\ \emph {et~al.}(1997)\citenamefont
+  {van Ritbergen}, \citenamefont {Vermaseren},\ and\ \citenamefont
+  {Larin}}]{vanRitbergen:1997va}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {van
+  Ritbergen}}, \bibinfo {author} {\bibfnamefont {J.~A.~M.}\ \bibnamefont
+  {Vermaseren}}, \ and\ \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
+  {Larin}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{The Four loop
+  beta function in quantum chromodynamics}},}\ }\href {\doibase
+  10.1016/S0370-2693(97)00370-5} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B400}},\ \bibinfo {pages}
+  {379--384} (\bibinfo {year} {1997})},\ \Eprint
+  {http://arxiv.org/abs/hep-ph/9701390} {arXiv:hep-ph/9701390 [hep-ph]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-PH/9701390;%%
+\bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2004)\citenamefont {Bowman},
+  \citenamefont {Heller}, \citenamefont {Leinweber}, \citenamefont
+  {Parappilly},\ and\ \citenamefont {Williams}}]{Bowman:2004jm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Patrick~O.}\
+  \bibnamefont {Bowman}}, \bibinfo {author} {\bibfnamefont {Urs~M.}\
+  \bibnamefont {Heller}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\
+  \bibnamefont {Leinweber}}, \bibinfo {author} {\bibfnamefont {Maria~B.}\
+  \bibnamefont {Parappilly}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {Anthony~G.}\ \bibnamefont {Williams}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Unquenched gluon propagator in Landau gauge}},}\ }\href
+  {\doibase 10.1103/PhysRevD.70.034509} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D70}},\ \bibinfo {pages}
+  {034509} (\bibinfo {year} {2004})},\ \Eprint
+  {http://arxiv.org/abs/hep-lat/0402032} {arXiv:hep-lat/0402032 [hep-lat]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/0402032;%%
+\bibitem [{\citenamefont {Leinweber}\ \emph {et~al.}(1999)\citenamefont
+  {Leinweber}, \citenamefont {Skullerud}, \citenamefont {Williams},\ and\
+  \citenamefont {Parrinello}}]{Leinweber:1998uu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Derek~B.}\
+  \bibnamefont {Leinweber}}, \bibinfo {author} {\bibfnamefont {Jon~Ivar}\
+  \bibnamefont {Skullerud}}, \bibinfo {author} {\bibfnamefont {Anthony~G.}\
+  \bibnamefont {Williams}}, \ and\ \bibinfo {author} {\bibfnamefont {Claudio}\
+  \bibnamefont {Parrinello}} (\bibinfo {collaboration} {UKQCD}),\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {{Asymptotic scaling and infrared
+  behavior of the gluon propagator}},}\ }\href {\doibase
+  10.1103/PhysRevD.61.079901, 10.1103/PhysRevD.60.094507} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D60}},\
+  \bibinfo {pages} {094507} (\bibinfo {year} {1999})},\ \bibinfo {note}
+  {[Erratum: Phys. Rev.D61,079901(2000)]},\ \Eprint
+  {http://arxiv.org/abs/hep-lat/9811027} {arXiv:hep-lat/9811027 [hep-lat]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/9811027;%%
+\bibitem [{\citenamefont {Boucaud}\ \emph {et~al.}(2006)\citenamefont
+  {Boucaud}, \citenamefont {Bruntjen}, \citenamefont {Leroy}, \citenamefont
+  {Le~Yaouanc}, \citenamefont {Lokhov}, \citenamefont {Micheli}, \citenamefont
+  {Pene}, \citenamefont {Rodriguez-Quintero},\ and\ \citenamefont
+  {Roiesnel}}]{Boucaud:2006pc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Philippe}\
+  \bibnamefont {Boucaud}}, \bibinfo {author} {\bibfnamefont {Th.}\ \bibnamefont
+  {Bruntjen}}, \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont {Leroy}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Le~Yaouanc}}, \bibinfo
+  {author} {\bibfnamefont {A.~Y.}\ \bibnamefont {Lokhov}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Micheli}}, \bibinfo {author} {\bibfnamefont
+  {O.}~\bibnamefont {Pene}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Rodriguez-Quintero}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Roiesnel}},\ }\bibfield  {title} {\enquote {\bibinfo
+  {title} {{Short comment about the lattice gluon propagator at vanishing
+  momentum}},}\ }\href@noop {} {\  (\bibinfo {year} {2006})},\ \Eprint
+  {http://arxiv.org/abs/hep-lat/0602006} {arXiv:hep-lat/0602006 [hep-lat]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/0602006;%%
 \bibitem [{\citenamefont {Marenzoni}\ \emph {et~al.}(1995)\citenamefont
   {Marenzoni}, \citenamefont {Martinelli},\ and\ \citenamefont
   {Stella}}]{Marenzoni:1994ap}%
@@ -1229,21 +1329,6 @@
   Rev.}\ }\textbf {\bibinfo {volume} {D21}},\ \bibinfo {pages} {2308--2315}
   (\bibinfo {year} {1980})}\BibitemShut {NoStop}%
 %%CITATION = PHRVA,D21,2308;%%
-\bibitem [{\citenamefont {Bilson-Thompson}\ \emph {et~al.}(2003)\citenamefont
-  {Bilson-Thompson}, \citenamefont {Leinweber},\ and\ \citenamefont
-  {Williams}}]{BilsonThompson:2002jk}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Sundance~O.}\
-  \bibnamefont {Bilson-Thompson}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\
-  \bibnamefont {Leinweber}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {Anthony~G.}\ \bibnamefont {Williams}},\ }\bibfield  {title} {\enquote
-  {\bibinfo {title} {{Highly improved lattice field strength tensor}},}\ }\href
-  {\doibase 10.1016/S0003-4916(03)00009-5} {\bibfield  {journal} {\bibinfo
-  {journal} {Annals Phys.}\ }\textbf {\bibinfo {volume} {304}},\ \bibinfo
-  {pages} {1--21} (\bibinfo {year} {2003})},\ \Eprint
-  {http://arxiv.org/abs/hep-lat/0203008} {arXiv:hep-lat/0203008 [hep-lat]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/0203008;%%
 \bibitem [{\citenamefont {Albanese}\ \emph {et~al.}(1987)\citenamefont
   {Albanese} \emph {et~al.}}]{Albanese:1987ds}%
   \BibitemOpen
@@ -1324,76 +1409,6 @@
   {http://arxiv.org/abs/hep-lat/0110196} {arXiv:hep-lat/0110196 [hep-lat]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/0110196;%%
-\bibitem [{\citenamefont {van Ritbergen}\ \emph {et~al.}(1997)\citenamefont
-  {van Ritbergen}, \citenamefont {Vermaseren},\ and\ \citenamefont
-  {Larin}}]{vanRitbergen:1997va}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {van
-  Ritbergen}}, \bibinfo {author} {\bibfnamefont {J.~A.~M.}\ \bibnamefont
-  {Vermaseren}}, \ and\ \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
-  {Larin}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{The Four loop
-  beta function in quantum chromodynamics}},}\ }\href {\doibase
-  10.1016/S0370-2693(97)00370-5} {\bibfield  {journal} {\bibinfo  {journal}
-  {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B400}},\ \bibinfo {pages}
-  {379--384} (\bibinfo {year} {1997})},\ \Eprint
-  {http://arxiv.org/abs/hep-ph/9701390} {arXiv:hep-ph/9701390 [hep-ph]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-PH/9701390;%%
-\bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2004)\citenamefont {Bowman},
-  \citenamefont {Heller}, \citenamefont {Leinweber}, \citenamefont
-  {Parappilly},\ and\ \citenamefont {Williams}}]{Bowman:2004jm}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Patrick~O.}\
-  \bibnamefont {Bowman}}, \bibinfo {author} {\bibfnamefont {Urs~M.}\
-  \bibnamefont {Heller}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\
-  \bibnamefont {Leinweber}}, \bibinfo {author} {\bibfnamefont {Maria~B.}\
-  \bibnamefont {Parappilly}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {Anthony~G.}\ \bibnamefont {Williams}},\ }\bibfield  {title} {\enquote
-  {\bibinfo {title} {{Unquenched gluon propagator in Landau gauge}},}\ }\href
-  {\doibase 10.1103/PhysRevD.70.034509} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D70}},\ \bibinfo {pages}
-  {034509} (\bibinfo {year} {2004})},\ \Eprint
-  {http://arxiv.org/abs/hep-lat/0402032} {arXiv:hep-lat/0402032 [hep-lat]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/0402032;%%
-\bibitem [{\citenamefont {Leinweber}\ \emph {et~al.}(1999)\citenamefont
-  {Leinweber}, \citenamefont {Skullerud}, \citenamefont {Williams},\ and\
-  \citenamefont {Parrinello}}]{Leinweber:1998uu}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Derek~B.}\
-  \bibnamefont {Leinweber}}, \bibinfo {author} {\bibfnamefont {Jon~Ivar}\
-  \bibnamefont {Skullerud}}, \bibinfo {author} {\bibfnamefont {Anthony~G.}\
-  \bibnamefont {Williams}}, \ and\ \bibinfo {author} {\bibfnamefont {Claudio}\
-  \bibnamefont {Parrinello}} (\bibinfo {collaboration} {UKQCD}),\ }\bibfield
-  {title} {\enquote {\bibinfo {title} {{Asymptotic scaling and infrared
-  behavior of the gluon propagator}},}\ }\href {\doibase
-  10.1103/PhysRevD.61.079901, 10.1103/PhysRevD.60.094507} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D60}},\
-  \bibinfo {pages} {094507} (\bibinfo {year} {1999})},\ \bibinfo {note}
-  {[Erratum: Phys. Rev.D61,079901(2000)]},\ \Eprint
-  {http://arxiv.org/abs/hep-lat/9811027} {arXiv:hep-lat/9811027 [hep-lat]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/9811027;%%
-\bibitem [{\citenamefont {Boucaud}\ \emph {et~al.}(2006)\citenamefont
-  {Boucaud}, \citenamefont {Bruntjen}, \citenamefont {Leroy}, \citenamefont
-  {Le~Yaouanc}, \citenamefont {Lokhov}, \citenamefont {Micheli}, \citenamefont
-  {Pene}, \citenamefont {Rodriguez-Quintero},\ and\ \citenamefont
-  {Roiesnel}}]{Boucaud:2006pc}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Philippe}\
-  \bibnamefont {Boucaud}}, \bibinfo {author} {\bibfnamefont {Th.}\ \bibnamefont
-  {Bruntjen}}, \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont {Leroy}},
-  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Le~Yaouanc}}, \bibinfo
-  {author} {\bibfnamefont {A.~Y.}\ \bibnamefont {Lokhov}}, \bibinfo {author}
-  {\bibfnamefont {J.}~\bibnamefont {Micheli}}, \bibinfo {author} {\bibfnamefont
-  {O.}~\bibnamefont {Pene}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Rodriguez-Quintero}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {C.}~\bibnamefont {Roiesnel}},\ }\bibfield  {title} {\enquote {\bibinfo
-  {title} {{Short comment about the lattice gluon propagator at vanishing
-  momentum}},}\ }\href@noop {} {\  (\bibinfo {year} {2006})},\ \Eprint
-  {http://arxiv.org/abs/hep-lat/0602006} {arXiv:hep-lat/0602006 [hep-lat]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/0602006;%%
 \bibitem [{\citenamefont {Bertle}\ \emph {et~al.}(2001)\citenamefont {Bertle},
   \citenamefont {Engelhardt},\ and\ \citenamefont {Faber}}]{Bertle:2001xd}%
   \BibitemOpen
@@ -1407,21 +1422,43 @@
   (\bibinfo {year} {2001})},\ \Eprint {http://arxiv.org/abs/hep-lat/0104004}
   {arXiv:hep-lat/0104004 [hep-lat]} \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/0104004;%%
-\bibitem [{\citenamefont {Engelhardt}\ \emph {et~al.}(2004)\citenamefont
-  {Engelhardt}, \citenamefont {Quandt},\ and\ \citenamefont
-  {Reinhardt}}]{Engelhardt:2003wm}%
+\bibitem [{\citenamefont {Biddle}\ \emph
+  {et~al.}(2018{\natexlab{b}})\citenamefont {Biddle}, \citenamefont {Kamleh},
+  \citenamefont {Leinweber},\ and\ \citenamefont {Trewartha}}]{Biddle:2018a}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Engelhardt}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Quandt}},
-  \ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Reinhardt}},\
-  }\bibfield  {title} {\enquote {\bibinfo {title} {{Center vortex model for the
-  infrared sector of SU(3) Yang-Mills theory: Confinement and
-  deconfinement}},}\ }\href {\doibase 10.1016/j.nuclphysb.2004.02.036}
-  {\bibfield  {journal} {\bibinfo  {journal} {Nucl. Phys.}\ }\textbf {\bibinfo
-  {volume} {B685}},\ \bibinfo {pages} {227--248} (\bibinfo {year} {2004})},\
-  \Eprint {http://arxiv.org/abs/hep-lat/0311029} {arXiv:hep-lat/0311029
-  [hep-lat]} \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/0311029;%%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {James}\ \bibnamefont
+  {Biddle}}, \bibinfo {author} {\bibfnamefont {Waseem}\ \bibnamefont {Kamleh}},
+  \bibinfo {author} {\bibfnamefont {Derek~B.}\ \bibnamefont {Leinweber}}, \
+  and\ \bibinfo {author} {\bibfnamefont {Daniel}\ \bibnamefont {Trewartha}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Visualizations of Centre
+  Vortex Structure}},}\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle}
+  {{Proceedings, 36th Annual International Symposium on Lattice Field Theory
+  (Lattice 2018): 22-28 July, 2018 Michigan State University, East Lansing,
+  Michigan, USA.}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {PoS}\ }\textbf {\bibinfo {volume} {LATTICE2018}},\ \bibinfo {pages} {325}
+  (\bibinfo {year} {2018}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Biddle}\ \emph
+  {et~al.}(2018{\natexlab{c}})\citenamefont {Biddle}, \citenamefont
+  {Charvetto}, \citenamefont {Kamleh}, \citenamefont {Leinweber}, \citenamefont
+  {Piercy}, \citenamefont {Puckridge}, \citenamefont {Stokes}, \citenamefont
+  {Young},\ and\ \citenamefont {Zanotti}}]{Biddle:2018b}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {James}\ \bibnamefont
+  {Biddle}}, \bibinfo {author} {\bibfnamefont {Josh}\ \bibnamefont
+  {Charvetto}}, \bibinfo {author} {\bibfnamefont {Waseem}\ \bibnamefont
+  {Kamleh}}, \bibinfo {author} {\bibfnamefont {Derek~B.}\ \bibnamefont
+  {Leinweber}}, \bibinfo {author} {\bibfnamefont {Helen}\ \bibnamefont
+  {Piercy}}, \bibinfo {author} {\bibfnamefont {Ethan}\ \bibnamefont
+  {Puckridge}}, \bibinfo {author} {\bibfnamefont {Finn}\ \bibnamefont
+  {Stokes}}, \bibinfo {author} {\bibfnamefont {Ross}\ \bibnamefont {Young}}, \
+  and\ \bibinfo {author} {\bibfnamefont {James}\ \bibnamefont {Zanotti}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Publicising Lattice Field
+  Theory through Visualisation}},}\ }\bibfield  {booktitle} {\emph {\bibinfo
+  {booktitle} {{Proceedings, 36th Annual International Symposium on Lattice
+  Field Theory (Lattice 2018): 22-28 July, 2018 Michigan State University, East
+  Lansing, Michigan, USA.}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {PoS}\ }\textbf {\bibinfo {volume} {LATTICE2018}},\ \bibinfo
+  {pages} {256} (\bibinfo {year} {2018}{\natexlab{c}})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bertle}\ \emph {et~al.}(1999)\citenamefont {Bertle},
   \citenamefont {Faber}, \citenamefont {Greensite},\ and\ \citenamefont
   {Olejnik}}]{Bertle:1999tw}%
@@ -1461,26 +1498,6 @@
   {http://arxiv.org/abs/hep-th/9907139} {arXiv:hep-th/9907139 [hep-th]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-TH/9907139;%%
-\bibitem [{\citenamefont {Cornwall}(2000)}]{Cornwall:1999xw}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {John~M.}\ \bibnamefont
-  {Cornwall}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Center
-  vortices, nexuses, and fractional topological charge}},}\ }\href {\doibase
-  10.1103/PhysRevD.61.085012} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
-  Rev.}\ }\textbf {\bibinfo {volume} {D61}},\ \bibinfo {pages} {085012}
-  (\bibinfo {year} {2000})},\ \Eprint {http://arxiv.org/abs/hep-th/9911125}
-  {arXiv:hep-th/9911125 [hep-th]} \BibitemShut {NoStop}%
-%%CITATION = HEP-TH/9911125;%%
-\bibitem [{\citenamefont {Cornwall}(1998)}]{Cornwall:1998ef}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {John~M.}\ \bibnamefont
-  {Cornwall}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Nexus
-  solitons in the center vortex picture of QCD}},}\ }\href {\doibase
-  10.1103/PhysRevD.58.105028} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
-  Rev.}\ }\textbf {\bibinfo {volume} {D58}},\ \bibinfo {pages} {105028}
-  (\bibinfo {year} {1998})},\ \Eprint {http://arxiv.org/abs/hep-th/9806007}
-  {arXiv:hep-th/9806007 [hep-th]} \BibitemShut {NoStop}%
-%%CITATION = HEP-TH/9806007;%%
 \bibitem [{\citenamefont {Bruckmann}\ and\ \citenamefont
   {Engelhardt}(2003)}]{Bruckmann:2003yd}%
   \BibitemOpen

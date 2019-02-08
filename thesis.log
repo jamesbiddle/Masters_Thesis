@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.14)  5 FEB 2019 12:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.14)  8 FEB 2019 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1584,78 +1584,7 @@ tex) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-lines.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count196
-\float@exts=\toks44
-\float@box=\box61
-\@float@everytoks=\toks45
-\@floatcapt=\box62
-)
-\@float@every@figure=\toks46
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-\c@subfigure=\count197
-\c@subtable=\count198
-)
-(/usr/share/texlive/texmf-dist/tex/latex/mwe/mwe.sty
-Package: mwe 2012/05/15 v0.3 Package to support minimal working examples (MWE)
-
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count199
-)
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-Normal \count register pool exhausted, switching to extended pool.
-\c@blindtext=\count277
-\c@Blindtext=\count278
-\c@blind@countparstart=\count279
-\blind@countxx=\count280
-\blindtext@numBlindtext=\count281
-\blind@countyy=\count282
-\c@blindlist=\count283
-\c@blindlistlevel=\count284
-\c@blindlist@level=\count285
-\blind@listitem=\count286
-\c@blind@listcount=\count287
-\c@blind@levelcount=\count288
-\blind@mathformula=\count289
-\blind@Mathformula=\count290
-\c@blind@randomcount=\count291
-\c@blind@randommax=\count292
-\c@blind@pangramcount=\count293
-\c@blind@pangrammax=\count294
-))
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen267
-\lightrulewidth=\dimen268
-\cmidrulewidth=\dimen269
-\belowrulesep=\dimen270
-\belowbottomsep=\dimen271
-\aboverulesep=\dimen272
-\abovetopsep=\dimen273
-\cmidrulesep=\dimen274
-\cmidrulekern=\dimen275
-\defaultaddspace=\dimen276
-\@cmidla=\count295
-\@cmidlb=\count296
-\@aboverulesep=\dimen277
-\@belowrulesep=\dimen278
-\@thisruleclass=\count297
-\@lastruleclass=\count298
-\@thisrulewidth=\dimen279
-)
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen280
-)
-(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/media9/media9.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
 
@@ -1669,31 +1598,32 @@ L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
 L3 Module: l3str 2016/01/03 v6357 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/01/05 v6366 L3 Integers
-\c_max_int=\count299
-\l_tmpa_int=\count300
-\l_tmpb_int=\count301
-\g_tmpa_int=\count302
-\g_tmpb_int=\count303
+\c_max_int=\count196
+\l_tmpa_int=\count197
+\l_tmpb_int=\count198
+\g_tmpa_int=\count199
+Normal \count register pool exhausted, switching to extended pool.
+\g_tmpb_int=\count277
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count304
+\g__prg_map_int=\count278
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2015/09/28 v6113 L3 Messages
 L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
-\l_iow_line_count_int=\count305
-\l__iow_target_count_int=\count306
-\l__iow_current_line_int=\count307
-\l__iow_current_word_int=\count308
-\l__iow_current_indentation_int=\count309
+\l_iow_line_count_int=\count279
+\l__iow_target_count_int=\count280
+\l__iow_current_line_int=\count281
+\l__iow_current_word_int=\count282
+\l__iow_current_indentation_int=\count283
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen281
-\c_max_dim=\dimen282
-\l_tmpa_dim=\dimen283
-\l_tmpb_dim=\dimen284
-\g_tmpa_dim=\dimen285
-\g_tmpb_dim=\dimen286
+\c_zero_dim=\dimen267
+\c_max_dim=\dimen268
+\l_tmpa_dim=\dimen269
+\l_tmpb_dim=\dimen270
+\g_tmpa_dim=\dimen271
+\g_tmpb_dim=\dimen272
 \c_zero_skip=\skip67
 \c_max_skip=\skip68
 \l_tmpa_skip=\skip69
@@ -1707,120 +1637,308 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count310
-\l_keys_choice_int=\count311
+\g__keyval_level_int=\count284
+\l_keys_choice_int=\count285
 L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
-\c__fp_leading_shift_int=\count312
-\c__fp_middle_shift_int=\count313
-\c__fp_trailing_shift_int=\count314
-\c__fp_big_leading_shift_int=\count315
-\c__fp_big_middle_shift_int=\count316
-\c__fp_big_trailing_shift_int=\count317
-\c__fp_Bigg_leading_shift_int=\count318
-\c__fp_Bigg_middle_shift_int=\count319
-\c__fp_Bigg_trailing_shift_int=\count320
+\c__fp_leading_shift_int=\count286
+\c__fp_middle_shift_int=\count287
+\c__fp_trailing_shift_int=\count288
+\c__fp_big_leading_shift_int=\count289
+\c__fp_big_middle_shift_int=\count290
+\c__fp_big_trailing_shift_int=\count291
+\c__fp_Bigg_leading_shift_int=\count292
+\c__fp_Bigg_middle_shift_int=\count293
+\c__fp_Bigg_trailing_shift_int=\count294
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
-\c_empty_box=\box63
-\l_tmpa_box=\box64
-\l_tmpb_box=\box65
-\g_tmpa_box=\box66
-\g_tmpb_box=\box67
+\c_empty_box=\box61
+\l_tmpa_box=\box62
+\l_tmpb_box=\box63
+\g_tmpa_box=\box64
+\g_tmpb_box=\box65
 L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
-\l__coffin_internal_box=\box68
-\l__coffin_internal_dim=\dimen287
-\l__coffin_offset_x_dim=\dimen288
-\l__coffin_offset_y_dim=\dimen289
-\l__coffin_x_dim=\dimen290
-\l__coffin_y_dim=\dimen291
-\l__coffin_x_prime_dim=\dimen292
-\l__coffin_y_prime_dim=\dimen293
-\c_empty_coffin=\box69
-\l__coffin_aligned_coffin=\box70
-\l__coffin_aligned_internal_coffin=\box71
-\l_tmpa_coffin=\box72
-\l_tmpb_coffin=\box73
-\l__coffin_display_coffin=\box74
-\l__coffin_display_coord_coffin=\box75
-\l__coffin_display_pole_coffin=\box76
-\l__coffin_display_offset_dim=\dimen294
-\l__coffin_display_x_dim=\dimen295
-\l__coffin_display_y_dim=\dimen296
+\l__coffin_internal_box=\box66
+\l__coffin_internal_dim=\dimen273
+\l__coffin_offset_x_dim=\dimen274
+\l__coffin_offset_y_dim=\dimen275
+\l__coffin_x_dim=\dimen276
+\l__coffin_y_dim=\dimen277
+\l__coffin_x_prime_dim=\dimen278
+\l__coffin_y_prime_dim=\dimen279
+\c_empty_coffin=\box67
+\l__coffin_aligned_coffin=\box68
+\l__coffin_aligned_internal_coffin=\box69
+\l_tmpa_coffin=\box70
+\l_tmpb_coffin=\box71
+\l__coffin_display_coffin=\box72
+\l__coffin_display_coord_coffin=\box73
+\l__coffin_display_pole_coffin=\box74
+\l__coffin_display_offset_dim=\dimen280
+\l__coffin_display_x_dim=\dimen281
+\l__coffin_display_y_dim=\dimen282
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen297
-\l__box_bottom_dim=\dimen298
-\l__box_left_dim=\dimen299
-\l__box_right_dim=\dimen300
-\l__box_top_new_dim=\dimen301
-\l__box_bottom_new_dim=\dimen302
-\l__box_left_new_dim=\dimen303
-\l__box_right_new_dim=\dimen304
-\l__box_internal_box=\box77
-\l__coffin_bounding_shift_dim=\dimen305
-\l__coffin_left_corner_dim=\dimen306
-\l__coffin_right_corner_dim=\dimen307
-\l__coffin_bottom_corner_dim=\dimen308
-\l__coffin_top_corner_dim=\dimen309
-\l__coffin_scaled_total_height_dim=\dimen310
-\l__coffin_scaled_width_dim=\dimen311
+\l__box_top_dim=\dimen283
+\l__box_bottom_dim=\dimen284
+\l__box_left_dim=\dimen285
+\l__box_right_dim=\dimen286
+\l__box_top_new_dim=\dimen287
+\l__box_bottom_new_dim=\dimen288
+\l__box_left_new_dim=\dimen289
+\l__box_right_new_dim=\dimen290
+\l__box_internal_box=\box75
+\l__coffin_bounding_shift_dim=\dimen291
+\l__coffin_left_corner_dim=\dimen292
+\l__coffin_right_corner_dim=\dimen293
+\l__coffin_bottom_corner_dim=\dimen294
+\l__coffin_top_corner_dim=\dimen295
+\l__coffin_scaled_total_height_dim=\dimen296
+\l__coffin_scaled_width_dim=\dimen297
 L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count321
+\l__driver_color_stack_int=\count295
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count322
-\l__xparse_m_args_int=\count323
-\l__xparse_mandatory_args_int=\count324
-\l__xparse_processor_int=\count325
-\l__xparse_v_nesting_int=\count326
-)
-Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
+Package: l3regex 2016/01/19 v6377 L3 Experimental regular expressions
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
+Package: l3tl-build 2016/01/19 v6377 L3 Experimental token list construction
+\l__tl_build_start_index_int=\count296
+\l__tl_build_index_int=\count297
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
+Package: l3tl-analysis 2015/11/09 v6244 L3 Experimental token lists analysis
+\l__tl_analysis_normal_int=\count298
+\l__tl_analysis_index_int=\count299
+\l__tl_analysis_nesting_int=\count300
+\l__tl_analysis_type_int=\count301
+) (/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
+Package: l3flag 2016/01/19 v6377 L3 Experimental flags
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
+Package: l3str-convert 2015/09/26 v6106 L3 Experimental string encoding convers
+ions
+\l__str_internal_int=\count302
+\c__str_replacement_char_int=\count303
+)
+\l__regex_internal_a_int=\count304
+\l__regex_internal_b_int=\count305
+\l__regex_internal_c_int=\count306
+\l__regex_balance_int=\count307
+\l__regex_group_level_int=\count308
+\l__regex_mode_int=\count309
+\l__regex_catcodes_int=\count310
+\l__regex_default_catcodes_int=\count311
+\c__regex_catcode_D_int=\count312
+\c__regex_catcode_S_int=\count313
+\c__regex_catcode_L_int=\count314
+\c__regex_catcode_O_int=\count315
+\c__regex_catcode_A_int=\count316
+\c__regex_all_catcodes_int=\count317
+\l__regex_show_lines_int=\count318
+\l__regex_min_state_int=\count319
+\l__regex_max_state_int=\count320
+\l__regex_left_state_int=\count321
+\l__regex_right_state_int=\count322
+\l__regex_capturing_group_int=\count323
+\l__regex_min_pos_int=\count324
+\l__regex_max_pos_int=\count325
+\l__regex_current_pos_int=\count326
+\l__regex_start_pos_int=\count327
+\l__regex_success_pos_int=\count328
+\l__regex_current_char_int=\count329
+\l__regex_current_catcode_int=\count330
+\l__regex_last_char_int=\count331
+\l__regex_case_changed_char_int=\count332
+\l__regex_current_state_int=\count333
+\l__regex_step_int=\count334
+\l__regex_min_active_int=\count335
+\l__regex_max_active_int=\count336
+\l__regex_replacement_csnames_int=\count337
+\l__regex_match_count_int=\count338
+\l__regex_submatch_int=\count339
+\l__regex_zeroth_submatch_int=\count340
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
 )
-\l__siunitx_tmp_box=\box78
-\l__siunitx_tmp_dim=\dimen312
-\l__siunitx_tmp_int=\count327
-\l__siunitx_number_mantissa_length_int=\count328
-\l__siunitx_number_uncert_length_int=\count329
-\l__siunitx_round_int=\count330
-\l__siunitx_process_decimal_int=\count331
-\l__siunitx_process_uncertainty_int=\count332
-\l__siunitx_process_fixed_int=\count333
-\l__siunitx_process_integer_min_int=\count334
-\l__siunitx_process_precision_int=\count335
-\l__siunitx_group_min_int=\count336
-\l__siunitx_angle_marker_box=\box79
-\l__siunitx_angle_unit_box=\box80
-\l__siunitx_angle_marker_dim=\dimen313
-\l__siunitx_angle_unit_dim=\dimen314
-\l__siunitx_unit_int=\count337
-\l__siunitx_unit_denominator_int=\count338
-\l__siunitx_unit_numerator_int=\count339
-\l__siunitx_unit_prefix_int=\count340
-\l__siunitx_unit_prefix_base_int=\count341
-\l__siunitx_unit_prefix_gram_int=\count342
-\l__siunitx_number_product_int=\count343
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count341
+\l__xparse_m_args_int=\count342
+\l__xparse_mandatory_args_int=\count343
+\l__xparse_processor_int=\count344
+\l__xparse_v_nesting_int=\count345
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/atenddvi.sty
+Package: atenddvi 2007/04/17 v1.1 At end DVI hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count346
+Package zref Info: New property: abspage on input line 62.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
+Package: zref-lastpage 2012/04/04 v2.24 Module lastpage for zref (HO)
+Package zref Info: New property list: LastPage on input line 55.
+))
+Package: media9 2016/03/11 v0.67 acrobat-9/X compatible media
+\g_mix_pkgresizeflag_int=\count347
+
+(/usr/share/texlive/texmf-dist/tex/latex/media9/pdfbase.sty
+Package: pdfbase 2016/03/11 v0.7 driver independent access to low-level PDF fea
+tures
+\g_pbs_oc_int=\count348
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2016/03/11 v0.6 support package for ocgx2.sty
+)
+\l_mix_poster_box=\box76
+\g_mix_wd_dim=\dimen298
+\g_mix_ht_dim=\dimen299
+\g_mix_dp_dim=\dimen300
+\g_mix_rmcnt_int=\count349
+\l_mix_viewcnt_int=\count350
+\g@mix@page@int=\count351
+\g_mix_resizeflag_int=\count352
+\l_mix_lineno_int=\count353
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addmediapath with sig. 'm' on line 818.
+.................................................
+\l_mix_pbtn_box=\box77
+\mix@btn@dim=\dimen301
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \includemedia with sig. 'O{}mm' on line 1210.
+.................................................
+\g_mix_mbtncnt_int=\count354
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \mediabutton with sig. 'O{}m' on line 2416.
+.................................................
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count355
+\float@exts=\toks44
+\float@box=\box78
+\@float@everytoks=\toks45
+\@floatcapt=\box79
+)
+\@float@every@figure=\toks46
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count356
+\c@subtable=\count357
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mwe/mwe.sty
+Package: mwe 2012/05/15 v0.3 Package to support minimal working examples (MWE)
+
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count358
+)
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count359
+\c@Blindtext=\count360
+\c@blind@countparstart=\count361
+\blind@countxx=\count362
+\blindtext@numBlindtext=\count363
+\blind@countyy=\count364
+\c@blindlist=\count365
+\c@blindlistlevel=\count366
+\c@blindlist@level=\count367
+\blind@listitem=\count368
+\c@blind@listcount=\count369
+\c@blind@levelcount=\count370
+\blind@mathformula=\count371
+\blind@Mathformula=\count372
+\c@blind@randomcount=\count373
+\c@blind@randommax=\count374
+\c@blind@pangramcount=\count375
+\c@blind@pangrammax=\count376
+))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen302
+\lightrulewidth=\dimen303
+\cmidrulewidth=\dimen304
+\belowrulesep=\dimen305
+\belowbottomsep=\dimen306
+\aboverulesep=\dimen307
+\abovetopsep=\dimen308
+\cmidrulesep=\dimen309
+\cmidrulekern=\dimen310
+\defaultaddspace=\dimen311
+\@cmidla=\count377
+\@cmidlb=\count378
+\@aboverulesep=\dimen312
+\@belowrulesep=\dimen313
+\@thisruleclass=\count379
+\@lastruleclass=\count380
+\@thisrulewidth=\dimen314
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen315
+)
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
+\l__siunitx_tmp_box=\box80
+\l__siunitx_tmp_dim=\dimen316
+\l__siunitx_tmp_int=\count381
+\l__siunitx_number_mantissa_length_int=\count382
+\l__siunitx_number_uncert_length_int=\count383
+\l__siunitx_round_int=\count384
+\l__siunitx_process_decimal_int=\count385
+\l__siunitx_process_uncertainty_int=\count386
+\l__siunitx_process_fixed_int=\count387
+\l__siunitx_process_integer_min_int=\count388
+\l__siunitx_process_precision_int=\count389
+\l__siunitx_group_min_int=\count390
+\l__siunitx_angle_marker_box=\box81
+\l__siunitx_angle_unit_box=\box82
+\l__siunitx_angle_marker_dim=\dimen317
+\l__siunitx_angle_unit_dim=\dimen318
+\l__siunitx_unit_int=\count391
+\l__siunitx_unit_denominator_int=\count392
+\l__siunitx_unit_numerator_int=\count393
+\l__siunitx_unit_prefix_int=\count394
+\l__siunitx_unit_prefix_base_int=\count395
+\l__siunitx_unit_prefix_gram_int=\count396
+\l__siunitx_number_product_int=\count397
 \c__siunitx_one_fill_skip=\skip73
 \l__siunitx_table_unit_align_skip=\skip74
-\l__siunitx_table_exponent_dim=\dimen315
-\l__siunitx_table_integer_dim=\dimen316
-\l__siunitx_table_mantissa_dim=\dimen317
-\l__siunitx_table_marker_dim=\dimen318
-\l__siunitx_table_result_dim=\dimen319
-\l__siunitx_table_uncert_dim=\dimen320
-\l__siunitx_table_fill_pre_dim=\dimen321
-\l__siunitx_table_fill_post_dim=\dimen322
-\l__siunitx_table_fill_mid_dim=\dimen323
-\l__siunitx_table_pre_box=\box81
-\l__siunitx_table_post_box=\box82
-\l__siunitx_table_mantissa_box=\box83
-\l__siunitx_table_result_box=\box84
+\l__siunitx_table_exponent_dim=\dimen319
+\l__siunitx_table_integer_dim=\dimen320
+\l__siunitx_table_mantissa_dim=\dimen321
+\l__siunitx_table_marker_dim=\dimen322
+\l__siunitx_table_result_dim=\dimen323
+\l__siunitx_table_uncert_dim=\dimen324
+\l__siunitx_table_fill_pre_dim=\dimen325
+\l__siunitx_table_fill_post_dim=\dimen326
+\l__siunitx_table_fill_mid_dim=\dimen327
+\l__siunitx_table_pre_box=\box83
+\l__siunitx_table_post_box=\box84
+\l__siunitx_table_mantissa_box=\box85
+\l__siunitx_table_result_box=\box86
 \l__siunitx_table_number_align_skip=\skip75
 \l__siunitx_table_text_align_skip=\skip76
 .................................................
@@ -1949,16 +2067,16 @@ Package: translator 2010/06/12 ver 1.10
 mappings.tex))) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip77
-\enit@outerparindent=\dimen324
+\enit@outerparindent=\dimen328
 \enit@toks=\toks47
-\enit@inbox=\box85
-\enitdp@description=\count344
+\enit@inbox=\box87
+\enitdp@description=\count398
 ) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip78
 \bibsep=\skip79
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count345
+\c@NAT@ctr=\count399
 )
 (/usr/share/texlive/texmf-dist/tex/latex/notoccite/notoccite.sty
 Package: notoccite 2000/07/20
@@ -2002,16 +2120,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count346
-\scratchdimen=\dimen325
-\scratchbox=\box86
-\nofMPsegments=\count347
-\nofMParguments=\count348
+\scratchcounter=\count400
+\scratchdimen=\dimen329
+\scratchbox=\box88
+\nofMPsegments=\count401
+\nofMParguments=\count402
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count349
-\MPscratchDim=\dimen326
-\MPnumerator=\count350
-\makeMPintoPDFobject=\count351
+\MPscratchCnt=\count403
+\MPscratchDim=\dimen330
+\MPnumerator=\count404
+\makeMPintoPDFobject=\count405
 \everyMPtoPDFconversion=\toks49
 )
 LaTeX Info: Redefining \microtypecontext on input line 110.
@@ -2028,7 +2146,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box87
+\AtBeginShipoutBox=\box89
 Package hyperref Info: Link coloring ON on input line 110.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -2037,7 +2155,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count352
+\c@section@level=\count406
 )
 LaTeX Info: Redefining \ref on input line 110.
 LaTeX Info: Redefining \pageref on input line 110.
@@ -2096,7 +2214,7 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
-\c__siunitx_mathsf_int=\count353
+\c__siunitx_mathsf_int=\count407
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 110.
 
 
@@ -2153,7 +2271,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count354
+\c__siunitx_mathtt_int=\count408
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 110
 .
 
@@ -2164,22 +2282,22 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\PHD@Title=\box88
-\PHD@crest=\box89
+\PHD@Title=\box90
+\PHD@crest=\box91
 
-<Figs/UofA-LogoVertical.png, id=216, 996.72375pt x 833.1125pt>
+<Figs/UofA-LogoVertical.png, id=212, 996.72375pt x 833.1125pt>
 File: Figs/UofA-LogoVertical.png Graphic file (type png)
 
 <use Figs/UofA-LogoVertical.png>
 Package pdftex.def Info: Figs/UofA-LogoVertical.png used on input line 114.
 (pdftex.def)             Requested size: 349.97023pt x 292.52174pt.
-\PHD@collegecrest=\box90
-\PHD@author=\box91
-\PHD@supervisor=\box92
-\PHD@advisor=\box93
-\PHD@dept=\box94
-\PHD@submission=\box95
-\PHD@collegedate=\box96
+\PHD@collegecrest=\box92
+\PHD@author=\box93
+\PHD@supervisor=\box94
+\PHD@advisor=\box95
+\PHD@dept=\box96
+\PHD@submission=\box97
+\PHD@collegedate=\box98
 \PHD@titlepagespacing=\skip80
  [1
 
@@ -2250,16 +2368,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 \openout8 = `thesis.lof'.
 
  [14]
-[15]
 \openout2 = `nomenclature.nlo.aux'.
 
 
 No file nomenclature.nlo.tex.
-(./thesis.nls) [16
-
-
-
-]
+(./thesis.nls)
 \openout2 = `Chapter1/chapter1.aux'.
 
  (./Chapter1/chapter1.tex
@@ -2275,6 +2388,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
  []
 
 [1
+
+
+
 
 
 ]
@@ -2320,46 +2436,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 220--223
+Underfull \hbox (badness 10000) in paragraph at lines 204--207
 
  []
 
-[11] (./Chapter2/Figs/LatticeExample.tex
+(./Chapter2/Figs/LatticeExample.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-) [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
+) [11] [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 337--340
+Underfull \hbox (badness 10000) in paragraph at lines 321--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 355--357
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 392--396
-
- []
-
-[17]
-Overfull \hbox (3.11446pt too wide) detected at line 416
+Overfull \hbox (3.11446pt too wide) detected at line 380
 [][] \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 ga[] [] [] [] \OT1/lmr/m/n/12 + \OMS/lm
 sy/m/n/12 O []  \OML/lmm/m/it/12 :
  []
 
-[18]) [19]
+[16]) [17]
 \openout2 = `Chapter3/chapter3.aux'.
 
- (./Chapter3/chapter3.tex [20
+ (./Chapter3/chapter3.tex [18
 
 
 
@@ -2375,7 +2486,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[21]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
@@ -2385,123 +2496,153 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[22] [23]
-<Chapter3/Figs/./centre_vortex.pdf, id=722, 269.00482pt x 118.08978pt>
+[20] [21]
+<Chapter3/Figs/./centre_vortex.pdf, id=686, 269.00482pt x 118.08978pt>
 File: Chapter3/Figs/./centre_vortex.pdf Graphic file (type pdf)
 
 <use Chapter3/Figs/./centre_vortex.pdf>
 Package pdftex.def Info: Chapter3/Figs/./centre_vortex.pdf used on input line 5
 5.
-(pdftex.def)             Requested size: 437.46112pt x 192.04137pt.
- [24 <./Chapter3/Figs/./centre_vortex.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
+(pdftex.def)             Requested size: 393.71233pt x 172.8367pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 133--136
+[22 <./Chapter3/Figs/./centre_vortex.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
-<Chapter3/Figs/./VortexDistribution.pdf, id=750, 425.90805pt x 315.83257pt>
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 135--138
+
+ []
+
+[24]
+<Chapter3/Figs/./VortexDistribution.pdf, id=727, 425.90805pt x 315.83257pt>
 File: Chapter3/Figs/./VortexDistribution.pdf Graphic file (type pdf)
 
 <use Chapter3/Figs/./VortexDistribution.pdf>
 Package pdftex.def Info: Chapter3/Figs/./VortexDistribution.pdf used on input l
-ine 140.
-(pdftex.def)             Requested size: 425.907pt x 315.83179pt.
- [26]
-<Chapter3/Figs/./LargeVortex.pdf, id=768, 550.55687pt x 256.07669pt>
-File: Chapter3/Figs/./LargeVortex.pdf Graphic file (type pdf)
-
-<use Chapter3/Figs/./LargeVortex.pdf>
-Package pdftex.def Info: Chapter3/Figs/./LargeVortex.pdf used on input line 149
-.
-(pdftex.def)             Requested size: 437.46112pt x 203.47841pt.
- [27 <./Chapter3/Figs/./VortexDistribution.pdf>] [28 <./Chapter3/Figs/./LargeVo
-rtex.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+ine 142.
+(pdftex.def)             Requested size: 393.71233pt x 291.95741pt.
+ [25]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-[29] [30] (./Chapter3/Figs/CreatedVortex.tex
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-) [31]
-Underfull \hbox (badness 10000) in paragraph at lines 247--250
+[26 <./Chapter3/Figs/./VortexDistribution.pdf>] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 198--201
 
  []
 
-[32] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+(./Chapter3/Figs/CreatedVortex.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Underfull \hbox (badness 10000) in paragraph at lines 207--217
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
-
- []
-
-(./Chapter3/Figs/MultipleLinkVortex.tex) [34] [35] [36] [37]
-(./Chapter3/Figs/Clover.tex
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-) [38]
-Underfull \hbox (badness 10000) in paragraph at lines 383--386
+[28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 244--247
 
  []
 
-[39] [40]) [41]
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+(./Chapter3/Figs/MultipleLinkVortex.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[31] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+[33] [34] [35] (./Chapter3/Figs/Clover.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 412--415
+
+ []
+
+[37]) [38]
 \openout2 = `Chapter4/chapter4.aux'.
 
- (./Chapter4/chapter4.tex [42
-
-
-
-]
+ (./Chapter4/chapter4.tex
 Chapter 4.
-[43] [44] [45] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 162--165
+[39
+
+
+
+] [40] [41] [42]
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
 
  []
 
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 233--236
+
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
-<Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf, id=1115, 415.93329pt 
+<Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf, id=1098, 415.93329pt 
 x 333.64912pt>
 File: Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf Graphic file (typ
 e pdf)
  <use Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf>
 Package pdftex.def Info: Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pd
-f used on input line 198.
+f used on input line 244.
 (pdftex.def)             Requested size: 437.46112pt x 350.93756pt.
 
-[48] [49 <./Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 225--228
+Underfull \hbox (badness 10000) in paragraph at lines 240--246
+
+ []
+
+[46] [47 <./Chapter4/Figs/./ScalarGluComp_q2_MomentumComparison.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 271--274
 
  []
 
 
-<Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf, id=1194, 425.51596pt x 333.35114
+<Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf, id=1172, 425.51596pt x 333.35114
 pt>
 File: Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf Graphic file (type pdf)
  <use Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf>
 Package pdftex.def Info: Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf used on i
-nput line 233.
+nput line 279.
 (pdftex.def)             Requested size: 437.46112pt x 342.71968pt.
-) [50] [51 <./Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf>]
+) [48] [49 <./Chapter4/Figs/./ScalarGluComp_q2_NoCoolU.pdf>]
 \openout2 = `Chapter5/chapter5.aux'.
 
- (./Chapter5/chapter5.tex [52
+ (./Chapter5/chapter5.tex [50
 
 
 
@@ -2517,12 +2658,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[53] (./Chapter5/Figs/staple.tex) [54] [55]
+[51] (./Chapter5/Figs/staple.tex) [52] [53]
 Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
-[56]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
@@ -2532,35 +2673,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
 
-[57]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 126--130
 
  []
 
-[58]
-<Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf, id=1334, 415.93329pt x 333.3
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+<Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf, id=1308, 415.93329pt x 333.3
 5114pt>
 File: Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf Graphic file (type pdf)
  <use Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf>
 Package pdftex.def Info: Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf used 
-on input line 155.
+on input line 156.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
- [59] [60 <./Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf>]
-<Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf, id=1394, 415.93329pt x 333
+ [57] [58 <./Chapter5/Figs/./ScalarGluComp_q2_1to10sweeps.pdf>]
+<Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf, id=1369, 415.93329pt x 333
 .35114pt>
 File: Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf Graphic file (type pdf
 )
  <use Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf>
 Package pdftex.def Info: Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf use
-d on input line 173.
+d on input line 174.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
- [61 <./Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf>]) [62]
+ [59 <./Chapter5/Figs/./ScalarGluComp_q2_SmearCoolComp.pdf>]) [60]
 \openout2 = `Chapter6/chapter6.aux'.
 
  (./Chapter6/chapter6.tex
 Chapter 6.
 
-<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf, id=1468, 415.93329pt x 333.351
+<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf, id=1446, 415.93329pt x 333.351
 14pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf Graphic file (type pdf)
  <use Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf>
@@ -2568,172 +2714,159 @@ Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf used on
  input line 19.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
 
-<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf, id=1469, 415.93329pt x 333.35
+Underfull \hbox (badness 10000) in paragraph at lines 15--21
+
+ []
+
+[61
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+<Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf, id=1457, 415.93329pt x 333.35
 114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf Graphic file (type pdf)
  <use Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum2.pdf used o
-n input line 25.
+n input line 30.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-[63
-
-
-
-] [64 <./Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf>] [65 <./Chapter6/Figs/
-./ScalarGluComp_q2_NoCoolSum2.pdf>]
-<Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf, id=1603, 424.33969pt x 333.35
+ [62 <./Chapter6/Figs/./ScalarGluComp_q2_NoCoolSum.pdf>] [63 <./Chapter6/Figs/.
+/ScalarGluComp_q2_NoCoolSum2.pdf>]
+<Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf, id=1580, 424.33969pt x 333.35
 114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf Graphic file (type pdf)
  <use Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf used o
-n input line 58.
-(pdftex.def)             Requested size: 393.71233pt x 309.30632pt.
- [66]
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
+n input line 61.
+(pdftex.def)             Requested size: 437.46112pt x 343.67595pt.
+ [64
 
- []
-
-[67 <./Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
-
- []
-
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+] [65 <./Chapter6/Figs/./ScalarGluComp_q2_CrossTerms.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-
- []
-
-[69]
-<Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf, id=1692, 415.93329pt x 333.3
+<Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf, id=1637, 415.93329pt x 333.3
 5114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf Graphic file (type pdf)
  <use Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf used 
-on input line 152.
+on input line 97.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 93--99
+
+ []
+
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-<Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf, id=1696, 415.93329pt x 333
+<Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf, id=1648, 415.93329pt x 333
 .35114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf Graphic file (type pdf
 )
  <use Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf use
-d on input line 162.
+d on input line 107.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+ [67 <./Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[70] <Chapter6/Figs/./ActionMatch.pdf, id=1713, 437.95305pt x 333.64912pt>
+[68 <./Chapter6/Figs/./ScalarGluComp_q2_1to10sweepsVO.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+<Chapter6/Figs/./ActionMatch.pdf, id=1760, 437.95305pt x 333.64912pt>
 File: Chapter6/Figs/./ActionMatch.pdf Graphic file (type pdf)
 
 <use Chapter6/Figs/./ActionMatch.pdf>
-Package pdftex.def Info: Chapter6/Figs/./ActionMatch.pdf used on input line 173
+Package pdftex.def Info: Chapter6/Figs/./ActionMatch.pdf used on input line 118
 .
-(pdftex.def)             Requested size: 437.46112pt x 333.28174pt.
+(pdftex.def)             Requested size: 393.71233pt x 299.9505pt.
 
-<Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf, id=1714, 415.93329pt x 33
+<Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf, id=1761, 415.93329pt x 33
 3.35114pt>
 File: Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf Graphic file (type pd
 f)
  <use Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf>
 Package pdftex.def Info: Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf us
-ed on input line 196.
+ed on input line 141.
 (pdftex.def)             Requested size: 437.46112pt x 350.62413pt.
- [71 <./Chapter6/Figs/./ScalarGluComp_q2_10sweepsAll.pdf>] [72 <./Chapter6/Figs
-/./ScalarGluComp_q2_1to10sweepsVO.pdf>] [73 <./Chapter6/Figs/./ActionMatch.pdf>
-] [74 <./Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+ [69
 
- []
-
-<Chapter6/Figs/./UTcool10.pdf, id=1927, 539.31578pt x 421.19826pt>
+ <./Chapter6/Figs/./ActionMatch.pdf>] [70]
+<Chapter6/Figs/./UTcool10.pdf, id=1824, 539.31578pt x 421.19826pt>
 File: Chapter6/Figs/./UTcool10.pdf Graphic file (type pdf)
 
 <use Chapter6/Figs/./UTcool10.pdf>
-Package pdftex.def Info: Chapter6/Figs/./UTcool10.pdf used on input line 208.
+Package pdftex.def Info: Chapter6/Figs/./UTcool10.pdf used on input line 158.
 (pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
 
-<Chapter6/Figs/./UTcool40.pdf, id=1928, 539.31578pt x 421.19826pt>
+<Chapter6/Figs/./UTcool40.pdf, id=1825, 539.31578pt x 421.19826pt>
 File: Chapter6/Figs/./UTcool40.pdf Graphic file (type pdf)
 
 <use Chapter6/Figs/./UTcool40.pdf>
-Package pdftex.def Info: Chapter6/Figs/./UTcool40.pdf used on input line 212.
+Package pdftex.def Info: Chapter6/Figs/./UTcool40.pdf used on input line 162.
 (pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
 
-<Chapter6/Figs/./VOPGcool10.pdf, id=1929, 539.31578pt x 421.19826pt>
+<Chapter6/Figs/./VOPGcool10.pdf, id=1826, 539.31578pt x 421.19826pt>
 File: Chapter6/Figs/./VOPGcool10.pdf Graphic file (type pdf)
 
 <use Chapter6/Figs/./VOPGcool10.pdf>
-Package pdftex.def Info: Chapter6/Figs/./VOPGcool10.pdf used on input line 216.
+Package pdftex.def Info: Chapter6/Figs/./VOPGcool10.pdf used on input line 166.
 
 (pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
 
-<Chapter6/Figs/./VOPGcool40.pdf, id=1930, 539.31578pt x 421.19826pt>
+<Chapter6/Figs/./VOPGcool40.pdf, id=1827, 539.31578pt x 421.19826pt>
 File: Chapter6/Figs/./VOPGcool40.pdf Graphic file (type pdf)
 
 <use Chapter6/Figs/./VOPGcool40.pdf>
-Package pdftex.def Info: Chapter6/Figs/./VOPGcool40.pdf used on input line 220.
+Package pdftex.def Info: Chapter6/Figs/./VOPGcool40.pdf used on input line 170.
 
 (pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
 
-<Chapter6/Figs/./VRcool10.pdf, id=1931, 539.31578pt x 421.19826pt>
+<Chapter6/Figs/./VRcool10.pdf, id=1828, 539.31578pt x 421.19826pt>
 File: Chapter6/Figs/./VRcool10.pdf Graphic file (type pdf)
 
 <use Chapter6/Figs/./VRcool10.pdf>
-Package pdftex.def Info: Chapter6/Figs/./VRcool10.pdf used on input line 224.
+Package pdftex.def Info: Chapter6/Figs/./VRcool10.pdf used on input line 174.
 (pdftex.def)             Requested size: 218.73056pt x 170.82214pt.
 
-<Chapter6/Figs/./VRcool40.pdf, id=1932, 535.18823pt x 421.19826pt>
+<Chapter6/Figs/./VRcool40.pdf, id=1829, 535.18823pt x 421.19826pt>
 File: Chapter6/Figs/./VRcool40.pdf Graphic file (type pdf)
 
 <use Chapter6/Figs/./VRcool40.pdf>
-Package pdftex.def Info: Chapter6/Figs/./VRcool40.pdf used on input line 228.
+Package pdftex.def Info: Chapter6/Figs/./VRcool40.pdf used on input line 178.
 (pdftex.def)             Requested size: 218.73056pt x 172.1461pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 206--230
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 156--180
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 206--230
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 156--180
 []$ $[]$
  []
 
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 206--230
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 156--180
 []$ $[]$ 
  []
 
-) [75
-
-] [76 <./Chapter6/Figs/./UTcool10.pdf> <./Chapter6/Figs/./UTcool40.pdf
+) [71 <./Chapter6/Figs/./ScalarGluComp_q2_UVOActionMatch.pdf>] [72] [73 <./Chap
+ter6/Figs/./UTcool10.pdf> <./Chapter6/Figs/./UTcool40.pdf
 
 pdfTeX warning: pdflatex (file ./Chapter6/Figs/./UTcool40.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
@@ -2756,236 +2889,252 @@ multiple pdfs with page group included in a single page
 >]
 \openout2 = `Chapter7/chapter7.aux'.
 
- (./Chapter7/chapter7.tex
-Chapter 7.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 13.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 13.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 17.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [77
+ (./Chapter7/chapter7.tex [74
 
 
 
 ]
-(./Chapter7/Figs/SpaceVortices.tex
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-<Chapter7/Figs/Plaq_CFG95_T01.png, id=2051, 1226.5825pt x 696.6025pt>
-File: Chapter7/Figs/Plaq_CFG95_T01.png Graphic file (type png)
 
-<use Chapter7/Figs/Plaq_CFG95_T01.png>
-Package pdftex.def Info: Chapter7/Figs/Plaq_CFG95_T01.png used on input line 37
-.
-(pdftex.def)             Requested size: 437.46112pt x 248.43826pt.
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
-<Chapter7/Figs/Plaq_CFG95_T02.png, id=2052, 1234.6125pt x 644.4075pt>
-File: Chapter7/Figs/Plaq_CFG95_T02.png Graphic file (type png)
+ []
 
-<use Chapter7/Figs/Plaq_CFG95_T02.png>
-Package pdftex.def Info: Chapter7/Figs/Plaq_CFG95_T02.png used on input line 42
-.
-(pdftex.def)             Requested size: 437.46112pt x 228.3287pt.
-
-<Chapter7/Figs/./plaqt1_line.png, id=2053, 667.49374pt x 611.28375pt>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 16.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 16.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 20.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [75]
+(./Chapter7/Figs/SpaceVortices.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+) [76]
+<Chapter7/Figs/./plaqt1_line.png, id=2024, 667.49374pt x 611.28375pt>
 File: Chapter7/Figs/./plaqt1_line.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqt1_line.png>
-Package pdftex.def Info: Chapter7/Figs/./plaqt1_line.png used on input line 50.
+Package pdftex.def Info: Chapter7/Figs/./plaqt1_line.png used on input line 39.
 
 (pdftex.def)             Requested size: 131.23967pt x 120.18388pt.
 
-<Chapter7/Figs/./plaqt1_loop.png, id=2054, 322.20375pt x 290.08376pt>
+<Chapter7/Figs/./plaqt1_loop.png, id=2025, 322.20375pt x 290.08376pt>
 File: Chapter7/Figs/./plaqt1_loop.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqt1_loop.png>
-Package pdftex.def Info: Chapter7/Figs/./plaqt1_loop.png used on input line 53.
+Package pdftex.def Info: Chapter7/Figs/./plaqt1_loop.png used on input line 42.
 
 (pdftex.def)             Requested size: 131.23967pt x 118.16049pt.
 
-<Chapter7/Figs/./plaqt1_monopole.png, id=2055, 428.60126pt x 365.365pt>
+<Chapter7/Figs/./plaqt1_monopole.png, id=2026, 428.60126pt x 365.365pt>
 File: Chapter7/Figs/./plaqt1_monopole.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqt1_monopole.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqt1_monopole.png used on input line
- 56.
+ 45.
 (pdftex.def)             Requested size: 131.23967pt x 111.8738pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+<Chapter7/Figs/Plaq_CFG95_T01.png, id=2029, 1226.5825pt x 696.6025pt>
+File: Chapter7/Figs/Plaq_CFG95_T01.png Graphic file (type png)
+
+<use Chapter7/Figs/Plaq_CFG95_T01.png>
+Package pdftex.def Info: Chapter7/Figs/Plaq_CFG95_T01.png used on input line 65
+.
+(pdftex.def)             Requested size: 1226.57951pt x 696.6008pt.
+<<./Chapter7/U3D/Plaq_CFG95_T01.u3d>><<3Dmenu.js>>
+<Chapter7/Figs/Plaq_CFG95_T02.png, id=2048, 1234.6125pt x 644.4075pt>
+File: Chapter7/Figs/Plaq_CFG95_T02.png Graphic file (type png)
+
+<use Chapter7/Figs/Plaq_CFG95_T02.png>
+Package pdftex.def Info: Chapter7/Figs/Plaq_CFG95_T02.png used on input line 84
+.
+(pdftex.def)             Requested size: 1234.6095pt x 644.40593pt.
+<<./Chapter7/U3D/Plaq_CFG95_T02.u3d>>
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-<Chapter7/Figs/./VortexBranching.pdf, id=2067, 495.62163pt x 187.84178pt>
+<Chapter7/Figs/./VortexBranching.pdf, id=2072, 495.62163pt x 187.84178pt>
 File: Chapter7/Figs/./VortexBranching.pdf Graphic file (type pdf)
 
 <use Chapter7/Figs/./VortexBranching.pdf>
 Package pdftex.def Info: Chapter7/Figs/./VortexBranching.pdf used on input line
- 67.
-(pdftex.def)             Requested size: 262.47934pt x 99.484pt.
- [78] [79 <./Chapter7/Figs/Plaq_CFG95_T01.png> <./Chapter7/Figs/Plaq_CFG95_T02.
-png>] [80 <./Chapter7/Figs/./plaqt1_line.png> <./Chapter7/Figs/./plaqt1_loop.pn
-g> <./Chapter7/Figs/./plaqt1_monopole.png> <./Chapter7/Figs/./VortexBranching.p
-df>] (./Chapter7/Figs/p1TimeVortex.tex) (./Chapter7/Figs/m1TimeVortex.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 79--94
+ 97.
+(pdftex.def)             Requested size: 393.71233pt x 149.22458pt.
+ [77
+
+ <./Chapter7/Figs/./plaqt1_line.png> <./Chapter7/Figs/./plaqt1_loop.png> <./Cha
+pter7/Figs/./plaqt1_monopole.png>] [78 <./Chapter7/Figs/Plaq_CFG95_T01.png> <./
+Chapter7/Figs/Plaq_CFG95_T02.png>] [79 <./Chapter7/Figs/./VortexBranching.pdf>]
+ (./Chapter7/Figs/p1TimeVortex.tex) (./Chapter7/Figs/m1TimeVortex.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 110--125
 
  []
 
-[81] <Chapter7/Figs/PlaqLink_CFG95_T01.png, id=2110, 1228.59pt x 623.32875pt>
+<Chapter7/Figs/PlaqLink_CFG95_T01.png, id=2107, 1228.59pt x 623.32875pt>
 File: Chapter7/Figs/PlaqLink_CFG95_T01.png Graphic file (type png)
 
 <use Chapter7/Figs/PlaqLink_CFG95_T01.png>
 Package pdftex.def Info: Chapter7/Figs/PlaqLink_CFG95_T01.png used on input lin
-e 99.
-(pdftex.def)             Requested size: 437.46112pt x 221.94427pt.
-
-<Chapter7/Figs/PlaqLink_CFG95_T02.png, id=2111, 1237.62375pt x 632.3625pt>
+e 142.
+(pdftex.def)             Requested size: 1228.587pt x 623.32722pt.
+<<./Chapter7/U3D/PlaqLink_CFG95_T01.u3d>>
+<Chapter7/Figs/PlaqLink_CFG95_T02.png, id=2122, 1237.62375pt x 632.3625pt>
 File: Chapter7/Figs/PlaqLink_CFG95_T02.png Graphic file (type png)
 
 <use Chapter7/Figs/PlaqLink_CFG95_T02.png>
 Package pdftex.def Info: Chapter7/Figs/PlaqLink_CFG95_T02.png used on input lin
-e 105.
-(pdftex.def)             Requested size: 437.46112pt x 223.52052pt.
- [82 <./Chapter7/Figs/PlaqLink_CFG95_T01.png> <./Chapter7/Figs/PlaqLink_CFG95_T
-02.png>]
-<Chapter7/Figs/./plaqlinet1_forwardarrows.png, id=2122, 687.56876pt x 551.05875
+e 162.
+(pdftex.def)             Requested size: 1237.62074pt x 632.36096pt.
+<<./Chapter7/U3D/PlaqLink_CFG95_T02.u3d>>
+<Chapter7/Figs/./plaqlinet1_forwardarrows.png, id=2142, 687.56876pt x 551.05875
 pt>
 File: Chapter7/Figs/./plaqlinet1_forwardarrows.png Graphic file (type png)
  <use Chapter7/Figs/./plaqlinet1_forwardarrows.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqlinet1_forwardarrows.png used on i
-nput line 117.
+nput line 176.
 (pdftex.def)             Requested size: 158.14798pt x 126.75508pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 118.
+(Font)              <10.95> on input line 177.
 
-<Chapter7/Figs/./plaqlinet2_backwardarrows.png, id=2123, 722.7pt x 549.05125pt>
+<Chapter7/Figs/./plaqlinet2_backwardarrows.png, id=2143, 722.7pt x 549.05125pt>
 File: Chapter7/Figs/./plaqlinet2_backwardarrows.png Graphic file (type png)
 <use Chapter7/Figs/./plaqlinet2_backwardarrows.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqlinet2_backwardarrows.png used on 
-input line 123.
+input line 182.
 (pdftex.def)             Requested size: 166.83504pt x 126.75508pt.
 
-<Chapter7/Figs/./plaqlinet1_line&monopole.png, id=2124, 362.35374pt x 633.36626
+<Chapter7/Figs/./plaqlinet1_line&monopole.png, id=2144, 362.35374pt x 633.36626
 pt>
 File: Chapter7/Figs/./plaqlinet1_line&monopole.png Graphic file (type png)
  <use Chapter7/Figs/./plaqlinet1_line&monopole.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqlinet1_line&monopole.png used on i
-nput line 133.
+nput line 192.
 (pdftex.def)             Requested size: 108.77884pt x 190.13747pt.
 
-<Chapter7/Figs/./plaqlinet2_line&monopole.png, id=2125, 293.095pt x 658.46pt>
+<Chapter7/Figs/./plaqlinet2_line&monopole.png, id=2145, 293.095pt x 658.46pt>
 File: Chapter7/Figs/./plaqlinet2_line&monopole.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqlinet2_line&monopole.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqlinet2_line&monopole.png used on i
-nput line 139.
+nput line 198.
 (pdftex.def)             Requested size: 84.6331pt x 190.13747pt.
- [83 <./Chapter7/Figs/./plaqlinet1_forwardarrows.png> <./Chapter7/Figs/./plaqli
-net2_backwardarrows.png>]
-<Chapter7/Figs/./plaqlinet1_SW8_line.png, id=2141, 495.8525pt x 514.92375pt>
+ [80] [81 <./Chapter7/Figs/PlaqLink_CFG95_T01.png> <./Chapter7/Figs/PlaqLink_CF
+G95_T02.png>]
+<Chapter7/Figs/./plaqlinet1_SW8_line.png, id=2161, 495.8525pt x 514.92375pt>
 File: Chapter7/Figs/./plaqlinet1_SW8_line.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqlinet1_SW8_line.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqlinet1_SW8_line.png used on input 
-line 152.
+line 211.
 (pdftex.def)             Requested size: 122.05615pt x 126.75508pt.
 
-<Chapter7/Figs/./plaqlinet2_SW8_line.png, id=2142, 406.51875pt x 391.4625pt>
+<Chapter7/Figs/./plaqlinet2_SW8_line.png, id=2162, 406.51875pt x 391.4625pt>
 File: Chapter7/Figs/./plaqlinet2_SW8_line.png Graphic file (type png)
 
 <use Chapter7/Figs/./plaqlinet2_SW8_line.png>
 Package pdftex.def Info: Chapter7/Figs/./plaqlinet2_SW8_line.png used on input 
-line 158.
+line 217.
 (pdftex.def)             Requested size: 131.62698pt x 126.75508pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--162
+Underfull \hbox (badness 10000) in paragraph at lines 205--221
 
  []
 
-(./Chapter7/Figs/VortexLineDiagram.tex) [84 <./Chapter7/Figs/./plaqlinet1_line&
-monopole.png> <./Chapter7/Figs/./plaqlinet2_line&monopole.png> <./Chapter7/Figs
-/./plaqlinet1_SW8_line.png> <./Chapter7/Figs/./plaqlinet2_SW8_line.png>]
-(./Chapter7/Figs/SingularPoint.tex) [85]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+[82 <./Chapter7/Figs/./plaqlinet1_forwardarrows.png> <./Chapter7/Figs/./plaqlin
+et2_backwardarrows.png> <./Chapter7/Figs/./plaqlinet1_line&monopole.png> <./Cha
+pter7/Figs/./plaqlinet2_line&monopole.png>]
+(./Chapter7/Figs/VortexLineDiagram.tex) [83 <./Chapter7/Figs/./plaqlinet1_SW8_l
+ine.png> <./Chapter7/Figs/./plaqlinet2_SW8_line.png>]
+(./Chapter7/Figs/SingularPoint.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
 
  []
 
-[86]
-<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png, id=2180, 1226.5825pt x 623.32875pt
->
-File: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png Graphic file (type png)
- <use Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png>
-Package pdftex.def Info: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png used on inp
-ut line 194.
-(pdftex.def)             Requested size: 437.46112pt x 222.30571pt.
-
-<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png, id=2181, 1252.68pt x 626.34pt>
-File: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png Graphic file (type png)
-
-<use Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png>
-Package pdftex.def Info: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T02.png used on inp
-ut line 200.
-(pdftex.def)             Requested size: 437.46112pt x 218.7253pt.
- [87 <./Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01.png> <./Chapter7/Figs/./PlaqLink
-TopQ_CFG95_T02.png>]
-<Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png, id=2189, 976.64874pt x 705
+[84]
+<Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png, id=2204, 976.64874pt x 705
 .63625pt>
 File: Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png Graphic file (type png
 )
  <use Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png>
 Package pdftex.def Info: Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png use
-d on input line 210.
+d on input line 255.
 (pdftex.def)             Requested size: 175.43152pt x 126.75508pt.
 
-<Chapter7/Figs/./PlaqLinkt2_SingularCollection.png, id=2190, 809.0225pt x 504.8
+<Chapter7/Figs/./PlaqLinkt2_SingularCollection.png, id=2205, 809.0225pt x 504.8
 8625pt>
 File: Chapter7/Figs/./PlaqLinkt2_SingularCollection.png Graphic file (type png)
 
  <use Chapter7/Figs/./PlaqLinkt2_SingularCollection.png>
 Package pdftex.def Info: Chapter7/Figs/./PlaqLinkt2_SingularCollection.png used
- on input line 215.
+ on input line 260.
 (pdftex.def)             Requested size: 203.1069pt x 126.75508pt.
 
-<Chapter7/Figs/./Correlation.pdf, id=2192, 421.92442pt x 326.01122pt>
-File: Chapter7/Figs/./Correlation.pdf Graphic file (type pdf)
-
-<use Chapter7/Figs/./Correlation.pdf>
-Package pdftex.def Info: Chapter7/Figs/./Correlation.pdf used on input line 241
-.
-(pdftex.def)             Requested size: 349.97023pt x 270.42009pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--243
+Underfull \hbox (badness 10000) in paragraph at lines 249--263
 
  []
 
 
-<Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png, id=2193, 941.5175pt x 483.8075
-pt>
-File: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png Graphic file (type png)
- <use Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png>
-Package pdftex.def Info: Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png used on
- input line 247.
-(pdftex.def)             Requested size: 437.46112pt x 224.79099pt.
- [88 <./Chapter7/Figs/./PlaqLinkQt2_SingularCollection.png> <./Chapter7/Figs/./
-PlaqLinkt2_SingularCollection.png>] [89 <./Chapter7/Figs/./Correlation.pdf> <./
-Chapter7/Figs/./PlaqLinkTopQ_CFG95_T01_8SW.png>]
-<Chapter7/Figs/./Correlation_sw07.pdf, id=2252, 421.92442pt x 326.01122pt>
+<Chapter7/Figs/PlaqLinkTopQ_CFG95_T01.png, id=2206, 1226.5825pt x 623.32875pt>
+File: Chapter7/Figs/PlaqLinkTopQ_CFG95_T01.png Graphic file (type png)
+
+<use Chapter7/Figs/PlaqLinkTopQ_CFG95_T01.png>
+Package pdftex.def Info: Chapter7/Figs/PlaqLinkTopQ_CFG95_T01.png used on input
+ line 279.
+(pdftex.def)             Requested size: 1226.57951pt x 623.32722pt.
+<<./Chapter7/U3D/PlaqLinkTopQ_CFG95_T01.u3d>>
+<Chapter7/Figs/PlaqLinkTopQ_CFG95_T02.png, id=2220, 1252.68pt x 626.34pt>
+File: Chapter7/Figs/PlaqLinkTopQ_CFG95_T02.png Graphic file (type png)
+
+<use Chapter7/Figs/PlaqLinkTopQ_CFG95_T02.png>
+Package pdftex.def Info: Chapter7/Figs/PlaqLinkTopQ_CFG95_T02.png used on input
+ line 299.
+(pdftex.def)             Requested size: 1252.67694pt x 626.33846pt.
+<<./Chapter7/U3D/PlaqLinkTopQ_CFG95_T02.u3d>> [85 <./Chapter7/Figs/./PlaqLinkQt
+2_SingularCollection.png> <./Chapter7/Figs/./PlaqLinkt2_SingularCollection.png>
+] [86 <./Chapter7/Figs/PlaqLinkTopQ_CFG95_T01.png> <./Chapter7/Figs/PlaqLinkTop
+Q_CFG95_T02.png>]
+<Chapter7/Figs/./Correlation.pdf, id=2249, 421.92442pt x 326.01122pt>
+File: Chapter7/Figs/./Correlation.pdf Graphic file (type pdf)
+
+<use Chapter7/Figs/./Correlation.pdf>
+Package pdftex.def Info: Chapter7/Figs/./Correlation.pdf used on input line 325
+.
+(pdftex.def)             Requested size: 349.97023pt x 270.42009pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+
+ []
+
+[87 <./Chapter7/Figs/./Correlation.pdf>]
+<Chapter7/Figs/PlaqLinkTopQ_CFG95_T01_8SW.png, id=2300, 941.5175pt x 483.8075pt
+>
+File: Chapter7/Figs/PlaqLinkTopQ_CFG95_T01_8SW.png Graphic file (type png)
+ <use Chapter7/Figs/PlaqLinkTopQ_CFG95_T01_8SW.png>
+Package pdftex.def Info: Chapter7/Figs/PlaqLinkTopQ_CFG95_T01_8SW.png used on i
+nput line 347.
+(pdftex.def)             Requested size: 941.51521pt x 483.80632pt.
+<<./Chapter7/U3D/PlaqLinkTopQ_CFG95_T01_8SW.u3d>>
+<Chapter7/Figs/./Correlation_sw07.pdf, id=2315, 421.92442pt x 326.01122pt>
 File: Chapter7/Figs/./Correlation_sw07.pdf Graphic file (type pdf)
 
 <use Chapter7/Figs/./Correlation_sw07.pdf>
 Package pdftex.def Info: Chapter7/Figs/./Correlation_sw07.pdf used on input lin
-e 257.
-(pdftex.def)             Requested size: 349.97023pt x 270.42009pt.
-) [90 <./Chapter7/Figs/./Correlation_sw07.pdf>] [91]
+e 355.
+(pdftex.def)             Requested size: 328.09584pt x 253.52164pt.
+ [88 <./Chapter7/Figs/PlaqLinkTopQ_CFG95_T01_8SW.png>]) [89 <./Chapter7/Figs/./
+Correlation_sw07.pdf>]
 \openout2 = `Chapter8/chapter8.aux'.
 
- (./Chapter8/chapter8.tex [92
+
+(./Chapter8/chapter8.tex [90
 
 
 
@@ -3006,32 +3155,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-[93]
+[91]
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-) [94]
+) [92]
 
 Package natbib Warning: Citation `apsrev41Control' undefined on input line 156.
 
 
-(./thesis.bbl [95
+(./thesis.bbl [93
 
 
 
-] [96] [97] [98]
-Overfull \hbox (0.96402pt too wide) in paragraph at lines 763--771
+] [94] [95] [96]
+Overfull \hbox (0.96402pt too wide) in paragraph at lines 750--758
 []\T1/lmr/m/n/12 (-20) Michael Creutz, ``Monte Carlo Study of Renormalization i
 n Lattice Gauge Theory,''
  []
 
-[99] [100] [101] [102] [103]) [104]
+[97] [98] [99] [100] [101]) [102]
 \openout2 = `Appendices/appendices.aux'.
 
  (./Appendices/appendices.tex
 Appendix A.
-[105
+[103
 
 
 ]
@@ -3058,7 +3207,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 57.
 
-[106] [107]
+[104] [105]
 Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
@@ -3083,37 +3232,34 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 148.
 
-[108]
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
-
- []
-
-
-Overfull \hbox (9.17052pt too wide) in paragraph at lines 196--196
+[106]
+Overfull \hbox (9.17052pt too wide) in paragraph at lines 193--193
 [] 
  []
 
-[109] [110]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+[107]
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
-[111]
-Underfull \hbox (badness 10000) in paragraph at lines 307--310
+[108] [109]
+Underfull \hbox (badness 10000) in paragraph at lines 304--307
 
  []
 
-[112]
-Overfull \hbox (27.87123pt too wide) in paragraph at lines 318--318
+
+Overfull \hbox (27.87123pt too wide) in paragraph at lines 315--315
 [] 
  []
 
-) [113] [114]
+[110])
+Package atenddvi Info: Last page = 125.
+ [111]
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 185.
 (./thesis.aux (./Dedication/dedication.aux) (./Declaration/declaration.aux)
 (./Acknowledgement/acknowledgement.aux) (./Abstract/abstract.aux)
 (./nomenclature.nlo.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
@@ -3123,16 +3269,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 676C76AD68B99AF31171ED03045C3A84;9613.
+(rerunfilecheck)             Checksum: 3943D031E7679EC715AFE929B3BF5797;9496.
  ) 
 Here is how much of TeX's memory you used:
- 44912 strings out of 493029
- 874474 string characters out of 6136233
- 1078884 words of memory out of 5000000
- 46664 multiletter control sequences out of 15000+600000
- 146925 words of font info for 220 fonts, out of 8000000 for 9000
+ 46901 strings out of 493029
+ 922147 string characters out of 6136233
+ 1147538 words of memory out of 5000000
+ 48607 multiletter control sequences out of 15000+600000
+ 151538 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,18n,92p,10383b,1301s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,18n,132p,10373b,1301s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
@@ -3142,21 +3288,22 @@ thsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive
 onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/euler/eufm10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (130 pages, 5033423 bytes).
+fb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb>
+Output written on thesis.pdf (125 pages, 8506556 bytes).
 PDF statistics:
- 2892 PDF objects out of 2984 (max. 8388607)
- 2150 compressed objects within 22 object streams
- 528 named destinations out of 1000 (max. 500000)
- 43651 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 2954 PDF objects out of 2984 (max. 8388607)
+ 2205 compressed objects within 23 object streams
+ 518 named destinations out of 1000 (max. 500000)
+ 44512 words of extra memory for PDF output out of 51595 (max. 10000000)
 

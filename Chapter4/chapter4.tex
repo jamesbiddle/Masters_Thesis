@@ -10,10 +10,10 @@
     \graphicspath{{Chapter4/Figs/Vector/}{Chapter4/Figs/}}
 \fi
 
-Now that we have developed the required background understanding of lattice QCD and the topological objects of interest to this research, we can explain how our calculations are performed. This chapter will first describe how we calculate the Landau gauge gluon propagator on the lattice. This is the primary quantity of interest for the first part of this research, and as such we will explicitly detail its calculation.  We will then motivate our choice of momentum variables, before proceeding to a description of the lattice parameters and data cuts utilised in this work.
+Now that we have developed the required background understanding of lattice QCD and the topological objects of interest to this research, we can explain how our calculations are performed. This chapter will first describe how we calculate the Landau gauge gluon propagator on the lattice. This is the primary quantity of interest for the first part of the original research, and as such we will explicitly detail its calculation.  We will then motivate our choice of momentum variables, before proceeding to a description of the renormalisation scheme we employ. Finally, we will present the lattice parameters and data cuts utilised in this work.
 
 \section{Lattice Definition of the Gluon Propagator}
-In a gauge field theory the position-space propagator, $D_{\mu\nu}(x,y)$, of the gauge boson is the two-point correlation function. In the case of QCD this can be interpreted as the probability amplitude of a gluon being created at the space-time point $x$, propagating to $y$, and then being annihilated. The propagator therefore serves as a useful measure of the behaviour of gluons as a function of distance; or, correspondingly, as a function of momentum in the momentum-space representation. In this section we detail how the momentum-space Landau gauge gluon propagator is calculated on the lattice. We begin with the definition of the coordinate space propagator as a two-point correlator~\cite{Zwanziger:1991gz,Cucchieri:1999sz,Langfeld:2001cz}.
+In a gauge field theory the position-space propagator, $D_{\mu\nu}(x,y)$, of the gauge boson is the two-point correlation function. In the case of perturbative QCD this can be interpreted as the probability amplitude of a gluon being created at the space-time point $x$, propagating to $y$, and then being annihilated. The propagator therefore serves as a useful measure of the behaviour of gluons as a function of distance; or, correspondingly, as a function of momentum in the momentum-space representation. In this section we detail how the non-perturbative momentum-space Landau gauge gluon propagator is calculated on the lattice. We begin with the definition of the coordinate-space propagator as a two-point correlator~\cite{Zwanziger:1991gz,Cucchieri:1999sz,Langfeld:2001cz}.
 \begin{equation}
 D^{ab}_{\mu\nu}(x) = \langle A^a_\mu(x) \, A^b_\nu(0)\rangle.
 \label{eq:coordGluonProp}
@@ -73,7 +73,13 @@ which can be substituted into Eq.~\eqref{eq:scalarProp} to obtain the final expr
 D(p^2) = \frac{2}{3\,(n_c^2-1)\,V}\big\langle {\rm Tr}\, A_\mu(p)\,A_\mu(-p) \big\rangle \,. \label{eq:scalarProp2}
 \end{equation}
 
-To calculate Eq.~\eqref{eq:scalarProp2} on the lattice, we need to define $A_\mu(p)$. As defined in Eq.~\eqref{eq:GaugePotentialLat}, we make use of the midpoint definition of the coordinate-space gauge potential in terms of the lattice link variables. Once the link variables are fixed to Landau gauge following the procedure described in Sec.~\ref{sec:LandauGauge}, we can obtain the momentum-space gauge potential by performing a Fourier transform,
+To calculate Eq.~\eqref{eq:scalarProp2} on the lattice, we need to define $A_\mu(p)$. As defined in Eq.~\eqref{eq:GaugePotentialLat}, we make use of the midpoint definition of the coordinate-space gauge potential in terms of the lattice link variables such that
+%
+\begin{equation}
+A_\mu\left(x+\frac{a}{2}\hat{\mu}\right) = \frac{i}{2ag}\left(U_\mu(x) - U_\mu^\dag(x)\right) - \frac{i}{6ag}\Tr\left(U_\mu(x) - U_\mu^\dag(x)\right)I + \mathcal{O}(a^2)\, .
+\end{equation}
+%
+Once the link variables are fixed to Landau gauge following the procedure described in Sec.~\ref{sec:LandauGauge}, we can obtain the momentum-space gauge potential by performing a Fourier transform,
 %
 \begin{equation}
 A_\mu(p) = \sum_x e^{-ip\cdot(x+\hat{\mu}/2)}\, A_\mu(x+\hat{\mu}/2)\, .
@@ -88,7 +94,7 @@ As discussed in Sec.~\ref{sec:Confinement}, it is understood that at high energi
 D_\gamma(p^2) = \frac{1}{p^2}\, .
 \end{equation}
 %
-However, lattice discretisation errors cause a deviation from this idealised behaviour that we would like to systematically account for. To do this, we follow the work of Refs.~\cite{Weisz:1982zw, Weisz:1983bn,Luscher:1985zq,Symanzik:1983dc,Symanzik:1983gh} and consider the behaviour of the photon propagator on the lattice. We therefore consider for this section only an Abelian theory. The commutator in the field strength tensor then vanishes, simplifying to
+However, lattice discretisation errors cause a deviation from this idealised behaviour that we would like to systematically account for. To do this, we follow the work of Refs.~\cite{Weisz:1982zw, Weisz:1983bn,Luscher:1985zq,Symanzik:1983dc,Symanzik:1983gh}. As we are considering the propagator at high momenta, it is sufficient to consider the behaviour of the photon propagator on the lattice. We therefore consider for this section only an Abelian theory. The commutator in the field strength tensor then vanishes, simplifying to
 %
 \begin{equation}
 F_{\mu\nu} = \partial_\mu \,A_\nu - \partial_\nu\,A_\mu
@@ -123,7 +129,7 @@ We are now in a position to consider the propagator. Equivalent to the two-point
 M_{\mu\nu}D^{\nu\lambda}(p) = \delta_\mu^\lambda\, .
 \end{equation}
 %
-In the continuum, we can write the Abelian Lagrangian in terms of momentum space variables as 
+In the continuum, we can write the Abelian Lagrangian density in terms of momentum space variables as 
 %
 \begin{align*}
 \mathcal{L} &= \frac{1}{2}\tilde{F}_{\mu\nu}\,\tilde{F}^{\mu\nu}\\
@@ -144,7 +150,7 @@ However, it is understood that in the continuum the equations of motion are not 
 M_{\mu\nu} = p^2\delta_{\mu\nu} - \left(1-\frac{1}{\alpha}\right)p_\mu p_\nu\, .
 \end{equation}
 %
-By inspection, we see that Eq.~\eqref{eq:WilsonMomentum} will have the same equations of motion, with the substitution $p_\mu\rightarrow \hat{k}_\mu$. In turn, this gives the propagator
+By inspection, we see that Eq.~\eqref{eq:WilsonMomentum} for the lattice Wilson action will have the same equations of motion, with the substitution $p_\mu\rightarrow \hat{k}_\mu$. In turn, this gives the propagator
 %
 \begin{equation}
 D_{\mu\nu}(p) = \frac{1}{\hat{k}^2}\left[\delta_{\mu\nu} + (\alpha-1)\frac{\hat{k}_\mu \hat{k}_\nu}{\hat{k}^2}\right]\, .
@@ -161,7 +167,7 @@ and therefore by comparison with Eq.~\eqref{eq:scalarProp} we see that
 D(p^2) = \frac{1}{\hat{k}^2}\, .
 \end{equation}
 %
-This suggests that for the Wilson action we should make the substitution $p_\mu\rightarrow \hat{k}_\mu = \frac{2}{a}\sin\left(\frac{a p_\mu}{2}\right)$ so that at tree-level we observe the expected behaviour of the gluon propagator.\\
+This suggests that for the Wilson action we should make the substitution $p_\mu\rightarrow \hat{k}_\mu = \frac{2}{a}\sin\left(a p_\mu/2\right)$ so that at tree-level we observe the expected behaviour of the gluon propagator.\\
 
 A similar analysis can be performed for the L\"uscher-Weisz action used in this work, taking into account the contributions from the rectangle terms. The L\"uscher-Weisz action written in the same form as Eq.~\eqref{eq:WilsonMomentum} is~\cite{Weisz:1982zw}
 %
@@ -190,17 +196,57 @@ In Landau gauge, this suggests the tree-level form for the scalar propagator is
 D(p^2) = \frac{a^2}{4 \sin ^ { 2 } \left( \frac { p _ { \mu } a } { 2 } \right) + \frac { 1 } { 3 } \sin ^ { 4 } \left( \frac { p _ { \mu } a } { 2 } \right)} = \frac{1}{q^2}\, .
 \label{eq:LWCorrection}
 \end{equation}\\
+Given Eq.~\eqref{eq:LWCorrection}, in this work we make the variable substitution $p_\mu\rightarrow q_\mu$ to ensure that at high momentum where we expect the gluon propagator to tend towards tree level.
 
-Given Eq.~\eqref{eq:LWCorrection}, in this work we make the variable substitution $p_\mu\rightarrow q_\mu$ to ensure that at high momentum where we expect the gluon propagator to tend towards tree level we observe that $q^2 D(q^2) = 1$. The momentum variables chosen for both the Wilson and L\"uscher-Weisz action have been numerically verified to provide better tree level agreement in Refs.~\cite{Marenzoni:1994ap, Bonnet:2001uh}, and we present a comparison of the L\"uscher-Weisz and uncorrected variables in Fig.~\ref{fig:MomentumComparison}. We plot $k^2\,D(k^2)$ (where $k_\mu=p_\mu,\,q_\mu$ is the momentum variable for the given case under consideration) such that the tree-level propagator appears as $k^2\,D(k^2)=1$, shown as the black dashed line. We can clearly see that at high momenta the corrected gluon propagator tends towards the expected tree-level behaviour, whereas the uncorrected propagator fans out considerably. This fanning is the result of asymmetry between the spacial and temporal components of the propagator, which is accounted for in the tree-level correction~\cite{Marenzoni:1994ap}. The results presented in Fig.~\ref{fig:MomentumComparison} clearly motivate the need for tree-level correction when calculating the gluon propagator on the lattice.\\
+\section{Renormalisation}\label{sec:Renormalisation}
+Before plotting the propagator, it is essential to touch on the issue of renormalisation. In the continuum, the renormalised propagator at any loop order, $D_R^\text{C}(q^2)$, can be related to the bare propagator, $D^\text{C}(q^2)$ via the relationship
 %
-\begin{figure}[htb!]
+\begin{equation}
+D^\text{C}(q^2) = Z^\text{C}_3 \, D_R^\text{C}(q^2)\, ,
+\label{eq:ContinuumRenormalisation}
+\end{equation}
+%
+where the superscript C is present to reinforce the fact that these are continuum quantities. Typically $Z^\text{C}_3$ and $D^\text{C}(q)$ are infinite in the continuum, whereas $D_R^\text{C}(q)$ is finite. The renormalised propagator is not independent of the renormalisation scheme, and the expression for $Z^\text{C}_3$ depends on the renormalisation scheme employed. For example, in the minimal subtraction (MS) scheme at one-loop order with no quark fields, $Z_3^\text{C}=1+(5g^2)/(8\pi^2\epsilon)$~\cite{ryder1996quantum}, where the quantity $\epsilon$ is introduced during the analytic continuation to $d = 4-\epsilon$ dimensions as part of the dimensional regularisation procedure. However, regardless of the chosen renormalisation scheme, the renormalised propagator can always be expressed in the form shown in Eq.~\eqref{eq:ContinuumRenormalisation}~\cite{vanRitbergen:1997va}.\\
+
+On the lattice, we can explicitly calculate the now finite bare dimensionless propagator $D^\text{L}(q^2)$, as the lattice introduces an explicit momentum cutoff of $\pi/a$. In the language of the continuum, this can be thought of as an approximation of the continuum bare propagator to all loop orders. Similarly, the lattice renormalisation constant $Z_3(\mu, a)$ is also finite. On the lattice, Eq.~\eqref{eq:ContinuumRenormalisation} becomes
+%
+\begin{equation}
+D^\text{L}(q^2) = Z_3(\mu, a)\, D_R(q^2)\, .
+\label{eq:LatticeRenormalisation}
+\end{equation}
+%
+Despite the finiteness of $D^\text{L}(q^2)$ and $Z_3(\mu, a)$, it is still necessary to enforce a renormalisation scheme to be able to draw meaningful comparisons between propagators. As such, we employ the momentum space subtraction (MOM) scheme~\cite{Bowman:2004jm,Leinweber:1998uu,Bonnet:2001uh}, which requires that for some sufficiently large $\mu$
+%
+\begin{equation}
+D_R(q^2)\big|_{q^2=\mu^2}=\frac{1}{\mu^2}\, .
+\end{equation}
+%
+This sets the value of the renormalisation constant to be
+%
+\begin{equation}
+Z_3(\mu,a) = \, \mu^2 \, D^\text{L}(\mu^2)\, ,
+\end{equation}
+such that
+%
+\begin{equation}
+D_R(q^2) = \frac{D^\text{L}(q^2)}{\mu^2 \, D^\text{L}(\mu^2)}\, .
+\end{equation}
+%
+This renormalised propagator is what we plot in e.g. Fig.~\ref{fig:UntouchedPropagator}. The MOM scheme can be understood as enforcing tree-level behaviour for some sufficiently large $\mu$. The value of $\mu$ is arbitrary, however it is necessary that it is sufficiently large such that it is outside the infrared region where the gluon propagator exhibits substantial deviation from tree-level perturbative behaviour. Furthermore, $\mu$ must be away from the momentum cutoff, as the renormalisation constant is only independent of the cutoff in the limit that the cutoff tends towards infinity~\cite{Bonnet:2001uh,Boucaud:2006pc}.  Once the renormalisation scheme has been imposed, it is then possible to connect the lattice results with those obtained from perturbation theory by connecting the renormalisation constant with those obtained from the MS or modified minimal subtraction (\textoverline{\text{MS}}) schemes.\\
+ 
+The crux of this argument is that it is the renormalised propagator, not the bare propagator, that carries the physical meaning.  More generally, it is the shape of the propagator that carries meaning, and we are free to impose a scaling constant without changing the physical significance of the result. To facilitate comparisons between vortex-modified ensembles, we make use of the original $Z_3(\mu, a)$ obtained for the untouched propagator unless specified otherwise. Maintaining this consistency is sufficient to comment on the qualitative shape of the propagator, which is the most significant point of interest in this research.\\
+
+\section{Lattice Parameters and Data Cuts} \label{sec:LatticeParameters}
+We calculate the gluon propagator on 100 configurations of a $20^3\times 40$ $SU(3)$ lattice with spacing $a=0.125\,\si{fm}$, as used in Refs.~\cite{Trewartha:2015nna,OMalley:2011aa}. The momentum variables chosen for both the Wilson and L\"uscher-Weisz action have been numerically verified to provide better tree level agreement in Refs.~\cite{Marenzoni:1994ap, Bonnet:2001uh}, and we present a comparison of the L\"uscher-Weisz and uncorrected variables in Fig.~\ref{fig:MomentumComparison}. To visualise this improvement, we plot $k^2\,D(k^2)$ (where $k_\mu=p_\mu,\,q_\mu$ is the momentum variable for the given case under consideration) such that the tree-level propagator appears as $k^2\,D(k^2)=1$, shown as the black dashed line. This choice of plotting $k^2\,D(k^2)$ against $ka$ has the benefit of aiding both the visualisation of the tree-level behaviour, and the onset of the non-perturbative infrared properties of the propagator. Via the method described in the previous section, we have renormalised the L\"uscher-Weisz corrected propagator such that $q^2\,D(q^2) = 1$ at $q=6.0$, and applied this same renormalisation constant to the uncorrected propagator. We can clearly see that at high momenta the corrected gluon propagator tends towards the expected tree-level behaviour, whereas the uncorrected propagator fans out considerably. This fanning is the result of asymmetry between the spacial and temporal components of the propagator, which is accounted for in the tree-level correction~\cite{Marenzoni:1994ap}. The results presented in Fig.~\ref{fig:MomentumComparison} clearly motivate the need for tree-level correction when calculating the gluon propagator on the lattice.\\ 
+%
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{./ScalarGluComp_q2_MomentumComparison.pdf}
-\caption[The scalar gluon propagator is plotted with no tree-level momentum correction and the L\"uscher and Weisz correction.]{\label{fig:MomentumComparison} The scalar gluon propagator is plotted with no tree-level momentum correction (blue crosses) and the L\"uscher and Weisz correction (red dots) presented in Eq.~\eqref{eq:LWCorrection}. It is clear that the corrected momentum has improved tree-level behaviour, free from the fanning effect present in the uncorrected case.}
+\caption[The renormalised scalar gluon propagator is plotted with no tree-level momentum correction and the L\"uscher-Weisz correction.]{\label{fig:MomentumComparison} The scalar gluon propagator is plotted with no tree-level momentum correction (blue crosses) and the L\"uscher-Weisz correction (red dots) presented in Eq.~\eqref{eq:LWCorrection}. It is clear that the corrected momentum has improved tree-level behaviour, free from the fanning effect present in the uncorrected case.}
 \end{figure}
 %
-\section{Lattice Parameters and Data Cuts} \label{sec:LatticeParameters}
-We calculate the gluon propagator on 100 configurations of a $20^3\times 40$ $SU(3)$ lattice with spacing $a=0.125\,\si{fm}$, as used in Refs.~\cite{Trewartha:2015nna,OMalley:2011aa}. When considering the gluon propagator it is useful to maintain the plotting convention introduced in Fig.~\ref{fig:MomentumComparison} of considering $q^2D(q^2)$ against $qa$. This has the twofold benefit of both aiding in visualisation of the tree-level behaviour, and enabling clearer analysis of the infrared properties of the propagator by suppressing the low-$qa$ region. Following the procedure of Ref.~\cite{Bonnet:2001uh,Leinweber:1998im} all results are plotted after a momentum half-cut. The momentum half-cut corresponds to only considering lattice momenta in the range
+
+When considering the gluon propagator we shall maintain the plotting convention introduced in Fig.~\ref{fig:MomentumComparison} of considering $q^2D(q^2)$ against $qa$ for the remainder of this work. To improve the momentum-corrected propagator presented in  Fig.~\ref{fig:MomentumComparison} we follow the procedure of Ref.~\cite{Bonnet:2001uh,Leinweber:1998im} and perform a momentum half-cut. The momentum half-cut corresponds to only considering lattice momenta in the range
 %
 \begin{equation}
 p_\mu = \frac{2\pi n_\mu}{a N_\mu},~n_\mu\in \left(-\frac{N_\mu}{4},\,\frac{N_\mu}{4}\right]\, .
@@ -224,11 +270,11 @@ where
 \theta_c = \cos^{-1}\left(\frac{pa \cdot \hat{n}}{|pa|}\right)\, ,
 \end{equation}
 %
-and $\hat{n} = \frac{1}{2}(1,\,1,\,1,\,1)$ is the unit vector along the diagonal. This is performed so that all directions are equally sampled, whilst omitting points where one direction dominates the signal. This assists in filtering out high-momentum systematic errors. Finally, we can take advantage of the rotational symmetry of the scalar propagator to perform $Z(3)$ averaging over the Cartesian coordinates. This means that we average over all points with the same Cartesian radius; for example, we would average across the points $(n_x,n_y,n_z)=(2,1,1),\,(1,2,1)$ and $(1,1,2)$. These choices of cuts assist in producing a cleaner signal that accurately represents the behaviour of the continuum propagator.\\
+and $\hat{n} = \frac{1}{2}(1,\,1,\,1,\,1)$ is the unit vector along the diagonal. This is performed so that all directions are equally sampled, whilst omitting points where one direction dominates the signal. This reduces the impact of lattice cutoff artefacts. Finally, we can take advantage of the rotational symmetry of the scalar propagator to perform $Z(3)$ averaging over the Cartesian coordinates. This means that we average over all points with the same Cartesian radius; for example, we would average across the points $(n_x,n_y,n_z)=(2,1,1),\,(1,2,1)$ and $(1,1,2)$. These choices of cuts assist in producing a cleaner signal that accurately represents the behaviour of the continuum propagator. With the momentum half-cut, we now renormalise at $qa=3.0$. This choice of renormalisation point is both sufficiently large and away from the lattice momentum cutoff, as well as falling within the momentum half-cut range of $qa\in [0,\,3.06]$. This choice of renormalisation point will be used for the remainder of this work.\\
 
-With these cuts implemented, the gluon propagator on the untouched configurations appears as Fig.~\ref{fig:UntouchedPropagator}. We observe the expected tree-level behaviour at high momenta, with an infrared enhancement indicative of amplified low-momentum propagation. It should be noted that the difference in peak height observed between Fig.~\ref{fig:MomentumComparison} and Fig.~\ref{fig:UntouchedPropagator} is due to a different renormalisation constant. This issue will be discussed in detail in Sec.~\ref{sec:Renormalisation}. Due to the cuts we have made, we observe a much cleaner signal, particularly in the region $qa\geq 1.5$, in agreement with the results of Ref.~\cite{Bonnet:2001uh}. For the remainder of this work we will employ these data cuts and this choice of momentum variables when plotting the gluon propagator to ensure an accurate and clear signal.
+With these cuts implemented, the gluon propagator on the original untouched configurations appears as Fig.~\ref{fig:UntouchedPropagator}. We observe the expected tree-level behaviour at high momenta, with an infrared enhancement indicative of amplified low-momentum propagation. It should be noted that the difference in peak height observed between Fig.~\ref{fig:MomentumComparison} and Fig.~\ref{fig:UntouchedPropagator} is due to the different renormalisation constant. Due to the cuts we have made, we observe a much cleaner signal, particularly in the region $qa\geq 1.5$, in agreement with the results of Ref.~\cite{Bonnet:2001uh}. For the remainder of this work we will employ these data cuts and this choice of momentum variables when plotting the gluon propagator to ensure an accurate and clear signal.
 %
-\begin{figure}[htb!]
+\begin{figure}
 \centering
 \includegraphics[width=\linewidth]{./ScalarGluComp_q2_NoCoolU.pdf}
 \caption[The untouched gluon propagator with all data cuts and correct momentum variables utilised.]{\label{fig:UntouchedPropagator} The untouched gluon propagator with all data cuts and correct momentum variables utilised. We observe a substantially cleaner signal when compared to the untouched propagator shown in Fig.~\ref{fig:MomentumComparison}.}
