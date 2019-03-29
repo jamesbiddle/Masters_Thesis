@@ -2,7 +2,7 @@
 %*******************************************************************************
 %****************************** Third Chapter **********************************
 %*******************************************************************************
-\chapter{Topology of the Lattice}\label{chapter:Topology}
+\chapter{Topology on the Lattice}\label{chapter:Topology}
 
 % **************************** Define Graphics Path **************************
 \ifpdf
@@ -15,7 +15,11 @@
 %\item Confinement of quarks, resulting in the absence of isolated quarks.
 %\item Dynamical chiral symmetry breaking, leading to dynamical generation of mass. This results in a substantial discrepancy between the mass of hadrons and the sum of the masses of the quarks that comprise them.
 %\end{enumerate}
-As discussed in Chapter~\ref{chapter:Introduction}, QCD is distinguished from other forces of nature by the properties of confinement and dynamical chiral symmetry breaking. These properties have been observed experimentally, however the question of how they arise from the gauge theory of QCD outlined in the preceding chapter is still the subject of intense investigation. It is believed that both these properties are connected by some underlying topological structure of the QCD vacuum. Proposed candidates include Abelian monopoles~\cite{tHooft:1981bkw,Smit:1989vg,Matsubara:1993nq,Suzuki:1989gp,Mandelstam:1974pi,Kronfeld:1987ri,Ivanenko:1990xu, Chernodub:1995tt}, instantons~\cite{Belavin:1975fg,Witten:1978bc,Callan:1977gz,Schafer:1996wv,Trewartha:2013qga,Aharonov:1978jd} and centre vortices~\cite{'tHooft:1977hy,'tHooft:1979uj,Feynman:1981ss,Aharonov:1978jd,Cornwall:1979hz,Nielsen:1979xu,Mack:1978rq}. With the advent of lattice simulations, the most promising of these appears to be the centre vortex model. Numerical evidence from the lattice has been amassed that indicates that topological objects known as centre vortices are tied to both confinement and dynamical chiral symmetry breaking~\cite{Biddle:2018dtc,Faber:1997rp,Langfeld:1998cz,Bowman:2008qd,Trewartha:2015ida,Trewartha:2015nna,Trewartha:2017ive,DelDebbio:1996lih,Greensite:2003bk,DelDebbio:1998luz,OMalley:2011aa,Langfeld:2003ev,Bowman:2010zr}. It is therefore the subject of this research to further extend the investigation into the properties of centre vortices, specifically in the gluonic sector of QCD.\\
+As discussed in Chapter~\ref{chapter:Introduction}, QCD is distinguished from other forces of nature by the properties of confinement and dynamical chiral symmetry breaking. These properties have been observed experimentally, however the question of how they arise from the gauge theory of QCD outlined in the preceding chapter is still the subject of intense investigation. It is believed that both these properties are connected by some underlying topological structure of the QCD vacuum. Proposed candidates include Abelian monopoles~\cite{tHooft:1981bkw,Smit:1989vg,Matsubara:1993nq,Suzuki:1989gp,Mandelstam:1974pi,Kronfeld:1987ri,Ivanenko:1990xu, Chernodub:1995tt}, instantons~\cite{Belavin:1975fg,Witten:1978bc,Callan:1977gz,Schafer:1996wv,Trewartha:2013qga,Aharonov:1978jd} and centre vortices~\cite{'tHooft:1977hy,'tHooft:1979uj,Feynman:1981ss,Aharonov:1978jd,Cornwall:1979hz,Nielsen:1979xu,Mack:1978rq}.\\
+
+Confinement arising from abelian monopoles is one of the oldest topological theories of confinement, however there are notable issues with the confining behaviour it predicts that have resulted in this model falling out of favour in recent years~\cite{Greensite:2003bk}. Instantons have enjoyed some success as a generator of dynamical quark mass, however they are no longer thought to play a significant role in confinement~\cite{Chen:1998ct}. A brief discussion of instantons is included in Sec.~\ref{sec:Instantons}.\\
+
+With the advent of lattice simulations, the most promising of these models appears to be the centre vortex model. Numerical evidence from the lattice has been amassed that indicates that topological objects known as centre vortices are tied to both confinement and dynamical chiral symmetry breaking~\cite{Biddle:2018dtc,Faber:1997rp,Langfeld:1998cz,Bowman:2008qd,Trewartha:2015ida,Trewartha:2015nna,Trewartha:2017ive,DelDebbio:1996lih,Greensite:2003bk,DelDebbio:1998luz,OMalley:2011aa,Langfeld:2003ev,Bowman:2010zr}. It is therefore the subject of this research to further extend the investigation into the properties of centre vortices, specifically in the gluonic sector of QCD.\\
 
 As dynamical chiral symmetry breaking is primarily concerned with quarks, we will omit a detailed discussion of this property and instead begin this chapter outlining the confinement property exhibited by the strong force. We will then introduce centre vortices and motivate how they provide a potential explanation for confinement in QCD. From here we will describe how it is that we can identify centre vortices on the lattice, and survey the lattice results found in current literature pertaining to centre vortices. Finally, we will briefly describe instantons and topological charge, in preparation for later chapters that draw on these concepts.  
 
@@ -59,18 +63,25 @@ where the $z_i$ correspond to the phases of the centre vortices intersecting the
 
 An important distinction to make is the difference between thin and thick vortices. Physical vortices are thick, meaning that they require some finite-sized Wilson loop encircling them to capture the centre phase~\cite{Faber:1997rp}. In 3D these can be pictured as closed tubes with some finite radius. For the purposes of this work we will more frequently think of thin vortices, otherwise known as projected or P-vortices for reasons that will be made clear in Sec.~\ref{sec:LocatingVortices}. These vortices are infinitely thin, and can instead be thought of as closed lines in 3D. Hence, any size Wilson loop can acquire the centre phase, so long as it encircles the line. Thin vortices are a representation of the thick vortices, and for the majority of this work we will focus on P-vortices. It is these vortices that we identify on the lattice and that are responsible for the long range effects that we are interested in.\\
 
-It is not immediately apparent why the centre vortex picture is related to confinement, however a simple $SU(3)$ calculation motivates the relevance of this model~\cite{Greensite:2016pfc}. To understand the significance of this calculation it is worth first deviating slightly to detail the relationship between the Wilson loop and the potential energy between two massive (static) quarks. Following the argument presented in Ref.~\cite{Makeenko:2009dw}, consider a Wilson loop calculated around a rectangle in the $x-t$ plane with dimensions $R\times T$. As the Wilson loop is gauge invariant, we are free to select a convenient gauge in which to perform the calculation. To this end, we choose the fields to be in axial gauge, such that $A_0(x)=0\implies U_0(x) = 1\,\forall\,x$. So the Wilson loop becomes
+It is not immediately apparent why the centre vortex picture is related to confinement, however a simple $SU(3)$ calculation motivates the relevance of this model~\cite{Greensite:2016pfc}. To understand the significance of this calculation it is worth first deviating slightly to detail the relationship between the Wilson loop and the potential energy between two massive (static) quarks. Following the argument presented in Ref.~\cite{Makeenko:2009dw}, consider a Wilson loop calculated around a rectangle in the $t-x$ plane with dimensions $T\times R$. As the Wilson loop is gauge invariant, we are free to select a convenient gauge in which to perform the calculation. To this end, we choose the fields to be in axial gauge, such that $A_0(x)=0~\forall\, x$. This results in any Wilson line in the purely temporal direction being the identity. Then we construct the continuum Wilson line $U(t)$ from $(t,\,0)$ to $(t,\,R)$ to be
 %
 \begin{equation}
-W(R\times T) = \Tr \left(U_1(0)\,U_1^\dagger(T)\right)\, .
+U(t,R) = \mathcal{P}\,\exp\left(-ig\int_0^R\,dx\, A_1(t,\,x)\right)\, .
+\end{equation}
+%
+%\implies U_0(x) = 1\,\forall\,x. So the Wilson loop becomes
+%
+Using this construction, our rectangular Wilson loop can be written as the product of the Wilson lines oriented in the $x$ direction.
+\begin{equation}
+W(R\times T) = \Tr \left(U(0,R) \,U^\dagger(T,R)\right)\, .
 \end{equation}
 %
 We can insert a complete set of energy eigenstates, $\sum_n |\,n\rangle\,\langle n \,|=1$ to obtain
 %
-\begin{align*}
-W(R\times T) &= \Tr \left( \sum_n \langle U_1(0)\, |\, n\rangle\,\langle n\, |\, e^{-E_n(R)\, T}\, | \, U_1(0) \rangle\right)\\
-&=  \sum_n \Tr \left( \big|\langle U_1(0)\, |\, n\rangle\big|^2 \right)\,e^{-E_n(R)\,T} \, .
-\end{align*}
+\begin{align}
+W(R\times T) &= \Tr \left( \sum_n \langle U(0,R)\, |\, n\rangle\,\langle n\, |\, e^{-E_n(R)\, T}\, | \, U(0,R) \rangle\right)\nonumber\\
+&=  \sum_n \Tr \left( \big|\langle U(0,R)\, |\, n\rangle\big|^2 \right)\,e^{-E_n(R)\,T} \, .
+\end{align}
 %
 As $T\rightarrow \infty$, the only surviving contribution will be the lowest energy, $E_0(R)$. This means that
 %
@@ -78,7 +89,7 @@ As $T\rightarrow \infty$, the only surviving contribution will be the lowest ene
 \lim_{T\rightarrow \infty} W(R\times T) \propto e^{-E_0(R)\, T}\, .
 \label{eq:WilsonEnergy}
 \end{equation}
-The quantity $E_0(R)$ is the static quark potential, and if it is linear than its slope is referred to as the `string tension', $\sigma$.
+The quantity $E_0(R)$ is the static quark potential, and if it is linear then its slope is referred to as the `string tension', $\sigma$.
 \\
 
 With Eq.~\eqref{eq:WilsonEnergy} in mind, we return to the aforementioned $SU(3)$ confinement model. Consider a two-dimensional plane of area $L^2$, with $2N$ vortices piercing the plane. Assuming an even distribution of vortices, the total vortex density is $\rho = 2N/L^2$. As there are two $SU(3)$ vortex types, corresponding to the two non-trivial phases, $z=\exp\left(\pm 2\pi i/3\right)$, we assume that there is an equal distribution of vortex phases, i.e. there are $N$ vortices of each type. The probability of finding $n$ vortices of a given phase in some region of the plane $A\subset L^2$ is equal to the probability that exactly $n$ vortices are in $A$, multiplied by the probability that exactly $N-n$ vortices are outside of $A$, multiplied by a combinatoric factor. Expressed mathematically, this is
@@ -108,10 +119,10 @@ to write
 %
 Consider the first sum in Eq.~\eqref{eq:WilsonExpectation},
 %
-\begin{align*}
-\sum_{n=0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^n P_N(n) & = \left(1-\frac{A}{L^2}\right)^{N}\sum_{n=0}^{N} \binom{N}{n} \left(\exp\left(\frac{2\pi i}{3}\right)\,\frac{A}{L^2}\left(1-\frac{A}{L^2}\right)^{-1}\right)^n\\
+\begin{align}
+\sum_{n=0}^N \left(\exp\left(\frac{2\pi i}{3}\right)\right)^n P_N(n) & = \left(1-\frac{A}{L^2}\right)^{N}\sum_{n=0}^{N} \binom{N}{n} \left(\exp\left(\frac{2\pi i}{3}\right)\,\frac{A}{L^2}\left(1-\frac{A}{L^2}\right)^{-1}\right)^n\nonumber\\
 &=\left(1+\left(\exp\left(\frac{2\pi i}{3}\right) - 1\right)\frac{A}{L^2}\right)^N\, ,
-\end{align*}
+\end{align}
 %
 where we have made use of the binomial series to evaluate the sum. Hence the total expectation value is
 %
@@ -192,8 +203,8 @@ U(x(\theta)) \rightarrow \Omega(2\pi)\,U(x(\theta))\,\Omega(0)\, ,
 with the corresponding Wilson loop
 %
 \begin{align}
-W_0(C(\theta)) &\rightarrow \Tr\left( \Omega(2\pi)\,U(x(\theta))\,\Omega(0)\right)\\
-&=\Tr\left(\exp\left(\frac{2\pi i}{3}\right)U(x(\theta))\right)\\
+W_0(C(\theta)) &\rightarrow \Tr\left( \Omega(2\pi)\,U(x(\theta))\,\Omega(0)\right)\nonumber\\
+&=\Tr\left(\exp\left(\frac{2\pi i}{3}\right)U(x(\theta))\right)\nonumber\\
 &=\exp\left(\frac{2\pi i}{3}\right)\,W_0(C(\theta))\, .
 \end{align}
 %
@@ -288,9 +299,9 @@ There are two further points worth making about the MCG method~\cite{Faber:1999g
 \end{figure}
 %
 
-The second point is due to the degeneracy in the maxima of $R$, the so-called Gribov copy issue. This degeneracy results in it being unclear whether a given maxima of $R$ is the global maxima, or instead local. The impact of this Gribov issue on centre vortices in $SU(3)$ will form the subject of future work. However, we are confident that the MCG procedure does accurately identify centre vortices. Numerical evidence has shown that if a vortex is inserted into a configuration by hand, then the above MCG procedure is capable of consistently identifying its location~\cite{Faber:1999gu,Montero:1999by}. Furthermore, efforts to improve the obtained value of $R$ through use of simulated annealing~\cite{Bogolubsky:2009dc} or preconditioning~\cite{Cais:2008za} have found that the amount of identified vortices actually decreases as $R$ is increased, and the resulting phenomenology is worse overall. The proposed reasoning for this is that these improvement techniques have the property of increasing the size of vortices, resulting in an amplification of the issue raised above, in which the MCG procedure fails to identify large vortices. Hence, based on these prior findings, we do not attempt to increase $R$ beyond this first local maxima, as in the study of centre vortices it is appropriate to remain near this local maxima.\\  
+The second point is due to the degeneracy in the maxima of $R$, the so-called Gribov copy issue. This degeneracy results in it being unclear whether a given maximum of $R$ is the global maximum, or instead local. The impact of this Gribov issue on centre vortices in $SU(3)$ will form the subject of future work. However, we are confident that the MCG procedure does accurately identify centre vortices. Numerical evidence has shown that if a vortex is inserted into a configuration by hand, then the above MCG procedure is capable of consistently identifying its location~\cite{Faber:1999gu,Montero:1999by}. Furthermore, efforts to improve the obtained value of $R$ through use of simulated annealing~\cite{Bogolubsky:2009dc} or preconditioning~\cite{Cais:2008za} have found that the number of identified vortices actually decreases as $R$ is increased, and the resulting phenomenology is worse overall. The proposed reasoning for this is that these improvement techniques have the property of increasing the size of vortices, resulting in an amplification of the issue raised above, in which the MCG procedure fails to identify large vortices. Hence, based on these prior findings, we do not attempt to increase $R$ beyond this first local maximum, as in the study of centre vortices it is appropriate to remain near this local maximum.\\  
 
-With the procedure described in this section, we can now construct our vortex-modified ensembles via the following procedure. The untouched configurations are generated in a random gauge, then fixed to maximal centre gauge. From here we define our vortex-only configurations by projecting these MCG configurations onto $Z(3)$. We then define the vortex removed configurations as $R_\mu = Z^{\dagger}_{\mu}(x)\,U_{\mu}(x)$. The vortex-modified configurations are set to a random gauge, then all the ensembles are independently fixed to Landau gauge via the method outlined in Sec.~\ref{sec:LandauGauge}. Hence, the three ensembles utilised for this work are the
+With the procedure described in this section, we can now construct our vortex-modified ensembles via the following procedure. The untouched configurations are generated in a random gauge, then fixed to maximal centre gauge. From here we define our vortex-only configurations by projecting these MCG configurations onto $Z(3)$. We then define the vortex removed configurations as $R_\mu = Z^{\dagger}_{\mu}(x)\,U_{\mu}(x)$. A random gauge transformation is applied to the vortex-modified configurations, then all the ensembles are independently fixed to Landau gauge via the method outlined in Sec.~\ref{sec:LandauGauge}. Hence, the three ensembles utilised for this work are the
 \begin{enumerate}
 \item Original `untouched' fields, $U_{\mu}(x),$
 
@@ -405,7 +416,7 @@ and the field strength tensor is given by~\cite{Schafer:1996wv}
 \label{eq:InstantonFieldStrength}
 \end{equation}
 %
-The topological charge at the centre of an instanton $x_0$ is given as a function of $\rho$ by~\cite{Trewartha:2013qga}
+The topological charge density at the centre of an instanton $x_0$ is given as a function of $\rho$ by~\cite{Trewartha:2013qga}
 %
 \begin{equation}
 q(x_0) = Q\frac{6}{\pi^2\,\rho^4}\, ,\label{eq:InstProfile}

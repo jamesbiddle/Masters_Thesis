@@ -52,16 +52,16 @@ R = \operatorname{Re} \Tr (U_\mu^\prime \, \bar{U})\, .
 \label{eq:CoolFunctional}
 \end{equation}
 %
-Naively, it would seem that $U_\mu^\prime = \bar{U}^{-1}$ would be the ideal choice. However, $\bar{U}$ is a sum of $SU(3)$ matrices, and $SU(3)$ is only closed under multiplication, not addition. Hence, $\bar{U}$, and by extension $\bar{U}^{-1}$, are not necessarily in $SU(3)$, making $\bar{U}^{-1}$ and invalid substitute for $U_\mu$. However, any $SU(2)$ element can be written in the form $U = a _ { 0 } I + i \vec { a } \cdot \vec { \sigma }$, where $\vec{\sigma}$ are the Pauli matrices and $a\in\mathbb{R}^4$  satisfies $a^2=1$. Hence, a sum of $SU(2)$ elements will be proportional to another $SU(2)$ element. We can exploit this fact to construct an new $SU(3)$ element from three $SU(2)$ subgroups. To this end, we wish to find a $U^\prime$ of the form
+Naively, it would seem that $U_\mu^\prime = \bar{U}^{-1}$ would be the ideal choice. However, $\bar{U}$ is a sum of $SU(3)$ matrices, and $SU(3)$ is only closed under multiplication, not addition. Hence, $\bar{U}$, and by extension $\bar{U}^{-1}$, are not necessarily in $SU(3)$, making $\bar{U}^{-1}$ an invalid substitute for $U_\mu$. However, any $SU(2)$ element can be written in the form $U = a _ { 0 } I + i \vec { a } \cdot \vec { \sigma }$, where $\vec{\sigma}$ are the Pauli matrices and $a\in\mathbb{R}^4$  satisfies $a^2=1$. Hence, a sum of $SU(2)$ elements will be proportional to another $SU(2)$ element. We can exploit this fact to construct an new $SU(3)$ element from three $SU(2)$ subgroups. To this end, we wish to find a $U^\prime$ of the form
 %
 \begin{equation}
 U^\prime_\mu = a_3\,a_2\,a_1\,U_\mu\, ,
 \label{eq:UPrime}
 \end{equation}
 %
-where the $a_i$ are each in different a $3\times 3$ representation of $SU(2)$. The optimal choice is
+where the $a_i$ are each in a different $3\times 3$ representation of $SU(2)$. The optimal choice is
 %
-\begin{align*}
+\begin{align}
 a_1 &= \frac{1}{k_1}
 \begin{pmatrix}
 \frac{1}{2}\left((U_\mu \, \bar{U})_{11} + (U_\mu \, \bar{U})^*_{22}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})_{12} - (U_\mu \, \bar{U})^*_{21}\right) & 0\\
@@ -70,17 +70,17 @@ a_1 &= \frac{1}{k_1}
 \end{pmatrix}^\dagger\\
 a_2 &= \frac{1}{k_2}
 \begin{pmatrix}
-\frac{1}{2}\left((U_\mu \, \bar{U})_{22} + (U_\mu \, \bar{U})^*_{33}\right) & 0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{23} - (U_\mu \, \bar{U})^*_{32}\right)\\
+\frac{1}{2}\left((U_\mu \, \bar{U})_{11} + (U_\mu \, \bar{U})^*_{33}\right) & 0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{13} - (U_\mu \, \bar{U})^*_{31}\right)\\
 0 & k_2 & 0\\
-\frac{1}{2}\left((U_\mu \, \bar{U})_{32} - (U_\mu \, \bar{U})^*_{23}\right) & 0 & \frac{1}{2}\left((U_\mu \, \bar{U})^*_{22} + (U_\mu \, \bar{U})_{33}\right)
+\frac{1}{2}\left((U_\mu \, \bar{U})_{31} - (U_\mu \, \bar{U})^*_{13}\right) & 0 & \frac{1}{2}\left((U_\mu \, \bar{U})^*_{11} + (U_\mu \, \bar{U})_{33}\right)
 \end{pmatrix}^\dagger\\
 a_3 &= \frac{1}{k_3}
 \begin{pmatrix}
-0 & 0 & k_3\\
-0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{11} + (U_\mu \, \bar{U})^*_{33}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})_{13} - (U_\mu \, \bar{U})^*_{31}\right)\\
-0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{31} - (U_\mu \, \bar{U})^*_{13}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})^*_{11} + (U_\mu \, \bar{U})_{33}\right)
+k_3 & 0 & 0\\
+0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{22} + (U_\mu \, \bar{U})^*_{33}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})_{23} - (U_\mu \, \bar{U})^*_{32}\right)\\
+0 & \frac{1}{2}\left((U_\mu \, \bar{U})_{32} - (U_\mu \, \bar{U})^*_{23}\right) & \frac{1}{2}\left((U_\mu \, \bar{U})^*_{22} + (U_\mu \, \bar{U})_{33}\right)
 \end{pmatrix}^\dagger\, .
-\end{align*}
+\end{align}
 The factor of $\frac{1}{k_i}$ fixes the determinant such that $\det(a_i)=1$. The procedure for identifying these $SU(2)$ elements is described in detail in Appendix~\ref{app:Cooling}. With this construction of $U_\mu^\prime$ we locally minimise the Wilson action for each link. This determination of $U_\mu^\prime$ is repeated 12 times per link. One sweep of cooling constitutes updating each link on the lattice according to this procedure.\\
 
 As detailed in Ref.~\cite{Bonnet:2000dc}, this process can be thought of as locally minimising the Wilson action of the three $SU(2)$ subgroups, which collectively minimises the Wilson action of the full $SU(3)$ link. It is then simple to extend this procedure to different actions by expanding the size and shape of the staples considered in the construction of $\bar{U}$. As all of the quantities utilised in the cooling procedure are gauge invariant, cooling can be performed in any gauge to arrive at the same cooled configuration. However, cooling is not a gauge transformation, and as such it represents a deviation from the original physical configuration. We therefore need to be careful when selecting the action used for the cooling routine to ensure that we are not removing the physics that we are interested in. To best study instantons and topological charge on a periodic lattice, it has been shown that a $\mathcal{O}(a^4)$ three-loop  improved action is most suitable~\cite{BilsonThompson:2002jk}. This action is dubbed a `three-loop' action as it consists of a linear combination of $1\times 1$, $2\times 2$ and $3\times 3$ Wilson loops. This choice of action combines both computational efficiency with an effective stabilisation of instantons and an accurate preservation of the topological charge under repeated cooling sweeps. As a result, it is this three-loop cooling routine that will be utilised in this research.

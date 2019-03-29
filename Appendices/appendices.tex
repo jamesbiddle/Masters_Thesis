@@ -3,7 +3,7 @@
 \section{Matrix definitions}\label{app:GellMann}
 The standard form of the $2\times 2$ Pauli matrices is
 %
-\begin{equation*}
+\begin{equation}
 \sigma_1 = \begin{pmatrix}
 0 & 1\\
 1 & 0
@@ -18,11 +18,11 @@ i & 0
 1 & 0\\
 0 & -1
 \end{pmatrix}\\, .
-\end{equation*}
+\end{equation}
 %
-The $4\times 4$ gamma matrices in the Dirac representation are therefore given by
+The $4\times 4$ gamma matrices in the Dirac representation in Euclidean space are therefore given by
 %
-\begin{align*}
+\begin{equation}
 \gamma_i = \begin{pmatrix}
 0 & \sigma_i\\
 -\sigma_i & 0
@@ -32,13 +32,13 @@ The $4\times 4$ gamma matrices in the Dirac representation are therefore given b
 I & 0\\
 0 & -I
 \end{pmatrix}\, .
-\end{align*} 
+\end{equation} 
 %
 The gamma matrices in this representation are evidently Hermitian, and satisfy the anti-commutation relationship,
 %
-\begin{equation*}
+\begin{equation}
 \lbrace \gamma_\mu\, ,\, \gamma_\mu \rbrace = 2\,\delta_{\mu\nu}\, .
-\end{equation*}
+\end{equation}
 %
 The Gell-Mann matrices $\lambda_a$ are related to the generators of $SU(3)$, $t_a$, by~\cite{peskin2018introduction}
 %
@@ -48,11 +48,11 @@ t_a = \frac{\lambda_a}{2}\, .
 %
 The matrices are given by
 %
-\begin{align*}
-\lambda _ { 1 } &= \left( \begin{array} { c c c } { 0 } & { 1 } & { 0 } \\ { 1 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 2 } = \left( \begin{array} { c c c } { 0 } & { - i } & { 0 } \\ { i } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 3 } = \left( \begin{array} { c c c } { 1 } & { 0 } & { 0 } \\ { 0 } & { - 1 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right)\\
-\lambda _ { 4 } &= \left( \begin{array} { c c c } { 0 } & { 0 } & { 1 } \\ { 0 } & { 0 } & { 0 } \\ { 1 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 5 } = \left( \begin{array} { c c c } { 0 } & { 0 } & { - i } \\ { 0 } & { 0 } & { 0 } \\ { i } & { 0 } & { 0 } \end{array} \right)\\
+\begin{align}
+\lambda _ { 1 } &= \left( \begin{array} { c c c } { 0 } & { 1 } & { 0 } \\ { 1 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 2 } = \left( \begin{array} { c c c } { 0 } & { - i } & { 0 } \\ { i } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 3 } = \left( \begin{array} { c c c } { 1 } & { 0 } & { 0 } \\ { 0 } & { - 1 } & { 0 } \\ { 0 } & { 0 } & { 0 } \end{array} \right)\nonumber\\
+\lambda _ { 4 } &= \left( \begin{array} { c c c } { 0 } & { 0 } & { 1 } \\ { 0 } & { 0 } & { 0 } \\ { 1 } & { 0 } & { 0 } \end{array} \right) \quad \lambda _ { 5 } = \left( \begin{array} { c c c } { 0 } & { 0 } & { - i } \\ { 0 } & { 0 } & { 0 } \\ { i } & { 0 } & { 0 } \end{array} \right)\nonumber\\
 \lambda _ { 6 } &= \left( \begin{array} { c c c } { 0 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 1 } \\ { 0 } & { 1 } & { 0 } \end{array} \right) \quad \lambda _ { 7 } = \left( \begin{array} { c c c } { 0 } & { 0 } & { 0 } \\ { 0 } & { 0 } & { - i } \\ { 0 } & { i } & { 0 } \end{array} \right) \quad \lambda _ { 8 } = \frac { 1 } { \sqrt { 3 } } \left( \begin{array} { c c c } { 1 } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { - 2 } \end{array} \right)\, .
-\end{align*}
+\end{align}
 
 \section{Gauge transformation of $F_{\mu\nu}$}\label{app:GTF}
 Recall from Eq.~\eqref{eq:FieldStrengthTensor} that the field strength tensor is defined to be
@@ -71,29 +71,29 @@ A_\mu \rightarrow \Omega\,A_\mu\,\Omega^\dag + \frac{i}{g}\,(\partial_\mu\,\Omeg
 %
 We will also make repeated use of the unitarity of $\Omega$, specifically the fact that
 %
-\begin{align*}
-\partial_\mu \left(\Omega\, \Omega^\dagger\right) &= \left(\partial_\mu\,\Omega\right)\Omega^\dagger + \Omega\left(\partial_\mu\, \Omega^\dagger\right)\\
-&=\partial_\mu \, I\\
-&= 0\\
+\begin{align}
+\partial_\mu \left(\Omega\, \Omega^\dagger\right) &= \left(\partial_\mu\,\Omega\right)\Omega^\dagger + \Omega\left(\partial_\mu\, \Omega^\dagger\right)\nonumber\\
+&=\partial_\mu \, I\nonumber\\
+&= 0\nonumber\\
 \implies & \left(\partial_\mu\,\Omega\right)\Omega^\dagger = -\Omega\left(\partial_\mu\, \Omega^\dagger\right)\, .
-\end{align*}
+\end{align}
 %
 Substituting Eq.~\eqref{eq:PotentialGT(app)} into Eq.~\eqref{eq:FieldStrength(app)} we obtain
 %
-\begin{align*}
-F_{\mu\nu} \rightarrow &\left(\partial_\mu \, \Omega\right)A_\nu \, \Omega^\dagger + \Omega\left(\partial_\mu\,A_\nu\right)\Omega^\dagger + \Omega \, A_\nu\left(\partial_\mu \, \Omega^\dagger\right)\\
-& + \frac{i}{g}\left(\partial_\nu\,\partial_\mu\, \Omega\right)\Omega^\dagger + \frac{i}{g}\left(\partial_\nu\,\Omega\right)\left(\partial_\mu\,\Omega^\dagger\right)\\
-& - \left(\partial_\nu \, \Omega\right)A_\mu \, \Omega^\dagger - \Omega\left(\partial_\nu\,A_\mu\right)\Omega^\dagger - \Omega \, A_\mu\left(\partial_\nu \, \Omega^\dagger\right)\\
-& - \frac{i}{g}\left(\partial_\nu\,\partial_\mu\, \Omega\right)\Omega^\dagger - \frac{i}{g}\left(\partial_\mu\,\Omega\right)\left(\partial_\nu\,\Omega^\dagger\right)\\
-& +ig \, \Omega \, A_\mu \, A_\nu \, \Omega^\dagger - \left(\partial_\mu \, \Omega\right)A_\nu \, \Omega^\dagger + \Omega\,A_\mu\left(\partial_\nu \, \Omega^\dagger\right) + \frac{i}{g}\left(\partial_\mu\,\Omega\right)\left(\partial_\nu\,\Omega^\dagger\right)\\
+\begin{align}
+F_{\mu\nu} \rightarrow &\left(\partial_\mu \, \Omega\right)A_\nu \, \Omega^\dagger + \Omega\left(\partial_\mu\,A_\nu\right)\Omega^\dagger + \Omega \, A_\nu\left(\partial_\mu \, \Omega^\dagger\right)\nonumber\\
+& + \frac{i}{g}\left(\partial_\nu\,\partial_\mu\, \Omega\right)\Omega^\dagger + \frac{i}{g}\left(\partial_\nu\,\Omega\right)\left(\partial_\mu\,\Omega^\dagger\right)\nonumber\\
+& - \left(\partial_\nu \, \Omega\right)A_\mu \, \Omega^\dagger - \Omega\left(\partial_\nu\,A_\mu\right)\Omega^\dagger - \Omega \, A_\mu\left(\partial_\nu \, \Omega^\dagger\right)\nonumber\\
+& - \frac{i}{g}\left(\partial_\nu\,\partial_\mu\, \Omega\right)\Omega^\dagger - \frac{i}{g}\left(\partial_\mu\,\Omega\right)\left(\partial_\nu\,\Omega^\dagger\right)\nonumber\\
+& +ig \, \Omega \, A_\mu \, A_\nu \, \Omega^\dagger - \left(\partial_\mu \, \Omega\right)A_\nu \, \Omega^\dagger + \Omega\,A_\mu\left(\partial_\nu \, \Omega^\dagger\right) + \frac{i}{g}\left(\partial_\mu\,\Omega\right)\left(\partial_\nu\,\Omega^\dagger\right)\nonumber\\
 & -ig \, \Omega \, A_\nu \, A_\mu \, \Omega^\dagger + \left(\partial_\nu \, \Omega\right)A_\mu \, \Omega^\dagger - \Omega\,A_\nu\left(\partial_\mu \, \Omega^\dagger\right) - \frac{i}{g}\left(\partial_\nu\,\Omega\right)\left(\partial_\mu\,\Omega^\dagger\right)\, . 
-\end{align*}
+\end{align}
 Cancelling off terms reduces the above expression to the desired result,
 %
-\begin{align*}
-F_{\mu\nu} \rightarrow &\, \Omega\left(\partial_\mu\,A_\nu\right)\Omega^\dagger - \Omega\left(\partial_\nu\,A_\mu\right)\Omega^\dagger +ig\,\Omega\left[A_\mu,\,A_\nu\right]\Omega^\dagger\\
+\begin{align}
+F_{\mu\nu} \rightarrow &\, \Omega\left(\partial_\mu\,A_\nu\right)\Omega^\dagger - \Omega\left(\partial_\nu\,A_\mu\right)\Omega^\dagger +ig\,\Omega\left[A_\mu,\,A_\nu\right]\Omega^\dagger\nonumber\\
 &= \Omega\,F_{\mu\nu}\,\Omega^\dagger\, .
-\end{align*}
+\end{align}
 
 \section{Wilson line gauge transformation}\label{app:WilsonLineGT}
 
@@ -146,7 +146,7 @@ U_\mu(x)\rightarrow \Omega(x)\,U_\mu(x)\,\Omega^\dagger(x+a\hat{\mu})\, .
 \end{equation} 
 
 \section{Taylor expansion of $P_{\mu\nu}$}\label{app:TEPlaquette}
-First, we recall the definitions of the gauge link in the continuum
+Here we sketch out how to construct the field strength tensor in terms of the plaquette. We will neglect a discussion of the $\mathcal{O}(a^3)$ terms found in Eq.~\eqref{eq:PlaquetteExponantial(app)} as a more careful treatment outside the scope of this work is required to show that these higher order terms do not render the expansion shown in Eq.~\eqref{eq:PlaquetteExpansion} incorrect. However, this derivation highlights the key steps in arriving at the desired result. First, we recall the definitions of the gauge link in the continuum
 %
 \begin{equation}
 U_\mu(x) = \mathcal{P}\exp\left(-iag\int_0^1 \,dt \,A_\mu(x + at\hat{\mu})\right)  \, ,
@@ -162,15 +162,15 @@ P_{\mu\nu} = U_\mu(x)\,U_\nu(x+a\hat{\mu})\,U^\dagger_\mu(x+a\hat{\nu})\,U^\dagg
 We can approximate the integral in Eq.~\eqref{eq:GaugeLink(app)} by Taylor expanding $A_\mu$ around $a=0$ and explicitly evaluating the integral. Note that once we have Taylor expanded $A_\mu$, the term within the integral commutes with itself for all values of $t$, allowing us to omit the path ordering from Eq.~\eqref{eq:GaugeLink(app)}. Performing the expansion, we find that
 %
 \begin{align}
-U_\mu(x)&=\exp\left(-iag\int_0^1 dt A_\mu\left(x\right) + at\partial_\mu A_\mu(x) + \mathcal{O}(a^3)\right)\nonumber\\
-&=\exp\left(-iag A_\mu\left(x\right) - \frac{1}{2}ia^2 g\, \partial_\mu A_\mu\left(x\right)\right)\, . \label{eq:UTaylor}
+U_\mu(x)&=\exp\left(-iag\int_0^1 dt \left(A_\mu\left(x\right) + at\partial_\mu A_\mu(x) + \mathcal{O}(a^3)\right)\right)\nonumber\\
+&=\exp\left(-iag A_\mu\left(x\right) - \frac{1}{2}ia^2 g\, \partial_\mu A_\mu\left(x\right)+ \mathcal{O}(a^3)\right)\, . \label{eq:UTaylor}
 \end{align}
 %
 Similarly, we evaluate
 %
 \begin{align}
-U_\nu(x+a\hat{\mu}) &= \exp\left(-iag\int_0^1 dt A_\nu(x) + a\partial_\mu A_\nu + at\partial_\nu A_\nu + \mathcal{O}(a^3)\right)\nonumber\\
-&= \exp\left(-iag A_\nu(x) - ia^2g\,\partial_\mu A_\nu(x) - \frac{1}{2}ia^2 g\,\partial_\nu A_\nu(x)\right)\, . \label{eq:UTaylor2}
+U_\nu(x+a\hat{\mu}) &= \exp\left(-iag\int_0^1 dt \left(A_\nu(x) + a\partial_\mu A_\nu + at\partial_\nu A_\nu + \mathcal{O}(a^3)\right)\right)\nonumber\\
+&= \exp\left(-iag A_\nu(x) - ia^2g\,\partial_\mu A_\nu(x) - \frac{1}{2}ia^2 g\,\partial_\nu A_\nu(x)+ \mathcal{O}(a^3)\right)\, . \label{eq:UTaylor2}
 \end{align}
 %
 We will also require the Baker-Campbell-Hausdorff identity for non-Abelian matrix exponentials
@@ -180,18 +180,17 @@ We will also require the Baker-Campbell-Hausdorff identity for non-Abelian matri
 \label{eq:BCH}
 \end{equation}
 %
-Substituting Eq.~\eqref{eq:UTaylor} and Eq.~\eqref{eq:UTaylor2} into Eq.~\eqref{eq:Plaquette(app)} and retaining only terms up to $\mathcal{O}(a^2)$ we have
+Substituting Eq.~\eqref{eq:UTaylor} and Eq.~\eqref{eq:UTaylor2} into Eq.~\eqref{eq:Plaquette(app)} and retaining only terms up to $\mathcal{O}(a^2)$ we find that
 %
-\begin{alignat*}{2}
-P_{\mu\nu} &= &&\exp\left(-ig\left(a\,A_\mu(x)+\frac{1}{2}a^2\,\partial_\mu A_\mu(x) \right)\right)\\
-& &&\times\exp\left(-ig\left(aA_\nu(x) + \frac{1}{2}a^2\,\partial_\nu A_\nu(x) + a^2\,\partial_\mu A_\nu(x)\right)\right)\\
-& &&\times\exp\left(ig\left(aA_\mu(x) + \frac{1}{2}a^2\,\partial_\mu A_\mu(x) + a^2\,\partial_\nu A_\mu(x)\right)\right)\\
-& &&\times\exp\left(ig\left(a\,A_\nu(x)+\frac{1}{2}a^2\,\partial_\nu A_\nu(x) + \right)\right)\\
-&= &&\exp\left(-ia^2g\,\partial_\mu A_\nu(x) + ia^2g\,\partial_\nu A_\mu(x) +\frac{a^2g^2}{2}[A_\mu(x),\,A_\nu(x)] - \frac{a^2g^2}{2}[A_\nu(x),\,A_\mu(x)]\right)\\
-&= &&\exp\left(-ia^2g F_{\mu\nu}(x)\right)\\
-&\approx &&\, I - ia^2 g F_{\mu\nu} -\frac{a^4 g^2}{2} F_{\mu\nu}^2\, .
-\end{alignat*}
-
+\begin{alignat}{2}
+P_{\mu\nu} &\simeq &&\exp\left(-ig\left(a\,A_\mu(x)+\frac{1}{2}a^2\,\partial_\mu A_\mu(x) \right)\right)\nonumber\\
+& &&\times\exp\left(-ig\left(aA_\nu(x) + \frac{1}{2}a^2\,\partial_\nu A_\nu(x) + a^2\,\partial_\mu A_\nu(x)\right)\right)\nonumber\\
+& &&\times\exp\left(ig\left(aA_\mu(x) + \frac{1}{2}a^2\,\partial_\mu A_\mu(x) + a^2\,\partial_\nu A_\mu(x)\right)\right)\nonumber\\
+& &&\times\exp\left(ig\left(a\,A_\nu(x)+\frac{1}{2}a^2\,\partial_\nu A_\nu(x)\right)\right)\nonumber\\
+&\simeq &&\exp\left(-ia^2g\,\partial_\mu A_\nu(x) + ia^2g\,\partial_\nu A_\mu(x) +\frac{a^2g^2}{2}[A_\mu(x),\,A_\nu(x)] - \frac{a^2g^2}{2}[A_\nu(x),\,A_\mu(x)]\right)\nonumber\\
+&= &&\exp\left(-ia^2g F_{\mu\nu}(x) + \mathcal{O}(a^3)\right)\, .
+\label{eq:PlaquetteExponantial(app)}
+\end{alignat}
 \section{Properties of the adjoint representation}
 \label{app:RepMapProof}
 Consider the mapping $H:SU(3)^\text{fundamental}\rightarrow SU(3)^\text{adjoint}$ defined by
@@ -211,23 +210,23 @@ We want to show that for $U,V\in SU(3)^F$
 To do this, we will need to make use of the following Fierz completeness relations for the $SU(3)$  generators
 %
 \begin{equation}
-\lambda _ { b } ^ { b } \cdot \lambda _ { c } ^ { d } = 2\, \delta _ { c } ^ { a } \delta _ { b } ^ { d } - \frac { 2 } { 3 } \delta _ { b } ^ { a } \delta _ { c } ^ { d }\, .
+\lambda _ { b } ^ { a } \lambda _ { c } ^ { d } = 2\, \delta _ { c } ^ { a } \delta _ { b } ^ { d } - \frac { 2 } { 3 } \delta _ { b } ^ { a } \delta _ { c } ^ { d }\, .
 \end{equation}
 %
 Substituting Eq.~\eqref{eq:FundMap(app)} into Eq.~\eqref{eq:MapPreserve(app)} and noting that repeated indicies are summed over, we have
-\begin{align*}
-\left[H(U)\right]_{\alpha\beta}\left[H(V)\right]^{\beta\gamma} &= \frac{1}{2} \lambda^\alpha_{ab}\, U_{bc}\,\lambda^\beta_{cd}\, U^\dagger_{da} \times \frac{1}{2} \lambda^\beta_{ef}\, V_{fg}\,\lambda^\gamma_{gh}\, V^\dagger_{he}\\
-&=\frac{1}{2} U_{bc}\,U^\dagger_{da}\,V_{fg}\,V^\dagger_{he}\,\lambda^\alpha_{ab}\, \lambda^\gamma_{gh} \left(\delta_{cf}\,\delta_{de} - \frac{1}{3}\delta_{cd}\delta_{ef}\right)\\
-&=\frac{1}{2}U_{bc} \, V_{cg} \, \lambda^\gamma_{gh} \, V^\dagger_{hd} \, U^\dagger_{da} \, \lambda^\alpha_{ab} - \frac{1}{6} U_{bc} \, U^\dagger_{ca} \, V^\dagger_{he} \, V_{eg} \lambda^\alpha_{ab}\, \lambda^\gamma_{gh}\\
-&= \frac{1}{2}U_{bc} \, V_{cg} \, \lambda^\gamma_{gh} \, V^\dagger_{hd} \, U^\dagger_{da} \, \lambda^\alpha_{ab} - \frac{1}{6}\delta_{ba}\delta_{hg} \lambda^\alpha_{ab}\, \lambda^\gamma_{gh}\\
+\begin{align}
+\left[H(U)\right]_{\alpha\beta}\left[H(V)\right]^{\beta\gamma} &= \frac{1}{2} \lambda^\alpha_{ab}\, U_{bc}\,\lambda^\beta_{cd}\, U^\dagger_{da} \times \frac{1}{2} \lambda^\beta_{ef}\, V_{fg}\,\lambda^\gamma_{gh}\, V^\dagger_{he}\nonumber\\
+&=\frac{1}{2} U_{bc}\,U^\dagger_{da}\,V_{fg}\,V^\dagger_{he}\,\lambda^\alpha_{ab}\, \lambda^\gamma_{gh} \left(\delta_{cf}\,\delta_{de} - \frac{1}{3}\delta_{cd}\delta_{ef}\right)\nonumber\\
+&=\frac{1}{2}U_{bc} \, V_{cg} \, \lambda^\gamma_{gh} \, V^\dagger_{hd} \, U^\dagger_{da} \, \lambda^\alpha_{ab} - \frac{1}{6} U_{bc} \, U^\dagger_{ca} \, V^\dagger_{he} \, V_{eg} \lambda^\alpha_{ab}\, \lambda^\gamma_{gh}\nonumber\\
+&= \frac{1}{2}U_{bc} \, V_{cg} \, \lambda^\gamma_{gh} \, V^\dagger_{hd} \, U^\dagger_{da} \, \lambda^\alpha_{ab} - \frac{1}{6}\delta_{ba}\delta_{hg} \lambda^\alpha_{ab}\, \lambda^\gamma_{gh}\nonumber\\
 &=\frac{1}{2}\Tr\left(U \, V \, \lambda^\gamma \, (U \, V)^\dagger \lambda^\alpha\right) - \frac{1}{6}\Tr\left(\lambda^\alpha\right) \, \Tr\left(\lambda^\gamma\right)\, .
-\end{align*}
+\end{align}
 Making use of the cyclic property of the trace and the fact that the Gell-Mann matrices are traceless, we find the desired result,
 %
-\begin{align*}
-\left[H(U)\right]_{\alpha\beta}\left[H(V)\right]^{\beta\gamma} &= \frac{1}{2}\Tr\left(\lambda^\alpha U \, V \, \lambda^\gamma \, (U \, V)^\dagger \right)\\
+\begin{align}
+\left[H(U)\right]_{\alpha\beta}\left[H(V)\right]^{\beta\gamma} &= \frac{1}{2}\Tr\left(\lambda^\alpha U \, V \, \lambda^\gamma \, (U \, V)^\dagger \right)\nonumber\\
 &= \left[H(UV)\right]_{\alpha\gamma} \, .
-\end{align*}\\
+\end{align}\\
 
 We also wish to show that for $U^A\in SU(3)^A$ and $U\in SU(3)^F$ that
 %
@@ -236,13 +235,13 @@ We also wish to show that for $U^A\in SU(3)^A$ and $U\in SU(3)^F$ that
 \end{equation}
 %
 Making use of Eq.~\eqref{eq:FundMap(app)}, we have
-\begin{align*}
-\Tr\left(U^A\right) &= \sum_{\alpha=1}^8 \frac{1}{2}\Tr\left(\lambda^\alpha \, U_\mu(x) \, \lambda^\alpha \, U_\mu^\dagger(x)\right)\\
-&= \frac{1}{2}U_{bc} \, U^\dagger_{da} \, \lambda_{ab}^\alpha \, \lambda_{cd}^\alpha\\
-&= U_{bc} \, U^\dagger_{da} \left(\delta_{ad}\,\delta_{bc} - \frac{1}{3}\delta_{ab}\,\delta_{cd}\right)\\
-&= \Tr\left(U\right) \, \Tr\left( U^\dagger \right) - \frac{1}{3}\Tr\left(U\, U^\dagger\right)\\
+\begin{align}
+\Tr\left(U^A\right) &= \sum_{\alpha=1}^8 \frac{1}{2}\Tr\left(\lambda^\alpha \, U_\mu(x) \, \lambda^\alpha \, U_\mu^\dagger(x)\right)\nonumber\\
+&= \frac{1}{2}U_{bc} \, U^\dagger_{da} \, \lambda_{ab}^\alpha \, \lambda_{cd}^\alpha\nonumber\\
+&= U_{bc} \, U^\dagger_{da} \left(\delta_{ad}\,\delta_{bc} - \frac{1}{3}\delta_{ab}\,\delta_{cd}\right)\nonumber\\
+&= \Tr\left(U\right) \, \Tr\left( U^\dagger \right) - \frac{1}{3}\Tr\left(U\, U^\dagger\right)\nonumber\\
 &= \left|\Tr(U)\right|^2 -1
-\end{align*}
+\end{align}
 
 \section{Cooling algorithm derivation}\label{app:Cooling}
 We wish to find $a_i$ such that 
@@ -261,23 +260,23 @@ R = \operatorname{Re} \Tr (U_\mu^\prime \, \bar{U})\, .
 %
 To determine the optimal choice for the $a_i$, we define the following three functions, $F_i(V)$, such that $F_i : SU(3)\rightarrow SU(2)$:
 %
-\begin{align*}
+\begin{align}
 F_1(V) &=\frac{1}{k_1} \begin{pmatrix}
 \frac{1}{2}\left(V_{11} + V_{22}^*\right) & \frac{1}{2}\left(V_{12} - V_{21}^*\right) & 0\\
 \frac{1}{2}\left(V_{21} - V_{12}^*\right) & \frac{1}{2}\left(V_{11}^* + V_{22}\right) & 0\\
 0 & 0 & k_1
 \end{pmatrix}\, ,\\
 F_2(V) &=\frac{1}{k_2} \begin{pmatrix}
-\frac{1}{2}\left(V_{22} + V_{33}^*\right) & 0 &\frac{1}{2}\left(V_{23} - V_{32}^*\right)\\
+\frac{1}{2}\left(V_{11} + V_{33}^*\right) & 0 &\frac{1}{2}\left(V_{13} - V_{31}^*\right)\\
 0 & k_2 & 0\\
-\frac{1}{2}\left(V_{32} - V_{23}^*\right) & 0 & \frac{1}{2}\left(V_{22}^* + V_{33}\right)
+\frac{1}{2}\left(V_{31} - V_{13}^*\right) & 0 & \frac{1}{2}\left(V_{11}^* + V_{33}\right)
 \end{pmatrix}\, ,\\
 F_3(V) &=\frac{1}{k_3} \begin{pmatrix}
 k_3 & 0 & 0\\
-0 & \frac{1}{2}\left(V_{11} + V_{33}^*\right) & \frac{1}{2}\left(V_{13} - V_{31}^*\right)\\
-0 & \frac{1}{2}\left(V_{31} - V_{13}^*\right) & \frac{1}{2}\left(V_{11}^* + V_{33}\right)
+0 & \frac{1}{2}\left(V_{22} + V_{33}^*\right) & \frac{1}{2}\left(V_{23} - V_{32}^*\right)\\
+0 & \frac{1}{2}\left(V_{32} - V_{23}^*\right) & \frac{1}{2}\left(V_{22}^* + V_{33}\right)
 \end{pmatrix}\, ,
-\end{align*}
+\end{align}
 %
 where $k_i^2$ is the determinant of the $2\times 2$ $SU(2)$ sub-block. The $\frac{1}{k_i}$ factor therefore fixes the determinant such that $\det(F_i(V))=1$. We now wish to find a suitable $V$ to define our $a_i$'s. Consider the first case, $U^{(1)}_\mu = a_1\,U_\mu$, and let $a_1 = F_1(U_\mu\,\bar{U})^\dagger$. It is worth stating explicitly that it is this step where the fact that a sum of $SU(2)$ matrices is proportional to an $SU(2)$ matrix is utilised. Despite the fact that $U_\mu\,\bar{U} \notin SU(3)$, $U_\mu \, \tilde{U}_\alpha\in SU(3)~\forall\, \alpha$, which implies that $F_i(U_\mu\, \tilde{U}_\alpha)\in SU(2)$. Then we have, for example,
 %
@@ -314,22 +313,22 @@ With the definition $a_1 = F_1(U_\mu\,\bar{U})^\dagger$, the functional in Eq.~\
 &= \frac{1}{k_1}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21} + k_1\,U_{33}\right)\, .\label{eq:FunctionalExpanded}
 \end{align}
 %
-Where we have used the fact that by the construction of $F_1(U)$, $k_1$ is real and can therefore be moved to the front of Eq.~\eqref{eq:FunctionalExpanded}. We now wish to make use of the known determinant of $F_1(U)$ to simplify this expression.
+Here we have used the fact that by the construction of $F_1(U)$, $k_1$ is real and can therefore be brought to the front of Eq.~\eqref{eq:FunctionalExpanded}. We now wish to make use of the known determinant of $F_1(U)$ to simplify this expression.
 %
-\begin{align*}
-\det(F_1(U)) &= \frac{1}{4\,k_1^2} \left(\left(U_{11}+ U_{22}^*\right)\left(U_{11}^* + U_{22}\right)-\left(U_{12} - U_{21}^*\right)\left( U_{21} - U_{12}^*\right)\right)\\
+\begin{align}
+\det(F_1(U)) &= \frac{1}{4\,k_1^2} \left(\left(U_{11}+ U_{22}^*\right)\left(U_{11}^* + U_{22}\right)-\left(U_{12} - U_{21}^*\right)\left( U_{21} - U_{12}^*\right)\right)\nonumber\\
 &=\frac{1}{4\,k_1^2}\left( |U_{11}|^2 + |U_{22}|^2 + |U_{12}|^2 + |U_{21}|^2\right.\\
-&~~~~+ U_{11}\,U_{22} + U_{11}^*\,U_{22}^* + U_{12}\,U_{21} + U_{12}^*\,U_{21}^*\big)\\
-&= \frac{1}{2\,k_1^2}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21}\right)\\
+&~~~~+ U_{11}\,U_{22} + U_{11}^*\,U_{22}^* + U_{12}\,U_{21} + U_{12}^*\,U_{21}^*\big)\nonumber\\
+&= \frac{1}{2\,k_1^2}\Re\left(\frac{|U_{11}|^2}{2} + \frac{|U_{22}|^2}{2} + \frac{|U_{12}|^2}{2} + \frac{|U_{21}|^2}{2} + U_{11}\,U_{22} - U_{12}\,U_{21}\right)\nonumber\\
 &=1\, .
-\end{align*}
+\end{align}
 %
 Substituting this determinant back into Eq.~\eqref{eq:FunctionalExpanded}, we find that
 %
-\begin{align*}
-\Re\Tr(F_1(U)^\dagger\, U) &= \Re\left(\frac{1}{k_1}(2k_1^2 + k_1\,U_{33}))\right)\\
+\begin{align}
+\Re\Tr(F_1(U)^\dagger\, U) &= \Re\left(\frac{1}{k_1}(2k_1^2 + k_1\,U_{33}))\right)\nonumber\\
 &=2\,k_1 + \Re\left(U_{33}\right)\, .
-\end{align*}
+\end{align}
 %
 Finally, substituting back $U = U_\mu\,\bar{U}$ brings us to the desired result,
 %

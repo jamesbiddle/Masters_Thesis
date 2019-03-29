@@ -9,7 +9,7 @@
 \else
     \graphicspath{{Chapter7/Figs/Vector/}{Chapter7/Figs/}}
 \fi
-\textit{A brief discussion of the work presented in this chapter will appear in the proceedings ``Visualizations of Centre Vortex Structure in Lattice Simulations'', }\citet{Biddle:2018a} \textit{and ``Publicizing Lattice Field Theory through Visualization'', }\citet{Biddle:2018b}\\
+\textit{A brief discussion of the work presented in this chapter will appear in the proceedings ``Visualizations of Centre Vortex Structure in Lattice Simulations'', }\citet{Biddle:2018a} \textit{and ``Publicizing Lattice Field Theory through Visualization'', }\citet{Biddle:2018b}.\\
 
 \textit{The digital version of this chapter contains interactive 3D models embedded in the document. To interact with these models, it is necessary to open the document in Adobe Reader or Adobe Acrobat (requires version 9 or newer). Linux users should install Adobe acroread version 9.4.1, the last edition to have full 3D support. Note that 3D content must also be enabled for the interactive content to be available, and for proper rendering it is necessary to enable double-sided rendering in the preferences menu. To view the models, click on the figures marked as \textbf{Interactive} in the caption. To rotate the model, click and hold the left mouse button and move the mouse. Use the scroll wheel or shift-click to zoom. Some pre-set views of the model are also provided to highlight areas of interest. To reset the model back to its original orientation and zoom, press the ‘home’ icon in the toolbar or change the view to ‘Default view’.}\\
 
@@ -306,6 +306,7 @@ To quantify the correlation between vortex locations and topological charge, we 
 %
 \begin{equation}
 C = V\frac{\sum_x |q(x)|\,L(x)}{\sum_x |q(x)|\,\sum_x L(x)}\, ,
+\label{eq:TopQCorrelation}
 \end{equation}
 %
 where $V$ is the lattice volume, and
@@ -327,7 +328,7 @@ In the case of no correlation, $C=1$. If there is correlation or anti-correlatio
 \end{figure}
 %
 
-Finally, it is also interesting to study the vortex structure of the lattice after cooling. After eight sweeps of cooling, we obtain Fig.~\ref{fig:PlaqLinkTopQ_SW8}. We clearly see that the complexity of the vortex structure has been greatly reduced, however the regions associated with topological charge have been less affected by the smoothing process. We can see this by recalculating the topological charge, shown in Fig.~\ref{fig:Correlation_sw07}. The average correlation has increased to a new average of $\bar{C}=1.76$, indicating that the residual vortices show a stronger correlation to the regions of high topological charge than those on the un-cooled configurations. This further supports the previously mentioned notion that cooling serves to isolate `genuine' topological objects and filter out those arising from fluctuations during the Monte-Carlo lattice generation process.
+Finally, it is also interesting to study the vortex structure of the lattice after cooling. After eight sweeps of cooling, we obtain Fig.~\ref{fig:PlaqLinkTopQ_SW8}. We clearly see that the complexity of the vortex structure has been greatly reduced, however the regions associated with topological charge have been less affected by the smoothing process. We can see this by recalculating the topological charge correlation (see Eq.~\eqref{eq:TopQCorrelation}), shown in Fig.~\ref{fig:Correlation_sw07}. The average correlation has increased to a new average of $\bar{C}=1.76$, indicating that the residual vortices show a stronger correlation to the regions of high topological charge than those on the un-cooled configurations. This further supports the previously mentioned notion that cooling serves to isolate `genuine' topological objects and filter out those arising from fluctuations during the Monte-Carlo lattice generation process.
 
 %
 \begin{figure}[H]

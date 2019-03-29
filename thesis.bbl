@@ -78,7 +78,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
   {Del~Debbio}}, \bibinfo {author} {\bibfnamefont {Manfried}\ \bibnamefont
   {Faber}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Greensite}}, \
-  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Olejnik}},\
+  and\ \bibinfo {author} {\bibfnamefont {\v{S}.}\ \bibnamefont {Olejnik}},\
   }\bibfield  {title} {\enquote {\bibinfo {title} {{Center dominance and Z(2)
   vortices in SU(2) lattice gauge theory}},}\ }\href {\doibase
   10.1103/PhysRevD.55.2298} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
@@ -242,17 +242,17 @@
   {http://arxiv.org/abs/hep-ph/9610451} {arXiv:hep-ph/9610451 [hep-ph]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-PH/9610451;%%
-\bibitem [{\citenamefont {Luscher}\ and\ \citenamefont
+\bibitem [{\citenamefont {L{\"u}scher}\ and\ \citenamefont
   {Weisz}(1985{\natexlab{a}})}]{Luscher:1984xn}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Luscher}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {L{\"u}scher}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
   {Weisz}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{On-Shell
   Improved Lattice Gauge Theories}},}\ }\href {\doibase 10.1007/BF01206178}
   {\bibfield  {journal} {\bibinfo  {journal} {Commun. Math. Phys.}\ }\textbf
   {\bibinfo {volume} {97}},\ \bibinfo {pages} {59--77} (\bibinfo {year}
-  {1985}{\natexlab{a}})},\ \bibinfo {note} {[Erratum: Commun. Math.
-  Phys.98,433(1985)]}\BibitemShut {NoStop}%
+  {1985}{\natexlab{a}})},\ \bibinfo {note} {[Erratum: Commun. Math. Phys. 98,
+  433 (1985)]}\BibitemShut {NoStop}%
 %%CITATION = CMPHA,97,59;%%
 \bibitem [{\citenamefont {Lepage}(1998)}]{Lepage:1998dt}%
   \BibitemOpen
@@ -304,11 +304,11 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Rajan}\ \bibnamefont
   {Gupta}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Introduction to
-  lattice QCD: Course}},}\ }in\ \href@noop {} {\emph {\bibinfo {booktitle}
-  {{Probing the standard model of particle interactions. Proceedings, Summer
-  School in Theoretical Physics, NATO Advanced Study Institute, 68th session,
-  Les Houches, France, July 28-September 5, 1997. Pt. 1, 2}}}}\ (\bibinfo
-  {year} {1997})\ pp.\ \bibinfo {pages} {83--219},\ \Eprint
+  lattice QCD}},}\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {{Probing
+  the standard model of particle interactions. Proceedings, Summer School in
+  Theoretical Physics, NATO Advanced Study Institute, 68th session, Les
+  Houches, France, July 28-September 5, 1997. Pt. 1, 2}}}}\ (\bibinfo {year}
+  {1997})\ pp.\ \bibinfo {pages} {83--219},\ \Eprint
   {http://arxiv.org/abs/hep-lat/9807028} {arXiv:hep-lat/9807028 [hep-lat]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/9807028;%%
@@ -487,8 +487,7 @@
   {{Pseudoparticle Solutions of the Yang-Mills Equations}},}\ }\href {\doibase
   10.1016/0370-2693(75)90163-X} {\bibfield  {journal} {\bibinfo  {journal}
   {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B59}},\ \bibinfo {pages} {85--87}
-  (\bibinfo {year} {1975})},\ \bibinfo {note} {[,350(1975)]}\BibitemShut
-  {NoStop}%
+  (\bibinfo {year} {1975})}\BibitemShut {NoStop}%
 %%CITATION = PHLTA,B59,85;%%
 \bibitem [{\citenamefont {Witten}(1979)}]{Witten:1978bc}%
   \BibitemOpen
@@ -509,7 +508,7 @@
   {title} {{Toward a Theory of the Strong Interactions}},}\ }\href {\doibase
   10.1103/PhysRevD.17.2717} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
   Rev.}\ }\textbf {\bibinfo {volume} {D17}},\ \bibinfo {pages} {2717} (\bibinfo
-  {year} {1978})},\ \bibinfo {note} {[,36(1977)]}\BibitemShut {NoStop}%
+  {year} {1978})}\BibitemShut {NoStop}%
 %%CITATION = PHRVA,D17,2717;%%
 \bibitem [{\citenamefont {Trewartha}\ \emph {et~al.}(2013)\citenamefont
   {Trewartha}, \citenamefont {Kamleh}, \citenamefont {Leinweber},\ and\
@@ -577,12 +576,30 @@
   {Annals Phys.}\ }\textbf {\bibinfo {volume} {123}},\ \bibinfo {pages} {442}
   (\bibinfo {year} {1979})}\BibitemShut {NoStop}%
 %%CITATION = APNYA,123,442;%%
+\bibitem [{\citenamefont {Chen}\ \emph {et~al.}(1999)\citenamefont {Chen},
+  \citenamefont {Brower}, \citenamefont {Negele},\ and\ \citenamefont
+  {Shuryak}}]{Chen:1998ct}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Chen}}, \bibinfo {author} {\bibfnamefont {R.~C.}\ \bibnamefont {Brower}},
+  \bibinfo {author} {\bibfnamefont {John~W.}\ \bibnamefont {Negele}}, \ and\
+  \bibinfo {author} {\bibfnamefont {Edward~V.}\ \bibnamefont {Shuryak}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Heavy quark potential in
+  the instanton liquid model}},}\ }\bibfield  {booktitle} {\emph {\bibinfo
+  {booktitle} {{Lattice Field Theory. Proceedings: 16th International
+  Symposium, Lattice '98, Boulder, USA, Jul 13-18, 1998}}},\ }\href {\doibase
+  10.1016/S0920-5632(99)85121-4} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nucl. Phys. Proc. Suppl.}\ }\textbf {\bibinfo {volume} {73}},\ \bibinfo
+  {pages} {512--514} (\bibinfo {year} {1999})},\ \bibinfo {note}
+  {[,512(1998)]},\ \Eprint {http://arxiv.org/abs/hep-lat/9809091}
+  {arXiv:hep-lat/9809091 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = HEP-LAT/9809091;%%
 \bibitem [{\citenamefont {Faber}\ \emph {et~al.}(1998)\citenamefont {Faber},
   \citenamefont {Greensite},\ and\ \citenamefont {Olejnik}}]{Faber:1997rp}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Manfried}\
   \bibnamefont {Faber}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Greensite}}, \ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Greensite}}, \ and\ \bibinfo {author} {\bibfnamefont {\v{S}.}\ \bibnamefont
   {Olejnik}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Casimir
   scaling from center vortices: Towards an understanding of the adjoint string
   tension}},}\ }\href {\doibase 10.1103/PhysRevD.57.2603} {\bibfield  {journal}
@@ -614,13 +631,13 @@
   {Del~Debbio}}, \bibinfo {author} {\bibfnamefont {Manfried}\ \bibnamefont
   {Faber}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Giedt}},
   \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Greensite}}, \ and\
-  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Olejnik}},\ }\bibfield
-  {title} {\enquote {\bibinfo {title} {{Detection of center vortices in the
-  lattice Yang-Mills vacuum}},}\ }\href {\doibase 10.1103/PhysRevD.58.094501}
-  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo
-  {volume} {D58}},\ \bibinfo {pages} {094501} (\bibinfo {year} {1998})},\
-  \Eprint {http://arxiv.org/abs/hep-lat/9801027} {arXiv:hep-lat/9801027
-  [hep-lat]} \BibitemShut {NoStop}%
+  \bibinfo {author} {\bibfnamefont {\v{S}.}\ \bibnamefont {Olejnik}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{Detection of center
+  vortices in the lattice Yang-Mills vacuum}},}\ }\href {\doibase
+  10.1103/PhysRevD.58.094501} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev.}\ }\textbf {\bibinfo {volume} {D58}},\ \bibinfo {pages} {094501}
+  (\bibinfo {year} {1998})},\ \Eprint {http://arxiv.org/abs/hep-lat/9801027}
+  {arXiv:hep-lat/9801027 [hep-lat]} \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/9801027;%%
 \bibitem [{\citenamefont {Langfeld}(2004)}]{Langfeld:2003ev}%
   \BibitemOpen
@@ -759,12 +776,12 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Adriano}\ \bibnamefont
   {Di~Giacomo}}, \bibinfo {author} {\bibfnamefont {Michele}\ \bibnamefont
-  {Maggiore}}, \ and\ \bibinfo {author} {\bibfnamefont {Stefan}\ \bibnamefont
-  {Olejnik}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Confinement
-  and Chromoelectric Flux Tubes in Lattice {QCD}}},}\ }\href {\doibase
-  10.1016/0550-3213(90)90567-W} {\bibfield  {journal} {\bibinfo  {journal}
-  {Nucl. Phys.}\ }\textbf {\bibinfo {volume} {B347}},\ \bibinfo {pages}
-  {441--460} (\bibinfo {year} {1990})}\BibitemShut {NoStop}%
+  {Maggiore}}, \ and\ \bibinfo {author} {\bibfnamefont {\v{S}tefan}\
+  \bibnamefont {Olejnik}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{Confinement and Chromoelectric Flux Tubes in Lattice {QCD}}},}\ }\href
+  {\doibase 10.1016/0550-3213(90)90567-W} {\bibfield  {journal} {\bibinfo
+  {journal} {Nucl. Phys.}\ }\textbf {\bibinfo {volume} {B347}},\ \bibinfo
+  {pages} {441--460} (\bibinfo {year} {1990})}\BibitemShut {NoStop}%
 %%CITATION = NUPHA,B347,441;%%
 \bibitem [{\citenamefont {Zwanziger}(1991)}]{Zwanziger:1991gz}%
   \BibitemOpen
@@ -872,10 +889,10 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Manfried}\
   \bibnamefont {Faber}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Greensite}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Olejnik}},
-  \ and\ \bibinfo {author} {\bibfnamefont {Daiske}\ \bibnamefont {Yamada}},\
-  }\bibfield  {title} {\enquote {\bibinfo {title} {{The Vortex finding property
-  of maximal center (and other) gauges}},}\ }\href {\doibase
+  {Greensite}}, \bibinfo {author} {\bibfnamefont {\v{S}.}\ \bibnamefont
+  {Olejnik}}, \ and\ \bibinfo {author} {\bibfnamefont {Daiske}\ \bibnamefont
+  {Yamada}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{The Vortex
+  finding property of maximal center (and other) gauges}},}\ }\href {\doibase
   10.1088/1126-6708/1999/12/012} {\bibfield  {journal} {\bibinfo  {journal}
   {JHEP}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo {pages} {012} (\bibinfo
   {year} {1999})},\ \Eprint {http://arxiv.org/abs/hep-lat/9910033}
@@ -897,12 +914,12 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Manfried}\
   \bibnamefont {Faber}}, \bibinfo {author} {\bibfnamefont {Jeff}\ \bibnamefont
-  {Greensite}}, \ and\ \bibinfo {author} {\bibfnamefont {Stefan}\ \bibnamefont
-  {Olejnik}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{First evidence
-  for center dominance in SU(3) lattice gauge theory}},}\ }\href {\doibase
-  10.1016/S0370-2693(00)00013-7} {\bibfield  {journal} {\bibinfo  {journal}
-  {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B474}},\ \bibinfo {pages}
-  {177--181} (\bibinfo {year} {2000})},\ \Eprint
+  {Greensite}}, \ and\ \bibinfo {author} {\bibfnamefont {\v{S}tefan}\
+  \bibnamefont {Olejnik}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{First evidence for center dominance in SU(3) lattice gauge theory}},}\
+  }\href {\doibase 10.1016/S0370-2693(00)00013-7} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B474}},\
+  \bibinfo {pages} {177--181} (\bibinfo {year} {2000})},\ \Eprint
   {http://arxiv.org/abs/hep-lat/9911006} {arXiv:hep-lat/9911006 [hep-lat]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/9911006;%%
@@ -966,13 +983,13 @@
   {volume} {D27}},\ \bibinfo {pages} {2545} (\bibinfo {year}
   {1983})}\BibitemShut {NoStop}%
 %%CITATION = PHRVA,D27,2545;%%
-\bibitem [{\citenamefont {Ambjorn}\ \emph
-  {et~al.}(1984{\natexlab{a}})\citenamefont {Ambjorn}, \citenamefont {Olesen},\
-  and\ \citenamefont {Peterson}}]{Ambjorn:1984mb}%
+\bibitem [{\citenamefont {Ambj{\o}rn}\ \emph
+  {et~al.}(1984{\natexlab{a}})\citenamefont {Ambj{\o}rn}, \citenamefont
+  {Olesen},\ and\ \citenamefont {Peterson}}]{Ambjorn:1984mb}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Jan}\ \bibnamefont
-  {Ambjorn}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Olesen}}, \
-  and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Peterson}},\
+  {Ambj{\o}rn}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Olesen}},
+  \ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Peterson}},\
   }\bibfield  {title} {\enquote {\bibinfo {title} {{Stochastic Confinement and
   Dimensional Reduction. 1. Four-Dimensional SU(2) Lattice Gauge Theory}},}\
   }\href {\doibase 10.1016/0550-3213(84)90475-9} {\bibfield  {journal}
@@ -980,13 +997,13 @@
   \bibinfo {pages} {189--212} (\bibinfo {year}
   {1984}{\natexlab{a}})}\BibitemShut {NoStop}%
 %%CITATION = NUPHA,B240,189;%%
-\bibitem [{\citenamefont {Ambjorn}\ \emph
-  {et~al.}(1984{\natexlab{b}})\citenamefont {Ambjorn}, \citenamefont {Olesen},\
-  and\ \citenamefont {Peterson}}]{Ambjorn:1984dp}%
+\bibitem [{\citenamefont {Ambj{\o}rn}\ \emph
+  {et~al.}(1984{\natexlab{b}})\citenamefont {Ambj{\o}rn}, \citenamefont
+  {Olesen},\ and\ \citenamefont {Peterson}}]{Ambjorn:1984dp}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Jan}\ \bibnamefont
-  {Ambjorn}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Olesen}}, \
-  and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Peterson}},\
+  {Ambj{\o}rn}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Olesen}},
+  \ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Peterson}},\
   }\bibfield  {title} {\enquote {\bibinfo {title} {{Stochastic Confinement and
   Dimensional Reduction. 2. Three-dimensional SU(2) Lattice Gauge Theory}},}\
   }\href {\doibase 10.1016/0550-3213(84)90242-6} {\bibfield  {journal}
@@ -1030,8 +1047,8 @@
   }\bibfield  {title} {\enquote {\bibinfo {title} {{The role of center vortices
   in Gribov's confinement scenario}},}\ }\href {\doibase
   10.1103/PhysRevD.81.065016} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
-  Rev.}\ }\textbf {\bibinfo {volume} {D81}},\ \bibinfo {pages} {065016}
-  (\bibinfo {year} {2010})},\ \Eprint {http://arxiv.org/abs/1001.3699}
+  Rev.}\ }\textbf {\bibinfo {volume} {D81}} (\bibinfo {year} {2010}),\
+  10.1103/PhysRevD.81.065016},\ \Eprint {http://arxiv.org/abs/1001.3699}
   {arXiv:1001.3699 [hep-lat]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1001.3699;%%
 \bibitem [{\citenamefont {Spengler}\ \emph {et~al.}(2018)\citenamefont
@@ -1186,11 +1203,11 @@
   {volume} {B236}},\ \bibinfo {pages} {397} (\bibinfo {year} {1984})},\
   \bibinfo {note} {[Erratum: Nucl. Phys.B247,544(1984)]}\BibitemShut {NoStop}%
 %%CITATION = NUPHA,B236,397;%%
-\bibitem [{\citenamefont {Luscher}\ and\ \citenamefont
+\bibitem [{\citenamefont {L{\"u}scher}\ and\ \citenamefont
   {Weisz}(1985{\natexlab{b}})}]{Luscher:1985zq}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Luscher}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {L{\"u}scher}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
   {Weisz}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{Computation of
   the Action for On-Shell Improved Lattice Gauge Theories at Weak Coupling}},}\
   }\href {\doibase 10.1016/0370-2693(85)90966-9} {\bibfield  {journal}
@@ -1198,21 +1215,6 @@
   \bibinfo {pages} {250--254} (\bibinfo {year}
   {1985}{\natexlab{b}})}\BibitemShut {NoStop}%
 %%CITATION = PHLTA,158B,250;%%
-\bibitem [{\citenamefont {van Ritbergen}\ \emph {et~al.}(1997)\citenamefont
-  {van Ritbergen}, \citenamefont {Vermaseren},\ and\ \citenamefont
-  {Larin}}]{vanRitbergen:1997va}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {van
-  Ritbergen}}, \bibinfo {author} {\bibfnamefont {J.~A.~M.}\ \bibnamefont
-  {Vermaseren}}, \ and\ \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
-  {Larin}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{The Four loop
-  beta function in quantum chromodynamics}},}\ }\href {\doibase
-  10.1016/S0370-2693(97)00370-5} {\bibfield  {journal} {\bibinfo  {journal}
-  {Phys. Lett.}\ }\textbf {\bibinfo {volume} {B400}},\ \bibinfo {pages}
-  {379--384} (\bibinfo {year} {1997})},\ \Eprint
-  {http://arxiv.org/abs/hep-ph/9701390} {arXiv:hep-ph/9701390 [hep-ph]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-PH/9701390;%%
 \bibitem [{\citenamefont {Bowman}\ \emph {et~al.}(2004)\citenamefont {Bowman},
   \citenamefont {Heller}, \citenamefont {Leinweber}, \citenamefont
   {Parappilly},\ and\ \citenamefont {Williams}}]{Bowman:2004jm}%
@@ -1251,7 +1253,7 @@
 \bibitem [{\citenamefont {Boucaud}\ \emph {et~al.}(2006)\citenamefont
   {Boucaud}, \citenamefont {Bruntjen}, \citenamefont {Leroy}, \citenamefont
   {Le~Yaouanc}, \citenamefont {Lokhov}, \citenamefont {Micheli}, \citenamefont
-  {Pene}, \citenamefont {Rodriguez-Quintero},\ and\ \citenamefont
+  {P\`ene}, \citenamefont {Rodriguez-Quintero},\ and\ \citenamefont
   {Roiesnel}}]{Boucaud:2006pc}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Philippe}\
@@ -1260,13 +1262,13 @@
   \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Le~Yaouanc}}, \bibinfo
   {author} {\bibfnamefont {A.~Y.}\ \bibnamefont {Lokhov}}, \bibinfo {author}
   {\bibfnamefont {J.}~\bibnamefont {Micheli}}, \bibinfo {author} {\bibfnamefont
-  {O.}~\bibnamefont {Pene}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Rodriguez-Quintero}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {C.}~\bibnamefont {Roiesnel}},\ }\bibfield  {title} {\enquote {\bibinfo
-  {title} {{Short comment about the lattice gluon propagator at vanishing
-  momentum}},}\ }\href@noop {} {\  (\bibinfo {year} {2006})},\ \Eprint
-  {http://arxiv.org/abs/hep-lat/0602006} {arXiv:hep-lat/0602006 [hep-lat]}
-  \BibitemShut {NoStop}%
+  {O.}~\bibnamefont {P\`ene}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Rodriguez-Quintero}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Roiesnel}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{Short comment about the lattice gluon propagator at
+  vanishing momentum}},}\ }\href@noop {} {\  (\bibinfo {year} {2006})},\
+  \Eprint {http://arxiv.org/abs/hep-lat/0602006} {arXiv:hep-lat/0602006
+  [hep-lat]} \BibitemShut {NoStop}%
 %%CITATION = HEP-LAT/0602006;%%
 \bibitem [{\citenamefont {Marenzoni}\ \emph {et~al.}(1995)\citenamefont
   {Marenzoni}, \citenamefont {Martinelli},\ and\ \citenamefont
@@ -1466,7 +1468,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
   {Bertle}}, \bibinfo {author} {\bibfnamefont {Manfried}\ \bibnamefont
   {Faber}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Greensite}}, \
-  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Olejnik}},\
+  and\ \bibinfo {author} {\bibfnamefont {\v{S}.}\ \bibnamefont {Olejnik}},\
   }\bibfield  {title} {\enquote {\bibinfo {title} {{The Structure of projected
   center vortices in lattice gauge theory}},}\ }\href {\doibase
   10.1088/1126-6708/1999/03/019} {\bibfield  {journal} {\bibinfo  {journal}
